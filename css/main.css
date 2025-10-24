@@ -1427,7 +1427,7 @@ pre code {
     transition: all 0.2s ease-in-out;
   }
   .links-of-author a::before {
-    background: #d430d2;
+    background: #ff1cec;
     display: inline-block;
     margin-right: 3px;
     transform: translateY(-2px);
@@ -3007,10 +3007,10 @@ body {
   background: rgba(245,245,245,0.067);
 }
 body {
-  color: #000;
+  color: #f8f5f5;
 }
 .posts-expand .post-title-link {
-  color: #000;
+  color: #f6f4f4;
 }
 .posts-expand .post-meta-container {
   color: #800;
