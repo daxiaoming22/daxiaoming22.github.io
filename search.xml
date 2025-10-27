@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>blog学习进展/hexo-next教程</title>
+    <url>/2025/10/22/blog_learning/</url>
+    <content><![CDATA[<h4 id="如何创建一个新的博客文章（草稿、发布、）？（10-27）"><a href="#如何创建一个新的博客文章（草稿、发布、）？（10-27）" class="headerlink" title="如何创建一个新的博客文章（草稿、发布、）？（10-27）"></a>如何创建一个新的博客文章（草稿、发布、）？（10-27）</h4><h4 id="如何配置自己的域名？（10-27）"><a href="#如何配置自己的域名？（10-27）" class="headerlink" title="如何配置自己的域名？（10-27）"></a>如何配置自己的域名？（10-27）</h4>]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>博客之旅</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>机器学习进展</title>
     <url>/2025/10/22/machine_learning/</url>
     <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="窃取机密失败QAQ..." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
@@ -20,17 +31,6 @@
       </categories>
       <tags>
         <tag>机器学习</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>blog学习进展/hexo-next教程</title>
-    <url>/2025/10/22/blog_learning/</url>
-    <content><![CDATA[<h4 id="如何创建一个新的博客文章（草稿、发布、）？（10-27）"><a href="#如何创建一个新的博客文章（草稿、发布、）？（10-27）" class="headerlink" title="如何创建一个新的博客文章（草稿、发布、）？（10-27）"></a>如何创建一个新的博客文章（草稿、发布、）？（10-27）</h4><h4 id="如何配置自己的域名？（10-27）"><a href="#如何配置自己的域名？（10-27）" class="headerlink" title="如何配置自己的域名？（10-27）"></a>如何配置自己的域名？（10-27）</h4>]]></content>
-      <categories>
-        <category>学习</category>
-      </categories>
-      <tags>
-        <tag>博客之旅</tag>
       </tags>
   </entry>
 </search>
