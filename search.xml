@@ -1,9 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>thoughts</title>
-    <url>/2025/10/27/thoughts/</url>
-    <content><![CDATA[]]></content>
+    <title>blog学习进展/hexo-next教程</title>
+    <url>/2025/10/22/blog_learning/</url>
+    <content><![CDATA[<h3 id="关于hexo-next的美化"><a href="#关于hexo-next的美化" class="headerlink" title="关于hexo-next的美化"></a>关于hexo-next的美化</h3><h4 id="如何创建一个新的博客文章？（2025-10-27）"><a href="#如何创建一个新的博客文章？（2025-10-27）" class="headerlink" title="如何创建一个新的博客文章？（2025-10-27）"></a>如何创建一个新的博客文章？（2025-10-27）</h4><p>hexo new “文章标题”<br>或者在对应的文件夹在直接添加对应.md文件，注意编辑文件头信息yaml格式</p>
+<h4 id="如何更改首页置顶顺序？（2025-10-28）"><a href="#如何更改首页置顶顺序？（2025-10-28）" class="headerlink" title="如何更改首页置顶顺序？（2025-10-28）"></a>如何更改首页置顶顺序？（2025-10-28）</h4><hr>
+<h3 id="关于如何优化访问，正规的站点建设"><a href="#关于如何优化访问，正规的站点建设" class="headerlink" title="关于如何优化访问，正规的站点建设"></a>关于如何优化访问，正规的站点建设</h3><h4 id="如何配置自己的域名？（2025-10-27）"><a href="#如何配置自己的域名？（2025-10-27）" class="headerlink" title="如何配置自己的域名？（2025-10-27）"></a><strong>如何配置自己的域名？（2025-10-27）</strong></h4><p>查看<a href="/2025/10/27/yuming/">域名配置</a></p>
+<h4 id="如何添加自己的友链？（2025-10-28）"><a href="#如何添加自己的友链？（2025-10-28）" class="headerlink" title="如何添加自己的友链？（2025-10-28）"></a>如何添加自己的友链？（2025-10-28）</h4><ul>
+<li>友链是指在博客中添加其他博客作者的链接，以展示他们的创作和关注。</li>
+</ul>
+<hr>
+<h3 id="关于markdown的使用"><a href="#关于markdown的使用" class="headerlink" title="关于markdown的使用"></a>关于markdown的使用</h3><p>markdown是一种轻量级的标记语言，用于在文本中添加格式化元素。它简单易学，同时也非常灵活。（obsidion、blog必备的技能、现在ai回答输出的格式也是markdown例如deepseek的回答、）基础语法参考(小刘在路上[^1]，2024)</p>
+<h4 id="如何链接文章？（2025-10-27）-有问题跳转找不到网页，亟待解决"><a href="#如何链接文章？（2025-10-27）-有问题跳转找不到网页，亟待解决" class="headerlink" title="如何链接文章？（2025-10-27）,有问题跳转找不到网页，亟待解决"></a>如何链接文章？（2025-10-27）,有问题跳转找不到网页，亟待解决</h4><h5 id="内部链接"><a href="#内部链接" class="headerlink" title="内部链接"></a>内部链接</h5><ul>
+<li>这种问题是由于在hexo生成的public文件夹中，文章的路径与链接的路径不一致导致的。</li>
+<li>解决方法：在hexo配置文件中，将permalink设置为&#x2F;:year&#x2F;:month&#x2F;:day&#x2F;:title&#x2F;，例如：permalink: &#x2F;:year&#x2F;:month&#x2F;:day&#x2F;:title&#x2F;</li>
+<li>这样，在生成的public文件夹中，文章的路径就与链接的路径一致了。</li>
+</ul>
+<p>例如，文章的路径为&#x2F;2025&#x2F;10&#x2F;27&#x2F;yuming&#x2F;，那么链接就为<a href="/2025/10/27/yuming/">域名配置</a></p>
+<h5 id="外部链接-https-www-baidu-com"><a href="#外部链接-https-www-baidu-com" class="headerlink" title="外部链接(https://www.baidu.com/)"></a>外部链接(<a href="https://www.baidu.com/">https://www.baidu.com/</a>)</h5><ul>
+<li>外部链接是指指向其他网站的链接，例如：<a href="https://www.baidu.com/">百度</a></li>
+<li>外部链接的安全链接的调试可能存在问题（待解决）</li>
+</ul>
+<h5 id="外部链接跳转无效问题（2025-10-29）"><a href="#外部链接跳转无效问题（2025-10-29）" class="headerlink" title="外部链接跳转无效问题（2025-10-29）"></a>外部链接跳转无效问题（2025-10-29）</h5><h4 id="如何添加脚注，来致谢引用参考链接的作者？（2025-10-27）15min"><a href="#如何添加脚注，来致谢引用参考链接的作者？（2025-10-27）15min" class="headerlink" title="如何添加脚注，来致谢引用参考链接的作者？（2025-10-27）15min"></a>如何添加脚注，来致谢引用参考链接的作者？（2025-10-27）15min</h4><p>[^1]: 小刘在路上, 2024. 手把手教会你使用Markdown. CNDS, <a href="https://blog.csdn.net/qq_40818172/article/details/126260661">https://blog.csdn.net/qq_40818172/article/details/126260661</a></p>
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>blog_learning</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>ml_learning_though</title>
+    <url>/2025/10/29/learning_thought/</url>
+    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="窃取机密失败QAQ..." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="64146faee19af39a5e1ac71d4aee08c49488fe6a97d42c8579342d116c80beaf">c5d824a5b25e76f40761a164f304f6d6ffa9d7098e122d1d10317356bf2598231f6eeacf7908a748e0bd3c975b49b6bcb66966d44585a6e06ed4c703f40405b72dd1407322c3edf4bbff9ff104dd1a066fa6325bb507264edc3b93c16856a19f2fecfd7a104afa65c1d151ba75400ddd68f7d744fb80fae5263c4efa8dd895325d0e178e9586806e9e1089d1ccafa150f7cbce67389f8ff46d57c3c29c77ab55189d469b3049feb3efdf2cfa98c1ad303fab11787ac9413fa0bd3e5745fa51bea9d144ce6dedb0bf4612a670311a8aab0e4f3c103ab50cd6c9cdd4a9a55f7692f4b5c44c11aacd752f0ec615516d961007d27d040ec645ad758147c770ec1cc253d127eee1212ad6223e19f69db614845718a9385b477ea452bf7be8cb1eaf91c4f9fb78051af4798991e83cd1f4a41074cf8be477094b6857dc3fbeee419f1a910ac760f4dd4baa3e275a113bfdd36c765b05117fdfacfbde6d983ec0ce18461e0d08857a6b6f06bf9c0659e53e7c28dfd6e6c5f99b07b79bf0bbf9db85dff6056fea09dda630ac390cf0a63ffe66b51c88a47175ada42dfe3d92599c7c42e58719d0e3adacd9af69b44437202eedddc4f2058f985c9fe30001331e50b74b109c764e9deff07d370c3b5b57b772a259f6ba3944c2898c6f13f55c56cd7766fafa5bcdcb85735fc6248f29e3d8fe23066a9c65fcaa77e135878f20a5decb19dc104b813f2c03d474a644cc104c6eb320623e54d96909226869a40ff357a0240bcc160eaa680d29309e20b4801dda85ab8a9900667bb7cf5cc5f84145d7a3277278385cde22c30802ca9c4d4e353b590aaa0c63601dbb7d2fbe6cd90ee701478462e224e4c18711c3a5e536cc3c35b455a2fee52656e2356e3e1c8adbd0bd1a8fb5be158c5c2aa21128758d80f3be4cc66b7134a8a61dc3bdff64c66dc05d9c42e1d22d63b35fa7fe788e9a05806ecf93727e1498ee7f918f789a05e70a3c91eab8b2235541e4fac80dbf0f98bf3bce43b52c1f6c28d5edd05109ccd3440e9493bd630902af30d4eefc1e2a3562de55e7cf8ca201ae27853aa3b81e5f56046564a96ce91a468a69a81af2041444c1f520c8d44904c598e60702893556f2945868850f1603bd02bb80ccde1c6002cfacc9920f51665baf89bee74e7c7444232b44248121b877b22a53914d751101ea8b6862868bd2cc09319656194d2f4eb42f6e1231aed139b97881ee3bcf1d44bd6e37f62694461cfb3a5129c968409c8e1e693e3b626429d0d1a747e0c6d8ce27d120896d28bb9d64edf31e3233da9045bbef2037db3233b18fe792c08be76130a709fcb7d70123cfa9cbd4835a68aaa7599ad1eaa63dd7a18b7bde10cd664609559dde16cc89a77ba9fca3491368ee859d96b18f4ba3ea88c250a5915a3ae6955cc0fa361a27d29f33ecf5afb0f6ee4153d25da599259132a5fbbdd24b68ec71b3fb6684271b34a1d265e37f78873d67bd83cf06734f91967a94456bce2e0781a556171c9a5095b38202a83b2523f7d37927d863659577473cfe347974ad65ae2c8e0de0e84589ce46cda6a651dc26871c5a00f5a771d6f5cc090e20693dfb8b054a6874090066d1cedeca8ae799c14015cffb1906e1b7b8d749e9e1981b4142f4cede74f410cd1164b3e9fc5dbd88ede3f4d6af1d697f1434d9f52be5c3d1dcabf08f53bce79a8294af22502f9f9a00bb38b48dd28c6b2424fd0aa6a96c3d66f972a2067fe9ea4877f2dc05d7f045cebd74b78cca39c296729b67e27efc310053929346f1a39f42cf6031a62c3799076db83b36f99cd82526bead686baf0e6c44dde1ae1cee800707c6240d7527803c0e03ec0932e9513c123ff85aa4ac34554d505ebd573458db975f550c6a8ced16ad758e115b2a83d4b1ba0fbb0a066a49ab29a030fa80baa8a5bc52e8e45ca35749d53ef569dcf9d225293c62e089430862a938b9a118aff32b3b62d28cdc944dea667d699a2778ed392ed5261cc46a9c1555f3036b3ffd3fa33d760c5834707942503ed3efc12c1a132d17ac7d2c042f9360838a6411b4c028a794eee086c9d8e446fa7ed8de90159bfeda681a54c797f1ad4922c941a8723aeb0b3b9bb9cd6bb146eb7a710065bbd7ccb6a906bb3b80136e24a5f1ad819624b8b71176a0f87c797a51febb3ab442deae734d4d80fe2ffb2933c06cecad7d38cd92f4b6d73ff6ab2b0a30e2a4de3f313e9fe5f34ba7f30ee33adcf9c0b6dcbfd9d0f0d3d922a609982acbcf97a83313323c31afa154dfd6bd6b7ad894dc49ff606e18c1102f0537ec17b52453c77205d28efec8331b5a8a1cf041f655b2482ed1eda8db5a524d1bd6dca7cd6187f5de786ca3e78c9744ef6f5cf4ec253e9e5c4cbc643f6815ee91d39791c809715a9c11cb08dda99931d48499a89531057bde0827ff7ca1993e7fe2d27889c39d93e34252a37b7ac95b3904393a465422c8980fe4612b674394d308a3df2fc78d702568d15d0147459717b92a527c6f47622bcdc16908729bb37bef076b0c4755ebd6e81893d4024c38fe218cb453d20cca89b202f85e0aba47b374b71e4e0cc18b912c8e4b8a530c3e772517549b8752ed5616f8c4b8b7d2b24bca782a1867444c774d346c40df6bc5bf190ae7fa4e41e8a34dbffc7f7b020183cca91f5937a4e42d12d35abfca9cf4715c245c56638f410721aa9b6633ae0ce421f55a54dfe2aa752ac2fe2fe6a6e08c5fb578c86c77cf9f2e0d15ec02c673f8c4f99b2570cb934f1949880d439febda7158580d3daec755b1303291cbb8cd491bc22995951b69805de8913642e394f5453ee12f3d6cfce7dd96501b7f8c996d3482113e18ae63b39559e04b69c1a43534f237d8e4532356d5a9537a66f7c0be8be534bc98198a18298c87d1fdef58a067091d5bf2f52af98999138d95e588961e7a720a85abc5fd5ea5324fb3be16287352baa7dae36e544e3767bc19c5c80fdf990df8782528251ec124355cb466ba6ba51044242e6b21e457186b500477596a</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-up">
+      <input class="hbe hbe-input-field hbe-input-field-up" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-up" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-up">请输入密码查看</span>
+      </label>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
       <categories>
         <category>观点</category>
       </categories>
@@ -16,7 +57,7 @@
     <title>机器学习进展</title>
     <url>/2025/10/22/machine_learning/</url>
     <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="窃取机密失败QAQ..." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
-  <script id="hbeData" type="hbeData" data-hmacdigest="6b5acdf636156ca295bc0751e41d420092ed09458aaa849bc2f358719572d7a8">4630436162ade97ba2718b7d0c4b3b63e601b1eef226c1f6c12ea65532ffef63de1b2592b41658576524c62fee346309e96bbb0e2d83fb1b640d9be3f6d04dbd7ae23f99ea7a5c03f46f81c797823664a91c29720d229aa31c7e7dfab4a6529e4643b1ecdf1a7dca51fca4b81c348f3cac0b4f7d7a037dcec7edfdd894aeddc03d5158070965c24e2de7db7d4585a40705b300b02467067bc1501a9e1911963d991cdbdb70a625a11ec73f80baf34182e412ed4fc70a87a74cba38f51ba900ff</script>
+  <script id="hbeData" type="hbeData" data-hmacdigest="e4525edd02280c1a33b6e92dbcab6907d62f9b6d892378b16814579388462776">c5d824a5b25e76f40761a164f304f6d67c3063513b7b50939ebf4e6e52a66201f4992e0e861c35e2eca8e72ac11e305f865e368a46cd69a99e944468989f9c8c937befa6a996c4d4c9ae7f795953de89f05cdec531b08bc77f4f6aa0a285225b0c306e2f7a946b9d53bcb45a4bd5381bc90da809ae9b35e8fd756d2cc6a40943f4922065be8c25a89f385ddfee46f2872b1d613a1b8956de395ac9df61d5a591251d4da37b5c4ffef7ab4a9cce98a1109f6942d6d77acb17c5f0145d36e0fe79</script>
   <div class="hbe hbe-content">
     <div class="hbe hbe-input hbe-input-up">
       <input class="hbe hbe-input-field hbe-input-field-up" type="password" id="hbePass">
@@ -35,28 +76,15 @@
       </tags>
   </entry>
   <entry>
-    <title>blog学习进展/hexo-next教程</title>
-    <url>/2025/10/22/blog_learning/</url>
-    <content><![CDATA[<h3 id="关于hexo-next的美化"><a href="#关于hexo-next的美化" class="headerlink" title="关于hexo-next的美化"></a>关于hexo-next的美化</h3><h4 id="如何创建一个新的博客文章？（2025-10-27）"><a href="#如何创建一个新的博客文章？（2025-10-27）" class="headerlink" title="如何创建一个新的博客文章？（2025-10-27）"></a>如何创建一个新的博客文章？（2025-10-27）</h4><p>hexo new “文章标题”<br>或者在对应的文件夹在直接添加对应.md文件，注意编辑文件头信息yaml格式</p>
-<h4 id="如何更改首页置顶顺序？（2025-10-28）"><a href="#如何更改首页置顶顺序？（2025-10-28）" class="headerlink" title="如何更改首页置顶顺序？（2025-10-28）"></a>如何更改首页置顶顺序？（2025-10-28）</h4><hr>
-<h3 id="关于如何优化访问，正规的站点建设"><a href="#关于如何优化访问，正规的站点建设" class="headerlink" title="关于如何优化访问，正规的站点建设"></a>关于如何优化访问，正规的站点建设</h3><h4 id="如何配置自己的域名？（2025-10-27）"><a href="#如何配置自己的域名？（2025-10-27）" class="headerlink" title="如何配置自己的域名？（2025-10-27）"></a><strong>如何配置自己的域名？（2025-10-27）</strong></h4><p>查看<a href="/2025/10/27/yuming/">域名配置</a></p>
-<hr>
-<h3 id="关于markdown的使用"><a href="#关于markdown的使用" class="headerlink" title="关于markdown的使用"></a>关于markdown的使用</h3><p>markdown是一种轻量级的标记语言，用于在文本中添加格式化元素。它简单易学，同时也非常灵活。（obsidion、blog必备的技能、现在ai回答输出的格式也是markdown例如deepseek的回答、）基础语法参考(小刘在路上[^1]，2024)</p>
-<h4 id="如何链接文章？（2025-10-27）-有问题跳转找不到网页，亟待解决"><a href="#如何链接文章？（2025-10-27）-有问题跳转找不到网页，亟待解决" class="headerlink" title="如何链接文章？（2025-10-27）,有问题跳转找不到网页，亟待解决"></a>如何链接文章？（2025-10-27）,有问题跳转找不到网页，亟待解决</h4><h5 id="内部链接"><a href="#内部链接" class="headerlink" title="内部链接"></a>内部链接</h5><ul>
-<li>这种问题是由于在hexo生成的public文件夹中，文章的路径与链接的路径不一致导致的。</li>
-<li>解决方法：在hexo配置文件中，将permalink设置为&#x2F;:year&#x2F;:month&#x2F;:day&#x2F;:title&#x2F;，例如：permalink: &#x2F;:year&#x2F;:month&#x2F;:day&#x2F;:title&#x2F;</li>
-<li>这样，在生成的public文件夹中，文章的路径就与链接的路径一致了。</li>
-</ul>
-<p>例如，文章的路径为&#x2F;2025&#x2F;10&#x2F;27&#x2F;yuming&#x2F;，那么链接就为<a href="/2025/10/27/yuming/">域名配置</a></p>
-<h5 id="外部链接-https-www-baidu-com"><a href="#外部链接-https-www-baidu-com" class="headerlink" title="外部链接(https://www.baidu.com/)"></a>外部链接(<a href="https://www.baidu.com/">https://www.baidu.com/</a>)</h5><ul>
-<li>外部链接是指指向其他网站的链接，例如：<a href="https://www.baidu.com/">百度</a></li>
-</ul>
-<h4 id="如何添加脚注，来致谢引用参考链接的作者？（2025-10-27）15min"><a href="#如何添加脚注，来致谢引用参考链接的作者？（2025-10-27）15min" class="headerlink" title="如何添加脚注，来致谢引用参考链接的作者？（2025-10-27）15min"></a>如何添加脚注，来致谢引用参考链接的作者？（2025-10-27）15min</h4>]]></content>
+    <title>thoughts</title>
+    <url>/2025/10/27/thoughts/</url>
+    <content><![CDATA[]]></content>
       <categories>
-        <category>学习</category>
+        <category>观点</category>
       </categories>
       <tags>
-        <tag>blog_learning</tag>
+        <tag>想法</tag>
+        <tag>观点</tag>
       </tags>
   </entry>
   <entry>
@@ -64,7 +92,7 @@
     <url>/2025/10/27/yuming/</url>
     <content><![CDATA[<p>域名购买<a href="https://cloud.tencent.com/">腾讯云</a><br><img src="/images/yuminghouxu.png" alt="域名购买"><br>等待时间 1-2天</p>
 <p>域名绑定以及解析，参考大佬的教程<a href="https://blog.csdn.net/qq_34902437/article/details/140298754">(码的艺术家，2024)</a></p>
-<p>域名备案(最后一步，域名备案，云服务器还要购买，呜呜呜)</p>
+<p>域名备案(最后一步，域名备案，云服务器还要购买，呜呜呜)<br>云服务器暂且搁置</p>
 ]]></content>
       <categories>
         <category>学习</category>
