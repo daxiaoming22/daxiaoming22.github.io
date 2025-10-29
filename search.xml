@@ -57,6 +57,33 @@
       </tags>
   </entry>
   <entry>
+    <title>thoughts</title>
+    <url>/2025/10/27/thoughts/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>观点</category>
+      </categories>
+      <tags>
+        <tag>想法</tag>
+        <tag>观点</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>域名配置</title>
+    <url>/2025/10/27/yuming/</url>
+    <content><![CDATA[<p>域名购买<a href="https://cloud.tencent.com/">腾讯云</a><br><img src="/images/yuminghouxu.png" alt="域名购买"><br>等待时间 1-2天</p>
+<p>域名绑定以及解析，参考大佬的教程<a href="https://blog.csdn.net/qq_34902437/article/details/140298754">(码的艺术家，2024)</a></p>
+<p>域名备案(最后一步，域名备案，云服务器还要购买，呜呜呜)<br>云服务器暂且搁置</p>
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>blog_learning</tag>
+        <tag>域名</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>机器学习进展</title>
     <url>/2025/10/22/machine_learning/</url>
     <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="窃取机密失败QAQ..." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
@@ -76,33 +103,6 @@
       </categories>
       <tags>
         <tag>机器学习</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>域名配置</title>
-    <url>/2025/10/27/yuming/</url>
-    <content><![CDATA[<p>域名购买<a href="https://cloud.tencent.com/">腾讯云</a><br><img src="/images/yuminghouxu.png" alt="域名购买"><br>等待时间 1-2天</p>
-<p>域名绑定以及解析，参考大佬的教程<a href="https://blog.csdn.net/qq_34902437/article/details/140298754">(码的艺术家，2024)</a></p>
-<p>域名备案(最后一步，域名备案，云服务器还要购买，呜呜呜)<br>云服务器暂且搁置</p>
-]]></content>
-      <categories>
-        <category>学习</category>
-      </categories>
-      <tags>
-        <tag>blog_learning</tag>
-        <tag>域名</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>thoughts</title>
-    <url>/2025/10/27/thoughts/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>观点</category>
-      </categories>
-      <tags>
-        <tag>想法</tag>
-        <tag>观点</tag>
       </tags>
   </entry>
 </search>
