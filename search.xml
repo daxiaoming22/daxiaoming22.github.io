@@ -10,6 +10,10 @@
 <h4 id="如何更改首页，仅部分显示文章？-2025-10-29"><a href="#如何更改首页，仅部分显示文章？-2025-10-29" class="headerlink" title="如何更改首页，仅部分显示文章？(2025-10-29)"></a>如何更改首页，仅部分显示文章？(2025-10-29)</h4><h4 id="如何实现副标题的动态显示？-2025-10-30"><a href="#如何实现副标题的动态显示？-2025-10-30" class="headerlink" title="如何实现副标题的动态显示？(2025-10-30)"></a>如何实现副标题的动态显示？(2025-10-30)</h4><h4 id="文章如何只显示部分文章内容？-2025-10-30-٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ"><a href="#文章如何只显示部分文章内容？-2025-10-30-٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ" class="headerlink" title="文章如何只显示部分文章内容？(2025-10-30) ٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ"></a>文章如何只显示部分文章内容？(2025-10-30) ٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ</h4><ul>
 <li>可以在文章的md文件中，添加<span id="more"></span>注释，注释之前的内容就会显示在首页，注释之后的内容就会隐藏起来。</li>
 </ul>
+<h4 id="链接跳转样式（2025-10-30）"><a href="#链接跳转样式（2025-10-30）" class="headerlink" title="链接跳转样式（2025-10-30）"></a>链接跳转样式（2025-10-30）</h4><ul>
+<li>链接跳转样式的图标美化</li>
+</ul>
+<p>博客美化的教程<a href="https://fatedshadow.github.io/%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/%E5%8D%9A%E5%AE%A2/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8-Hexo-Next-%E7%BE%8E%E5%8C%96%E5%8D%9A%E5%AE%A2/">text</a></p>
 <!-- more -->
 
 <hr>
@@ -20,7 +24,7 @@
 <h4 id="如何添加自己的友链？（2025-10-28）"><a href="#如何添加自己的友链？（2025-10-28）" class="headerlink" title="如何添加自己的友链？（2025-10-28）"></a>如何添加自己的友链？（2025-10-28）</h4><ul>
 <li>友链是指在博客中添加其他博客作者的链接，以展示他们的创作和关注。</li>
 </ul>
-<hr>
+<h4 id="如何添加文章分享功能？（2025-10-30）"><a href="#如何添加文章分享功能？（2025-10-30）" class="headerlink" title="如何添加文章分享功能？（2025-10-30）"></a>如何添加文章分享功能？（2025-10-30）</h4><hr>
 <h3 id="关于markdown的使用"><a href="#关于markdown的使用" class="headerlink" title="关于markdown的使用"></a>关于markdown的使用</h3><p>markdown是一种轻量级的标记语言，用于在文本中添加格式化元素。它简单易学，同时也非常灵活。（obsidion、blog必备的技能、现在ai回答输出的格式也是markdown例如deepseek的回答、）基础语法参考(小刘在路上[^1]，2024)</p>
 <h4 id="如何链接文章？（2025-10-27）-有问题跳转找不到网页，亟待解决-٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ"><a href="#如何链接文章？（2025-10-27）-有问题跳转找不到网页，亟待解决-٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ" class="headerlink" title="如何链接文章？（2025-10-27）,有问题跳转找不到网页，亟待解决 ٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ"></a>如何链接文章？（2025-10-27）,有问题跳转找不到网页，亟待解决 ٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ</h4><h5 id="内部链接-٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ"><a href="#内部链接-٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ" class="headerlink" title="内部链接 ٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ"></a>内部链接 ٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ</h5><ul>
 <li>这种问题是由于在hexo生成的public文件夹中，文章的路径与链接的路径不一致导致的。</li>
@@ -54,6 +58,40 @@
       <tags>
         <tag>想法</tag>
         <tag>观点</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>道路风险预测学习笔记</title>
+    <url>/2025/10/30/Predicting%20Road%20Accident%20Risk/</url>
+    <content><![CDATA[<h3 id="下面所学知识经验均来自对kaggle竞赛Predicting-Road-Accident-Riskz中的公开Notebook-代码-kaggle竞赛Predicting-Road-Accident-Riskz中的公开Notebook代码-的模仿过程"><a href="#下面所学知识经验均来自对kaggle竞赛Predicting-Road-Accident-Riskz中的公开Notebook-代码-kaggle竞赛Predicting-Road-Accident-Riskz中的公开Notebook代码-的模仿过程" class="headerlink" title="下面所学知识经验均来自对kaggle竞赛Predicting Road Accident Riskz中的公开Notebook[代码](kaggle竞赛Predicting Road Accident Riskz中的公开Notebook代码)的模仿过程"></a>下面所学知识经验均来自对kaggle竞赛Predicting Road Accident Riskz中的公开Notebook[代码](kaggle竞赛Predicting Road Accident Riskz中的公开Notebook代码)的模仿过程</h3><hr>
+<h4 id="数据观察（主要用pandas库）"><a href="#数据观察（主要用pandas库）" class="headerlink" title="数据观察（主要用pandas库）"></a>数据观察（主要用pandas库）</h4><h5 id="读取数据"><a href="#读取数据" class="headerlink" title="读取数据"></a>读取数据</h5><ul>
+<li>读取文件——<strong>pd.read_csv</strong>(“path”)<code>pd.read_csv</code></li>
+</ul>
+<h5 id="数据分析"><a href="#数据分析" class="headerlink" title="数据分析"></a>数据分析</h5><blockquote>
+<p>注意kaggle比赛中，数据已经备好了，从赛者可专注于模型的建立和学习<br>一下较为常用的用粗体表示</p>
+</blockquote>
+<ul>
+<li>df.columns 查看列 <code>df.columns</code></li>
+<li>数据DataFrame的信息——<strong>df.info()</strong>， <code>df.info()</code>输出列名、以及对于列名的数据大小、空值情况、以及对应的数据类型</li>
+<li>df.shape查看数据的形状 <code>df.shape()</code></li>
+<li>数据DataFrame的前五行——<strong>df.head()</strong>， <code>df.head()</code>在nb中会自动展示，或者要对比可以print，or display</li>
+</ul>
+<hr>
+<h4 id="EDA"><a href="#EDA" class="headerlink" title="EDA"></a>EDA</h4><blockquote>
+<p>探索性数据分析（Exploratory Data Analysis，简称EDA）是数据科学中的关键步骤，旨在熟悉数据集、揭示变量间的关系并指导后续处理。通过读取数据、数据汇总、总览、缺失值和异常值分析，以及特征分析，我们可以深入了解数据的结构和质量。</p>
+</blockquote>
+<h5 id="目标分布"><a href="#目标分布" class="headerlink" title="目标分布"></a>目标分布</h5><ul>
+<li><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">- ```sns.histplot```的参数和功能是什么？bin箱子的数目，kde是否加一条拟合分布的曲线</span><br><span class="line"></span><br><span class="line">&gt;参考两个教程[民间教程](https://blog.csdn.net/maizeman126/article/details/135347919)、[官方教程](https://seaborn.pydata.org/generated/seaborn.histplot.html)</span><br><span class="line"></span><br><span class="line">##### 关联热力图</span><br><span class="line"></span><br><span class="line">- 筛选出数值列```df.select_dtypes（include=[&quot;int64&quot;,&quot;float64&quot;]）```</span><br><span class="line"></span><br><span class="line">- ```df.corr()```用来计算各列之间的相关系数的（可以自定义方法用method参数来指定）。这用来做作为```sns.heatmap()```的输入参数极为方便</span><br><span class="line"></span><br><span class="line">&gt;参考[民间教程](https://blog.csdn.net/qq_41721951/article/details/109645921)</span><br><span class="line"></span><br><span class="line">- `sns.heatmap()`</span><br><span class="line"></span><br><span class="line">&gt;参考两个教程[民间教程](https://blog.csdn.net/weixin_45492560/article/details/106227864)、[官方教程](https://seaborn.org.cn/generated/seaborn.heatmap.html)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">---</span><br><span class="line"></span><br><span class="line">#### CatBoost Model</span><br><span class="line"></span><br><span class="line">##### 介绍(擅长处理类别特征)</span><br><span class="line">CatBoost的全称是**Categorical Boosting**，它是一种由俄罗斯搜索巨头Yandex开发的梯度提升算法库，特别擅长处理类别型特征。</span><br><span class="line"></span><br><span class="line">CatBoost的名称来源于其核心功能，即处理类别型特征（Categorical Features）和梯度提升（Gradient Boosting）。与其他梯度提升算法如XGBoost和LightGBM相比，CatBoost在处理类别型特征方面具有显著优势。</span><br><span class="line"></span><br><span class="line">CatBoost的特点</span><br><span class="line"></span><br><span class="line">1. **类别型特征处理**：CatBoost使用独特的编码方法来处理类别型特征，降低过拟合风险。</span><br><span class="line">    </span><br><span class="line">2. **克服梯度偏差**：CatBoost采用排序提升的概念，防止目标泄漏和过度拟合。</span><br><span class="line">    </span><br><span class="line">3. **高效实现**：支持GPU加速和多GPU训练，提升计算效率。</span><br><span class="line">    </span><br><span class="line">4. **鲁棒性**：减少对大量超参数调整的需求，降低过度拟合的机会。</span><br><span class="line">    </span><br><span class="line"></span><br><span class="line">CatBoost的应用</span><br><span class="line"></span><br><span class="line">CatBoost在多个领域中表现出色，包括金融风控、推荐系统和生物医学等。例如，在信用卡欺诈检测、商品推荐和基因表达数据分析中，CatBoost能够有效处理类别型特征和缺失值，构建精准的预测模型。</span><br><span class="line"></span><br><span class="line">总之，CatBoost作为一种专为类别型特征优化的梯度提升算法，凭借其独特的处理策略和高效的实现，迅速成为业界广受欢迎的GBDT框架。</span><br><span class="line"></span><br><span class="line">&gt;详细介绍解释参考[数据STUDIO, 2022](https://zhuanlan.zhihu.com/p/540956200)、[CatBoost深度解析](https://blog.csdn.net/ai_aijiang/article/details/149075808)、[官方 CatBoost](https://catboost.ai/docs/en/concepts/python-quickstart)</span><br><span class="line"></span><br><span class="line">##### 分类特征（前面对数值类型的特征进行了关联性的分析）</span><br><span class="line"></span><br><span class="line">**dtype一般是bool或者object**</span><br><span class="line"></span><br><span class="line">- 作者做了一个操作，将bool转化为str，也变成了object对象。关于选择bool值时，`df.select_dtypes(include=)`进行优化</span><br><span class="line"></span><br><span class="line">- 关于具体转化格式的函数方法，作者使用的是`df.astype()`</span><br><span class="line"></span><br><span class="line">&gt;可参考[转化类型](https://blog.csdn.net/u013172930/article/details/143723145)</span><br><span class="line"></span><br><span class="line"> 关于`from sklearn.model_selection import train_test_split, cross_val_score`</span><br><span class="line"></span><br><span class="line">- `train_test_split`这个函数十分常用在从训练集分割出验证集时。</span><br><span class="line"></span><br><span class="line">&gt;参考[民间教程](https://blog.csdn.net/2301_76849908/article/details/149281512)、[官方教程](https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.train_test_split.html)</span><br><span class="line"></span><br><span class="line">##### 模型构建</span><br><span class="line"></span><br><span class="line">使用的是catboost库中的，CatBoostRegressor模型，记得安装</span><br><span class="line"></span><br><span class="line">```cmd</span><br><span class="line">conda activate your_env</span><br><span class="line"></span><br><span class="line">conda install catboost</span><br></pre></td></tr></table></figure></li>
+</ul>
+<p>未完待续</p>
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>机器学习</tag>
+        <tag>kaggle比赛</tag>
+        <tag>函数功能记录</tag>
       </tags>
   </entry>
   <entry>
