@@ -4,7 +4,10 @@
     <title>blog学习进展/hexo-next教程</title>
     <url>/2025/10/22/blog_learning/</url>
     <content><![CDATA[<h3 id="关于hexo-next的美化"><a href="#关于hexo-next的美化" class="headerlink" title="关于hexo-next的美化"></a>关于hexo-next的美化</h3><h4 id="如何创建一个新的博客文章？（2025-10-27）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ"><a href="#如何创建一个新的博客文章？（2025-10-27）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ" class="headerlink" title="如何创建一个新的博客文章？（2025-10-27）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ"></a>如何创建一个新的博客文章？（2025-10-27）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ</h4><p>hexo new “文章标题”<br>或者在对应的文件夹在直接添加对应.md文件，注意编辑文件头信息yaml格式</p>
-<h4 id="如何更改首页置顶顺序？（2025-10-28）"><a href="#如何更改首页置顶顺序？（2025-10-28）" class="headerlink" title="如何更改首页置顶顺序？（2025-10-28）"></a>如何更改首页置顶顺序？（2025-10-28）</h4><h4 id="如何更改首页，仅部分显示文章？-2025-10-29"><a href="#如何更改首页，仅部分显示文章？-2025-10-29" class="headerlink" title="如何更改首页，仅部分显示文章？(2025-10-29)"></a>如何更改首页，仅部分显示文章？(2025-10-29)</h4><hr>
+<h4 id="如何更改首页置顶顺序？（2025-10-28）"><a href="#如何更改首页置顶顺序？（2025-10-28）" class="headerlink" title="如何更改首页置顶顺序？（2025-10-28）"></a>如何更改首页置顶顺序？（2025-10-28）</h4><ul>
+<li>可以参考这篇博主的文章<a href="https://www.axitown.com/a764f98564af/">阿希の小镇, 2025</a></li>
+</ul>
+<h4 id="如何更改首页，仅部分显示文章？-2025-10-29"><a href="#如何更改首页，仅部分显示文章？-2025-10-29" class="headerlink" title="如何更改首页，仅部分显示文章？(2025-10-29)"></a>如何更改首页，仅部分显示文章？(2025-10-29)</h4><hr>
 <h3 id="关于如何优化访问，正规的站点建设"><a href="#关于如何优化访问，正规的站点建设" class="headerlink" title="关于如何优化访问，正规的站点建设"></a>关于如何优化访问，正规的站点建设</h3><h4 id="为什么每段时间自己的域名就要重新对齐GitHub（2025-10-29）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ"><a href="#为什么每段时间自己的域名就要重新对齐GitHub（2025-10-29）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ" class="headerlink" title="为什么每段时间自己的域名就要重新对齐GitHub（2025-10-29）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ"></a>为什么每段时间自己的域名就要重新对齐GitHub（2025-10-29）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ</h4><ul>
 <li>可以参考这篇博主的文章<a href="https://www.cnblogs.com/xieqk/p/Github-Page-DNS.html">域名DNS解析到自己的githubpages页面,谢乔康</a></li>
 </ul>
@@ -24,13 +27,28 @@
 <li>外部链接是指指向其他网站的链接，例如：<a href="https://www.baidu.com/">百度</a></li>
 <li>外部链接的安全链接的调试可能存在问题（待解决）</li>
 </ul>
-<h5 id="外部链接跳转无效问题？（2025-10-29）"><a href="#外部链接跳转无效问题？（2025-10-29）" class="headerlink" title="外部链接跳转无效问题？（2025-10-29）"></a>外部链接跳转无效问题？（2025-10-29）</h5><h4 id="如何添加脚注，来致谢引用参考链接的作者？（2025-10-27）15min-٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ"><a href="#如何添加脚注，来致谢引用参考链接的作者？（2025-10-27）15min-٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ" class="headerlink" title="如何添加脚注，来致谢引用参考链接的作者？（2025-10-27）15min ٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ"></a>如何添加脚注，来致谢引用参考链接的作者？（2025-10-27）15min ٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ</h4><p>[^1]: 小刘在路上, 2024. 手把手教会你使用Markdown. CNDS, <a href="https://blog.csdn.net/qq_40818172/article/details/126260661">https://blog.csdn.net/qq_40818172/article/details/126260661</a></p>
+<h5 id="外部链接跳转无效问题？（2025-10-29）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ"><a href="#外部链接跳转无效问题？（2025-10-29）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ" class="headerlink" title="外部链接跳转无效问题？（2025-10-29）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ"></a>外部链接跳转无效问题？（2025-10-29）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ</h5><ul>
+<li>问题出在butterfly与next主题的容器选择器不同所导致的</li>
+</ul>
+<h4 id="如何添加脚注，来致谢引用参考链接的作者？（2025-10-27）15min-٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ"><a href="#如何添加脚注，来致谢引用参考链接的作者？（2025-10-27）15min-٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ" class="headerlink" title="如何添加脚注，来致谢引用参考链接的作者？（2025-10-27）15min ٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ"></a>如何添加脚注，来致谢引用参考链接的作者？（2025-10-27）15min ٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ</h4><p>[^1]: 小刘在路上, 2024. 手把手教会你使用Markdown. CNDS, <a href="https://blog.csdn.net/qq_40818172/article/details/126260661">https://blog.csdn.net/qq_40818172/article/details/126260661</a></p>
 ]]></content>
       <categories>
         <category>学习</category>
       </categories>
       <tags>
         <tag>blog_learning</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>thoughts</title>
+    <url>/2025/10/27/thoughts/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>观点</category>
+      </categories>
+      <tags>
+        <tag>想法</tag>
+        <tag>观点</tag>
       </tags>
   </entry>
   <entry>
@@ -57,15 +75,18 @@
       </tags>
   </entry>
   <entry>
-    <title>thoughts</title>
-    <url>/2025/10/27/thoughts/</url>
-    <content><![CDATA[]]></content>
+    <title>域名配置</title>
+    <url>/2025/10/27/yuming/</url>
+    <content><![CDATA[<p>域名购买<a href="https://cloud.tencent.com/">腾讯云</a><br><img src="/images/yuminghouxu.png" alt="域名购买"><br>等待时间 1-2天</p>
+<p>域名绑定以及解析，参考大佬的教程<a href="https://blog.csdn.net/qq_34902437/article/details/140298754">(码的艺术家，2024)</a></p>
+<p>域名备案(最后一步，域名备案，云服务器还要购买，呜呜呜)<br>云服务器暂且搁置</p>
+]]></content>
       <categories>
-        <category>观点</category>
+        <category>学习</category>
       </categories>
       <tags>
-        <tag>想法</tag>
-        <tag>观点</tag>
+        <tag>blog_learning</tag>
+        <tag>域名</tag>
       </tags>
   </entry>
   <entry>
@@ -88,21 +109,6 @@
       </categories>
       <tags>
         <tag>机器学习</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>域名配置</title>
-    <url>/2025/10/27/yuming/</url>
-    <content><![CDATA[<p>域名购买<a href="https://cloud.tencent.com/">腾讯云</a><br><img src="/images/yuminghouxu.png" alt="域名购买"><br>等待时间 1-2天</p>
-<p>域名绑定以及解析，参考大佬的教程<a href="https://blog.csdn.net/qq_34902437/article/details/140298754">(码的艺术家，2024)</a></p>
-<p>域名备案(最后一步，域名备案，云服务器还要购买，呜呜呜)<br>云服务器暂且搁置</p>
-]]></content>
-      <categories>
-        <category>学习</category>
-      </categories>
-      <tags>
-        <tag>blog_learning</tag>
-        <tag>域名</tag>
       </tags>
   </entry>
 </search>
