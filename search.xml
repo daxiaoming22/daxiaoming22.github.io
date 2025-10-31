@@ -1,66 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>blog学习进展/hexo-next教程</title>
-    <url>/2025/10/22/blog_learning/</url>
-    <content><![CDATA[<h3 id="关于hexo-next的美化"><a href="#关于hexo-next的美化" class="headerlink" title="关于hexo-next的美化"></a>关于hexo-next的美化</h3><h4 id="如何创建一个新的博客文章？（2025-10-27）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ"><a href="#如何创建一个新的博客文章？（2025-10-27）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ" class="headerlink" title="如何创建一个新的博客文章？（2025-10-27）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ"></a>如何创建一个新的博客文章？（2025-10-27）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ</h4><p>hexo new “文章标题”<br>或者在对应的文件夹在直接添加对应.md文件，注意编辑文件头信息yaml格式</p>
-<h4 id="如何更改首页置顶顺序？（2025-10-28）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ"><a href="#如何更改首页置顶顺序？（2025-10-28）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ" class="headerlink" title="如何更改首页置顶顺序？（2025-10-28）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ"></a>如何更改首页置顶顺序？（2025-10-28）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ</h4><ul>
-<li>可以参考这篇博主的文章<a href="https://www.axitown.com/a764f98564af/">阿希の小镇, 2025</a></li>
-</ul>
-<h4 id="如何更改首页，仅部分显示文章？-2025-10-29"><a href="#如何更改首页，仅部分显示文章？-2025-10-29" class="headerlink" title="如何更改首页，仅部分显示文章？(2025-10-29)"></a>如何更改首页，仅部分显示文章？(2025-10-29)</h4><h4 id="如何实现副标题的动态显示？-2025-10-30"><a href="#如何实现副标题的动态显示？-2025-10-30" class="headerlink" title="如何实现副标题的动态显示？(2025-10-30)"></a>如何实现副标题的动态显示？(2025-10-30)</h4><h4 id="文章如何只显示部分文章内容？-2025-10-30-٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ"><a href="#文章如何只显示部分文章内容？-2025-10-30-٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ" class="headerlink" title="文章如何只显示部分文章内容？(2025-10-30) ٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ"></a>文章如何只显示部分文章内容？(2025-10-30) ٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ</h4><ul>
-<li>可以在文章的md文件中，添加<span id="more"></span>注释，注释之前的内容就会显示在首页，注释之后的内容就会隐藏起来。</li>
-</ul>
-<h4 id="链接跳转样式（2025-10-30）"><a href="#链接跳转样式（2025-10-30）" class="headerlink" title="链接跳转样式（2025-10-30）"></a>链接跳转样式（2025-10-30）</h4><ul>
-<li>链接跳转样式的图标美化</li>
-</ul>
-<p>博客美化的教程<a href="https://fatedshadow.github.io/%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/%E5%8D%9A%E5%AE%A2/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8-Hexo-Next-%E7%BE%8E%E5%8C%96%E5%8D%9A%E5%AE%A2/">text</a></p>
-<!-- more -->
-
-<hr>
-<h3 id="关于如何优化访问，正规的站点建设"><a href="#关于如何优化访问，正规的站点建设" class="headerlink" title="关于如何优化访问，正规的站点建设"></a>关于如何优化访问，正规的站点建设</h3><h4 id="为什么每段时间自己的域名就要重新对齐GitHub（2025-10-29）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ"><a href="#为什么每段时间自己的域名就要重新对齐GitHub（2025-10-29）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ" class="headerlink" title="为什么每段时间自己的域名就要重新对齐GitHub（2025-10-29）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ"></a>为什么每段时间自己的域名就要重新对齐GitHub（2025-10-29）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ</h4><ul>
-<li>可以参考这篇博主的文章<a href="https://www.cnblogs.com/xieqk/p/Github-Page-DNS.html">域名DNS解析到自己的githubpages页面,谢乔康</a></li>
-</ul>
-<h4 id="如何配置自己的域名？（2025-10-27）"><a href="#如何配置自己的域名？（2025-10-27）" class="headerlink" title="如何配置自己的域名？（2025-10-27）"></a><strong>如何配置自己的域名？（2025-10-27）</strong></h4><p>查看<a href="/2025/10/27/yuming/">域名配置</a></p>
-<h4 id="如何添加自己的友链？（2025-10-28）"><a href="#如何添加自己的友链？（2025-10-28）" class="headerlink" title="如何添加自己的友链？（2025-10-28）"></a>如何添加自己的友链？（2025-10-28）</h4><ul>
-<li>友链是指在博客中添加其他博客作者的链接，以展示他们的创作和关注。</li>
-</ul>
-<h4 id="如何添加文章分享功能？（2025-10-30）"><a href="#如何添加文章分享功能？（2025-10-30）" class="headerlink" title="如何添加文章分享功能？（2025-10-30）"></a>如何添加文章分享功能？（2025-10-30）</h4><hr>
-<h3 id="关于markdown的使用"><a href="#关于markdown的使用" class="headerlink" title="关于markdown的使用"></a>关于markdown的使用</h3><p>markdown是一种轻量级的标记语言，用于在文本中添加格式化元素。它简单易学，同时也非常灵活。（obsidion、blog必备的技能、现在ai回答输出的格式也是markdown例如deepseek的回答、）基础语法参考(小刘在路上[^1]，2024)</p>
-<h4 id="如何链接文章？（2025-10-27）-有问题跳转找不到网页，亟待解决-٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ"><a href="#如何链接文章？（2025-10-27）-有问题跳转找不到网页，亟待解决-٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ" class="headerlink" title="如何链接文章？（2025-10-27）,有问题跳转找不到网页，亟待解决 ٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ"></a>如何链接文章？（2025-10-27）,有问题跳转找不到网页，亟待解决 ٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ</h4><h5 id="内部链接-٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ"><a href="#内部链接-٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ" class="headerlink" title="内部链接 ٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ"></a>内部链接 ٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ</h5><ul>
-<li>这种问题是由于在hexo生成的public文件夹中，文章的路径与链接的路径不一致导致的。</li>
-<li>解决方法：在hexo配置文件中，将permalink设置为&#x2F;:year&#x2F;:month&#x2F;:day&#x2F;:title&#x2F;，例如：permalink: &#x2F;:year&#x2F;:month&#x2F;:day&#x2F;:title&#x2F;</li>
-<li>这样，在生成的public文件夹中，文章的路径就与链接的路径一致了。</li>
-</ul>
-<p>例如，文章的路径为&#x2F;2025&#x2F;10&#x2F;27&#x2F;yuming&#x2F;，那么链接就为<a href="/2025/10/27/yuming/">域名配置</a></p>
-<h5 id="外部链接-https-www-baidu-com-٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ"><a href="#外部链接-https-www-baidu-com-٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ" class="headerlink" title="外部链接(https://www.baidu.com/) ٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ"></a>外部链接(<a href="https://www.baidu.com/">https://www.baidu.com/</a>) ٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ</h5><ul>
-<li>外部链接是指指向其他网站的链接，例如：<a href="https://www.baidu.com/">百度</a></li>
-<li>外部链接的安全链接的调试可能存在问题（待解决）</li>
-</ul>
-<h5 id="外部链接跳转无效问题？（2025-10-29）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ"><a href="#外部链接跳转无效问题？（2025-10-29）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ" class="headerlink" title="外部链接跳转无效问题？（2025-10-29）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ"></a>外部链接跳转无效问题？（2025-10-29）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ</h5><ul>
-<li>问题出在butterfly与next主题的容器选择器不同所导致的，致谢<a href="https://blog.liushen.fun/posts/1dfd1f41/">LiuShen,2024</a></li>
-</ul>
-<h4 id="如何添加脚注，来致谢引用参考链接的作者？（2025-10-27）15min-٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ"><a href="#如何添加脚注，来致谢引用参考链接的作者？（2025-10-27）15min-٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ" class="headerlink" title="如何添加脚注，来致谢引用参考链接的作者？（2025-10-27）15min ٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ"></a>如何添加脚注，来致谢引用参考链接的作者？（2025-10-27）15min ٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ</h4><p>[^1]: 小刘在路上, 2024. 手把手教会你使用Markdown. CNDS, <a href="https://blog.csdn.net/qq_40818172/article/details/126260661">https://blog.csdn.net/qq_40818172/article/details/126260661</a></p>
-]]></content>
-      <categories>
-        <category>学习</category>
-      </categories>
-      <tags>
-        <tag>blog_learning</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>thoughts</title>
-    <url>/2025/10/27/thoughts/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>观点</category>
-      </categories>
-      <tags>
-        <tag>想法</tag>
-        <tag>观点</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>CatBoost道路风险预测学习笔记</title>
     <url>/2025/10/30/Predicting%20Road%20Accident%20Risk/</url>
     <content><![CDATA[<h3 id="下面所学知识经验均来自对kaggle竞赛Predicting-Road-Accident-Riskz中的公开Notebook代码的模仿过程"><a href="#下面所学知识经验均来自对kaggle竞赛Predicting-Road-Accident-Riskz中的公开Notebook代码的模仿过程" class="headerlink" title="下面所学知识经验均来自对kaggle竞赛Predicting Road Accident Riskz中的公开Notebook代码的模仿过程"></a>下面所学知识经验均来自对kaggle竞赛Predicting Road Accident Riskz中的公开Notebook<a href="https://www.kaggle.com/code/josephnehrenz/s5e10-predicting-road-accident-risk-w-web-app/notebook">代码</a>的模仿过程</h3><hr>
@@ -211,6 +151,54 @@
       </tags>
   </entry>
   <entry>
+    <title>blog学习进展/hexo-next教程</title>
+    <url>/2025/10/22/blog_learning/</url>
+    <content><![CDATA[<h3 id="关于hexo-next的美化"><a href="#关于hexo-next的美化" class="headerlink" title="关于hexo-next的美化"></a>关于hexo-next的美化</h3><h4 id="如何创建一个新的博客文章？（2025-10-27）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ"><a href="#如何创建一个新的博客文章？（2025-10-27）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ" class="headerlink" title="如何创建一个新的博客文章？（2025-10-27）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ"></a>如何创建一个新的博客文章？（2025-10-27）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ</h4><p>hexo new “文章标题”<br>或者在对应的文件夹在直接添加对应.md文件，注意编辑文件头信息yaml格式</p>
+<h4 id="如何更改首页置顶顺序？（2025-10-28）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ"><a href="#如何更改首页置顶顺序？（2025-10-28）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ" class="headerlink" title="如何更改首页置顶顺序？（2025-10-28）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ"></a>如何更改首页置顶顺序？（2025-10-28）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ</h4><ul>
+<li>可以参考这篇博主的文章<a href="https://www.axitown.com/a764f98564af/">阿希の小镇, 2025</a></li>
+</ul>
+<h4 id="如何更改首页，仅部分显示文章？-2025-10-29"><a href="#如何更改首页，仅部分显示文章？-2025-10-29" class="headerlink" title="如何更改首页，仅部分显示文章？(2025-10-29)"></a>如何更改首页，仅部分显示文章？(2025-10-29)</h4><h4 id="如何实现副标题的动态显示？-2025-10-30"><a href="#如何实现副标题的动态显示？-2025-10-30" class="headerlink" title="如何实现副标题的动态显示？(2025-10-30)"></a>如何实现副标题的动态显示？(2025-10-30)</h4><h4 id="文章如何只显示部分文章内容？-2025-10-30-٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ"><a href="#文章如何只显示部分文章内容？-2025-10-30-٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ" class="headerlink" title="文章如何只显示部分文章内容？(2025-10-30) ٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ"></a>文章如何只显示部分文章内容？(2025-10-30) ٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ</h4><ul>
+<li>可以在文章的md文件中，添加<span id="more"></span>注释，注释之前的内容就会显示在首页，注释之后的内容就会隐藏起来。</li>
+</ul>
+<h4 id="链接跳转样式（2025-10-30）"><a href="#链接跳转样式（2025-10-30）" class="headerlink" title="链接跳转样式（2025-10-30）"></a>链接跳转样式（2025-10-30）</h4><ul>
+<li>链接跳转样式的图标美化</li>
+</ul>
+<p>博客美化的教程<a href="https://fatedshadow.github.io/%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/%E5%8D%9A%E5%AE%A2/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8-Hexo-Next-%E7%BE%8E%E5%8C%96%E5%8D%9A%E5%AE%A2/">text</a></p>
+<!-- more -->
+
+<hr>
+<h3 id="关于如何优化访问，正规的站点建设"><a href="#关于如何优化访问，正规的站点建设" class="headerlink" title="关于如何优化访问，正规的站点建设"></a>关于如何优化访问，正规的站点建设</h3><h4 id="为什么每段时间自己的域名就要重新对齐GitHub（2025-10-29）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ"><a href="#为什么每段时间自己的域名就要重新对齐GitHub（2025-10-29）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ" class="headerlink" title="为什么每段时间自己的域名就要重新对齐GitHub（2025-10-29）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ"></a>为什么每段时间自己的域名就要重新对齐GitHub（2025-10-29）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ</h4><ul>
+<li>可以参考这篇博主的文章<a href="https://www.cnblogs.com/xieqk/p/Github-Page-DNS.html">域名DNS解析到自己的githubpages页面,谢乔康</a></li>
+</ul>
+<h4 id="如何配置自己的域名？（2025-10-27）"><a href="#如何配置自己的域名？（2025-10-27）" class="headerlink" title="如何配置自己的域名？（2025-10-27）"></a><strong>如何配置自己的域名？（2025-10-27）</strong></h4><p>查看<a href="/2025/10/27/yuming/">域名配置</a></p>
+<h4 id="如何添加自己的友链？（2025-10-28）"><a href="#如何添加自己的友链？（2025-10-28）" class="headerlink" title="如何添加自己的友链？（2025-10-28）"></a>如何添加自己的友链？（2025-10-28）</h4><ul>
+<li>友链是指在博客中添加其他博客作者的链接，以展示他们的创作和关注。</li>
+</ul>
+<h4 id="如何添加文章分享功能？（2025-10-30）"><a href="#如何添加文章分享功能？（2025-10-30）" class="headerlink" title="如何添加文章分享功能？（2025-10-30）"></a>如何添加文章分享功能？（2025-10-30）</h4><hr>
+<h3 id="关于markdown的使用"><a href="#关于markdown的使用" class="headerlink" title="关于markdown的使用"></a>关于markdown的使用</h3><p>markdown是一种轻量级的标记语言，用于在文本中添加格式化元素。它简单易学，同时也非常灵活。（obsidion、blog必备的技能、现在ai回答输出的格式也是markdown例如deepseek的回答、）基础语法参考(小刘在路上[^1]，2024)</p>
+<h4 id="如何链接文章？（2025-10-27）-有问题跳转找不到网页，亟待解决-٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ"><a href="#如何链接文章？（2025-10-27）-有问题跳转找不到网页，亟待解决-٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ" class="headerlink" title="如何链接文章？（2025-10-27）,有问题跳转找不到网页，亟待解决 ٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ"></a>如何链接文章？（2025-10-27）,有问题跳转找不到网页，亟待解决 ٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ</h4><h5 id="内部链接-٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ"><a href="#内部链接-٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ" class="headerlink" title="内部链接 ٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ"></a>内部链接 ٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ</h5><ul>
+<li>这种问题是由于在hexo生成的public文件夹中，文章的路径与链接的路径不一致导致的。</li>
+<li>解决方法：在hexo配置文件中，将permalink设置为&#x2F;:year&#x2F;:month&#x2F;:day&#x2F;:title&#x2F;，例如：permalink: &#x2F;:year&#x2F;:month&#x2F;:day&#x2F;:title&#x2F;</li>
+<li>这样，在生成的public文件夹中，文章的路径就与链接的路径一致了。</li>
+</ul>
+<p>例如，文章的路径为&#x2F;2025&#x2F;10&#x2F;27&#x2F;yuming&#x2F;，那么链接就为<a href="/2025/10/27/yuming/">域名配置</a></p>
+<h5 id="外部链接-https-www-baidu-com-٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ"><a href="#外部链接-https-www-baidu-com-٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ" class="headerlink" title="外部链接(https://www.baidu.com/) ٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ"></a>外部链接(<a href="https://www.baidu.com/">https://www.baidu.com/</a>) ٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ</h5><ul>
+<li>外部链接是指指向其他网站的链接，例如：<a href="https://www.baidu.com/">百度</a></li>
+<li>外部链接的安全链接的调试可能存在问题（待解决）</li>
+</ul>
+<h5 id="外部链接跳转无效问题？（2025-10-29）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ"><a href="#外部链接跳转无效问题？（2025-10-29）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ" class="headerlink" title="外部链接跳转无效问题？（2025-10-29）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ"></a>外部链接跳转无效问题？（2025-10-29）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ</h5><ul>
+<li>问题出在butterfly与next主题的容器选择器不同所导致的，致谢<a href="https://blog.liushen.fun/posts/1dfd1f41/">LiuShen,2024</a></li>
+</ul>
+<h4 id="如何添加脚注，来致谢引用参考链接的作者？（2025-10-27）15min-٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ"><a href="#如何添加脚注，来致谢引用参考链接的作者？（2025-10-27）15min-٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ" class="headerlink" title="如何添加脚注，来致谢引用参考链接的作者？（2025-10-27）15min ٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ"></a>如何添加脚注，来致谢引用参考链接的作者？（2025-10-27）15min ٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ</h4><p>[^1]: 小刘在路上, 2024. 手把手教会你使用Markdown. CNDS, <a href="https://blog.csdn.net/qq_40818172/article/details/126260661">https://blog.csdn.net/qq_40818172/article/details/126260661</a></p>
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>blog_learning</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>ml_learning_thought</title>
     <url>/2025/10/29/learning_thought/</url>
     <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="窃取机密失败QAQ..." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
@@ -225,6 +213,18 @@
   </div>
 </div>
 <script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+      <categories>
+        <category>观点</category>
+      </categories>
+      <tags>
+        <tag>想法</tag>
+        <tag>观点</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>thoughts</title>
+    <url>/2025/10/27/thoughts/</url>
+    <content><![CDATA[]]></content>
       <categories>
         <category>观点</category>
       </categories>
