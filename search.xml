@@ -1,58 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>blog学习进展/hexo-next教程</title>
-    <url>/2025/10/22/blog_learning/</url>
-    <content><![CDATA[<h3 id="关于hexo-next的美化"><a href="#关于hexo-next的美化" class="headerlink" title="关于hexo-next的美化"></a>关于hexo-next的美化</h3><h4 id="如何创建一个新的博客文章？（2025-10-27）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ"><a href="#如何创建一个新的博客文章？（2025-10-27）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ" class="headerlink" title="如何创建一个新的博客文章？（2025-10-27）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ"></a>如何创建一个新的博客文章？（2025-10-27）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ</h4><p>hexo new “文章标题”<br>或者在对应的文件夹在直接添加对应.md文件，注意编辑文件头信息yaml格式</p>
-<h4 id="如何更改首页置顶顺序？（2025-10-28）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ"><a href="#如何更改首页置顶顺序？（2025-10-28）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ" class="headerlink" title="如何更改首页置顶顺序？（2025-10-28）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ"></a>如何更改首页置顶顺序？（2025-10-28）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ</h4><ul>
-<li>可以参考这篇博主的文章<a href="https://www.axitown.com/a764f98564af/">阿希の小镇, 2025</a></li>
-</ul>
-<h4 id="如何更改首页，仅部分显示文章？-2025-10-29"><a href="#如何更改首页，仅部分显示文章？-2025-10-29" class="headerlink" title="如何更改首页，仅部分显示文章？(2025-10-29)"></a>如何更改首页，仅部分显示文章？(2025-10-29)</h4><h4 id="如何实现副标题的动态显示？-2025-10-30"><a href="#如何实现副标题的动态显示？-2025-10-30" class="headerlink" title="如何实现副标题的动态显示？(2025-10-30)"></a>如何实现副标题的动态显示？(2025-10-30)</h4><h4 id="文章如何只显示部分文章内容？-2025-10-30-٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ"><a href="#文章如何只显示部分文章内容？-2025-10-30-٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ" class="headerlink" title="文章如何只显示部分文章内容？(2025-10-30) ٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ"></a>文章如何只显示部分文章内容？(2025-10-30) ٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ</h4><ul>
-<li>可以在文章的md文件中，添加<span id="more"></span>注释，注释之前的内容就会显示在首页，注释之后的内容就会隐藏起来。</li>
-</ul>
-<h4 id="链接跳转样式（2025-10-30）"><a href="#链接跳转样式（2025-10-30）" class="headerlink" title="链接跳转样式（2025-10-30）"></a>链接跳转样式（2025-10-30）</h4><ul>
-<li>链接跳转样式的图标美化</li>
-</ul>
-<p>博客美化的教程<a href="https://fatedshadow.github.io/%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/%E5%8D%9A%E5%AE%A2/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8-Hexo-Next-%E7%BE%8E%E5%8C%96%E5%8D%9A%E5%AE%A2/">text</a></p>
-<!-- more -->
-
-<hr>
-<h3 id="关于如何优化访问，正规的站点建设"><a href="#关于如何优化访问，正规的站点建设" class="headerlink" title="关于如何优化访问，正规的站点建设"></a>关于如何优化访问，正规的站点建设</h3><h4 id="为什么每段时间自己的域名就要重新对齐GitHub（2025-10-29）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ"><a href="#为什么每段时间自己的域名就要重新对齐GitHub（2025-10-29）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ" class="headerlink" title="为什么每段时间自己的域名就要重新对齐GitHub（2025-10-29）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ"></a>为什么每段时间自己的域名就要重新对齐GitHub（2025-10-29）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ</h4><ul>
-<li>可以参考这篇博主的文章<a href="https://www.cnblogs.com/xieqk/p/Github-Page-DNS.html">域名DNS解析到自己的githubpages页面,谢乔康</a></li>
-</ul>
-<h4 id="如何配置自己的域名？（2025-10-27）"><a href="#如何配置自己的域名？（2025-10-27）" class="headerlink" title="如何配置自己的域名？（2025-10-27）"></a><strong>如何配置自己的域名？（2025-10-27）</strong></h4><p>查看<a href="/2025/10/27/yuming/">域名配置</a></p>
-<h4 id="如何添加自己的友链？（2025-10-28）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵏᵎᵎᵎᵎ"><a href="#如何添加自己的友链？（2025-10-28）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵏᵎᵎᵎᵎ" class="headerlink" title="如何添加自己的友链？（2025-10-28）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵏᵎᵎᵎᵎ"></a>如何添加自己的友链？（2025-10-28）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵏᵎᵎᵎᵎ</h4><ul>
-<li>友链是指在博客中添加其他博客作者的链接，以展示他们的创作和关注。</li>
-</ul>
-<blockquote>
-<p>感悟思考：现在hexo博客的建立主要靠，<strong>浏览器的搜索查找别人的技术文章</strong>以及<strong>ai的回答</strong>。还是要多学会用<strong>dp、chatgpt</strong>等工具，来理解问题解决问题。Trea真的太垃圾了，要加快自己的学习速度！</p>
-</blockquote>
-<h4 id="如何添加文章分享功能？（2025-10-30）"><a href="#如何添加文章分享功能？（2025-10-30）" class="headerlink" title="如何添加文章分享功能？（2025-10-30）"></a>如何添加文章分享功能？（2025-10-30）</h4><h4 id="如何将自己的ipynb文件转换为markdown文件？并发表在博客上？（2025-11-02）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ"><a href="#如何将自己的ipynb文件转换为markdown文件？并发表在博客上？（2025-11-02）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ" class="headerlink" title="如何将自己的ipynb文件转换为markdown文件？并发表在博客上？（2025-11-02）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ"></a>如何将自己的ipynb文件转换为markdown文件？并发表在博客上？（2025-11-02）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ</h4><p>参考这篇文章<a href="https://juejin.cn/post/7506038621612245033">惜鸟，2025</a></p>
-<h4 id="如何升级评论系统，GitHub评论系统较为封闭并不开放？（2025-11-03）"><a href="#如何升级评论系统，GitHub评论系统较为封闭并不开放？（2025-11-03）" class="headerlink" title="如何升级评论系统，GitHub评论系统较为封闭并不开放？（2025-11-03）"></a>如何升级评论系统，GitHub评论系统较为封闭并不开放？（2025-11-03）</h4><hr>
-<h3 id="关于markdown的使用"><a href="#关于markdown的使用" class="headerlink" title="关于markdown的使用"></a>关于markdown的使用</h3><p>markdown是一种轻量级的标记语言，用于在文本中添加格式化元素。它简单易学，同时也非常灵活。（obsidion、blog必备的技能、现在ai回答输出的格式也是markdown例如deepseek的回答、）基础语法参考(小刘在路上[^1]，2024)</p>
-<h4 id="如何链接文章？（2025-10-27）-有问题跳转找不到网页，亟待解决-٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ"><a href="#如何链接文章？（2025-10-27）-有问题跳转找不到网页，亟待解决-٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ" class="headerlink" title="如何链接文章？（2025-10-27）,有问题跳转找不到网页，亟待解决 ٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ"></a>如何链接文章？（2025-10-27）,有问题跳转找不到网页，亟待解决 ٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ</h4><h5 id="内部链接-٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ"><a href="#内部链接-٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ" class="headerlink" title="内部链接 ٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ"></a>内部链接 ٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ</h5><ul>
-<li>这种问题是由于在hexo生成的public文件夹中，文章的路径与链接的路径不一致导致的。</li>
-<li>解决方法：在hexo配置文件中，将permalink设置为&#x2F;:year&#x2F;:month&#x2F;:day&#x2F;:title&#x2F;，例如：permalink: &#x2F;:year&#x2F;:month&#x2F;:day&#x2F;:title&#x2F;</li>
-<li>这样，在生成的public文件夹中，文章的路径就与链接的路径一致了。</li>
-</ul>
-<p>例如，文章的路径为&#x2F;2025&#x2F;10&#x2F;27&#x2F;yuming&#x2F;，那么链接就为<a href="/2025/10/27/yuming/">域名配置</a></p>
-<h5 id="外部链接-https-www-baidu-com-٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ"><a href="#外部链接-https-www-baidu-com-٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ" class="headerlink" title="外部链接(https://www.baidu.com/) ٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ"></a>外部链接(<a href="https://www.baidu.com/">https://www.baidu.com/</a>) ٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ</h5><ul>
-<li>外部链接是指指向其他网站的链接，例如：<a href="https://www.baidu.com/">百度</a></li>
-<li>外部链接的安全链接的调试可能存在问题（待解决）</li>
-</ul>
-<h5 id="外部链接跳转无效问题？（2025-10-29）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ"><a href="#外部链接跳转无效问题？（2025-10-29）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ" class="headerlink" title="外部链接跳转无效问题？（2025-10-29）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ"></a>外部链接跳转无效问题？（2025-10-29）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ</h5><ul>
-<li>问题出在butterfly与next主题的容器选择器不同所导致的，致谢<a href="https://blog.liushen.fun/posts/1dfd1f41/">LiuShen,2024</a></li>
-</ul>
-<h4 id="如何添加脚注，来致谢引用参考链接的作者？（2025-10-27）15min-٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ"><a href="#如何添加脚注，来致谢引用参考链接的作者？（2025-10-27）15min-٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ" class="headerlink" title="如何添加脚注，来致谢引用参考链接的作者？（2025-10-27）15min ٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ"></a>如何添加脚注，来致谢引用参考链接的作者？（2025-10-27）15min ٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ</h4><p>[^1]: 小刘在路上, 2024. 手把手教会你使用Markdown. CNDS, <a href="https://blog.csdn.net/qq_40818172/article/details/126260661">https://blog.csdn.net/qq_40818172/article/details/126260661</a></p>
-]]></content>
-      <categories>
-        <category>学习</category>
-      </categories>
-      <tags>
-        <tag>blog_learning</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>CatBoost道路风险预测学习笔记</title>
     <url>/2025/10/30/Predicting%20Road%20Accident%20Risk/</url>
     <content><![CDATA[<h3 id="下面所学知识经验均来自对kaggle竞赛Predicting-Road-Accident-Riskz中的公开Notebook代码的模仿过程"><a href="#下面所学知识经验均来自对kaggle竞赛Predicting-Road-Accident-Riskz中的公开Notebook代码的模仿过程" class="headerlink" title="下面所学知识经验均来自对kaggle竞赛Predicting Road Accident Riskz中的公开Notebook代码的模仿过程"></a>下面所学知识经验均来自对kaggle竞赛Predicting Road Accident Riskz中的公开Notebook<a href="https://www.kaggle.com/code/josephnehrenz/s5e10-predicting-road-accident-risk-w-web-app/notebook">代码</a>的模仿过程</h3><hr>
@@ -203,6 +151,81 @@
       </tags>
   </entry>
   <entry>
+    <title>blog学习进展/hexo-next教程</title>
+    <url>/2025/10/22/blog_learning/</url>
+    <content><![CDATA[<h3 id="关于hexo-next的美化"><a href="#关于hexo-next的美化" class="headerlink" title="关于hexo-next的美化"></a>关于hexo-next的美化</h3><h4 id="如何创建一个新的博客文章？（2025-10-27）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ"><a href="#如何创建一个新的博客文章？（2025-10-27）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ" class="headerlink" title="如何创建一个新的博客文章？（2025-10-27）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ"></a>如何创建一个新的博客文章？（2025-10-27）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ</h4><p>hexo new “文章标题”<br>或者在对应的文件夹在直接添加对应.md文件，注意编辑文件头信息yaml格式</p>
+<h4 id="如何更改首页置顶顺序？（2025-10-28）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ"><a href="#如何更改首页置顶顺序？（2025-10-28）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ" class="headerlink" title="如何更改首页置顶顺序？（2025-10-28）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ"></a>如何更改首页置顶顺序？（2025-10-28）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ</h4><ul>
+<li>可以参考这篇博主的文章<a href="https://www.axitown.com/a764f98564af/">阿希の小镇, 2025</a></li>
+</ul>
+<h4 id="如何更改首页，仅部分显示文章？-2025-10-29"><a href="#如何更改首页，仅部分显示文章？-2025-10-29" class="headerlink" title="如何更改首页，仅部分显示文章？(2025-10-29)"></a>如何更改首页，仅部分显示文章？(2025-10-29)</h4><h4 id="如何实现副标题的动态显示？-2025-10-30"><a href="#如何实现副标题的动态显示？-2025-10-30" class="headerlink" title="如何实现副标题的动态显示？(2025-10-30)"></a>如何实现副标题的动态显示？(2025-10-30)</h4><h4 id="文章如何只显示部分文章内容？-2025-10-30-٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ"><a href="#文章如何只显示部分文章内容？-2025-10-30-٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ" class="headerlink" title="文章如何只显示部分文章内容？(2025-10-30) ٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ"></a>文章如何只显示部分文章内容？(2025-10-30) ٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ</h4><ul>
+<li>可以在文章的md文件中，添加<span id="more"></span>注释，注释之前的内容就会显示在首页，注释之后的内容就会隐藏起来。</li>
+</ul>
+<h4 id="链接跳转样式（2025-10-30）"><a href="#链接跳转样式（2025-10-30）" class="headerlink" title="链接跳转样式（2025-10-30）"></a>链接跳转样式（2025-10-30）</h4><ul>
+<li>链接跳转样式的图标美化</li>
+</ul>
+<p>博客美化的教程<a href="https://fatedshadow.github.io/%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/%E5%8D%9A%E5%AE%A2/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8-Hexo-Next-%E7%BE%8E%E5%8C%96%E5%8D%9A%E5%AE%A2/">text</a></p>
+<!-- more -->
+
+<hr>
+<h3 id="关于如何优化访问，正规的站点建设"><a href="#关于如何优化访问，正规的站点建设" class="headerlink" title="关于如何优化访问，正规的站点建设"></a>关于如何优化访问，正规的站点建设</h3><h4 id="为什么每段时间自己的域名就要重新对齐GitHub（2025-10-29）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ"><a href="#为什么每段时间自己的域名就要重新对齐GitHub（2025-10-29）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ" class="headerlink" title="为什么每段时间自己的域名就要重新对齐GitHub（2025-10-29）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ"></a>为什么每段时间自己的域名就要重新对齐GitHub（2025-10-29）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ</h4><ul>
+<li>可以参考这篇博主的文章<a href="https://www.cnblogs.com/xieqk/p/Github-Page-DNS.html">域名DNS解析到自己的githubpages页面,谢乔康</a></li>
+</ul>
+<h4 id="如何配置自己的域名？（2025-10-27）"><a href="#如何配置自己的域名？（2025-10-27）" class="headerlink" title="如何配置自己的域名？（2025-10-27）"></a><strong>如何配置自己的域名？（2025-10-27）</strong></h4><p>查看<a href="/2025/10/27/yuming/">域名配置</a></p>
+<h4 id="如何添加自己的友链？（2025-10-28）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵏᵎᵎᵎᵎ"><a href="#如何添加自己的友链？（2025-10-28）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵏᵎᵎᵎᵎ" class="headerlink" title="如何添加自己的友链？（2025-10-28）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵏᵎᵎᵎᵎ"></a>如何添加自己的友链？（2025-10-28）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵏᵎᵎᵎᵎ</h4><ul>
+<li>友链是指在博客中添加其他博客作者的链接，以展示他们的创作和关注。</li>
+</ul>
+<blockquote>
+<p>感悟思考：现在hexo博客的建立主要靠，<strong>浏览器的搜索查找别人的技术文章</strong>以及<strong>ai的回答</strong>。还是要多学会用<strong>dp、chatgpt</strong>等工具，来理解问题解决问题。Trea真的太垃圾了，要加快自己的学习速度！</p>
+</blockquote>
+<h4 id="如何添加文章分享功能？（2025-10-30）"><a href="#如何添加文章分享功能？（2025-10-30）" class="headerlink" title="如何添加文章分享功能？（2025-10-30）"></a>如何添加文章分享功能？（2025-10-30）</h4><h4 id="如何将自己的ipynb文件转换为markdown文件？并发表在博客上？（2025-11-02）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ"><a href="#如何将自己的ipynb文件转换为markdown文件？并发表在博客上？（2025-11-02）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ" class="headerlink" title="如何将自己的ipynb文件转换为markdown文件？并发表在博客上？（2025-11-02）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ"></a>如何将自己的ipynb文件转换为markdown文件？并发表在博客上？（2025-11-02）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ</h4><p>参考这篇文章<a href="https://juejin.cn/post/7506038621612245033">惜鸟，2025</a></p>
+<h4 id="如何升级评论系统，GitHub评论系统较为封闭并不开放？（2025-11-03）"><a href="#如何升级评论系统，GitHub评论系统较为封闭并不开放？（2025-11-03）" class="headerlink" title="如何升级评论系统，GitHub评论系统较为封闭并不开放？（2025-11-03）"></a>如何升级评论系统，GitHub评论系统较为封闭并不开放？（2025-11-03）</h4><hr>
+<h3 id="关于markdown的使用"><a href="#关于markdown的使用" class="headerlink" title="关于markdown的使用"></a>关于markdown的使用</h3><p>markdown是一种轻量级的标记语言，用于在文本中添加格式化元素。它简单易学，同时也非常灵活。（obsidion、blog必备的技能、现在ai回答输出的格式也是markdown例如deepseek的回答、）基础语法参考(小刘在路上[^1]，2024)</p>
+<h4 id="如何链接文章？（2025-10-27）-有问题跳转找不到网页，亟待解决-٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ"><a href="#如何链接文章？（2025-10-27）-有问题跳转找不到网页，亟待解决-٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ" class="headerlink" title="如何链接文章？（2025-10-27）,有问题跳转找不到网页，亟待解决 ٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ"></a>如何链接文章？（2025-10-27）,有问题跳转找不到网页，亟待解决 ٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ</h4><h5 id="内部链接-٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ"><a href="#内部链接-٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ" class="headerlink" title="内部链接 ٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ"></a>内部链接 ٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ</h5><ul>
+<li>这种问题是由于在hexo生成的public文件夹中，文章的路径与链接的路径不一致导致的。</li>
+<li>解决方法：在hexo配置文件中，将permalink设置为&#x2F;:year&#x2F;:month&#x2F;:day&#x2F;:title&#x2F;，例如：permalink: &#x2F;:year&#x2F;:month&#x2F;:day&#x2F;:title&#x2F;</li>
+<li>这样，在生成的public文件夹中，文章的路径就与链接的路径一致了。</li>
+</ul>
+<p>例如，文章的路径为&#x2F;2025&#x2F;10&#x2F;27&#x2F;yuming&#x2F;，那么链接就为<a href="/2025/10/27/yuming/">域名配置</a></p>
+<h5 id="外部链接-https-www-baidu-com-٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ"><a href="#外部链接-https-www-baidu-com-٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ" class="headerlink" title="外部链接(https://www.baidu.com/) ٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ"></a>外部链接(<a href="https://www.baidu.com/">https://www.baidu.com/</a>) ٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ</h5><ul>
+<li>外部链接是指指向其他网站的链接，例如：<a href="https://www.baidu.com/">百度</a></li>
+<li>外部链接的安全链接的调试可能存在问题（待解决）</li>
+</ul>
+<h5 id="外部链接跳转无效问题？（2025-10-29）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ"><a href="#外部链接跳转无效问题？（2025-10-29）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ" class="headerlink" title="外部链接跳转无效问题？（2025-10-29）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ"></a>外部链接跳转无效问题？（2025-10-29）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ</h5><ul>
+<li>问题出在butterfly与next主题的容器选择器不同所导致的，致谢<a href="https://blog.liushen.fun/posts/1dfd1f41/">LiuShen,2024</a></li>
+</ul>
+<h4 id="如何添加脚注，来致谢引用参考链接的作者？（2025-10-27）15min-٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ"><a href="#如何添加脚注，来致谢引用参考链接的作者？（2025-10-27）15min-٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ" class="headerlink" title="如何添加脚注，来致谢引用参考链接的作者？（2025-10-27）15min ٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ"></a>如何添加脚注，来致谢引用参考链接的作者？（2025-10-27）15min ٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ</h4><p>[^1]: 小刘在路上, 2024. 手把手教会你使用Markdown. CNDS, <a href="https://blog.csdn.net/qq_40818172/article/details/126260661">https://blog.csdn.net/qq_40818172/article/details/126260661</a></p>
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>blog_learning</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>ml_learning_thought</title>
+    <url>/2025/10/29/learning_thought/</url>
+    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="窃取机密失败QAQ..." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="acab7b5f8bf6b1a1900e851d689933ef0d5be34356e4b15dc30aa32ec70cbad4">dccefed83fa27a7ad5aaf2d09629528976e37d2b1b2ec508bbe9326c2b8d1c780be92b472d5958c19047d34b42881fb25248fe62ff9abbe53a80248f116632ed4fda1534854660661c3454433b03af84d8aa5d195b921a47729c761b9df0a3442c5ea33340f50fccfcf1b8b334a34865787a1bf897ca134f8ed4442391822c185f4575a53d5b8e34d08ae41ba22b9435ad9194d4982e4d0bf4e4d01e9a02774a322fc09f6e2fa5f6d760a7194051e55e9aed1c6a7238138a395c2c3c5172fedab06b3ac3ab5f5d17c8a59e9eb490504ba2c35d07e0fd5f2a40f2d4031bcffc0489eb6e4aff1013edc58ea83aea76d351c8469547fe267a5b7be6e09dc08138c7bad678602dcfbc9fa1bdd0e03f50037251e5fbba10f46d8fd713616da5c3eb5abfdc92ea12fbe0474e0bbd87362eb21a2f59d00c57477f592192d3d234a33ba0da34d3446d47e3e9d92c727835190bc2a70f07366a07c2e9040d1d64ccc77f28d59c6b8192e9df2cb06c35ad0b659f83dcfa078ee06659541a57f2d729fdaddf2be5e744d99d32733c8ab72a21f7f7f870f22d43236fb4c6e7b5e1fc54362a0f6aef7284d8246d2c334676cc899bffccff36951c4a38b4774913c01169fefc133ce1eff96d48c74f2c1ff59aed29659203f62c1acbca9d5cfde63b797854b920f4d624d188a3e7a386c1901d4ef37125d76b27e26044d76e738850b46e43d29b3ce764f0816cf7e0af6b36ff96b36ab10b006327e2e34400ed9821b7298095a881bd88f4f2f720056a18bf84256d9b9842e5a49a70dd38a0972bfdeb116bfc91bad5d09477cc862295dfd90f26b63c59ae2e4234ee527c950641f7778c18289bbae44b13b0b0cee77cd033e2c3187ba997889db910116fc06b2f1d7e7b2ceb7801a22d0e3d13d74a083a4b6d61cb0ae16b3cc3bb68442639f13b66320818d7eea4e05ce7d7b92c8f95a13b946bd185587df8c23cca824f84b4162c60dfebfc5bd0f7ce79c414d21fe89852a0b5ac85403427471345f2a0949e8e7968c306eb1cde1363635dbaf5b26e1c72129641dc649981c3f3e7cc568dc98e418f326fa45498a787063b0b2dab26eb4c6e2ed918385265eb1b3c3d01bf258c0c67f33f5ad1f379e944d75521bfae44c3c8cf68ccf85a94ed0af87a6aa4e5417e66ec6921211bc672308179db70ed2987eb59662e8987b61dfef8a6b19da702fc06ee2f7ccb0e4a58b2dc22d34ad602d1c593c6285b66417ebec33c7143e01e45d2b1e9274d853642b76049dcee9786ee7ea47904ba6075fddcb0ffa8cd3c1ee4d0fb41dd4e3d13bc3575f89d18c4d1a659bec0561b52d9a48b9b5c424bf3c1f7e1ba3f688db6abfd52c78f1f683da6798fca4ab14b075ae4ef75e7dfbb41b3a68f7ebcecce6b8c78d8dc75f0fb42b8e4987a1cacd6809c7bf8e65312874ff007387a976212ec1f4df5b899462412355a29eb7c476b84aeb654710c283eb5bfd4995395a56dcd4896d44204eab659699c4c3227d4f4b9b6c7793762d08ccb77bc69cace8876a56d40ea7924dee3e713e72250a9abc12cff2df02fe35bd7ff91f282c8b1682405701ee851871dfd494c05cff2a89fe03cb2b43bdedaa8a9ed1cc6308d0720a15e9971e64e7a63e9f53ed69cccfd04dcc08b24cbe27fa1bd4264f48e919fe232af69c594a04ef09c3d07484f3560da8d74e4ffee48782f57180098ad994c94f1982a4ee87b7ac9b2793b9be75f49db433550d4523e95c0ba92cc2d13a8bf743999ee49d4955c9abe046cf16d126838514404a12cd2050f448adad7ffeb572567391eb5a8096cf3dee4eced850b98e0281e233c6001e60890669a0dd9511ff37dda9f45941edf05c745b0aab174e91846cf4c66f462ef2c172df34296da5af94d14b04a31f9f07ecac9859ab19e97eadb3fbea100787c89f787a457701f0a127ee297272c17e4cd28542cd7f8eafe9733325cb9535fbe5e186fa1cc8e84075cfe397c49837b457b9102ea87e1f1568568c50346a1ab091f9191fbb231db82d95d7e9a78d63b7de10322f942f372d442555fea5900a921ccceba6f121f7f8856cae4936960fd6796f409f3019b6ba705a2c7aa393c2e6911015843abe64c243f9b843b9a199253fdd876a50e7a62d2acbe28231c3b0c9ab13448a7ed2be4e5bc1f28f099f1ef9ed36b634e2bbe4b311747b1cd528619167a35e265216f29c4af3f3f427a8d0140a9d21505bc015657938a6ceffe1d90fa9ea00d56ec21c0aa328d3ce3078956c2919c85619ca188126b70e381d33d33e2101b94f6d1b42bf4f33884ba3cfb41e11d1619fdbf11f49306d34e61caee383004bf18d074b910d7c87de78f046fe034d59aa0cbba223388f1046ace871184e9d744ef354253f02d384d6a74e2f3977b5586c9701421a502938487526f794fdd1f3d88ff17b38118ecf7a604335797ead8df23d37cbeb9a96897c577297d1dc2fc91ae595450321e6ce7485178637092f400cc2d2917668a8cc7c61894d8399650df816858d9cbee5bdd4e8ba1f6509e77f5337309e84de68cce2288bf0606761d0c27bd477ae9d25808c1869ef589ea4773c0f7f9233f550841a97e9af164cd5b7d3585451d4982f41a6b933b60d07fc7b74551b66bdca2acc8bc86867c4af86042dc9292a887e5e31cd49ef04dfa05080390e347277319951d16b59fccf654464b47bd56db180384a7b1bf51606614d08347ff6b0a8688b2d8eef4c6d1b341b3426ae7606821132d9e31408a38801aea53f4c1d2635531df4a303295d23a86bb21ce21935e990ce9e0fb380bc9bf7512a91d0a479ef68d183324648b83445a66ff0cbb3e94b470c6180932ba1a960204b545d174be76e5efc7e8082ef943992b0627a9496c4321246b2fe79cd6743d8849fbd57edf6a95862eae85abc453d9a09723ef5cf31ef4a41f47c83b63d08c215ab4e99c9d8581e88a21fdbccf9262e056e6eaef16050ca0e624ca148f0197eda376db19af854df181ace4b5b4d7d4ad5d86297b11ebc5b6f5</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-up">
+      <input class="hbe hbe-input-field hbe-input-field-up" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-up" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-up">请输入密码查看</span>
+      </label>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+      <categories>
+        <category>观点</category>
+      </categories>
+      <tags>
+        <tag>想法</tag>
+        <tag>观点</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>蹇锡高学术讲座——新型杂环高性能工程塑料及其加工应用发展进展——杂萘联苯型聚芳醚高性能树脂及其应用技术</title>
     <url>/2025/11/03/jianxigao_1103/</url>
     <content><![CDATA[<h2 id="讲师介绍"><a href="#讲师介绍" class="headerlink" title="讲师介绍"></a>讲师介绍</h2><p>详细见链接<a href="https://zhuanlan.zhihu.com/p/1904787911674672194">蹇锡高院士研究团队:杂萘联苯型聚芳醚高性能树脂及其应用技术</a></p>
@@ -274,29 +297,6 @@
       </categories>
       <tags>
         <tag>机器学习</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>ml_learning_thought</title>
-    <url>/2025/10/29/learning_thought/</url>
-    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="窃取机密失败QAQ..." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
-  <script id="hbeData" type="hbeData" data-hmacdigest="acab7b5f8bf6b1a1900e851d689933ef0d5be34356e4b15dc30aa32ec70cbad4">dccefed83fa27a7ad5aaf2d09629528976e37d2b1b2ec508bbe9326c2b8d1c780be92b472d5958c19047d34b42881fb25248fe62ff9abbe53a80248f116632ed4fda1534854660661c3454433b03af84d8aa5d195b921a47729c761b9df0a3442c5ea33340f50fccfcf1b8b334a34865787a1bf897ca134f8ed4442391822c185f4575a53d5b8e34d08ae41ba22b9435ad9194d4982e4d0bf4e4d01e9a02774a322fc09f6e2fa5f6d760a7194051e55e9aed1c6a7238138a395c2c3c5172fedab06b3ac3ab5f5d17c8a59e9eb490504ba2c35d07e0fd5f2a40f2d4031bcffc0489eb6e4aff1013edc58ea83aea76d351c8469547fe267a5b7be6e09dc08138c7bad678602dcfbc9fa1bdd0e03f50037251e5fbba10f46d8fd713616da5c3eb5abfdc92ea12fbe0474e0bbd87362eb21a2f59d00c57477f592192d3d234a33ba0da34d3446d47e3e9d92c727835190bc2a70f07366a07c2e9040d1d64ccc77f28d59c6b8192e9df2cb06c35ad0b659f83dcfa078ee06659541a57f2d729fdaddf2be5e744d99d32733c8ab72a21f7f7f870f22d43236fb4c6e7b5e1fc54362a0f6aef7284d8246d2c334676cc899bffccff36951c4a38b4774913c01169fefc133ce1eff96d48c74f2c1ff59aed29659203f62c1acbca9d5cfde63b797854b920f4d624d188a3e7a386c1901d4ef37125d76b27e26044d76e738850b46e43d29b3ce764f0816cf7e0af6b36ff96b36ab10b006327e2e34400ed9821b7298095a881bd88f4f2f720056a18bf84256d9b9842e5a49a70dd38a0972bfdeb116bfc91bad5d09477cc862295dfd90f26b63c59ae2e4234ee527c950641f7778c18289bbae44b13b0b0cee77cd033e2c3187ba997889db910116fc06b2f1d7e7b2ceb7801a22d0e3d13d74a083a4b6d61cb0ae16b3cc3bb68442639f13b66320818d7eea4e05ce7d7b92c8f95a13b946bd185587df8c23cca824f84b4162c60dfebfc5bd0f7ce79c414d21fe89852a0b5ac85403427471345f2a0949e8e7968c306eb1cde1363635dbaf5b26e1c72129641dc649981c3f3e7cc568dc98e418f326fa45498a787063b0b2dab26eb4c6e2ed918385265eb1b3c3d01bf258c0c67f33f5ad1f379e944d75521bfae44c3c8cf68ccf85a94ed0af87a6aa4e5417e66ec6921211bc672308179db70ed2987eb59662e8987b61dfef8a6b19da702fc06ee2f7ccb0e4a58b2dc22d34ad602d1c593c6285b66417ebec33c7143e01e45d2b1e9274d853642b76049dcee9786ee7ea47904ba6075fddcb0ffa8cd3c1ee4d0fb41dd4e3d13bc3575f89d18c4d1a659bec0561b52d9a48b9b5c424bf3c1f7e1ba3f688db6abfd52c78f1f683da6798fca4ab14b075ae4ef75e7dfbb41b3a68f7ebcecce6b8c78d8dc75f0fb42b8e4987a1cacd6809c7bf8e65312874ff007387a976212ec1f4df5b899462412355a29eb7c476b84aeb654710c283eb5bfd4995395a56dcd4896d44204eab659699c4c3227d4f4b9b6c7793762d08ccb77bc69cace8876a56d40ea7924dee3e713e72250a9abc12cff2df02fe35bd7ff91f282c8b1682405701ee851871dfd494c05cff2a89fe03cb2b43bdedaa8a9ed1cc6308d0720a15e9971e64e7a63e9f53ed69cccfd04dcc08b24cbe27fa1bd4264f48e919fe232af69c594a04ef09c3d07484f3560da8d74e4ffee48782f57180098ad994c94f1982a4ee87b7ac9b2793b9be75f49db433550d4523e95c0ba92cc2d13a8bf743999ee49d4955c9abe046cf16d126838514404a12cd2050f448adad7ffeb572567391eb5a8096cf3dee4eced850b98e0281e233c6001e60890669a0dd9511ff37dda9f45941edf05c745b0aab174e91846cf4c66f462ef2c172df34296da5af94d14b04a31f9f07ecac9859ab19e97eadb3fbea100787c89f787a457701f0a127ee297272c17e4cd28542cd7f8eafe9733325cb9535fbe5e186fa1cc8e84075cfe397c49837b457b9102ea87e1f1568568c50346a1ab091f9191fbb231db82d95d7e9a78d63b7de10322f942f372d442555fea5900a921ccceba6f121f7f8856cae4936960fd6796f409f3019b6ba705a2c7aa393c2e6911015843abe64c243f9b843b9a199253fdd876a50e7a62d2acbe28231c3b0c9ab13448a7ed2be4e5bc1f28f099f1ef9ed36b634e2bbe4b311747b1cd528619167a35e265216f29c4af3f3f427a8d0140a9d21505bc015657938a6ceffe1d90fa9ea00d56ec21c0aa328d3ce3078956c2919c85619ca188126b70e381d33d33e2101b94f6d1b42bf4f33884ba3cfb41e11d1619fdbf11f49306d34e61caee383004bf18d074b910d7c87de78f046fe034d59aa0cbba223388f1046ace871184e9d744ef354253f02d384d6a74e2f3977b5586c9701421a502938487526f794fdd1f3d88ff17b38118ecf7a604335797ead8df23d37cbeb9a96897c577297d1dc2fc91ae595450321e6ce7485178637092f400cc2d2917668a8cc7c61894d8399650df816858d9cbee5bdd4e8ba1f6509e77f5337309e84de68cce2288bf0606761d0c27bd477ae9d25808c1869ef589ea4773c0f7f9233f550841a97e9af164cd5b7d3585451d4982f41a6b933b60d07fc7b74551b66bdca2acc8bc86867c4af86042dc9292a887e5e31cd49ef04dfa05080390e347277319951d16b59fccf654464b47bd56db180384a7b1bf51606614d08347ff6b0a8688b2d8eef4c6d1b341b3426ae7606821132d9e31408a38801aea53f4c1d2635531df4a303295d23a86bb21ce21935e990ce9e0fb380bc9bf7512a91d0a479ef68d183324648b83445a66ff0cbb3e94b470c6180932ba1a960204b545d174be76e5efc7e8082ef943992b0627a9496c4321246b2fe79cd6743d8849fbd57edf6a95862eae85abc453d9a09723ef5cf31ef4a41f47c83b63d08c215ab4e99c9d8581e88a21fdbccf9262e056e6eaef16050ca0e624ca148f0197eda376db19af854df181ace4b5b4d7d4ad5d86297b11ebc5b6f5</script>
-  <div class="hbe hbe-content">
-    <div class="hbe hbe-input hbe-input-up">
-      <input class="hbe hbe-input-field hbe-input-field-up" type="password" id="hbePass">
-      <label class="hbe hbe-input-label hbe-input-label-up" for="hbePass">
-        <span class="hbe hbe-input-label-content hbe-input-label-content-up">请输入密码查看</span>
-      </label>
-    </div>
-  </div>
-</div>
-<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
-      <categories>
-        <category>观点</category>
-      </categories>
-      <tags>
-        <tag>想法</tag>
-        <tag>观点</tag>
       </tags>
   </entry>
   <entry>
