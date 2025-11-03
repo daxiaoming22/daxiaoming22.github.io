@@ -1,66 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>blog学习进展/hexo-next教程</title>
-    <url>/2025/10/22/blog_learning/</url>
-    <content><![CDATA[<h3 id="关于hexo-next的美化"><a href="#关于hexo-next的美化" class="headerlink" title="关于hexo-next的美化"></a>关于hexo-next的美化</h3><h4 id="如何创建一个新的博客文章？（2025-10-27）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ"><a href="#如何创建一个新的博客文章？（2025-10-27）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ" class="headerlink" title="如何创建一个新的博客文章？（2025-10-27）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ"></a>如何创建一个新的博客文章？（2025-10-27）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ</h4><p>hexo new “文章标题”<br>或者在对应的文件夹在直接添加对应.md文件，注意编辑文件头信息yaml格式</p>
-<h4 id="如何更改首页置顶顺序？（2025-10-28）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ"><a href="#如何更改首页置顶顺序？（2025-10-28）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ" class="headerlink" title="如何更改首页置顶顺序？（2025-10-28）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ"></a>如何更改首页置顶顺序？（2025-10-28）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ</h4><ul>
-<li>可以参考这篇博主的文章<a href="https://www.axitown.com/a764f98564af/">阿希の小镇, 2025</a></li>
-</ul>
-<h4 id="如何更改首页，仅部分显示文章？-2025-10-29"><a href="#如何更改首页，仅部分显示文章？-2025-10-29" class="headerlink" title="如何更改首页，仅部分显示文章？(2025-10-29)"></a>如何更改首页，仅部分显示文章？(2025-10-29)</h4><h4 id="如何实现副标题的动态显示？-2025-10-30"><a href="#如何实现副标题的动态显示？-2025-10-30" class="headerlink" title="如何实现副标题的动态显示？(2025-10-30)"></a>如何实现副标题的动态显示？(2025-10-30)</h4><h4 id="文章如何只显示部分文章内容？-2025-10-30-٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ"><a href="#文章如何只显示部分文章内容？-2025-10-30-٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ" class="headerlink" title="文章如何只显示部分文章内容？(2025-10-30) ٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ"></a>文章如何只显示部分文章内容？(2025-10-30) ٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ</h4><ul>
-<li>可以在文章的md文件中，添加<span id="more"></span>注释，注释之前的内容就会显示在首页，注释之后的内容就会隐藏起来。</li>
-</ul>
-<h4 id="链接跳转样式（2025-10-30）"><a href="#链接跳转样式（2025-10-30）" class="headerlink" title="链接跳转样式（2025-10-30）"></a>链接跳转样式（2025-10-30）</h4><ul>
-<li>链接跳转样式的图标美化</li>
-</ul>
-<p>博客美化的教程<a href="https://fatedshadow.github.io/%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/%E5%8D%9A%E5%AE%A2/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8-Hexo-Next-%E7%BE%8E%E5%8C%96%E5%8D%9A%E5%AE%A2/">text</a></p>
-<!-- more -->
-
-<hr>
-<h3 id="关于如何优化访问，正规的站点建设"><a href="#关于如何优化访问，正规的站点建设" class="headerlink" title="关于如何优化访问，正规的站点建设"></a>关于如何优化访问，正规的站点建设</h3><h4 id="为什么每段时间自己的域名就要重新对齐GitHub（2025-10-29）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ"><a href="#为什么每段时间自己的域名就要重新对齐GitHub（2025-10-29）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ" class="headerlink" title="为什么每段时间自己的域名就要重新对齐GitHub（2025-10-29）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ"></a>为什么每段时间自己的域名就要重新对齐GitHub（2025-10-29）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ</h4><ul>
-<li>可以参考这篇博主的文章<a href="https://www.cnblogs.com/xieqk/p/Github-Page-DNS.html">域名DNS解析到自己的githubpages页面,谢乔康</a></li>
-</ul>
-<h4 id="如何配置自己的域名？（2025-10-27）"><a href="#如何配置自己的域名？（2025-10-27）" class="headerlink" title="如何配置自己的域名？（2025-10-27）"></a><strong>如何配置自己的域名？（2025-10-27）</strong></h4><p>查看<a href="/2025/10/27/yuming/">域名配置</a></p>
-<h4 id="如何添加自己的友链？（2025-10-28）"><a href="#如何添加自己的友链？（2025-10-28）" class="headerlink" title="如何添加自己的友链？（2025-10-28）"></a>如何添加自己的友链？（2025-10-28）</h4><ul>
-<li>友链是指在博客中添加其他博客作者的链接，以展示他们的创作和关注。</li>
-</ul>
-<h4 id="如何添加文章分享功能？（2025-10-30）"><a href="#如何添加文章分享功能？（2025-10-30）" class="headerlink" title="如何添加文章分享功能？（2025-10-30）"></a>如何添加文章分享功能？（2025-10-30）</h4><h4 id="如何将自己的ipynb文件转换为markdown文件？并发表在博客上？（2025-11-02）"><a href="#如何将自己的ipynb文件转换为markdown文件？并发表在博客上？（2025-11-02）" class="headerlink" title="如何将自己的ipynb文件转换为markdown文件？并发表在博客上？（2025-11-02）"></a>如何将自己的ipynb文件转换为markdown文件？并发表在博客上？（2025-11-02）</h4><hr>
-<h3 id="关于markdown的使用"><a href="#关于markdown的使用" class="headerlink" title="关于markdown的使用"></a>关于markdown的使用</h3><p>markdown是一种轻量级的标记语言，用于在文本中添加格式化元素。它简单易学，同时也非常灵活。（obsidion、blog必备的技能、现在ai回答输出的格式也是markdown例如deepseek的回答、）基础语法参考(小刘在路上[^1]，2024)</p>
-<h4 id="如何链接文章？（2025-10-27）-有问题跳转找不到网页，亟待解决-٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ"><a href="#如何链接文章？（2025-10-27）-有问题跳转找不到网页，亟待解决-٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ" class="headerlink" title="如何链接文章？（2025-10-27）,有问题跳转找不到网页，亟待解决 ٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ"></a>如何链接文章？（2025-10-27）,有问题跳转找不到网页，亟待解决 ٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ</h4><h5 id="内部链接-٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ"><a href="#内部链接-٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ" class="headerlink" title="内部链接 ٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ"></a>内部链接 ٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ</h5><ul>
-<li>这种问题是由于在hexo生成的public文件夹中，文章的路径与链接的路径不一致导致的。</li>
-<li>解决方法：在hexo配置文件中，将permalink设置为&#x2F;:year&#x2F;:month&#x2F;:day&#x2F;:title&#x2F;，例如：permalink: &#x2F;:year&#x2F;:month&#x2F;:day&#x2F;:title&#x2F;</li>
-<li>这样，在生成的public文件夹中，文章的路径就与链接的路径一致了。</li>
-</ul>
-<p>例如，文章的路径为&#x2F;2025&#x2F;10&#x2F;27&#x2F;yuming&#x2F;，那么链接就为<a href="/2025/10/27/yuming/">域名配置</a></p>
-<h5 id="外部链接-https-www-baidu-com-٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ"><a href="#外部链接-https-www-baidu-com-٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ" class="headerlink" title="外部链接(https://www.baidu.com/) ٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ"></a>外部链接(<a href="https://www.baidu.com/">https://www.baidu.com/</a>) ٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ</h5><ul>
-<li>外部链接是指指向其他网站的链接，例如：<a href="https://www.baidu.com/">百度</a></li>
-<li>外部链接的安全链接的调试可能存在问题（待解决）</li>
-</ul>
-<h5 id="外部链接跳转无效问题？（2025-10-29）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ"><a href="#外部链接跳转无效问题？（2025-10-29）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ" class="headerlink" title="外部链接跳转无效问题？（2025-10-29）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ"></a>外部链接跳转无效问题？（2025-10-29）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ</h5><ul>
-<li>问题出在butterfly与next主题的容器选择器不同所导致的，致谢<a href="https://blog.liushen.fun/posts/1dfd1f41/">LiuShen,2024</a></li>
-</ul>
-<h4 id="如何添加脚注，来致谢引用参考链接的作者？（2025-10-27）15min-٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ"><a href="#如何添加脚注，来致谢引用参考链接的作者？（2025-10-27）15min-٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ" class="headerlink" title="如何添加脚注，来致谢引用参考链接的作者？（2025-10-27）15min ٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ"></a>如何添加脚注，来致谢引用参考链接的作者？（2025-10-27）15min ٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ</h4><p>[^1]: 小刘在路上, 2024. 手把手教会你使用Markdown. CNDS, <a href="https://blog.csdn.net/qq_40818172/article/details/126260661">https://blog.csdn.net/qq_40818172/article/details/126260661</a></p>
-]]></content>
-      <categories>
-        <category>学习</category>
-      </categories>
-      <tags>
-        <tag>blog_learning</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>thoughts</title>
-    <url>/2025/10/27/thoughts/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>观点</category>
-      </categories>
-      <tags>
-        <tag>想法</tag>
-        <tag>观点</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>CatBoost道路风险预测学习笔记</title>
     <url>/2025/10/30/Predicting%20Road%20Accident%20Risk/</url>
     <content><![CDATA[<h3 id="下面所学知识经验均来自对kaggle竞赛Predicting-Road-Accident-Riskz中的公开Notebook代码的模仿过程"><a href="#下面所学知识经验均来自对kaggle竞赛Predicting-Road-Accident-Riskz中的公开Notebook代码的模仿过程" class="headerlink" title="下面所学知识经验均来自对kaggle竞赛Predicting Road Accident Riskz中的公开Notebook代码的模仿过程"></a>下面所学知识经验均来自对kaggle竞赛Predicting Road Accident Riskz中的公开Notebook<a href="https://www.kaggle.com/code/josephnehrenz/s5e10-predicting-road-accident-risk-w-web-app/notebook">代码</a>的模仿过程</h3><hr>
@@ -211,6 +151,77 @@
       </tags>
   </entry>
   <entry>
+    <title>blog学习进展/hexo-next教程</title>
+    <url>/2025/10/22/blog_learning/</url>
+    <content><![CDATA[<h3 id="关于hexo-next的美化"><a href="#关于hexo-next的美化" class="headerlink" title="关于hexo-next的美化"></a>关于hexo-next的美化</h3><h4 id="如何创建一个新的博客文章？（2025-10-27）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ"><a href="#如何创建一个新的博客文章？（2025-10-27）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ" class="headerlink" title="如何创建一个新的博客文章？（2025-10-27）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ"></a>如何创建一个新的博客文章？（2025-10-27）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ</h4><p>hexo new “文章标题”<br>或者在对应的文件夹在直接添加对应.md文件，注意编辑文件头信息yaml格式</p>
+<h4 id="如何更改首页置顶顺序？（2025-10-28）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ"><a href="#如何更改首页置顶顺序？（2025-10-28）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ" class="headerlink" title="如何更改首页置顶顺序？（2025-10-28）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ"></a>如何更改首页置顶顺序？（2025-10-28）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ</h4><ul>
+<li>可以参考这篇博主的文章<a href="https://www.axitown.com/a764f98564af/">阿希の小镇, 2025</a></li>
+</ul>
+<h4 id="如何更改首页，仅部分显示文章？-2025-10-29"><a href="#如何更改首页，仅部分显示文章？-2025-10-29" class="headerlink" title="如何更改首页，仅部分显示文章？(2025-10-29)"></a>如何更改首页，仅部分显示文章？(2025-10-29)</h4><h4 id="如何实现副标题的动态显示？-2025-10-30"><a href="#如何实现副标题的动态显示？-2025-10-30" class="headerlink" title="如何实现副标题的动态显示？(2025-10-30)"></a>如何实现副标题的动态显示？(2025-10-30)</h4><h4 id="文章如何只显示部分文章内容？-2025-10-30-٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ"><a href="#文章如何只显示部分文章内容？-2025-10-30-٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ" class="headerlink" title="文章如何只显示部分文章内容？(2025-10-30) ٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ"></a>文章如何只显示部分文章内容？(2025-10-30) ٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ</h4><ul>
+<li>可以在文章的md文件中，添加<span id="more"></span>注释，注释之前的内容就会显示在首页，注释之后的内容就会隐藏起来。</li>
+</ul>
+<h4 id="链接跳转样式（2025-10-30）"><a href="#链接跳转样式（2025-10-30）" class="headerlink" title="链接跳转样式（2025-10-30）"></a>链接跳转样式（2025-10-30）</h4><ul>
+<li>链接跳转样式的图标美化</li>
+</ul>
+<p>博客美化的教程<a href="https://fatedshadow.github.io/%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/%E5%8D%9A%E5%AE%A2/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8-Hexo-Next-%E7%BE%8E%E5%8C%96%E5%8D%9A%E5%AE%A2/">text</a></p>
+<!-- more -->
+
+<hr>
+<h3 id="关于如何优化访问，正规的站点建设"><a href="#关于如何优化访问，正规的站点建设" class="headerlink" title="关于如何优化访问，正规的站点建设"></a>关于如何优化访问，正规的站点建设</h3><h4 id="为什么每段时间自己的域名就要重新对齐GitHub（2025-10-29）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ"><a href="#为什么每段时间自己的域名就要重新对齐GitHub（2025-10-29）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ" class="headerlink" title="为什么每段时间自己的域名就要重新对齐GitHub（2025-10-29）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ"></a>为什么每段时间自己的域名就要重新对齐GitHub（2025-10-29）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ</h4><ul>
+<li>可以参考这篇博主的文章<a href="https://www.cnblogs.com/xieqk/p/Github-Page-DNS.html">域名DNS解析到自己的githubpages页面,谢乔康</a></li>
+</ul>
+<h4 id="如何配置自己的域名？（2025-10-27）"><a href="#如何配置自己的域名？（2025-10-27）" class="headerlink" title="如何配置自己的域名？（2025-10-27）"></a><strong>如何配置自己的域名？（2025-10-27）</strong></h4><p>查看<a href="/2025/10/27/yuming/">域名配置</a></p>
+<h4 id="如何添加自己的友链？（2025-10-28）"><a href="#如何添加自己的友链？（2025-10-28）" class="headerlink" title="如何添加自己的友链？（2025-10-28）"></a>如何添加自己的友链？（2025-10-28）</h4><ul>
+<li>友链是指在博客中添加其他博客作者的链接，以展示他们的创作和关注。</li>
+</ul>
+<h4 id="如何添加文章分享功能？（2025-10-30）"><a href="#如何添加文章分享功能？（2025-10-30）" class="headerlink" title="如何添加文章分享功能？（2025-10-30）"></a>如何添加文章分享功能？（2025-10-30）</h4><h4 id="如何将自己的ipynb文件转换为markdown文件？并发表在博客上？（2025-11-02）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ"><a href="#如何将自己的ipynb文件转换为markdown文件？并发表在博客上？（2025-11-02）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ" class="headerlink" title="如何将自己的ipynb文件转换为markdown文件？并发表在博客上？（2025-11-02）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ"></a>如何将自己的ipynb文件转换为markdown文件？并发表在博客上？（2025-11-02）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ</h4><p>参考这篇文章<a href="https://juejin.cn/post/7506038621612245033">惜鸟，2025</a></p>
+<hr>
+<h3 id="关于markdown的使用"><a href="#关于markdown的使用" class="headerlink" title="关于markdown的使用"></a>关于markdown的使用</h3><p>markdown是一种轻量级的标记语言，用于在文本中添加格式化元素。它简单易学，同时也非常灵活。（obsidion、blog必备的技能、现在ai回答输出的格式也是markdown例如deepseek的回答、）基础语法参考(小刘在路上[^1]，2024)</p>
+<h4 id="如何链接文章？（2025-10-27）-有问题跳转找不到网页，亟待解决-٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ"><a href="#如何链接文章？（2025-10-27）-有问题跳转找不到网页，亟待解决-٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ" class="headerlink" title="如何链接文章？（2025-10-27）,有问题跳转找不到网页，亟待解决 ٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ"></a>如何链接文章？（2025-10-27）,有问题跳转找不到网页，亟待解决 ٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ</h4><h5 id="内部链接-٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ"><a href="#内部链接-٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ" class="headerlink" title="内部链接 ٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ"></a>内部链接 ٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ</h5><ul>
+<li>这种问题是由于在hexo生成的public文件夹中，文章的路径与链接的路径不一致导致的。</li>
+<li>解决方法：在hexo配置文件中，将permalink设置为&#x2F;:year&#x2F;:month&#x2F;:day&#x2F;:title&#x2F;，例如：permalink: &#x2F;:year&#x2F;:month&#x2F;:day&#x2F;:title&#x2F;</li>
+<li>这样，在生成的public文件夹中，文章的路径就与链接的路径一致了。</li>
+</ul>
+<p>例如，文章的路径为&#x2F;2025&#x2F;10&#x2F;27&#x2F;yuming&#x2F;，那么链接就为<a href="/2025/10/27/yuming/">域名配置</a></p>
+<h5 id="外部链接-https-www-baidu-com-٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ"><a href="#外部链接-https-www-baidu-com-٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ" class="headerlink" title="外部链接(https://www.baidu.com/) ٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ"></a>外部链接(<a href="https://www.baidu.com/">https://www.baidu.com/</a>) ٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ</h5><ul>
+<li>外部链接是指指向其他网站的链接，例如：<a href="https://www.baidu.com/">百度</a></li>
+<li>外部链接的安全链接的调试可能存在问题（待解决）</li>
+</ul>
+<h5 id="外部链接跳转无效问题？（2025-10-29）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ"><a href="#外部链接跳转无效问题？（2025-10-29）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ" class="headerlink" title="外部链接跳转无效问题？（2025-10-29）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ"></a>外部链接跳转无效问题？（2025-10-29）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ</h5><ul>
+<li>问题出在butterfly与next主题的容器选择器不同所导致的，致谢<a href="https://blog.liushen.fun/posts/1dfd1f41/">LiuShen,2024</a></li>
+</ul>
+<h4 id="如何添加脚注，来致谢引用参考链接的作者？（2025-10-27）15min-٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ"><a href="#如何添加脚注，来致谢引用参考链接的作者？（2025-10-27）15min-٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ" class="headerlink" title="如何添加脚注，来致谢引用参考链接的作者？（2025-10-27）15min ٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ"></a>如何添加脚注，来致谢引用参考链接的作者？（2025-10-27）15min ٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ</h4><p>[^1]: 小刘在路上, 2024. 手把手教会你使用Markdown. CNDS, <a href="https://blog.csdn.net/qq_40818172/article/details/126260661">https://blog.csdn.net/qq_40818172/article/details/126260661</a></p>
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>blog_learning</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>机器学习进展</title>
+    <url>/2025/10/22/machine_learning/</url>
+    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="窃取机密失败QAQ..." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="1d8fc7a41a7aa008385373bc979bd685338685654d10fbb3072706a97ee9ccb7">dccefed83fa27a7ad5aaf2d0962952897e2eac05819bcc21e675ce1cdc4aba5bff28ab5366c0082d3d01afa8266b2dacdbe7a68be5328e495334da6bcdb16dad63f750b36853e82b92dd70455470dcc32445e1b166be9edb511c5b69409bd081e957d2944db89ce45b8c0aa90ec4d7a7d7405dd5888b4575645cb78b38e5b20f24d2d61d326133f628806fade4587f8778a888b108d9f64a95959754ae38e38c57ac33ddb9ef8205fe4e842e00e3690dbded7436d9194145d83a50057f7c9ca7911a5dd4ac65ff142e82f2b166f91f6bb15034f2868a1db66ee15b16468f6697cf9b067fb8f2826b8c478316e68e43787bd8d508545e753785b4688f6a7b0789829a2ec0dabf861879627b0e5e81a0947ba9892a8a7d54d749bcd60316859a4c9c4aa905a3d959841d1ee2d03322fea031fd23e3d5f18418769caaeafe4f1c7dc25cfef63602d19638873a9b94906f629a05e5470ec0b037dfbc36ee4ac4086bc8bb0cce82b950c18512c78a433848aec8bd9a635498ef265210b23f0097e237b64c3d62b888525124fb6203848263d470ca89f616f2662ff34ed75a218aed99d9b8526800caa9df534c14f12afcf68d6aea68df7a020c5052f0d25421f07a9c1aebd8c9593c604bd38f24200e36314062cd0a547604d42a858c8ffdb272d75a5bb9b64f88c4c78f4c720fcd751e0d9303642fdab9f96b989860d1622641508672e1fc6b63d1a2508668fd83a9fe47472a677e9d44806ad434521b6069dceccae9b6e8ea524410879d3f76718a8d9c7b5a033ec64f0e1d4297c397557f5ad6d73e4bec326ea5da17432b5f6e7ae7e4bbe62336ef44b132a8cc93f855b0c5f5e77deb494c7a616737a3f459a8947fc412d27359a518e252f452310b99f145a2dd441a7340ae96f7079a159df1bf630536d1ca4a89a97ae8c2333616494e768297ad2550540dfded6b72ae67ab69fec27032ecab1576ba320ee4aa5bdcab97634b64e2b3a4490ec8969ab3664834e4048d6edd9e7503392fd8e694d8bb7039be1e7ed7bbc3449b0afff15c24db1956d582572e2b127788984069e83709490b413d</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-up">
+      <input class="hbe hbe-input-field hbe-input-field-up" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-up" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-up">请输入密码查看</span>
+      </label>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+      <categories>
+        <category>学术</category>
+      </categories>
+      <tags>
+        <tag>机器学习</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>ml_learning_thought</title>
     <url>/2025/10/29/learning_thought/</url>
     <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="窃取机密失败QAQ..." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
@@ -249,25 +260,625 @@
       </tags>
   </entry>
   <entry>
-    <title>机器学习进展</title>
-    <url>/2025/10/22/machine_learning/</url>
-    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="窃取机密失败QAQ..." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
-  <script id="hbeData" type="hbeData" data-hmacdigest="1d8fc7a41a7aa008385373bc979bd685338685654d10fbb3072706a97ee9ccb7">dccefed83fa27a7ad5aaf2d0962952897e2eac05819bcc21e675ce1cdc4aba5bff28ab5366c0082d3d01afa8266b2dacdbe7a68be5328e495334da6bcdb16dad63f750b36853e82b92dd70455470dcc32445e1b166be9edb511c5b69409bd081e957d2944db89ce45b8c0aa90ec4d7a7d7405dd5888b4575645cb78b38e5b20f24d2d61d326133f628806fade4587f8778a888b108d9f64a95959754ae38e38c57ac33ddb9ef8205fe4e842e00e3690dbded7436d9194145d83a50057f7c9ca7911a5dd4ac65ff142e82f2b166f91f6bb15034f2868a1db66ee15b16468f6697cf9b067fb8f2826b8c478316e68e43787bd8d508545e753785b4688f6a7b0789829a2ec0dabf861879627b0e5e81a0947ba9892a8a7d54d749bcd60316859a4c9c4aa905a3d959841d1ee2d03322fea031fd23e3d5f18418769caaeafe4f1c7dc25cfef63602d19638873a9b94906f629a05e5470ec0b037dfbc36ee4ac4086bc8bb0cce82b950c18512c78a433848aec8bd9a635498ef265210b23f0097e237b64c3d62b888525124fb6203848263d470ca89f616f2662ff34ed75a218aed99d9b8526800caa9df534c14f12afcf68d6aea68df7a020c5052f0d25421f07a9c1aebd8c9593c604bd38f24200e36314062cd0a547604d42a858c8ffdb272d75a5bb9b64f88c4c78f4c720fcd751e0d9303642fdab9f96b989860d1622641508672e1fc6b63d1a2508668fd83a9fe47472a677e9d44806ad434521b6069dceccae9b6e8ea524410879d3f76718a8d9c7b5a033ec64f0e1d4297c397557f5ad6d73e4bec326ea5da17432b5f6e7ae7e4bbe62336ef44b132a8cc93f855b0c5f5e77deb494c7a616737a3f459a8947fc412d27359a518e252f452310b99f145a2dd441a7340ae96f7079a159df1bf630536d1ca4a89a97ae8c2333616494e768297ad2550540dfded6b72ae67ab69fec27032ecab1576ba320ee4aa5bdcab97634b64e2b3a4490ec8969ab3664834e4048d6edd9e7503392fd8e694d8bb7039be1e7ed7bbc3449b0afff15c24db1956d582572e2b127788984069e83709490b413d</script>
-  <div class="hbe hbe-content">
-    <div class="hbe hbe-input hbe-input-up">
-      <input class="hbe hbe-input-field hbe-input-field-up" type="password" id="hbePass">
-      <label class="hbe hbe-input-label hbe-input-label-up" for="hbePass">
-        <span class="hbe hbe-input-label-content hbe-input-label-content-up">请输入密码查看</span>
-      </label>
-    </div>
-  </div>
-</div>
-<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+    <title>thoughts</title>
+    <url>/2025/10/27/thoughts/</url>
+    <content><![CDATA[]]></content>
       <categories>
-        <category>学术</category>
+        <category>观点</category>
+      </categories>
+      <tags>
+        <tag>想法</tag>
+        <tag>观点</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>CatBoost道路风险预测学习笔记（对应的ipynb的markdown版本）</title>
+    <url>/2025/10/30/road_rick_new_one/</url>
+    <content><![CDATA[<h3 id="第三方库导入和数据集的导入，数据集的查看"><a href="#第三方库导入和数据集的导入，数据集的查看" class="headerlink" title="第三方库导入和数据集的导入，数据集的查看"></a>第三方库导入和数据集的导入，数据集的查看</h3><h4 id="第三方库的导入和输出对应的版本编号"><a href="#第三方库的导入和输出对应的版本编号" class="headerlink" title="第三方库的导入和输出对应的版本编号"></a>第三方库的导入和输出对应的版本编号</h4><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"><span class="keyword">import</span> os</span><br><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line"><span class="keyword">import</span> seaborn <span class="keyword">as</span> sns</span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">from</span> sklearn.model_selection <span class="keyword">import</span> train_test_split, cross_val_score</span><br><span class="line"><span class="keyword">from</span> sklearn.metrics <span class="keyword">import</span> mean_squared_error</span><br><span class="line"><span class="keyword">from</span> catboost <span class="keyword">import</span> CatBoostRegressor</span><br><span class="line"><span class="keyword">from</span> IPython.core.display <span class="keyword">import</span> HTML</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">show_object_columns_info</span>(<span class="params">df</span>):</span><br><span class="line">    <span class="string">&quot;显示DataFrame中所有object类型列的信息，包括列名、唯一值数量和所有唯一值&quot;</span></span><br><span class="line">    object_cols = df.select_dtypes(include=[<span class="string">&#x27;object&#x27;</span>]).columns</span><br><span class="line">    <span class="built_in">print</span>(object_cols)</span><br><span class="line">    <span class="keyword">for</span> col <span class="keyword">in</span> object_cols:</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">f&quot;列名: <span class="subst">&#123;col&#125;</span>&quot;</span>)</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">f&#x27;object数量: <span class="subst">&#123;df[col].nunique()&#125;</span>&#x27;</span>)</span><br><span class="line">        <span class="built_in">print</span>(df[col].unique())</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(sns.__version__)</span><br><span class="line"><span class="built_in">print</span>(pd.__version__)</span><br><span class="line"><span class="built_in">print</span>(np.__version__)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<pre><code>0.13.2
+2.3.3
+1.26.4
+</code></pre>
+<h4 id="数据的导入，数据集的描述和清洗"><a href="#数据的导入，数据集的描述和清洗" class="headerlink" title="数据的导入，数据集的描述和清洗"></a>数据的导入，数据集的描述和清洗</h4><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">train_path = <span class="string">&quot;../../datasets/competition_datas/Accident_Risk/train.csv&quot;</span></span><br><span class="line">test_path = <span class="string">&quot;../../datasets/competition_datas/Accident_Risk/test.csv&quot;</span></span><br><span class="line"></span><br><span class="line">train_ds = pd.read_csv(train_path) <span class="comment">#ds: dataset</span></span><br><span class="line"><span class="comment">#train_ds.info()</span></span><br><span class="line"><span class="comment">#print(train_ds.shape)</span></span><br><span class="line"><span class="comment">#train_ds.describe()</span></span><br><span class="line">train_ds.head()</span><br><span class="line"><span class="comment"># 使用函数显示object类型列的信息</span></span><br><span class="line"><span class="comment">#show_object_columns_info(train_ds)</span></span><br><span class="line">    </span><br></pre></td></tr></table></figure>
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+<pre><code>.dataframe tbody tr th {
+    vertical-align: top;
+}
+
+.dataframe thead th {
+    text-align: right;
+}
+</code></pre>
+<p></style></p>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>id</th>
+      <th>road_type</th>
+      <th>num_lanes</th>
+      <th>curvature</th>
+      <th>speed_limit</th>
+      <th>lighting</th>
+      <th>weather</th>
+      <th>road_signs_present</th>
+      <th>public_road</th>
+      <th>time_of_day</th>
+      <th>holiday</th>
+      <th>school_season</th>
+      <th>num_reported_accidents</th>
+      <th>accident_risk</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0</td>
+      <td>urban</td>
+      <td>2</td>
+      <td>0.06</td>
+      <td>35</td>
+      <td>daylight</td>
+      <td>rainy</td>
+      <td>False</td>
+      <td>True</td>
+      <td>afternoon</td>
+      <td>False</td>
+      <td>True</td>
+      <td>1</td>
+      <td>0.13</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1</td>
+      <td>urban</td>
+      <td>4</td>
+      <td>0.99</td>
+      <td>35</td>
+      <td>daylight</td>
+      <td>clear</td>
+      <td>True</td>
+      <td>False</td>
+      <td>evening</td>
+      <td>True</td>
+      <td>True</td>
+      <td>0</td>
+      <td>0.35</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>2</td>
+      <td>rural</td>
+      <td>4</td>
+      <td>0.63</td>
+      <td>70</td>
+      <td>dim</td>
+      <td>clear</td>
+      <td>False</td>
+      <td>True</td>
+      <td>morning</td>
+      <td>True</td>
+      <td>False</td>
+      <td>2</td>
+      <td>0.30</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>3</td>
+      <td>highway</td>
+      <td>4</td>
+      <td>0.07</td>
+      <td>35</td>
+      <td>dim</td>
+      <td>rainy</td>
+      <td>True</td>
+      <td>True</td>
+      <td>morning</td>
+      <td>False</td>
+      <td>False</td>
+      <td>1</td>
+      <td>0.21</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>4</td>
+      <td>rural</td>
+      <td>1</td>
+      <td>0.58</td>
+      <td>60</td>
+      <td>daylight</td>
+      <td>foggy</td>
+      <td>False</td>
+      <td>False</td>
+      <td>evening</td>
+      <td>True</td>
+      <td>False</td>
+      <td>1</td>
+      <td>0.56</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">test_ds = pd.read_csv(test_path)</span><br><span class="line"><span class="comment">#print(test_ds.info())</span></span><br><span class="line">test_ds.head()</span><br></pre></td></tr></table></figure>
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+<pre><code>.dataframe tbody tr th {
+    vertical-align: top;
+}
+
+.dataframe thead th {
+    text-align: right;
+}
+</code></pre>
+<p></style></p>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>id</th>
+      <th>road_type</th>
+      <th>num_lanes</th>
+      <th>curvature</th>
+      <th>speed_limit</th>
+      <th>lighting</th>
+      <th>weather</th>
+      <th>road_signs_present</th>
+      <th>public_road</th>
+      <th>time_of_day</th>
+      <th>holiday</th>
+      <th>school_season</th>
+      <th>num_reported_accidents</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>517754</td>
+      <td>highway</td>
+      <td>2</td>
+      <td>0.34</td>
+      <td>45</td>
+      <td>night</td>
+      <td>clear</td>
+      <td>True</td>
+      <td>True</td>
+      <td>afternoon</td>
+      <td>True</td>
+      <td>True</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>517755</td>
+      <td>urban</td>
+      <td>3</td>
+      <td>0.04</td>
+      <td>45</td>
+      <td>dim</td>
+      <td>foggy</td>
+      <td>True</td>
+      <td>False</td>
+      <td>afternoon</td>
+      <td>True</td>
+      <td>False</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>517756</td>
+      <td>urban</td>
+      <td>2</td>
+      <td>0.59</td>
+      <td>35</td>
+      <td>dim</td>
+      <td>clear</td>
+      <td>True</td>
+      <td>False</td>
+      <td>afternoon</td>
+      <td>True</td>
+      <td>True</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>517757</td>
+      <td>rural</td>
+      <td>4</td>
+      <td>0.95</td>
+      <td>35</td>
+      <td>daylight</td>
+      <td>rainy</td>
+      <td>False</td>
+      <td>False</td>
+      <td>afternoon</td>
+      <td>False</td>
+      <td>False</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>517758</td>
+      <td>highway</td>
+      <td>2</td>
+      <td>0.86</td>
+      <td>35</td>
+      <td>daylight</td>
+      <td>clear</td>
+      <td>True</td>
+      <td>False</td>
+      <td>evening</td>
+      <td>False</td>
+      <td>True</td>
+      <td>3</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+<h4 id="数据的可视化-了解数据，并不是选择特征"><a href="#数据的可视化-了解数据，并不是选择特征" class="headerlink" title="数据的可视化(了解数据，并不是选择特征)"></a>数据的可视化(了解数据，并不是选择特征)</h4><p>由于上述数据并没有缺失值，因此我们不用处理缺失值.直接使用可视化工具进行可视化分析.</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">y = train_ds[<span class="string">&#x27;accident_risk&#x27;</span>]</span><br><span class="line">X = train_ds.drop(columns=[<span class="string">&#x27;accident_risk&#x27;</span>, <span class="string">&#x27;id&#x27;</span>],axis=<span class="number">1</span>)</span><br><span class="line"></span><br><span class="line">X.info()</span><br><span class="line">display(X.head())</span><br><span class="line">X_num = X.select_dtypes(include=[<span class="string">&#x27;int64&#x27;</span>, <span class="string">&#x27;float64&#x27;</span>])</span><br></pre></td></tr></table></figure>
+
+<pre><code>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
+RangeIndex: 517754 entries, 0 to 517753
+Data columns (total 12 columns):
+ #   Column                  Non-Null Count   Dtype  
+---  ------                  --------------   -----  
+ 0   road_type               517754 non-null  object 
+ 1   num_lanes               517754 non-null  int64  
+ 2   curvature               517754 non-null  float64
+ 3   speed_limit             517754 non-null  int64  
+ 4   lighting                517754 non-null  object 
+ 5   weather                 517754 non-null  object 
+ 6   road_signs_present      517754 non-null  bool   
+ 7   public_road             517754 non-null  bool   
+ 8   time_of_day             517754 non-null  object 
+ 9   holiday                 517754 non-null  bool   
+ 10  school_season           517754 non-null  bool   
+ 11  num_reported_accidents  517754 non-null  int64  
+dtypes: bool(4), float64(1), int64(3), object(4)
+memory usage: 33.6+ MB
+</code></pre>
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+<pre><code>.dataframe tbody tr th {
+    vertical-align: top;
+}
+
+.dataframe thead th {
+    text-align: right;
+}
+</code></pre>
+<p></style></p>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>road_type</th>
+      <th>num_lanes</th>
+      <th>curvature</th>
+      <th>speed_limit</th>
+      <th>lighting</th>
+      <th>weather</th>
+      <th>road_signs_present</th>
+      <th>public_road</th>
+      <th>time_of_day</th>
+      <th>holiday</th>
+      <th>school_season</th>
+      <th>num_reported_accidents</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>urban</td>
+      <td>2</td>
+      <td>0.06</td>
+      <td>35</td>
+      <td>daylight</td>
+      <td>rainy</td>
+      <td>False</td>
+      <td>True</td>
+      <td>afternoon</td>
+      <td>False</td>
+      <td>True</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>urban</td>
+      <td>4</td>
+      <td>0.99</td>
+      <td>35</td>
+      <td>daylight</td>
+      <td>clear</td>
+      <td>True</td>
+      <td>False</td>
+      <td>evening</td>
+      <td>True</td>
+      <td>True</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>rural</td>
+      <td>4</td>
+      <td>0.63</td>
+      <td>70</td>
+      <td>dim</td>
+      <td>clear</td>
+      <td>False</td>
+      <td>True</td>
+      <td>morning</td>
+      <td>True</td>
+      <td>False</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>highway</td>
+      <td>4</td>
+      <td>0.07</td>
+      <td>35</td>
+      <td>dim</td>
+      <td>rainy</td>
+      <td>True</td>
+      <td>True</td>
+      <td>morning</td>
+      <td>False</td>
+      <td>False</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>rural</td>
+      <td>1</td>
+      <td>0.58</td>
+      <td>60</td>
+      <td>daylight</td>
+      <td>foggy</td>
+      <td>False</td>
+      <td>False</td>
+      <td>evening</td>
+      <td>True</td>
+      <td>False</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+<h4 id="目标分布"><a href="#目标分布" class="headerlink" title="目标分布"></a>目标分布</h4><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">plt.figure()</span><br><span class="line">sns.histplot(y, kde=<span class="literal">True</span>, bins=<span class="number">50</span>)</span><br><span class="line">plt.title(<span class="string">&#x27;Distribution of Accident Risk&#x27;</span>)</span><br><span class="line">plt.xlabel(<span class="string">&#x27;Accident Risk&#x27;</span>)</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
+
+
+<p><img src="/road_rick_new_one_files/road_rick_new_one_8_0.png" alt="png"></p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">X_corr = X_num.corr()</span><br><span class="line">plt.figure()</span><br><span class="line">sns.heatmap(X_corr, annot=<span class="literal">True</span>, cmap=<span class="string">&#x27;viridis&#x27;</span>, center=<span class="number">0</span>, fmt=<span class="string">&#x27;.2f&#x27;</span>)</span><br><span class="line">plt.title(<span class="string">&#x27;Correlation Heatmap&#x27;</span>)</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
+
+
+<p><img src="/road_rick_new_one_files/road_rick_new_one_9_0.png" alt="png"></p>
+<h3 id="catboost"><a href="#catboost" class="headerlink" title="catboost"></a>catboost</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment">#display(X.head())</span></span><br><span class="line"><span class="comment">#display(y.head())</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#print(X.dtypes)</span></span><br><span class="line"><span class="comment"># 将X中的bool类型转化为object(str)类型,除了数值类型</span></span><br><span class="line">X_bool_cols = X.select_dtypes(include=[<span class="string">&#x27;bool&#x27;</span>]).columns</span><br><span class="line"><span class="built_in">print</span>(X_bool_cols)</span><br><span class="line"></span><br><span class="line"><span class="comment">#print(X_bool_cols)</span></span><br><span class="line"><span class="keyword">for</span> col <span class="keyword">in</span> X_bool_cols:</span><br><span class="line">    X[col] = X[col].astype(<span class="built_in">str</span>)</span><br><span class="line">    test_ds[col] = test_ds[col].astype(<span class="built_in">str</span>)</span><br><span class="line">    </span><br><span class="line">cat_features = X.select_dtypes(include=[<span class="string">&#x27;object&#x27;</span>]).columns.tolist()</span><br><span class="line"><span class="built_in">print</span>(cat_features)</span><br><span class="line"><span class="comment">#print(X.dtypes)</span></span><br></pre></td></tr></table></figure>
+
+<pre><code>Index([&#39;road_signs_present&#39;, &#39;public_road&#39;, &#39;holiday&#39;, &#39;school_season&#39;], dtype=&#39;object&#39;)
+[&#39;road_type&#39;, &#39;lighting&#39;, &#39;weather&#39;, &#39;road_signs_present&#39;, &#39;public_road&#39;, &#39;time_of_day&#39;, &#39;holiday&#39;, &#39;school_season&#39;]
+</code></pre>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 分割数据集</span></span><br><span class="line">X_train, X_val, y_train, y_val = train_test_split(X, y, test_size=<span class="number">0.2</span>, random_state=<span class="number">42</span>, shuffle=<span class="literal">True</span>, stratify=y)</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(X_train.shape, X_val.shape, y_train.shape, y_val.shape)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<pre><code>(414203, 12) (103551, 12) (414203,) (103551,)
+</code></pre>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">params = &#123;</span><br><span class="line">    <span class="string">&#x27;iterations&#x27;</span>: <span class="number">1000</span>, <span class="comment"># 迭代次数</span></span><br><span class="line">    <span class="string">&#x27;learning_rate&#x27;</span>: <span class="number">0.1</span>, <span class="comment"># 学习率</span></span><br><span class="line">    <span class="string">&#x27;depth&#x27;</span>: <span class="number">6</span>, <span class="comment"># 树的深度</span></span><br><span class="line">    <span class="string">&#x27;cat_features&#x27;</span>: cat_features, <span class="comment"># 分类特征</span></span><br><span class="line">    <span class="string">&#x27;random_seed&#x27;</span>: <span class="number">42</span>, <span class="comment"># 随机种子</span></span><br><span class="line">    <span class="string">&#x27;loss_function&#x27;</span>: <span class="string">&#x27;RMSE&#x27;</span>, <span class="comment"># 损失函数</span></span><br><span class="line">    <span class="string">&#x27;verbose&#x27;</span>: <span class="number">100</span>, <span class="comment"># 每100次迭代打印一次信息</span></span><br><span class="line">    <span class="string">&#x27;early_stopping_rounds&#x27;</span>: <span class="number">50</span>, <span class="comment"># 早停轮数</span></span><br><span class="line">    <span class="string">&quot;task_type&quot;</span>: <span class="string">&quot;GPU&quot;</span>, <span class="comment"># 启用 GPU </span></span><br><span class="line">    <span class="string">&quot;devices&quot;</span>: <span class="string">&quot;0&quot;</span> <span class="comment"># 指定 GPU 设备</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">Catboost_model = CatBoostRegressor(**params)</span><br><span class="line">Catboost_model.fit(X, y, eval_set=(X_val, y_val)) <span class="comment"># eval_set 用于监控模型在验证集上的性能 没有则不会显示性能表现</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<pre><code>0:	learn: 0.1523865	test: 0.1523846	best: 0.1523846 (0)	total: 94.3ms	remaining: 1m 34s
+100:	learn: 0.0564065	test: 0.0564811	best: 0.0564811 (100)	total: 8.16s	remaining: 1m 12s
+200:	learn: 0.0561983	test: 0.0563075	best: 0.0563075 (200)	total: 17s	remaining: 1m 7s
+300:	learn: 0.0560877	test: 0.0562139	best: 0.0562139 (300)	total: 26s	remaining: 1m
+400:	learn: 0.0560011	test: 0.0561416	best: 0.0561416 (400)	total: 34.5s	remaining: 51.5s
+500:	learn: 0.0559323	test: 0.0560808	best: 0.0560808 (500)	total: 43.1s	remaining: 42.9s
+600:	learn: 0.0558682	test: 0.0560278	best: 0.0560278 (600)	total: 52.6s	remaining: 34.9s
+700:	learn: 0.0558153	test: 0.0559829	best: 0.0559829 (700)	total: 1m 1s	remaining: 26.2s
+800:	learn: 0.0557594	test: 0.0559401	best: 0.0559401 (800)	total: 1m 10s	remaining: 17.4s
+900:	learn: 0.0557073	test: 0.0559001	best: 0.0559001 (899)	total: 1m 19s	remaining: 8.72s
+999:	learn: 0.0556659	test: 0.0558659	best: 0.0558659 (999)	total: 1m 29s	remaining: 0us
+bestTest = 0.05586587195
+bestIteration = 999
+
+
+
+
+
+&lt;catboost.core.CatBoostRegressor at 0x257b5932e50&gt;
+</code></pre>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Make predictions on validation set </span></span><br><span class="line">y_pred = Catboost_model.predict(X_val)  </span><br><span class="line"><span class="comment"># Calculate RMSE </span></span><br><span class="line">val_rmse = mean_squared_error(y_val, y_pred)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">f&quot;Validation RMSE: <span class="subst">&#123;val_rmse:<span class="number">.4</span>f&#125;</span>&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># Cross-validation </span></span><br><span class="line">cv_scores = cross_val_score(Catboost_model, X, y, cv=<span class="number">5</span>, scoring=<span class="string">&#x27;neg_mean_squared_error&#x27;</span>)  <span class="comment"># 5折交叉验证 # 计算每个折的 负均方误差</span></span><br><span class="line">cv_rmse = np.sqrt(-cv_scores)  <span class="comment"># 计算每个折的 RMSE 并取平方根</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">f&quot;Cross-validation RMSE: <span class="subst">&#123;cv_rmse.mean():<span class="number">.4</span>f&#125;</span> (+/- <span class="subst">&#123;cv_rmse.std() * <span class="number">2</span>:<span class="number">.4</span>f&#125;</span>)&quot;</span>)</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<pre><code>Validation RMSE: 0.0031
+0:	learn: 0.1523602	total: 74.6ms	remaining: 1m 14s
+100:	learn: 0.0563163	total: 7.29s	remaining: 1m 4s
+200:	learn: 0.0560969	total: 14.1s	remaining: 56.1s
+300:	learn: 0.0559734	total: 20.9s	remaining: 48.6s
+400:	learn: 0.0558743	total: 29.3s	remaining: 43.8s
+500:	learn: 0.0557934	total: 36.8s	remaining: 36.7s
+600:	learn: 0.0557296	total: 45.4s	remaining: 30.1s
+700:	learn: 0.0556612	total: 53s	remaining: 22.6s
+800:	learn: 0.0556026	total: 1m	remaining: 15s
+900:	learn: 0.0555548	total: 1m 10s	remaining: 7.79s
+999:	learn: 0.0555088	total: 1m 32s	remaining: 0us
+0:	learn: 0.1524152	total: 78.6ms	remaining: 1m 18s
+100:	learn: 0.0564793	total: 10.3s	remaining: 1m 31s
+200:	learn: 0.0562581	total: 21.2s	remaining: 1m 24s
+300:	learn: 0.0561289	total: 33.6s	remaining: 1m 17s
+400:	learn: 0.0560335	total: 44s	remaining: 1m 5s
+500:	learn: 0.0559565	total: 57.6s	remaining: 57.3s
+600:	learn: 0.0558867	total: 1m 13s	remaining: 48.6s
+700:	learn: 0.0558220	total: 1m 26s	remaining: 36.9s
+800:	learn: 0.0557681	total: 1m 38s	remaining: 24.5s
+900:	learn: 0.0557146	total: 1m 50s	remaining: 12.2s
+999:	learn: 0.0556690	total: 2m 4s	remaining: 0us
+0:	learn: 0.1523094	total: 71.2ms	remaining: 1m 11s
+100:	learn: 0.0563526	total: 11.3s	remaining: 1m 40s
+200:	learn: 0.0561467	total: 23.4s	remaining: 1m 33s
+300:	learn: 0.0560148	total: 35.4s	remaining: 1m 22s
+400:	learn: 0.0559182	total: 49.6s	remaining: 1m 14s
+500:	learn: 0.0558331	total: 1m 2s	remaining: 1m 2s
+600:	learn: 0.0557582	total: 1m 16s	remaining: 50.5s
+700:	learn: 0.0556941	total: 1m 28s	remaining: 37.7s
+800:	learn: 0.0556372	total: 1m 39s	remaining: 24.8s
+900:	learn: 0.0555797	total: 1m 50s	remaining: 12.2s
+999:	learn: 0.0555314	total: 2m 1s	remaining: 0us
+0:	learn: 0.1524123	total: 80ms	remaining: 1m 19s
+100:	learn: 0.0563271	total: 8.31s	remaining: 1m 13s
+200:	learn: 0.0561321	total: 19.8s	remaining: 1m 18s
+300:	learn: 0.0560138	total: 35.6s	remaining: 1m 22s
+400:	learn: 0.0559252	total: 48.3s	remaining: 1m 12s
+500:	learn: 0.0558532	total: 59.8s	remaining: 59.6s
+600:	learn: 0.0557891	total: 1m 11s	remaining: 47.2s
+700:	learn: 0.0557296	total: 1m 23s	remaining: 35.5s
+800:	learn: 0.0556794	total: 1m 35s	remaining: 23.7s
+900:	learn: 0.0556325	total: 1m 45s	remaining: 11.6s
+999:	learn: 0.0555885	total: 1m 55s	remaining: 0us
+0:	learn: 0.1523530	total: 80.1ms	remaining: 1m 19s
+100:	learn: 0.0564252	total: 10.3s	remaining: 1m 31s
+200:	learn: 0.0562220	total: 22.4s	remaining: 1m 29s
+300:	learn: 0.0561025	total: 31.7s	remaining: 1m 13s
+400:	learn: 0.0559980	total: 41.2s	remaining: 1m 1s
+500:	learn: 0.0559200	total: 51.8s	remaining: 51.6s
+600:	learn: 0.0558540	total: 1m 1s	remaining: 40.9s
+700:	learn: 0.0557899	total: 1m 14s	remaining: 31.9s
+800:	learn: 0.0557331	total: 1m 25s	remaining: 21.2s
+900:	learn: 0.0556776	total: 1m 39s	remaining: 11s
+999:	learn: 0.0556246	total: 1m 52s	remaining: 0us
+Cross-validation RMSE: 0.0561 (+/- 0.0005)
+</code></pre>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Feature Importance</span></span><br><span class="line">feature_importance = Catboost_model.get_feature_importance()  <span class="comment"># index类型</span></span><br><span class="line"><span class="comment">#print(feature_importance)</span></span><br><span class="line">feature_names = X.columns <span class="comment"># ndarray类型</span></span><br><span class="line"><span class="comment">#print(feature_names)</span></span><br><span class="line">importance_df = pd.DataFrame(&#123;</span><br><span class="line">    <span class="string">&#x27;feature&#x27;</span>: feature_names,</span><br><span class="line">    <span class="string">&#x27;importance&#x27;</span>: feature_importance</span><br><span class="line">&#125;).sort_values(<span class="string">&#x27;importance&#x27;</span>, ascending=<span class="literal">False</span>) <span class="comment"># 按重要性降序排序</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;\nTop 10 Most Important Features:&quot;</span>)</span><br><span class="line"><span class="built_in">print</span>(importance_df.head(<span class="number">10</span>))</span><br></pre></td></tr></table></figure>
+
+<pre><code>[2.68670072e-02 5.57111260e-02 1.53970212e+01 3.71319477e+01
+ 3.42504222e+01 9.16493355e+00 2.00611428e-02 4.68708926e-02
+ 2.95851141e-02 5.71107703e-02 1.50494424e-02 3.80441977e+00]
+Index([&#39;road_type&#39;, &#39;num_lanes&#39;, &#39;curvature&#39;, &#39;speed_limit&#39;, &#39;lighting&#39;,
+       &#39;weather&#39;, &#39;road_signs_present&#39;, &#39;public_road&#39;, &#39;time_of_day&#39;,
+       &#39;holiday&#39;, &#39;school_season&#39;, &#39;num_reported_accidents&#39;],
+      dtype=&#39;object&#39;)
+
+Top 10 Most Important Features:
+                   feature  importance
+3              speed_limit   37.131948
+4                 lighting   34.250422
+2                curvature   15.397021
+5                  weather    9.164934
+11  num_reported_accidents    3.804420
+9                  holiday    0.057111
+1                num_lanes    0.055711
+7              public_road    0.046871
+8              time_of_day    0.029585
+0                road_type    0.026867
+</code></pre>
+<h3 id="结果可视化"><a href="#结果可视化" class="headerlink" title="结果可视化"></a>结果可视化</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
+
+<pre><code>C:\Windows\Temp\ipykernel_27588\3889204982.py:3: FutureWarning: 
+
+Passing `palette` without assigning `hue` is deprecated and will be removed in v0.14.0. Assign the `y` variable to `hue` and set `legend=False` for the same effect.
+
+  sns.barplot(data=importance_df.head(10), x=&#39;importance&#39;, y=&#39;feature&#39;, palette=&#39;viridis&#39;)
+</code></pre>
+<p><img src="/road_rick_new_one_files/road_rick_new_one_17_1.png" alt="png"></p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Plot actual vs predicted values</span></span><br><span class="line">plt.scatter(y_val, y_pred, alpha=<span class="number">0.1</span>, marker=<span class="string">&#x27;.&#x27;</span>, s=<span class="number">5</span>)</span><br><span class="line">plt.plot([y_val.<span class="built_in">min</span>(), y_val.<span class="built_in">max</span>()], [y_val.<span class="built_in">min</span>(), y_val.<span class="built_in">max</span>()], <span class="string">&#x27;r--&#x27;</span>, lw=<span class="number">2</span>)</span><br><span class="line">plt.xlabel(<span class="string">&#x27;Actual Values&#x27;</span>)</span><br><span class="line">plt.ylabel(<span class="string">&#x27;Predicted Values&#x27;</span>)</span><br><span class="line">plt.title(<span class="string">&#x27;Actual vs Predicted Values&#x27;</span>)</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
+
+
+<p><img src="/road_rick_new_one_files/road_rick_new_one_18_0.png" alt="png"></p>
+<h3 id="提交结果"><a href="#提交结果" class="headerlink" title="提交结果"></a>提交结果</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Prepare test data (excluding the id column for prediction)</span></span><br><span class="line"></span><br><span class="line">test_features = test_ds.drop(<span class="string">&#x27;id&#x27;</span>, axis=<span class="number">1</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># Make predictions on test set</span></span><br><span class="line">test_predictions = Catboost_model.predict(test_features)</span><br><span class="line"></span><br><span class="line"><span class="comment"># Create submission file</span></span><br><span class="line">submission = pd.DataFrame(&#123;</span><br><span class="line">    <span class="string">&#x27;id&#x27;</span>: test_ds[<span class="string">&#x27;id&#x27;</span>],</span><br><span class="line">    <span class="string">&#x27;accident_risk&#x27;</span>: test_predictions</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line"><span class="comment"># Save submission file</span></span><br><span class="line">submission.to_csv(<span class="string">&#x27;submission.csv&#x27;</span>, index=<span class="literal">False</span>)</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="string">f&quot;Submission shape: <span class="subst">&#123;submission.shape&#125;</span>&quot;</span>)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;\nFirst 5 rows of submission:&quot;</span>)</span><br><span class="line">display(submission.head())</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<pre><code>Submission shape: (172585, 2)
+
+First 5 rows of submission:
+</code></pre>
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+<pre><code>.dataframe tbody tr th {
+    vertical-align: top;
+}
+
+.dataframe thead th {
+    text-align: right;
+}
+</code></pre>
+<p></style></p>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>id</th>
+      <th>accident_risk</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>517754</td>
+      <td>0.291503</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>517755</td>
+      <td>0.122281</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>517756</td>
+      <td>0.187375</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>517757</td>
+      <td>0.313193</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>517758</td>
+      <td>0.398013</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+]]></content>
+      <categories>
+        <category>学习</category>
       </categories>
       <tags>
         <tag>机器学习</tag>
+        <tag>kaggle比赛</tag>
+        <tag>函数功能记录</tag>
+        <tag>markdown_from_ipynb</tag>
       </tags>
   </entry>
 </search>

@@ -1,0 +1,1114 @@
+<!DOCTYPE html><html lang="zh-CN"><head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 8.0.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/blog_image_3232.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/blog_image_16_16.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha256-VHqXKFhhMxcpubYf9xiWdCiojEbY9NexQ4jh8AxbvcM=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/themes/blue/pace-theme-bounce.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/pace.min.js" integrity="sha256-gqd7YTjg/BtfqWSwsJOvndl0Bxc8gFImLEkXQT8+qj0=" crossorigin="anonymous" defer=""></script>
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"ideaforge.icu","root":"/","images":"/images","scheme":"Pisces","darkmode":true,"version":"8.25.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"codeblock":{"theme":{"light":"default","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":true,"style":"mac"},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownBigIn","coll_header":"slideLeftIn","sidebar":"slideDownBigOut"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":"ture","top_n_per_article":1,"unescape":false,"preload":"ture"}}</script><script src="/js/config.js" defer=""></script>
+
+    <meta name="description" content="第三方库导入和数据集的导入，数据集的查看第三方库的导入和输出对应的版本编号12345678910111213141516171819202122232425import pandas as pdimport osimport matplotlib.pyplot as pltimport seaborn as snsimport numpy as npfrom sklearn.model_selec">
+<meta property="og:type" content="article">
+<meta property="og:title" content="CatBoost道路风险预测学习笔记（对应的ipynb的markdown版本）">
+<meta property="og:url" content="https://ideaforge.icu/2025/10/30/road_rick_new_one/index.html">
+<meta property="og:site_name" content="Yueming &amp; Blog">
+<meta property="og:description" content="第三方库导入和数据集的导入，数据集的查看第三方库的导入和输出对应的版本编号12345678910111213141516171819202122232425import pandas as pdimport osimport matplotlib.pyplot as pltimport seaborn as snsimport numpy as npfrom sklearn.model_selec">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://ideaforge.icu/road_rick_new_one_files/road_rick_new_one_8_0.png">
+<meta property="og:image" content="https://ideaforge.icu/road_rick_new_one_files/road_rick_new_one_9_0.png">
+<meta property="og:image" content="https://ideaforge.icu/road_rick_new_one_files/road_rick_new_one_17_1.png">
+<meta property="og:image" content="https://ideaforge.icu/road_rick_new_one_files/road_rick_new_one_18_0.png">
+<meta property="article:published_time" content="2025-10-29T16:00:00.000Z">
+<meta property="article:modified_time" content="2025-11-03T11:13:39.810Z">
+<meta property="article:author" content="月明">
+<meta property="article:tag" content="kaggle比赛">
+<meta property="article:tag" content="markdown_from_ipynb">
+<meta property="article:tag" content="函数功能记录">
+<meta property="article:tag" content="机器学习">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://ideaforge.icu/road_rick_new_one_files/road_rick_new_one_8_0.png">
+
+
+<link rel="canonical" href="https://ideaforge.icu/2025/10/30/road_rick_new_one/">
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://ideaforge.icu/2025/10/30/road_rick_new_one/","path":"2025/10/30/road_rick_new_one/","title":"CatBoost道路风险预测学习笔记（对应的ipynb的markdown版本）"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>CatBoost道路风险预测学习笔记（对应的ipynb的markdown版本） | Yueming &amp; Blog</title>
+  
+
+
+
+
+
+
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous" defer=""></script>
+<script src="/js/utils.js" defer=""></script><script src="/js/motion.js" defer=""></script><script src="/js/sidebar.js" defer=""></script><script src="/js/next-boot.js" defer=""></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.5.0/search.js" integrity="sha256-xFC6PJ82SL9b3WkGjFavNiA9gm5z6UBxWPiu4CYjptg=" crossorigin="anonymous" defer=""></script>
+<script src="/js/third-party/search/local-search.js" defer=""></script>
+
+
+
+
+
+  <script src="/js/third-party/pace.js" defer=""></script>
+
+
+  
+  <script async="" src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope="" itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+
+<div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">Yueming &amp; Blog</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">人的内心不种满鲜花，就会长满杂草。</p>
+      <img class="custom-logo-image" src="/images/site_logo.jpg" alt="Yueming &amp; Blog">
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜索" role="button">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">8</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">3</span></a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">7</span></a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+      <div class="search-header">
+        <span class="search-icon">
+          <i class="fa fa-search"></i>
+        </span>
+        <div class="search-input-container">
+          <input autocomplete="off" autocapitalize="off" maxlength="80" placeholder="搜索..." spellcheck="false" type="search" class="search-input">
+        </div>
+        <span class="popup-btn-close" role="button">
+          <i class="fa fa-times-circle"></i>
+        </span>
+      </div>
+      <div class="search-result-container">
+        <div class="search-result-icon">
+          <i class="fa fa-spinner fa-pulse fa-5x"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93%E5%AF%BC%E5%85%A5%E5%92%8C%E6%95%B0%E6%8D%AE%E9%9B%86%E7%9A%84%E5%AF%BC%E5%85%A5%EF%BC%8C%E6%95%B0%E6%8D%AE%E9%9B%86%E7%9A%84%E6%9F%A5%E7%9C%8B"><span class="nav-number">1.</span> <span class="nav-text">第三方库导入和数据集的导入，数据集的查看</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93%E7%9A%84%E5%AF%BC%E5%85%A5%E5%92%8C%E8%BE%93%E5%87%BA%E5%AF%B9%E5%BA%94%E7%9A%84%E7%89%88%E6%9C%AC%E7%BC%96%E5%8F%B7"><span class="nav-number">1.1.</span> <span class="nav-text">第三方库的导入和输出对应的版本编号</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%95%B0%E6%8D%AE%E7%9A%84%E5%AF%BC%E5%85%A5%EF%BC%8C%E6%95%B0%E6%8D%AE%E9%9B%86%E7%9A%84%E6%8F%8F%E8%BF%B0%E5%92%8C%E6%B8%85%E6%B4%97"><span class="nav-number">1.2.</span> <span class="nav-text">数据的导入，数据集的描述和清洗</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%95%B0%E6%8D%AE%E7%9A%84%E5%8F%AF%E8%A7%86%E5%8C%96-%E4%BA%86%E8%A7%A3%E6%95%B0%E6%8D%AE%EF%BC%8C%E5%B9%B6%E4%B8%8D%E6%98%AF%E9%80%89%E6%8B%A9%E7%89%B9%E5%BE%81"><span class="nav-number">1.3.</span> <span class="nav-text">数据的可视化(了解数据，并不是选择特征)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%9B%AE%E6%A0%87%E5%88%86%E5%B8%83"><span class="nav-number">1.4.</span> <span class="nav-text">目标分布</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#catboost"><span class="nav-number">2.</span> <span class="nav-text">catboost</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BB%93%E6%9E%9C%E5%8F%AF%E8%A7%86%E5%8C%96"><span class="nav-number">3.</span> <span class="nav-text">结果可视化</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%8F%90%E4%BA%A4%E7%BB%93%E6%9E%9C"><span class="nav-number">4.</span> <span class="nav-text">提交结果</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="月明" src="/images/blog_image.jpg">
+  <p class="site-author-name" itemprop="name">月明</p>
+  <div class="site-description" itemprop="description">多提问多思考 | 做多长期主义</div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">7</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">8</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <a href="/go.html?u=aHR0cHM6Ly9naXRodWIuY29tL2RheGlhb21pbmcyMg" title="GitHub → https://github.com/daxiaoming22" rel="external nofollow noopener noreferrer" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:yueming_dai@smail.nju.edu.cn" title="E-Mail → mailto:yueming_dai@smail.nju.edu.cn" rel="noopener me" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="/go.html?u=aHR0cHM6Ly9zcGFjZS5iaWxpYmlsaS5jb20vMzYxNDYyMzIz" title="哔哩哔哩 → https://space.bilibili.com/361462323" rel="external nofollow noopener noreferrer" target="_blank"><i class="fa-brands fa-bilibili fa-fw"></i>哔哩哔哩</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="/go.html?u=aHR0cHM6Ly9tcC53ZWl4aW4ucXEuY29tL3Mva0doM2QtNkdaNGREc3V3cmEzOFQwQQ" title="微信公众号 → https://mp.weixin.qq.com/s/kGh3d-6GZ4dDsuwra38T0A" rel="external nofollow noopener noreferrer" target="_blank"><i class="fa-brands fa-weixin fa-fw"></i>微信公众号</a>
+      </span>
+  </div>
+  <div class="cc-license animated" itemprop="license">
+    <a href="/go.html?u=aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo" class="cc-opacity" rel="external nofollow noopener noreferrer" target="_blank"><img src="https://cdnjs.cloudflare.com/ajax/libs/creativecommons-vocabulary/2020.11.3/assets/license_badges/small/by_nc_sa.svg" alt="Creative Commons"></a>
+  </div>
+<p id="hitokoto">
+  <a href="#" id="hitokoto_text">:D 获取中...</a>
+</p>
+<script>
+  fetch('https://v1.hitokoto.cn?c=a&c=i&c=j&encode=json&charset=utf-8')
+    .then(response => response.json())
+    .then(data => {
+      const hitokoto = document.querySelector('#hitokoto_text');
+      hitokoto.href = `https://hitokoto.cn?uuid=${data.uuid}`;
+      hitokoto.innerText = `${data.hitokoto}  --${data.from_who}《${data.from}》`;
+    })
+    .catch(console.error);
+</script>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope="" itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://ideaforge.icu/2025/10/30/road_rick_new_one/">
+
+    <span hidden="" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/blog_image.jpg">
+      <meta itemprop="name" content="月明">
+    </span>
+
+    <span hidden="" itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Yueming &amp; Blog">
+      <meta itemprop="description" content="多提问多思考 | 做多长期主义">
+    </span>
+
+    <span hidden="" itemprop="post" itemscope="" itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="CatBoost道路风险预测学习笔记（对应的ipynb的markdown版本） | Yueming &amp; Blog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          CatBoost道路风险预测学习笔记（对应的ipynb的markdown版本）
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2025-10-30 00:00:00" itemprop="dateCreated datePublished" datetime="2025-10-30T00:00:00+08:00">2025-10-30</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2025-11-03 19:13:39" itemprop="dateModified" datetime="2025-11-03T19:13:39+08:00">2025-11-03</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+          <a href="/categories/%E5%AD%A6%E4%B9%A0/" itemprop="url" rel="index"><span itemprop="name">学习</span></a>
+        </span>
+    </span>
+
+  
+    <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span id="busuanzi_value_page_pv"></span>
+    </span>
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>2.6k</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 ≈</span>
+      <span>9 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><h3 id="第三方库导入和数据集的导入，数据集的查看"><a href="#第三方库导入和数据集的导入，数据集的查看" class="headerlink" title="第三方库导入和数据集的导入，数据集的查看"></a>第三方库导入和数据集的导入，数据集的查看</h3><h4 id="第三方库的导入和输出对应的版本编号"><a href="#第三方库的导入和输出对应的版本编号" class="headerlink" title="第三方库的导入和输出对应的版本编号"></a>第三方库的导入和输出对应的版本编号</h4><figure class="highlight python"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"><span class="keyword">import</span> os</span><br><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line"><span class="keyword">import</span> seaborn <span class="keyword">as</span> sns</span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">from</span> sklearn.model_selection <span class="keyword">import</span> train_test_split, cross_val_score</span><br><span class="line"><span class="keyword">from</span> sklearn.metrics <span class="keyword">import</span> mean_squared_error</span><br><span class="line"><span class="keyword">from</span> catboost <span class="keyword">import</span> CatBoostRegressor</span><br><span class="line"><span class="keyword">from</span> IPython.core.display <span class="keyword">import</span> HTML</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">show_object_columns_info</span>(<span class="params">df</span>):</span><br><span class="line">    <span class="string">"显示DataFrame中所有object类型列的信息，包括列名、唯一值数量和所有唯一值"</span></span><br><span class="line">    object_cols = df.select_dtypes(include=[<span class="string">'object'</span>]).columns</span><br><span class="line">    <span class="built_in">print</span>(object_cols)</span><br><span class="line">    <span class="keyword">for</span> col <span class="keyword">in</span> object_cols:</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">f"列名: <span class="subst">{col}</span>"</span>)</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">f'object数量: <span class="subst">{df[col].nunique()}</span>'</span>)</span><br><span class="line">        <span class="built_in">print</span>(df[col].unique())</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(sns.__version__)</span><br><span class="line"><span class="built_in">print</span>(pd.__version__)</span><br><span class="line"><span class="built_in">print</span>(np.__version__)</span><br><span class="line"></span><br></pre></td></tr></tbody></table></figure>
+
+<pre><code>0.13.2
+2.3.3
+1.26.4
+</code></pre>
+<h4 id="数据的导入，数据集的描述和清洗"><a href="#数据的导入，数据集的描述和清洗" class="headerlink" title="数据的导入，数据集的描述和清洗"></a>数据的导入，数据集的描述和清洗</h4><figure class="highlight python"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">train_path = <span class="string">"../../datasets/competition_datas/Accident_Risk/train.csv"</span></span><br><span class="line">test_path = <span class="string">"../../datasets/competition_datas/Accident_Risk/test.csv"</span></span><br><span class="line"></span><br><span class="line">train_ds = pd.read_csv(train_path) <span class="comment">#ds: dataset</span></span><br><span class="line"><span class="comment">#train_ds.info()</span></span><br><span class="line"><span class="comment">#print(train_ds.shape)</span></span><br><span class="line"><span class="comment">#train_ds.describe()</span></span><br><span class="line">train_ds.head()</span><br><span class="line"><span class="comment"># 使用函数显示object类型列的信息</span></span><br><span class="line"><span class="comment">#show_object_columns_info(train_ds)</span></span><br><span class="line">    </span><br></pre></td></tr></tbody></table></figure>
+
+
+
+
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+<pre><code>.dataframe tbody tr th {
+    vertical-align: top;
+}
+
+.dataframe thead th {
+    text-align: right;
+}
+</code></pre>
+<p></style><p></p>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>id</th>
+      <th>road_type</th>
+      <th>num_lanes</th>
+      <th>curvature</th>
+      <th>speed_limit</th>
+      <th>lighting</th>
+      <th>weather</th>
+      <th>road_signs_present</th>
+      <th>public_road</th>
+      <th>time_of_day</th>
+      <th>holiday</th>
+      <th>school_season</th>
+      <th>num_reported_accidents</th>
+      <th>accident_risk</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0</td>
+      <td>urban</td>
+      <td>2</td>
+      <td>0.06</td>
+      <td>35</td>
+      <td>daylight</td>
+      <td>rainy</td>
+      <td>False</td>
+      <td>True</td>
+      <td>afternoon</td>
+      <td>False</td>
+      <td>True</td>
+      <td>1</td>
+      <td>0.13</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1</td>
+      <td>urban</td>
+      <td>4</td>
+      <td>0.99</td>
+      <td>35</td>
+      <td>daylight</td>
+      <td>clear</td>
+      <td>True</td>
+      <td>False</td>
+      <td>evening</td>
+      <td>True</td>
+      <td>True</td>
+      <td>0</td>
+      <td>0.35</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>2</td>
+      <td>rural</td>
+      <td>4</td>
+      <td>0.63</td>
+      <td>70</td>
+      <td>dim</td>
+      <td>clear</td>
+      <td>False</td>
+      <td>True</td>
+      <td>morning</td>
+      <td>True</td>
+      <td>False</td>
+      <td>2</td>
+      <td>0.30</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>3</td>
+      <td>highway</td>
+      <td>4</td>
+      <td>0.07</td>
+      <td>35</td>
+      <td>dim</td>
+      <td>rainy</td>
+      <td>True</td>
+      <td>True</td>
+      <td>morning</td>
+      <td>False</td>
+      <td>False</td>
+      <td>1</td>
+      <td>0.21</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>4</td>
+      <td>rural</td>
+      <td>1</td>
+      <td>0.58</td>
+      <td>60</td>
+      <td>daylight</td>
+      <td>foggy</td>
+      <td>False</td>
+      <td>False</td>
+      <td>evening</td>
+      <td>True</td>
+      <td>False</td>
+      <td>1</td>
+      <td>0.56</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+<figure class="highlight python"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">test_ds = pd.read_csv(test_path)</span><br><span class="line"><span class="comment">#print(test_ds.info())</span></span><br><span class="line">test_ds.head()</span><br></pre></td></tr></tbody></table></figure>
+
+
+
+
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+<pre><code>.dataframe tbody tr th {
+    vertical-align: top;
+}
+
+.dataframe thead th {
+    text-align: right;
+}
+</code></pre>
+<p></style><p></p>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>id</th>
+      <th>road_type</th>
+      <th>num_lanes</th>
+      <th>curvature</th>
+      <th>speed_limit</th>
+      <th>lighting</th>
+      <th>weather</th>
+      <th>road_signs_present</th>
+      <th>public_road</th>
+      <th>time_of_day</th>
+      <th>holiday</th>
+      <th>school_season</th>
+      <th>num_reported_accidents</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>517754</td>
+      <td>highway</td>
+      <td>2</td>
+      <td>0.34</td>
+      <td>45</td>
+      <td>night</td>
+      <td>clear</td>
+      <td>True</td>
+      <td>True</td>
+      <td>afternoon</td>
+      <td>True</td>
+      <td>True</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>517755</td>
+      <td>urban</td>
+      <td>3</td>
+      <td>0.04</td>
+      <td>45</td>
+      <td>dim</td>
+      <td>foggy</td>
+      <td>True</td>
+      <td>False</td>
+      <td>afternoon</td>
+      <td>True</td>
+      <td>False</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>517756</td>
+      <td>urban</td>
+      <td>2</td>
+      <td>0.59</td>
+      <td>35</td>
+      <td>dim</td>
+      <td>clear</td>
+      <td>True</td>
+      <td>False</td>
+      <td>afternoon</td>
+      <td>True</td>
+      <td>True</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>517757</td>
+      <td>rural</td>
+      <td>4</td>
+      <td>0.95</td>
+      <td>35</td>
+      <td>daylight</td>
+      <td>rainy</td>
+      <td>False</td>
+      <td>False</td>
+      <td>afternoon</td>
+      <td>False</td>
+      <td>False</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>517758</td>
+      <td>highway</td>
+      <td>2</td>
+      <td>0.86</td>
+      <td>35</td>
+      <td>daylight</td>
+      <td>clear</td>
+      <td>True</td>
+      <td>False</td>
+      <td>evening</td>
+      <td>False</td>
+      <td>True</td>
+      <td>3</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+<h4 id="数据的可视化-了解数据，并不是选择特征"><a href="#数据的可视化-了解数据，并不是选择特征" class="headerlink" title="数据的可视化(了解数据，并不是选择特征)"></a>数据的可视化(了解数据，并不是选择特征)</h4><p>由于上述数据并没有缺失值，因此我们不用处理缺失值.直接使用可视化工具进行可视化分析.</p>
+<figure class="highlight python"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">y = train_ds[<span class="string">'accident_risk'</span>]</span><br><span class="line">X = train_ds.drop(columns=[<span class="string">'accident_risk'</span>, <span class="string">'id'</span>],axis=<span class="number">1</span>)</span><br><span class="line"></span><br><span class="line">X.info()</span><br><span class="line">display(X.head())</span><br><span class="line">X_num = X.select_dtypes(include=[<span class="string">'int64'</span>, <span class="string">'float64'</span>])</span><br></pre></td></tr></tbody></table></figure>
+
+<pre><code>&lt;class 'pandas.core.frame.DataFrame'&gt;
+RangeIndex: 517754 entries, 0 to 517753
+Data columns (total 12 columns):
+ #   Column                  Non-Null Count   Dtype  
+---  ------                  --------------   -----  
+ 0   road_type               517754 non-null  object 
+ 1   num_lanes               517754 non-null  int64  
+ 2   curvature               517754 non-null  float64
+ 3   speed_limit             517754 non-null  int64  
+ 4   lighting                517754 non-null  object 
+ 5   weather                 517754 non-null  object 
+ 6   road_signs_present      517754 non-null  bool   
+ 7   public_road             517754 non-null  bool   
+ 8   time_of_day             517754 non-null  object 
+ 9   holiday                 517754 non-null  bool   
+ 10  school_season           517754 non-null  bool   
+ 11  num_reported_accidents  517754 non-null  int64  
+dtypes: bool(4), float64(1), int64(3), object(4)
+memory usage: 33.6+ MB
+</code></pre>
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+<pre><code>.dataframe tbody tr th {
+    vertical-align: top;
+}
+
+.dataframe thead th {
+    text-align: right;
+}
+</code></pre>
+<p></style><p></p>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>road_type</th>
+      <th>num_lanes</th>
+      <th>curvature</th>
+      <th>speed_limit</th>
+      <th>lighting</th>
+      <th>weather</th>
+      <th>road_signs_present</th>
+      <th>public_road</th>
+      <th>time_of_day</th>
+      <th>holiday</th>
+      <th>school_season</th>
+      <th>num_reported_accidents</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>urban</td>
+      <td>2</td>
+      <td>0.06</td>
+      <td>35</td>
+      <td>daylight</td>
+      <td>rainy</td>
+      <td>False</td>
+      <td>True</td>
+      <td>afternoon</td>
+      <td>False</td>
+      <td>True</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>urban</td>
+      <td>4</td>
+      <td>0.99</td>
+      <td>35</td>
+      <td>daylight</td>
+      <td>clear</td>
+      <td>True</td>
+      <td>False</td>
+      <td>evening</td>
+      <td>True</td>
+      <td>True</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>rural</td>
+      <td>4</td>
+      <td>0.63</td>
+      <td>70</td>
+      <td>dim</td>
+      <td>clear</td>
+      <td>False</td>
+      <td>True</td>
+      <td>morning</td>
+      <td>True</td>
+      <td>False</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>highway</td>
+      <td>4</td>
+      <td>0.07</td>
+      <td>35</td>
+      <td>dim</td>
+      <td>rainy</td>
+      <td>True</td>
+      <td>True</td>
+      <td>morning</td>
+      <td>False</td>
+      <td>False</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>rural</td>
+      <td>1</td>
+      <td>0.58</td>
+      <td>60</td>
+      <td>daylight</td>
+      <td>foggy</td>
+      <td>False</td>
+      <td>False</td>
+      <td>evening</td>
+      <td>True</td>
+      <td>False</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+<h4 id="目标分布"><a href="#目标分布" class="headerlink" title="目标分布"></a>目标分布</h4><figure class="highlight python"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">plt.figure()</span><br><span class="line">sns.histplot(y, kde=<span class="literal">True</span>, bins=<span class="number">50</span>)</span><br><span class="line">plt.title(<span class="string">'Distribution of Accident Risk'</span>)</span><br><span class="line">plt.xlabel(<span class="string">'Accident Risk'</span>)</span><br><span class="line">plt.show()</span><br></pre></td></tr></tbody></table></figure>
+
+
+<p><img src="/road_rick_new_one_files/road_rick_new_one_8_0.png" alt="png"></p>
+<figure class="highlight python"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">X_corr = X_num.corr()</span><br><span class="line">plt.figure()</span><br><span class="line">sns.heatmap(X_corr, annot=<span class="literal">True</span>, cmap=<span class="string">'viridis'</span>, center=<span class="number">0</span>, fmt=<span class="string">'.2f'</span>)</span><br><span class="line">plt.title(<span class="string">'Correlation Heatmap'</span>)</span><br><span class="line">plt.show()</span><br></pre></td></tr></tbody></table></figure>
+
+
+<p><img src="/road_rick_new_one_files/road_rick_new_one_9_0.png" alt="png"></p>
+<h3 id="catboost"><a href="#catboost" class="headerlink" title="catboost"></a>catboost</h3><figure class="highlight python"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#display(X.head())</span></span><br><span class="line"><span class="comment">#display(y.head())</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#print(X.dtypes)</span></span><br><span class="line"><span class="comment"># 将X中的bool类型转化为object(str)类型,除了数值类型</span></span><br><span class="line">X_bool_cols = X.select_dtypes(include=[<span class="string">'bool'</span>]).columns</span><br><span class="line"><span class="built_in">print</span>(X_bool_cols)</span><br><span class="line"></span><br><span class="line"><span class="comment">#print(X_bool_cols)</span></span><br><span class="line"><span class="keyword">for</span> col <span class="keyword">in</span> X_bool_cols:</span><br><span class="line">    X[col] = X[col].astype(<span class="built_in">str</span>)</span><br><span class="line">    test_ds[col] = test_ds[col].astype(<span class="built_in">str</span>)</span><br><span class="line">    </span><br><span class="line">cat_features = X.select_dtypes(include=[<span class="string">'object'</span>]).columns.tolist()</span><br><span class="line"><span class="built_in">print</span>(cat_features)</span><br><span class="line"><span class="comment">#print(X.dtypes)</span></span><br></pre></td></tr></tbody></table></figure>
+
+<pre><code>Index(['road_signs_present', 'public_road', 'holiday', 'school_season'], dtype='object')
+['road_type', 'lighting', 'weather', 'road_signs_present', 'public_road', 'time_of_day', 'holiday', 'school_season']
+</code></pre>
+<figure class="highlight python"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 分割数据集</span></span><br><span class="line">X_train, X_val, y_train, y_val = train_test_split(X, y, test_size=<span class="number">0.2</span>, random_state=<span class="number">42</span>, shuffle=<span class="literal">True</span>, stratify=y)</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(X_train.shape, X_val.shape, y_train.shape, y_val.shape)</span><br><span class="line"></span><br></pre></td></tr></tbody></table></figure>
+
+<pre><code>(414203, 12) (103551, 12) (414203,) (103551,)
+</code></pre>
+<figure class="highlight python"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">params = {</span><br><span class="line">    <span class="string">'iterations'</span>: <span class="number">1000</span>, <span class="comment"># 迭代次数</span></span><br><span class="line">    <span class="string">'learning_rate'</span>: <span class="number">0.1</span>, <span class="comment"># 学习率</span></span><br><span class="line">    <span class="string">'depth'</span>: <span class="number">6</span>, <span class="comment"># 树的深度</span></span><br><span class="line">    <span class="string">'cat_features'</span>: cat_features, <span class="comment"># 分类特征</span></span><br><span class="line">    <span class="string">'random_seed'</span>: <span class="number">42</span>, <span class="comment"># 随机种子</span></span><br><span class="line">    <span class="string">'loss_function'</span>: <span class="string">'RMSE'</span>, <span class="comment"># 损失函数</span></span><br><span class="line">    <span class="string">'verbose'</span>: <span class="number">100</span>, <span class="comment"># 每100次迭代打印一次信息</span></span><br><span class="line">    <span class="string">'early_stopping_rounds'</span>: <span class="number">50</span>, <span class="comment"># 早停轮数</span></span><br><span class="line">    <span class="string">"task_type"</span>: <span class="string">"GPU"</span>, <span class="comment"># 启用 GPU </span></span><br><span class="line">    <span class="string">"devices"</span>: <span class="string">"0"</span> <span class="comment"># 指定 GPU 设备</span></span><br><span class="line">}</span><br><span class="line"></span><br><span class="line">Catboost_model = CatBoostRegressor(**params)</span><br><span class="line">Catboost_model.fit(X, y, eval_set=(X_val, y_val)) <span class="comment"># eval_set 用于监控模型在验证集上的性能 没有则不会显示性能表现</span></span><br><span class="line"></span><br></pre></td></tr></tbody></table></figure>
+
+<pre><code>0:	learn: 0.1523865	test: 0.1523846	best: 0.1523846 (0)	total: 94.3ms	remaining: 1m 34s
+100:	learn: 0.0564065	test: 0.0564811	best: 0.0564811 (100)	total: 8.16s	remaining: 1m 12s
+200:	learn: 0.0561983	test: 0.0563075	best: 0.0563075 (200)	total: 17s	remaining: 1m 7s
+300:	learn: 0.0560877	test: 0.0562139	best: 0.0562139 (300)	total: 26s	remaining: 1m
+400:	learn: 0.0560011	test: 0.0561416	best: 0.0561416 (400)	total: 34.5s	remaining: 51.5s
+500:	learn: 0.0559323	test: 0.0560808	best: 0.0560808 (500)	total: 43.1s	remaining: 42.9s
+600:	learn: 0.0558682	test: 0.0560278	best: 0.0560278 (600)	total: 52.6s	remaining: 34.9s
+700:	learn: 0.0558153	test: 0.0559829	best: 0.0559829 (700)	total: 1m 1s	remaining: 26.2s
+800:	learn: 0.0557594	test: 0.0559401	best: 0.0559401 (800)	total: 1m 10s	remaining: 17.4s
+900:	learn: 0.0557073	test: 0.0559001	best: 0.0559001 (899)	total: 1m 19s	remaining: 8.72s
+999:	learn: 0.0556659	test: 0.0558659	best: 0.0558659 (999)	total: 1m 29s	remaining: 0us
+bestTest = 0.05586587195
+bestIteration = 999
+
+
+
+
+
+&lt;catboost.core.CatBoostRegressor at 0x257b5932e50&gt;
+</code></pre>
+<figure class="highlight python"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Make predictions on validation set </span></span><br><span class="line">y_pred = Catboost_model.predict(X_val)  </span><br><span class="line"><span class="comment"># Calculate RMSE </span></span><br><span class="line">val_rmse = mean_squared_error(y_val, y_pred)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">f"Validation RMSE: <span class="subst">{val_rmse:<span class="number">.4</span>f}</span>"</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># Cross-validation </span></span><br><span class="line">cv_scores = cross_val_score(Catboost_model, X, y, cv=<span class="number">5</span>, scoring=<span class="string">'neg_mean_squared_error'</span>)  <span class="comment"># 5折交叉验证 # 计算每个折的 负均方误差</span></span><br><span class="line">cv_rmse = np.sqrt(-cv_scores)  <span class="comment"># 计算每个折的 RMSE 并取平方根</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">f"Cross-validation RMSE: <span class="subst">{cv_rmse.mean():<span class="number">.4</span>f}</span> (+/- <span class="subst">{cv_rmse.std() * <span class="number">2</span>:<span class="number">.4</span>f}</span>)"</span>)</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></tbody></table></figure>
+
+<pre><code>Validation RMSE: 0.0031
+0:	learn: 0.1523602	total: 74.6ms	remaining: 1m 14s
+100:	learn: 0.0563163	total: 7.29s	remaining: 1m 4s
+200:	learn: 0.0560969	total: 14.1s	remaining: 56.1s
+300:	learn: 0.0559734	total: 20.9s	remaining: 48.6s
+400:	learn: 0.0558743	total: 29.3s	remaining: 43.8s
+500:	learn: 0.0557934	total: 36.8s	remaining: 36.7s
+600:	learn: 0.0557296	total: 45.4s	remaining: 30.1s
+700:	learn: 0.0556612	total: 53s	remaining: 22.6s
+800:	learn: 0.0556026	total: 1m	remaining: 15s
+900:	learn: 0.0555548	total: 1m 10s	remaining: 7.79s
+999:	learn: 0.0555088	total: 1m 32s	remaining: 0us
+0:	learn: 0.1524152	total: 78.6ms	remaining: 1m 18s
+100:	learn: 0.0564793	total: 10.3s	remaining: 1m 31s
+200:	learn: 0.0562581	total: 21.2s	remaining: 1m 24s
+300:	learn: 0.0561289	total: 33.6s	remaining: 1m 17s
+400:	learn: 0.0560335	total: 44s	remaining: 1m 5s
+500:	learn: 0.0559565	total: 57.6s	remaining: 57.3s
+600:	learn: 0.0558867	total: 1m 13s	remaining: 48.6s
+700:	learn: 0.0558220	total: 1m 26s	remaining: 36.9s
+800:	learn: 0.0557681	total: 1m 38s	remaining: 24.5s
+900:	learn: 0.0557146	total: 1m 50s	remaining: 12.2s
+999:	learn: 0.0556690	total: 2m 4s	remaining: 0us
+0:	learn: 0.1523094	total: 71.2ms	remaining: 1m 11s
+100:	learn: 0.0563526	total: 11.3s	remaining: 1m 40s
+200:	learn: 0.0561467	total: 23.4s	remaining: 1m 33s
+300:	learn: 0.0560148	total: 35.4s	remaining: 1m 22s
+400:	learn: 0.0559182	total: 49.6s	remaining: 1m 14s
+500:	learn: 0.0558331	total: 1m 2s	remaining: 1m 2s
+600:	learn: 0.0557582	total: 1m 16s	remaining: 50.5s
+700:	learn: 0.0556941	total: 1m 28s	remaining: 37.7s
+800:	learn: 0.0556372	total: 1m 39s	remaining: 24.8s
+900:	learn: 0.0555797	total: 1m 50s	remaining: 12.2s
+999:	learn: 0.0555314	total: 2m 1s	remaining: 0us
+0:	learn: 0.1524123	total: 80ms	remaining: 1m 19s
+100:	learn: 0.0563271	total: 8.31s	remaining: 1m 13s
+200:	learn: 0.0561321	total: 19.8s	remaining: 1m 18s
+300:	learn: 0.0560138	total: 35.6s	remaining: 1m 22s
+400:	learn: 0.0559252	total: 48.3s	remaining: 1m 12s
+500:	learn: 0.0558532	total: 59.8s	remaining: 59.6s
+600:	learn: 0.0557891	total: 1m 11s	remaining: 47.2s
+700:	learn: 0.0557296	total: 1m 23s	remaining: 35.5s
+800:	learn: 0.0556794	total: 1m 35s	remaining: 23.7s
+900:	learn: 0.0556325	total: 1m 45s	remaining: 11.6s
+999:	learn: 0.0555885	total: 1m 55s	remaining: 0us
+0:	learn: 0.1523530	total: 80.1ms	remaining: 1m 19s
+100:	learn: 0.0564252	total: 10.3s	remaining: 1m 31s
+200:	learn: 0.0562220	total: 22.4s	remaining: 1m 29s
+300:	learn: 0.0561025	total: 31.7s	remaining: 1m 13s
+400:	learn: 0.0559980	total: 41.2s	remaining: 1m 1s
+500:	learn: 0.0559200	total: 51.8s	remaining: 51.6s
+600:	learn: 0.0558540	total: 1m 1s	remaining: 40.9s
+700:	learn: 0.0557899	total: 1m 14s	remaining: 31.9s
+800:	learn: 0.0557331	total: 1m 25s	remaining: 21.2s
+900:	learn: 0.0556776	total: 1m 39s	remaining: 11s
+999:	learn: 0.0556246	total: 1m 52s	remaining: 0us
+Cross-validation RMSE: 0.0561 (+/- 0.0005)
+</code></pre>
+<figure class="highlight python"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Feature Importance</span></span><br><span class="line">feature_importance = Catboost_model.get_feature_importance()  <span class="comment"># index类型</span></span><br><span class="line"><span class="comment">#print(feature_importance)</span></span><br><span class="line">feature_names = X.columns <span class="comment"># ndarray类型</span></span><br><span class="line"><span class="comment">#print(feature_names)</span></span><br><span class="line">importance_df = pd.DataFrame({</span><br><span class="line">    <span class="string">'feature'</span>: feature_names,</span><br><span class="line">    <span class="string">'importance'</span>: feature_importance</span><br><span class="line">}).sort_values(<span class="string">'importance'</span>, ascending=<span class="literal">False</span>) <span class="comment"># 按重要性降序排序</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="string">"\nTop 10 Most Important Features:"</span>)</span><br><span class="line"><span class="built_in">print</span>(importance_df.head(<span class="number">10</span>))</span><br></pre></td></tr></tbody></table></figure>
+
+<pre><code>[2.68670072e-02 5.57111260e-02 1.53970212e+01 3.71319477e+01
+ 3.42504222e+01 9.16493355e+00 2.00611428e-02 4.68708926e-02
+ 2.95851141e-02 5.71107703e-02 1.50494424e-02 3.80441977e+00]
+Index(['road_type', 'num_lanes', 'curvature', 'speed_limit', 'lighting',
+       'weather', 'road_signs_present', 'public_road', 'time_of_day',
+       'holiday', 'school_season', 'num_reported_accidents'],
+      dtype='object')
+
+Top 10 Most Important Features:
+                   feature  importance
+3              speed_limit   37.131948
+4                 lighting   34.250422
+2                curvature   15.397021
+5                  weather    9.164934
+11  num_reported_accidents    3.804420
+9                  holiday    0.057111
+1                num_lanes    0.055711
+7              public_road    0.046871
+8              time_of_day    0.029585
+0                road_type    0.026867
+</code></pre>
+<h3 id="结果可视化"><a href="#结果可视化" class="headerlink" title="结果可视化"></a>结果可视化</h3><figure class="highlight python"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></tbody></table></figure>
+
+<pre><code>C:\Windows\Temp\ipykernel_27588\3889204982.py:3: FutureWarning: 
+
+Passing `palette` without assigning `hue` is deprecated and will be removed in v0.14.0. Assign the `y` variable to `hue` and set `legend=False` for the same effect.
+
+  sns.barplot(data=importance_df.head(10), x='importance', y='feature', palette='viridis')
+</code></pre>
+<p><img src="/road_rick_new_one_files/road_rick_new_one_17_1.png" alt="png"></p>
+<figure class="highlight python"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Plot actual vs predicted values</span></span><br><span class="line">plt.scatter(y_val, y_pred, alpha=<span class="number">0.1</span>, marker=<span class="string">'.'</span>, s=<span class="number">5</span>)</span><br><span class="line">plt.plot([y_val.<span class="built_in">min</span>(), y_val.<span class="built_in">max</span>()], [y_val.<span class="built_in">min</span>(), y_val.<span class="built_in">max</span>()], <span class="string">'r--'</span>, lw=<span class="number">2</span>)</span><br><span class="line">plt.xlabel(<span class="string">'Actual Values'</span>)</span><br><span class="line">plt.ylabel(<span class="string">'Predicted Values'</span>)</span><br><span class="line">plt.title(<span class="string">'Actual vs Predicted Values'</span>)</span><br><span class="line">plt.show()</span><br></pre></td></tr></tbody></table></figure>
+
+
+<p><img src="/road_rick_new_one_files/road_rick_new_one_18_0.png" alt="png"></p>
+<h3 id="提交结果"><a href="#提交结果" class="headerlink" title="提交结果"></a>提交结果</h3><figure class="highlight python"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Prepare test data (excluding the id column for prediction)</span></span><br><span class="line"></span><br><span class="line">test_features = test_ds.drop(<span class="string">'id'</span>, axis=<span class="number">1</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># Make predictions on test set</span></span><br><span class="line">test_predictions = Catboost_model.predict(test_features)</span><br><span class="line"></span><br><span class="line"><span class="comment"># Create submission file</span></span><br><span class="line">submission = pd.DataFrame({</span><br><span class="line">    <span class="string">'id'</span>: test_ds[<span class="string">'id'</span>],</span><br><span class="line">    <span class="string">'accident_risk'</span>: test_predictions</span><br><span class="line">})</span><br><span class="line"></span><br><span class="line"><span class="comment"># Save submission file</span></span><br><span class="line">submission.to_csv(<span class="string">'submission.csv'</span>, index=<span class="literal">False</span>)</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="string">f"Submission shape: <span class="subst">{submission.shape}</span>"</span>)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">"\nFirst 5 rows of submission:"</span>)</span><br><span class="line">display(submission.head())</span><br><span class="line"></span><br></pre></td></tr></tbody></table></figure>
+
+<pre><code>Submission shape: (172585, 2)
+
+First 5 rows of submission:
+</code></pre>
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+<pre><code>.dataframe tbody tr th {
+    vertical-align: top;
+}
+
+.dataframe thead th {
+    text-align: right;
+}
+</code></pre>
+<p></style><p></p>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>id</th>
+      <th>accident_risk</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>517754</td>
+      <td>0.291503</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>517755</td>
+      <td>0.122281</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>517756</td>
+      <td>0.187375</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>517757</td>
+      <td>0.313193</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>517758</td>
+      <td>0.398013</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          
+
+<div class="post-copyright">
+<ul>
+  <li class="post-copyright-author">
+      <strong>原作者： </strong>yueming
+  </li>
+  <li class="post-copyright-link">
+      <strong>本文链接：</strong>
+      <a href="https://ideaforge.icu/2025/10/30/road_rick_new_one/" title="CatBoost道路风险预测学习笔记（对应的ipynb的markdown版本）">https://ideaforge.icu/2025/10/30/road_rick_new_one/</a>
+  </li>
+  <li class="post-copyright-license">
+      <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="/go.html?u=aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo" rel="external nofollow noopener noreferrer" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+          <div class="post-tags">
+              <a href="/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/" rel="tag"><i class="fa fa-tag"></i> 机器学习</a>
+              <a href="/tags/kaggle%E6%AF%94%E8%B5%9B/" rel="tag"><i class="fa fa-tag"></i> kaggle比赛</a>
+              <a href="/tags/%E5%87%BD%E6%95%B0%E5%8A%9F%E8%83%BD%E8%AE%B0%E5%BD%95/" rel="tag"><i class="fa fa-tag"></i> 函数功能记录</a>
+              <a href="/tags/markdown-from-ipynb/" rel="tag"><i class="fa fa-tag"></i> markdown_from_ipynb</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2025/10/29/learning_thought/" rel="prev" title="ml_learning_thought">
+                  <i class="fa fa-angle-left"></i> ml_learning_thought
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/2025/10/30/Predicting%20Road%20Accident%20Risk/" rel="next" title="CatBoost道路风险预测学习笔记">
+                  CatBoost道路风险预测学习笔记 <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+    
+  
+  <div class="comments giscus-container">
+  </div>
+  
+  
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    © 
+    <span itemprop="copyrightYear">2025</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">月明</span>
+  </div>
+<div class="wordcount">
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-line"></i>
+    </span>
+    <span title="站点总字数">6k</span>
+  </span>
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    <span title="站点阅读时长">21 分钟</span>
+  </span>
+</div>
+<div class="busuanzi-count">
+    <span class="post-meta-item" id="busuanzi_container_site_uv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+
+<!--
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/pisces/" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
+  </div>
+-->
+
+
+<!-- <br /> -->
+<!-- 网站运行时间的设置 -->
+<span id="timeDate">载入天数...</span>
+<!-- <span id="times">载入时分秒...</span> -->
+<script>
+    var now = new Date();
+    function createtime() {
+        var grt= new Date("10/23/2025 8:00:00");//此处修改你的建站时间或者网站上线时间
+        now.setTime(now.getTime()+250);
+        days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days);
+        hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours);
+        if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum);
+        mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;}
+        seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
+        snum = Math.round(seconds); 
+        if(String(snum).length ==1 ){snum = "0" + snum;}
+        // var times = document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒";
+        document.getElementById("timeDate").innerHTML = "本站已安全运行 "+dnum+" 天 "+hnum + " 小时 " + mnum + " 分 " + snum + " 秒";
+    }
+setInterval("createtime()",250);
+</script>
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+<script class="next-config" data-name="giscus" type="application/json">{"enable":true,"repo":"daxiaoming22/daxiaoming22.github.io","repo_id":"R_kgDOQG7XnQ","category":"Announcements","category_id":"DIC_kwDOQG7Xnc4CxAjd","mapping":"title","strict":0,"reactions_enabled":1,"emit_metadata":0,"theme":"light","lang":"zh-CN","crossorigin":"anonymous","input_position":"bottom","loading":"lazy"}</script>
+
+<script>
+document.addEventListener('page:loaded', () => {
+  if (!CONFIG.page.comments) return;
+
+  NexT.utils.loadComments('.giscus-container')
+    .then(() => NexT.utils.getScript('https://giscus.app/client.js', {
+      attributes: {
+        async                   : true,
+        crossOrigin             : 'anonymous',
+        'data-repo'             : CONFIG.giscus.repo,
+        'data-repo-id'          : CONFIG.giscus.repo_id,
+        'data-category'         : CONFIG.giscus.category,
+        'data-category-id'      : CONFIG.giscus.category_id,
+        'data-mapping'          : CONFIG.giscus.mapping,
+        'data-strict'           : CONFIG.giscus.strict,
+        'data-reactions-enabled': CONFIG.giscus.reactions_enabled,
+        'data-emit-metadata'    : CONFIG.giscus.emit_metadata,
+        'data-theme'            : CONFIG.giscus.theme,
+        'data-lang'             : CONFIG.giscus.lang,
+        'data-input-position'   : CONFIG.giscus.input_position,
+        'data-loading'          : CONFIG.giscus.loading
+      },
+      parentNode: document.querySelector('.giscus-container')
+    }));
+});
+</script>
+
+
+
+</body></html>
