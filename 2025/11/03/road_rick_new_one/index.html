@@ -23,29 +23,29 @@
     <meta name="description" content="第三方库导入和数据集的导入，数据集的查看第三方库的导入和输出对应的版本编号12345678910111213141516171819202122232425import pandas as pdimport osimport matplotlib.pyplot as pltimport seaborn as snsimport numpy as npfrom sklearn.model_selec">
 <meta property="og:type" content="article">
 <meta property="og:title" content="CatBoost道路风险预测学习笔记（对应的ipynb的markdown版本）">
-<meta property="og:url" content="https://ideaforge.icu/2025/10/30/road_rick_new_one/index.html">
+<meta property="og:url" content="https://ideaforge.icu/2025/11/03/road_rick_new_one/index.html">
 <meta property="og:site_name" content="Yueming &amp; Blog">
 <meta property="og:description" content="第三方库导入和数据集的导入，数据集的查看第三方库的导入和输出对应的版本编号12345678910111213141516171819202122232425import pandas as pdimport osimport matplotlib.pyplot as pltimport seaborn as snsimport numpy as npfrom sklearn.model_selec">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://ideaforge.icu/road_rick_new_one_files/road_rick_new_one_8_0.png">
-<meta property="og:image" content="https://ideaforge.icu/road_rick_new_one_files/road_rick_new_one_9_0.png">
-<meta property="og:image" content="https://ideaforge.icu/road_rick_new_one_files/road_rick_new_one_17_1.png">
-<meta property="og:image" content="https://ideaforge.icu/road_rick_new_one_files/road_rick_new_one_18_0.png">
-<meta property="article:published_time" content="2025-10-29T16:00:00.000Z">
-<meta property="article:modified_time" content="2025-11-03T11:13:39.810Z">
+<meta property="og:image" content="https://ideaforge.icu/images/road_rick_new_one_8_0.png">
+<meta property="og:image" content="https://ideaforge.icu/images/road_rick_new_one_9_0.png">
+<meta property="og:image" content="https://ideaforge.icu/images/road_rick_new_one_17_1.png">
+<meta property="og:image" content="https://ideaforge.icu/images/road_rick_new_one_18_0.png">
+<meta property="article:published_time" content="2025-11-02T16:00:00.000Z">
+<meta property="article:modified_time" content="2025-11-03T11:27:50.731Z">
 <meta property="article:author" content="月明">
 <meta property="article:tag" content="kaggle比赛">
 <meta property="article:tag" content="markdown_from_ipynb">
 <meta property="article:tag" content="函数功能记录">
 <meta property="article:tag" content="机器学习">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://ideaforge.icu/road_rick_new_one_files/road_rick_new_one_8_0.png">
+<meta name="twitter:image" content="https://ideaforge.icu/images/road_rick_new_one_8_0.png">
 
 
-<link rel="canonical" href="https://ideaforge.icu/2025/10/30/road_rick_new_one/">
+<link rel="canonical" href="https://ideaforge.icu/2025/11/03/road_rick_new_one/">
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://ideaforge.icu/2025/10/30/road_rick_new_one/","path":"2025/10/30/road_rick_new_one/","title":"CatBoost道路风险预测学习笔记（对应的ipynb的markdown版本）"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://ideaforge.icu/2025/11/03/road_rick_new_one/","path":"2025/11/03/road_rick_new_one/","title":"CatBoost道路风险预测学习笔记（对应的ipynb的markdown版本）"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
 <title>CatBoost道路风险预测学习笔记（对应的ipynb的markdown版本） | Yueming &amp; Blog</title>
@@ -121,7 +121,7 @@
 
 
 <nav class="site-nav">
-  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">8</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">3</span></a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">7</span></a></li>
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">11</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">3</span></a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">8</span></a></li>
       <li class="menu-item menu-item-search">
         <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
         </a>
@@ -184,7 +184,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">7</span>
+          <span class="site-state-item-count">8</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -195,7 +195,7 @@
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/tags/">
-        <span class="site-state-item-count">8</span>
+        <span class="site-state-item-count">11</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -252,7 +252,7 @@
   
 
   <article itemscope="" itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://ideaforge.icu/2025/10/30/road_rick_new_one/">
+    <link itemprop="mainEntityOfPage" href="https://ideaforge.icu/2025/11/03/road_rick_new_one/">
 
     <span hidden="" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/blog_image.jpg">
@@ -280,15 +280,9 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">发表于</span>
+      
 
-      <time title="创建时间：2025-10-30 00:00:00" itemprop="dateCreated datePublished" datetime="2025-10-30T00:00:00+08:00">2025-10-30</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2025-11-03 19:13:39" itemprop="dateModified" datetime="2025-11-03T19:13:39+08:00">2025-11-03</time>
+      <time title="创建时间：2025-11-03 00:00:00 / 修改时间：19:27:50" itemprop="dateCreated datePublished" datetime="2025-11-03T00:00:00+08:00">2025-11-03</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -736,11 +730,11 @@ memory usage: 33.6+ MB
 <h4 id="目标分布"><a href="#目标分布" class="headerlink" title="目标分布"></a>目标分布</h4><figure class="highlight python"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">plt.figure()</span><br><span class="line">sns.histplot(y, kde=<span class="literal">True</span>, bins=<span class="number">50</span>)</span><br><span class="line">plt.title(<span class="string">'Distribution of Accident Risk'</span>)</span><br><span class="line">plt.xlabel(<span class="string">'Accident Risk'</span>)</span><br><span class="line">plt.show()</span><br></pre></td></tr></tbody></table></figure>
 
 
-<p><img src="/road_rick_new_one_files/road_rick_new_one_8_0.png" alt="png"></p>
+<p><img src="/images/road_rick_new_one_8_0.png" alt="png"></p>
 <figure class="highlight python"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">X_corr = X_num.corr()</span><br><span class="line">plt.figure()</span><br><span class="line">sns.heatmap(X_corr, annot=<span class="literal">True</span>, cmap=<span class="string">'viridis'</span>, center=<span class="number">0</span>, fmt=<span class="string">'.2f'</span>)</span><br><span class="line">plt.title(<span class="string">'Correlation Heatmap'</span>)</span><br><span class="line">plt.show()</span><br></pre></td></tr></tbody></table></figure>
 
 
-<p><img src="/road_rick_new_one_files/road_rick_new_one_9_0.png" alt="png"></p>
+<p><img src="/images/road_rick_new_one_9_0.png" alt="png"></p>
 <h3 id="catboost"><a href="#catboost" class="headerlink" title="catboost"></a>catboost</h3><figure class="highlight python"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#display(X.head())</span></span><br><span class="line"><span class="comment">#display(y.head())</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#print(X.dtypes)</span></span><br><span class="line"><span class="comment"># 将X中的bool类型转化为object(str)类型,除了数值类型</span></span><br><span class="line">X_bool_cols = X.select_dtypes(include=[<span class="string">'bool'</span>]).columns</span><br><span class="line"><span class="built_in">print</span>(X_bool_cols)</span><br><span class="line"></span><br><span class="line"><span class="comment">#print(X_bool_cols)</span></span><br><span class="line"><span class="keyword">for</span> col <span class="keyword">in</span> X_bool_cols:</span><br><span class="line">    X[col] = X[col].astype(<span class="built_in">str</span>)</span><br><span class="line">    test_ds[col] = test_ds[col].astype(<span class="built_in">str</span>)</span><br><span class="line">    </span><br><span class="line">cat_features = X.select_dtypes(include=[<span class="string">'object'</span>]).columns.tolist()</span><br><span class="line"><span class="built_in">print</span>(cat_features)</span><br><span class="line"><span class="comment">#print(X.dtypes)</span></span><br></pre></td></tr></tbody></table></figure>
 
 <pre><code>Index(['road_signs_present', 'public_road', 'holiday', 'school_season'], dtype='object')
@@ -863,11 +857,11 @@ Passing `palette` without assigning `hue` is deprecated and will be removed in v
 
   sns.barplot(data=importance_df.head(10), x='importance', y='feature', palette='viridis')
 </code></pre>
-<p><img src="/road_rick_new_one_files/road_rick_new_one_17_1.png" alt="png"></p>
+<p><img src="/images/road_rick_new_one_17_1.png" alt="png"></p>
 <figure class="highlight python"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Plot actual vs predicted values</span></span><br><span class="line">plt.scatter(y_val, y_pred, alpha=<span class="number">0.1</span>, marker=<span class="string">'.'</span>, s=<span class="number">5</span>)</span><br><span class="line">plt.plot([y_val.<span class="built_in">min</span>(), y_val.<span class="built_in">max</span>()], [y_val.<span class="built_in">min</span>(), y_val.<span class="built_in">max</span>()], <span class="string">'r--'</span>, lw=<span class="number">2</span>)</span><br><span class="line">plt.xlabel(<span class="string">'Actual Values'</span>)</span><br><span class="line">plt.ylabel(<span class="string">'Predicted Values'</span>)</span><br><span class="line">plt.title(<span class="string">'Actual vs Predicted Values'</span>)</span><br><span class="line">plt.show()</span><br></pre></td></tr></tbody></table></figure>
 
 
-<p><img src="/road_rick_new_one_files/road_rick_new_one_18_0.png" alt="png"></p>
+<p><img src="/images/road_rick_new_one_18_0.png" alt="png"></p>
 <h3 id="提交结果"><a href="#提交结果" class="headerlink" title="提交结果"></a>提交结果</h3><figure class="highlight python"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Prepare test data (excluding the id column for prediction)</span></span><br><span class="line"></span><br><span class="line">test_features = test_ds.drop(<span class="string">'id'</span>, axis=<span class="number">1</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># Make predictions on test set</span></span><br><span class="line">test_predictions = Catboost_model.predict(test_features)</span><br><span class="line"></span><br><span class="line"><span class="comment"># Create submission file</span></span><br><span class="line">submission = pd.DataFrame({</span><br><span class="line">    <span class="string">'id'</span>: test_ds[<span class="string">'id'</span>],</span><br><span class="line">    <span class="string">'accident_risk'</span>: test_predictions</span><br><span class="line">})</span><br><span class="line"></span><br><span class="line"><span class="comment"># Save submission file</span></span><br><span class="line">submission.to_csv(<span class="string">'submission.csv'</span>, index=<span class="literal">False</span>)</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="string">f"Submission shape: <span class="subst">{submission.shape}</span>"</span>)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">"\nFirst 5 rows of submission:"</span>)</span><br><span class="line">display(submission.head())</span><br><span class="line"></span><br></pre></td></tr></tbody></table></figure>
 
 <pre><code>Submission shape: (172585, 2)
@@ -944,7 +938,7 @@ First 5 rows of submission:
   </li>
   <li class="post-copyright-link">
       <strong>本文链接：</strong>
-      <a href="https://ideaforge.icu/2025/10/30/road_rick_new_one/" title="CatBoost道路风险预测学习笔记（对应的ipynb的markdown版本）">https://ideaforge.icu/2025/10/30/road_rick_new_one/</a>
+      <a href="https://ideaforge.icu/2025/11/03/road_rick_new_one/" title="CatBoost道路风险预测学习笔记（对应的ipynb的markdown版本）">https://ideaforge.icu/2025/11/03/road_rick_new_one/</a>
   </li>
   <li class="post-copyright-license">
       <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="/go.html?u=aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo" rel="external nofollow noopener noreferrer" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
@@ -963,13 +957,13 @@ First 5 rows of submission:
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/2025/10/29/learning_thought/" rel="prev" title="ml_learning_thought">
-                  <i class="fa fa-angle-left"></i> ml_learning_thought
+                <a href="/2025/10/30/Predicting%20Road%20Accident%20Risk/" rel="prev" title="CatBoost道路风险预测学习笔记">
+                  <i class="fa fa-angle-left"></i> CatBoost道路风险预测学习笔记
                 </a>
             </div>
             <div class="post-nav-item">
-                <a href="/2025/10/30/Predicting%20Road%20Accident%20Risk/" rel="next" title="CatBoost道路风险预测学习笔记">
-                  CatBoost道路风险预测学习笔记 <i class="fa fa-angle-right"></i>
+                <a href="/2025/11/03/jianxigao_1103/" rel="next" title="蹇锡高学术讲座——新型杂环高性能工程塑料及其加工应用发展进展——杂萘联苯型聚芳醚高性能树脂及其应用技术">
+                  蹇锡高学术讲座——新型杂环高性能工程塑料及其加工应用发展进展——杂萘联苯型聚芳醚高性能树脂及其应用技术 <i class="fa fa-angle-right"></i>
                 </a>
             </div>
           </div>
@@ -1013,7 +1007,7 @@ First 5 rows of submission:
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">21 分钟</span>
+    <span title="站点阅读时长">22 分钟</span>
   </span>
 </div>
 <div class="busuanzi-count">
