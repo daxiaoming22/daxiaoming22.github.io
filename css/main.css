@@ -1427,7 +1427,7 @@ pre code {
     transition: all 0.2s ease-in-out;
   }
   .links-of-author a::before {
-    background: #21b08e;
+    background: #ff9f6f;
     display: inline-block;
     margin-right: 3px;
     transform: translateY(-2px);
@@ -3040,4 +3040,27 @@ body {
 .main-inner {
   background-color: rgba(255,255,255,0);
   padding: 0px 40px 40px 40px;
+}
+/* 夜间模式样式覆盖 */
+.dark-mode #links-page .link-card {
+  background: #2d3748; /* 深灰蓝色背景，低调内敛 */
+  border: 1px solid #4a5568; /* 细微边框 */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+.dark-mode #links-page .link-card:hover {
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  background: #3a4556; /* 悬停时稍亮 */
+}
+.dark-mode #links-page .link-name a {
+  color: #e2e8f0; /* 柔和的浅色文字 */
+}
+.dark-mode #links-page .link-name a:hover {
+  color: #63b3ed; /* 悬停时温和的蓝色 */
+}
+.dark-mode #links-page .link-descr {
+  color: #a0aec0; /* 稍暗的浅灰色，降低描述文字对比度 */
+}
+/* 如果需要对页面标题等元素也进行调整 */
+.dark-mode #links-page .links-content h1 {
+  color: #f7fafc;
 }
