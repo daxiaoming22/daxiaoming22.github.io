@@ -68,6 +68,64 @@
       </tags>
   </entry>
   <entry>
+    <title>复现——Data-Driven Design of High-Performance Polyimides With Enhanced Heat Resistance and Dielectric Properties</title>
+    <url>/2025/11/04/Simulation_and_reproduction_work/</url>
+    <content><![CDATA[<h3 id="标题——数据驱动的高性能聚酰亚胺设计：增强耐热性与介电性能"><a href="#标题——数据驱动的高性能聚酰亚胺设计：增强耐热性与介电性能" class="headerlink" title="标题——数据驱动的高性能聚酰亚胺设计：增强耐热性与介电性能"></a>标题——数据驱动的高性能聚酰亚胺设计：增强耐热性与介电性能</h3><h4 id="期刊名称：Advanced-Functional-Materials"><a href="#期刊名称：Advanced-Functional-Materials" class="headerlink" title="期刊名称：Advanced Functional Materials"></a>期刊名称：Advanced Functional Materials</h4><h4 id="文章解读："><a href="#文章解读：" class="headerlink" title="文章解读："></a>文章解读：</h4><h5 id="intrduction：强调背景、抛砖引玉、娓娓道来"><a href="#intrduction：强调背景、抛砖引玉、娓娓道来" class="headerlink" title="intrduction：强调背景、抛砖引玉、娓娓道来"></a>intrduction：强调背景、抛砖引玉、娓娓道来</h5><ul>
+<li>对象：聚酰亚胺Pi，在高频、高温下的需求</li>
+<li>策略：<strong>mag</strong>，先讲传统策略的缺陷，劣势；突出强调mag方法</li>
+<li><strong>mag</strong>：The MGA is a systematic research strategy to accelerate the discovery and optimization of new materials through <strong>high-throughput experimentation, computation, simulation, and data analysis</strong>. The core of MGA is to accurately predict material properties through machine learning (ML) and effectively screen desired materials from candidates.</li>
+<li>举例：其他人用<strong>mag</strong>做出了什么，开始说在Pi领域也有人在用mag做研究。</li>
+<li><strong>However</strong>：（画风一转）However, applying these methods to the design of polyimides still faces numerous challenges, such as the issue of <strong>data sparsity in high-frequency dielectric properties</strong> and <strong>the need for precise representation of polyimide structures</strong>.<br><strong>点明矛盾问题</strong>：高频段数据稀缺；聚亚酰胺的空间结构的精确表达</li>
+<li>工作方法：the classical Havriliak-Negami (H-N) dielectric relaxation dual-parameter model——对于高频段数据稀缺性采用<strong>经典的Havriliak-Negami（H-N）介电弛豫双参数模型</strong>（第一性原理的引入）；<br>developed multi-level descriptors to comprehensively capture the characteristics of the molecular structures of PIs——对于后者空间结构的表征采用的是<strong>多级描述符</strong></li>
+<li>多层神经网络<strong>HNN</strong>进行<strong>多任务学习MTL</strong>——Subsequently, using these data, we employed multi-task learning (MTL) with hierarchical neural networks (HNN) to establish an efficient and accurate machine learning model.</li>
+<li>人工神经网络<strong>ANN</strong>——Meanwhile, an artificial neural network (ANN) model for predicting the glass transition temperature of PIs was developed</li>
+<li><strong>遗传算法</strong>——A genetic algorithm was employed to create a series of PIs exhibiting exceptional high-frequency dielectric properties and heat resistance.</li>
+</ul>
+<h5 id="结果与讨论"><a href="#结果与讨论" class="headerlink" title="结果与讨论"></a>结果与讨论</h5><ul>
+<li>Section 2.1 introduces the <strong>data preparation</strong>, and Section 2.2 details <strong>the workflow of ML model construction</strong>, as shown in Figure 1b. Section 2.3 describes <strong>the structural design of polyimides using genetic algorithms</strong>. In Section 2.4, we validated <strong>the reliability of the MGA method through experiments</strong>. Section 2.5 reveals <strong>potential chemical rules through interpretable feature analysis</strong>.</li>
+</ul>
+<h6 id="2-1数据准备"><a href="#2-1数据准备" class="headerlink" title="2.1数据准备"></a>2.1数据准备</h6><ul>
+<li><p>原始数据：ployinfo总的聚亚酰胺的重复单元、介电性能（指不同频率和温度下的介电常数与介电损耗）、玻璃转化温度等参数；另一部分人工方式提取。</p>
+</li>
+<li><p>对象限制：所以聚酰亚胺均为不可交联型</p>
+</li>
+<li><p>数据拓展：Considering the need for sufficient low-frequency dielectric performance data to obtain the parameters of Equation 1, fitting was performed for 13 kinds of PIs that met the criteria (having at least 5 data points for low-frequency dielectric properties at the same test temperature).对低频拟合，再对高频计算<br>![[..&#x2F;..&#x2F;images&#x2F;Pasted image 20251104140004.png]]</p>
+</li>
+<li><p>分布展示<br>![[..&#x2F;..&#x2F;images&#x2F;Pasted image 20251104140130.png]]</p>
+</li>
+<li><p>关于数据表征：<strong>聚合物表征</strong>——简化的分子输入行条目系统（<strong>SMILES</strong>）<br>空间特征表征（<strong>多级描述符</strong>）：were automatically generated using the Python third-party library <strong>Mordred</strong>。（Python第三方库）<br>另外一种：<strong>RDKit固有的分子描述符</strong>。</p>
+</li>
+<li><p><strong>特征工程</strong>：将描述符数量减少，减少至130、107和170个</p>
+</li>
+<li><p><strong>子结构描述符SD</strong>方法，关键基元，更微小的结构。</p>
+</li>
+<li><p><strong>gspan算法</strong>：基于图的<strong>子结构模式挖掘算法</strong>，来提取<strong>每种聚酰亚胺中与各项性能相关的子结构</strong>，从而<strong>整合不同子结构对目标性能的贡献度</strong></p>
+</li>
+<li><p>结合定量结构-性能关系分析，我们最终分别获得了508、284和1313个特征，用于构建聚酰亚胺结构与介电常数、介电损耗和玻璃化转变温度之间的定量关系模型。</p>
+</li>
+</ul>
+<h6 id="2-2基于机器学习的定量结构-性质关系模型构建"><a href="#2-2基于机器学习的定量结构-性质关系模型构建" class="headerlink" title="2.2基于机器学习的定量结构-性质关系模型构建"></a>2.2基于机器学习的定量结构-性质关系模型构建</h6><ul>
+<li>简单来说<strong>HNN</strong>来多精度问题；<strong>ANN</strong>用来预测缺失的玻璃化转变温度；广泛<strong>使用的高斯过程回归（GPR）模型被确立为基准模型</strong>，用以<strong>评估神经网络模型的性能</strong>。</li>
+<li>Due to the significant impact of the size of the feature set on the performance of ML models, a practical and highly accurate dimensionality reduction method is necessary to reduce redundant information in the features.需要采用一种<strong>实用且高精度的降维方法</strong>，以<strong>减少特征中的冗余信息</strong>。</li>
+<li>We selected three feature reduction methods used in ML, including <strong>LASSO regression</strong>, <strong>ridge regression</strong>, and <strong>recursive feature elimination</strong> (RFE)</li>
+<li>Note that we have taken the logarithm of the dielectric constants and the dielectric losses to guarantee that the final predicted values are all positive.</li>
+</ul>
+<blockquote>
+<p>关于HNN的学习<a href=""></a>和ANN的学习<a href=""></a></p>
+</blockquote>
+<p>未完待续</p>
+<h3 id="数据来源（对应数据结构）"><a href="#数据来源（对应数据结构）" class="headerlink" title="数据来源（对应数据结构）"></a>数据来源（对应数据结构）</h3>]]></content>
+      <categories>
+        <category>学术</category>
+      </categories>
+      <tags>
+        <tag>文献复现</tag>
+        <tag>机器学习</tag>
+        <tag>高性能材料的设计</tag>
+        <tag>文献阅读笔记</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>蹇锡高学术讲座——新型杂环高性能工程塑料及其加工应用发展进展——杂萘联苯型聚芳醚高性能树脂及其应用技术</title>
     <url>/2025/11/03/jianxigao_1103/</url>
     <content><![CDATA[<h2 id="讲师介绍"><a href="#讲师介绍" class="headerlink" title="讲师介绍"></a>讲师介绍</h2><p>详细见链接<a href="https://zhuanlan.zhihu.com/p/1904787911674672194">蹇锡高院士研究团队:杂萘联苯型聚芳醚高性能树脂及其应用技术</a></p>
@@ -728,6 +786,7 @@ First 5 rows of submission:
         <tag>kaggle比赛</tag>
         <tag>函数功能记录</tag>
         <tag>markdown_from_ipynb</tag>
+        <tag>catboost</tag>
       </tags>
   </entry>
   <entry>
@@ -880,6 +939,7 @@ First 5 rows of submission:
         <tag>机器学习</tag>
         <tag>kaggle比赛</tag>
         <tag>函数功能记录</tag>
+        <tag>catboost</tag>
       </tags>
   </entry>
   <entry>
@@ -924,7 +984,7 @@ First 5 rows of submission:
     <title>机器学习进展</title>
     <url>/2025/10/22/machine_learning/</url>
     <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="窃取机密失败QAQ..." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
-  <script id="hbeData" type="hbeData" data-hmacdigest="1d8fc7a41a7aa008385373bc979bd685338685654d10fbb3072706a97ee9ccb7">dccefed83fa27a7ad5aaf2d0962952897e2eac05819bcc21e675ce1cdc4aba5bff28ab5366c0082d3d01afa8266b2dacdbe7a68be5328e495334da6bcdb16dad63f750b36853e82b92dd70455470dcc32445e1b166be9edb511c5b69409bd081e957d2944db89ce45b8c0aa90ec4d7a7d7405dd5888b4575645cb78b38e5b20f24d2d61d326133f628806fade4587f8778a888b108d9f64a95959754ae38e38c57ac33ddb9ef8205fe4e842e00e3690dbded7436d9194145d83a50057f7c9ca7911a5dd4ac65ff142e82f2b166f91f6bb15034f2868a1db66ee15b16468f6697cf9b067fb8f2826b8c478316e68e43787bd8d508545e753785b4688f6a7b0789829a2ec0dabf861879627b0e5e81a0947ba9892a8a7d54d749bcd60316859a4c9c4aa905a3d959841d1ee2d03322fea031fd23e3d5f18418769caaeafe4f1c7dc25cfef63602d19638873a9b94906f629a05e5470ec0b037dfbc36ee4ac4086bc8bb0cce82b950c18512c78a433848aec8bd9a635498ef265210b23f0097e237b64c3d62b888525124fb6203848263d470ca89f616f2662ff34ed75a218aed99d9b8526800caa9df534c14f12afcf68d6aea68df7a020c5052f0d25421f07a9c1aebd8c9593c604bd38f24200e36314062cd0a547604d42a858c8ffdb272d75a5bb9b64f88c4c78f4c720fcd751e0d9303642fdab9f96b989860d1622641508672e1fc6b63d1a2508668fd83a9fe47472a677e9d44806ad434521b6069dceccae9b6e8ea524410879d3f76718a8d9c7b5a033ec64f0e1d4297c397557f5ad6d73e4bec326ea5da17432b5f6e7ae7e4bbe62336ef44b132a8cc93f855b0c5f5e77deb494c7a616737a3f459a8947fc412d27359a518e252f452310b99f145a2dd441a7340ae96f7079a159df1bf630536d1ca4a89a97ae8c2333616494e768297ad2550540dfded6b72ae67ab69fec27032ecab1576ba320ee4aa5bdcab97634b64e2b3a4490ec8969ab3664834e4048d6edd9e7503392fd8e694d8bb7039be1e7ed7bbc3449b0afff15c24db1956d582572e2b127788984069e83709490b413d</script>
+  <script id="hbeData" type="hbeData" data-hmacdigest="71c8bf7212203e7846d3a7bf656fb6f12cb1ce5060a2f8af6f7f5d399af41eb0">dccefed83fa27a7ad5aaf2d0962952897e2eac05819bcc21e675ce1cdc4aba5bff28ab5366c0082d3d01afa8266b2dacef3e8eb80ba325b8acc136cbeb108b2c454e602c9a9f740b2827934a89803342bc04ccd631b0782fa124ea7bb373b86c2dea7a22cd5a6b0d2348797feec3366ae8b8f209fcd7f2a6a550fab04a206d18b7219c82ed4db1f9125a9755e75b5634656d3d4b9bf2698c88a9f2603538da83848bfb0333fd3d850acefac9fb39e6414ba447d71e7aeb9d7b8a758800f0a3504a395c2ff2b470b875cdd375ab8a683d764ad81eec8f5328ef44a818f7ba3bea4ed1af70bc6550780f4b8a6c1faafe1ceabc13c9cd1081f54dc5454ebe92c7987391a2d7646907612723f487a3527d9401bdd52bfc3bc7d026da77fb61811f7ef12f65b60214fafcc30302359bf25f8f59ecd0e291ddbc9e67aba6ea082e5e48934b4f8f9ade062ba83a80e4428b86a6d539c23fe7ae9fdcb75853f1360ec871735fbd5109301d92ac8888dafb61d6b138a4792f3a049b517186454030d317a9729f9a9ad62ac8931a38735c967c9eb423959284f9659ad117f5135e5304818fb297c0bb25a408eec8f3e9425597e96f92899252f8d6224bf1382efe6bbffd1b9ecc2fd712e30bb048654372a1d16652ba4203ec1715c183ce6a6f3f6a5046d43ffc995a092b51206ea4b6fab71fad7a98ff15ba119c73dc8b17ff65063b2f9228d56ec552f56405b7b69f8d84586766340ad670cc727ca40ac87501dea9d7f0b1f13f4e0003dd9559449a5b26bf9c108dba0ba09ba785025f4b3d4430b99f0c218eb56cb9e600ae92bbb878858a773c52db3531b06c94e971dd923880a47104279a09359d7bf0f25974ce6bb63b663a05d86300e0bd537b0759fbdd56445262be65a081a9d340528890256f255f3c3927274904a3caf0f16e9c68f8b41f70f4</script>
   <div class="hbe hbe-content">
     <div class="hbe hbe-input hbe-input-up">
       <input class="hbe hbe-input-field hbe-input-field-up" type="password" id="hbePass">
