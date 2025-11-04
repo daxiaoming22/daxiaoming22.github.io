@@ -20,19 +20,19 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"ideaforge.icu","root":"/","images":"/images","scheme":"Pisces","darkmode":true,"version":"8.25.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"codeblock":{"theme":{"light":"default","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":true,"style":"mac"},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownBigIn","coll_header":"slideLeftIn","sidebar":"slideDownBigOut"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":"ture","top_n_per_article":1,"unescape":false,"preload":"ture"}}</script><script src="/js/config.js" defer=""></script>
 
-    <meta name="description" content="第三方库导入和数据集的导入，数据集的查看第三方库的导入和输出对应的版本编号12345678910111213141516171819202122232425import pandas as pdimport osimport matplotlib.pyplot as pltimport seaborn as snsimport numpy as npfrom sklearn.model_selec">
+    <meta name="description" content="这篇笔记基于Kaggle竞赛数据，详细记录了使用CatBoost进行道路风险预测的完整流程，包括第三方库导入与版本查看、数据集导入与清洗、数据可视化分析（目标分布和相关性热力图）、CatBoost模型构建（设置1000次迭代、0.1学习率、6层深度等参数并启用GPU加速）、模型评估（通过RMSE和5折交叉验证）、特征重要性分析（速度限制、光照条件和曲率是最重要的三个特征）、预测结果可视化（实际值v">
 <meta property="og:type" content="article">
 <meta property="og:title" content="CatBoost道路风险预测学习笔记（对应的ipynb的markdown版本）">
 <meta property="og:url" content="https://ideaforge.icu/2025/11/03/road_rick_new_one/index.html">
 <meta property="og:site_name" content="Yueming &amp; Blog">
-<meta property="og:description" content="第三方库导入和数据集的导入，数据集的查看第三方库的导入和输出对应的版本编号12345678910111213141516171819202122232425import pandas as pdimport osimport matplotlib.pyplot as pltimport seaborn as snsimport numpy as npfrom sklearn.model_selec">
+<meta property="og:description" content="这篇笔记基于Kaggle竞赛数据，详细记录了使用CatBoost进行道路风险预测的完整流程，包括第三方库导入与版本查看、数据集导入与清洗、数据可视化分析（目标分布和相关性热力图）、CatBoost模型构建（设置1000次迭代、0.1学习率、6层深度等参数并启用GPU加速）、模型评估（通过RMSE和5折交叉验证）、特征重要性分析（速度限制、光照条件和曲率是最重要的三个特征）、预测结果可视化（实际值v">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://ideaforge.icu/images/road_rick_new_one_8_0.png">
 <meta property="og:image" content="https://ideaforge.icu/images/road_rick_new_one_9_0.png">
 <meta property="og:image" content="https://ideaforge.icu/images/road_rick_new_one_17_1.png">
 <meta property="og:image" content="https://ideaforge.icu/images/road_rick_new_one_18_0.png">
 <meta property="article:published_time" content="2025-11-02T16:00:00.000Z">
-<meta property="article:modified_time" content="2025-11-03T11:27:50.731Z">
+<meta property="article:modified_time" content="2025-11-04T02:33:48.022Z">
 <meta property="article:author" content="月明">
 <meta property="article:tag" content="kaggle比赛">
 <meta property="article:tag" content="markdown_from_ipynb">
@@ -266,7 +266,7 @@
 
     <span hidden="" itemprop="post" itemscope="" itemtype="http://schema.org/CreativeWork">
       <meta itemprop="name" content="CatBoost道路风险预测学习笔记（对应的ipynb的markdown版本） | Yueming &amp; Blog">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content="这篇笔记基于Kaggle竞赛数据，详细记录了使用CatBoost进行道路风险预测的完整流程，包括第三方库导入与版本查看、数据集导入与清洗、数据可视化分析（目标分布和相关性热力图）、CatBoost模型构建（设置1000次迭代、0.1学习率、6层深度等参数并启用GPU加速）、模型评估（通过RMSE和5折交叉验证）、特征重要性分析（速度限制、光照条件和曲率是最重要的三个特征）、预测结果可视化（实际值vs预测值散点图）以及提交结果生成（创建包含id和accident_risk的submission.csv文件）。">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
@@ -280,9 +280,15 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">发表于</span>
-      
 
-      <time title="创建时间：2025-11-03 00:00:00 / 修改时间：19:27:50" itemprop="dateCreated datePublished" datetime="2025-11-03T00:00:00+08:00">2025-11-03</time>
+      <time title="创建时间：2025-11-03 00:00:00" itemprop="dateCreated datePublished" datetime="2025-11-03T00:00:00+08:00">2025-11-03</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2025-11-04 10:33:48" itemprop="dateModified" datetime="2025-11-04T10:33:48+08:00">2025-11-04</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -319,13 +325,15 @@
     </span>
 </div>
 
+            <div class="post-description">这篇笔记基于Kaggle竞赛数据，详细记录了使用CatBoost进行道路风险预测的完整流程，包括第三方库导入与版本查看、数据集导入与清洗、数据可视化分析（目标分布和相关性热力图）、CatBoost模型构建（设置1000次迭代、0.1学习率、6层深度等参数并启用GPU加速）、模型评估（通过RMSE和5折交叉验证）、特征重要性分析（速度限制、光照条件和曲率是最重要的三个特征）、预测结果可视化（实际值vs预测值散点图）以及提交结果生成（创建包含id和accident_risk的submission.csv文件）。</div>
         </div>
       </header>
 
     
     
     
-    <div class="post-body" itemprop="articleBody"><h3 id="第三方库导入和数据集的导入，数据集的查看"><a href="#第三方库导入和数据集的导入，数据集的查看" class="headerlink" title="第三方库导入和数据集的导入，数据集的查看"></a>第三方库导入和数据集的导入，数据集的查看</h3><h4 id="第三方库的导入和输出对应的版本编号"><a href="#第三方库的导入和输出对应的版本编号" class="headerlink" title="第三方库的导入和输出对应的版本编号"></a>第三方库的导入和输出对应的版本编号</h4><figure class="highlight python"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"><span class="keyword">import</span> os</span><br><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line"><span class="keyword">import</span> seaborn <span class="keyword">as</span> sns</span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">from</span> sklearn.model_selection <span class="keyword">import</span> train_test_split, cross_val_score</span><br><span class="line"><span class="keyword">from</span> sklearn.metrics <span class="keyword">import</span> mean_squared_error</span><br><span class="line"><span class="keyword">from</span> catboost <span class="keyword">import</span> CatBoostRegressor</span><br><span class="line"><span class="keyword">from</span> IPython.core.display <span class="keyword">import</span> HTML</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">show_object_columns_info</span>(<span class="params">df</span>):</span><br><span class="line">    <span class="string">"显示DataFrame中所有object类型列的信息，包括列名、唯一值数量和所有唯一值"</span></span><br><span class="line">    object_cols = df.select_dtypes(include=[<span class="string">'object'</span>]).columns</span><br><span class="line">    <span class="built_in">print</span>(object_cols)</span><br><span class="line">    <span class="keyword">for</span> col <span class="keyword">in</span> object_cols:</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">f"列名: <span class="subst">{col}</span>"</span>)</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">f'object数量: <span class="subst">{df[col].nunique()}</span>'</span>)</span><br><span class="line">        <span class="built_in">print</span>(df[col].unique())</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(sns.__version__)</span><br><span class="line"><span class="built_in">print</span>(pd.__version__)</span><br><span class="line"><span class="built_in">print</span>(np.__version__)</span><br><span class="line"></span><br></pre></td></tr></tbody></table></figure>
+    <div class="post-body" itemprop="articleBody"><span id="more"></span>
+<h3 id="第三方库导入和数据集的导入，数据集的查看"><a href="#第三方库导入和数据集的导入，数据集的查看" class="headerlink" title="第三方库导入和数据集的导入，数据集的查看"></a>第三方库导入和数据集的导入，数据集的查看</h3><h4 id="第三方库的导入和输出对应的版本编号"><a href="#第三方库的导入和输出对应的版本编号" class="headerlink" title="第三方库的导入和输出对应的版本编号"></a>第三方库的导入和输出对应的版本编号</h4><figure class="highlight python"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"><span class="keyword">import</span> os</span><br><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line"><span class="keyword">import</span> seaborn <span class="keyword">as</span> sns</span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">from</span> sklearn.model_selection <span class="keyword">import</span> train_test_split, cross_val_score</span><br><span class="line"><span class="keyword">from</span> sklearn.metrics <span class="keyword">import</span> mean_squared_error</span><br><span class="line"><span class="keyword">from</span> catboost <span class="keyword">import</span> CatBoostRegressor</span><br><span class="line"><span class="keyword">from</span> IPython.core.display <span class="keyword">import</span> HTML</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">show_object_columns_info</span>(<span class="params">df</span>):</span><br><span class="line">    <span class="string">"显示DataFrame中所有object类型列的信息，包括列名、唯一值数量和所有唯一值"</span></span><br><span class="line">    object_cols = df.select_dtypes(include=[<span class="string">'object'</span>]).columns</span><br><span class="line">    <span class="built_in">print</span>(object_cols)</span><br><span class="line">    <span class="keyword">for</span> col <span class="keyword">in</span> object_cols:</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">f"列名: <span class="subst">{col}</span>"</span>)</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">f'object数量: <span class="subst">{df[col].nunique()}</span>'</span>)</span><br><span class="line">        <span class="built_in">print</span>(df[col].unique())</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(sns.__version__)</span><br><span class="line"><span class="built_in">print</span>(pd.__version__)</span><br><span class="line"><span class="built_in">print</span>(np.__version__)</span><br><span class="line"></span><br></pre></td></tr></tbody></table></figure>
 
 <pre><code>0.13.2
 2.3.3
