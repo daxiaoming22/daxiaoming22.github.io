@@ -1,185 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>blog学习进展/hexo-next教程</title>
-    <url>/2025/10/22/blog_learning/</url>
-    <content><![CDATA[<h3 id="关于hexo-next的美化"><a href="#关于hexo-next的美化" class="headerlink" title="关于hexo-next的美化"></a>关于hexo-next的美化</h3><h4 id="如何创建一个新的博客文章？（2025-10-27）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ"><a href="#如何创建一个新的博客文章？（2025-10-27）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ" class="headerlink" title="如何创建一个新的博客文章？（2025-10-27）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ"></a>如何创建一个新的博客文章？（2025-10-27）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ</h4><p>hexo new “文章标题”<br>或者在对应的文件夹在直接添加对应.md文件，注意编辑文件头信息yaml格式</p>
-<h4 id="如何更改首页置顶顺序？（2025-10-28）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ"><a href="#如何更改首页置顶顺序？（2025-10-28）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ" class="headerlink" title="如何更改首页置顶顺序？（2025-10-28）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ"></a>如何更改首页置顶顺序？（2025-10-28）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ</h4><ul>
-<li>可以参考这篇博主的文章<a href="https://www.axitown.com/a764f98564af/">阿希の小镇, 2025</a></li>
-</ul>
-<h4 id="如何更改首页，仅部分显示文章？-2025-10-29"><a href="#如何更改首页，仅部分显示文章？-2025-10-29" class="headerlink" title="如何更改首页，仅部分显示文章？(2025-10-29)"></a>如何更改首页，仅部分显示文章？(2025-10-29)</h4><h4 id="如何实现副标题的动态显示？-2025-10-30"><a href="#如何实现副标题的动态显示？-2025-10-30" class="headerlink" title="如何实现副标题的动态显示？(2025-10-30)"></a>如何实现副标题的动态显示？(2025-10-30)</h4><h4 id="文章如何只显示部分文章内容？-2025-10-30-٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ"><a href="#文章如何只显示部分文章内容？-2025-10-30-٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ" class="headerlink" title="文章如何只显示部分文章内容？(2025-10-30) ٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ"></a>文章如何只显示部分文章内容？(2025-10-30) ٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ</h4><ul>
-<li>可以在文章的md文件中，添加<span id="more"></span>注释，注释之前的内容就会显示在首页，注释之后的内容就会隐藏起来。</li>
-</ul>
-<h4 id="链接跳转样式（2025-10-30）"><a href="#链接跳转样式（2025-10-30）" class="headerlink" title="链接跳转样式（2025-10-30）"></a>链接跳转样式（2025-10-30）</h4><ul>
-<li>链接跳转样式的图标美化</li>
-</ul>
-<p>博客美化的教程<a href="https://fatedshadow.github.io/%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/%E5%8D%9A%E5%AE%A2/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8-Hexo-Next-%E7%BE%8E%E5%8C%96%E5%8D%9A%E5%AE%A2/">text</a></p>
-<!-- more -->
-
-<hr>
-<h3 id="关于如何优化访问，正规的站点建设"><a href="#关于如何优化访问，正规的站点建设" class="headerlink" title="关于如何优化访问，正规的站点建设"></a>关于如何优化访问，正规的站点建设</h3><h4 id="为什么每段时间自己的域名就要重新对齐GitHub（2025-10-29）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ"><a href="#为什么每段时间自己的域名就要重新对齐GitHub（2025-10-29）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ" class="headerlink" title="为什么每段时间自己的域名就要重新对齐GitHub（2025-10-29）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ"></a>为什么每段时间自己的域名就要重新对齐GitHub（2025-10-29）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ</h4><ul>
-<li>可以参考这篇博主的文章<a href="https://www.cnblogs.com/xieqk/p/Github-Page-DNS.html">域名DNS解析到自己的githubpages页面,谢乔康</a></li>
-</ul>
-<h4 id="如何配置自己的域名？（2025-10-27）"><a href="#如何配置自己的域名？（2025-10-27）" class="headerlink" title="如何配置自己的域名？（2025-10-27）"></a><strong>如何配置自己的域名？（2025-10-27）</strong></h4><p>查看<a href="/2025/10/27/yuming/">域名配置</a></p>
-<h4 id="如何添加自己的友链？（2025-10-28）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵏᵎᵎᵎᵎ"><a href="#如何添加自己的友链？（2025-10-28）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵏᵎᵎᵎᵎ" class="headerlink" title="如何添加自己的友链？（2025-10-28）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵏᵎᵎᵎᵎ"></a>如何添加自己的友链？（2025-10-28）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵏᵎᵎᵎᵎ</h4><ul>
-<li>友链是指在博客中添加其他博客作者的链接，以展示他们的创作和关注。</li>
-</ul>
-<blockquote>
-<p>感悟思考：现在hexo博客的建立主要靠，<strong>浏览器的搜索查找别人的技术文章</strong>以及<strong>ai的回答</strong>。还是要多学会用<strong>dp、chatgpt</strong>等工具，来理解问题解决问题。Trea真的太垃圾了，要加快自己的学习速度！</p>
-</blockquote>
-<h4 id="如何添加文章分享功能？（2025-10-30）"><a href="#如何添加文章分享功能？（2025-10-30）" class="headerlink" title="如何添加文章分享功能？（2025-10-30）"></a>如何添加文章分享功能？（2025-10-30）</h4><h4 id="如何将自己的ipynb文件转换为markdown文件？并发表在博客上？（2025-11-02）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ"><a href="#如何将自己的ipynb文件转换为markdown文件？并发表在博客上？（2025-11-02）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ" class="headerlink" title="如何将自己的ipynb文件转换为markdown文件？并发表在博客上？（2025-11-02）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ"></a>如何将自己的ipynb文件转换为markdown文件？并发表在博客上？（2025-11-02）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ</h4><p>参考这篇文章<a href="https://juejin.cn/post/7506038621612245033">惜鸟，2025</a></p>
-<h4 id="如何升级评论系统，GitHub评论系统较为封闭并不开放？（2025-11-03）"><a href="#如何升级评论系统，GitHub评论系统较为封闭并不开放？（2025-11-03）" class="headerlink" title="如何升级评论系统，GitHub评论系统较为封闭并不开放？（2025-11-03）"></a>如何升级评论系统，GitHub评论系统较为封闭并不开放？（2025-11-03）</h4><h4 id="RSS订阅功能如何添加？（2025-11-04）"><a href="#RSS订阅功能如何添加？（2025-11-04）" class="headerlink" title="RSS订阅功能如何添加？（2025-11-04）"></a>RSS订阅功能如何添加？（2025-11-04）</h4><ul>
-<li>添加<a href="https://www.boyouquan.com/home">博客圈</a></li>
-</ul>
-<hr>
-<h3 id="关于markdown的使用"><a href="#关于markdown的使用" class="headerlink" title="关于markdown的使用"></a>关于markdown的使用</h3><p>markdown是一种轻量级的标记语言，用于在文本中添加格式化元素。它简单易学，同时也非常灵活。（obsidion、blog必备的技能、现在ai回答输出的格式也是markdown例如deepseek的回答、）基础语法参考(小刘在路上[^1]，2024)</p>
-<h4 id="如何链接文章？（2025-10-27）-有问题跳转找不到网页，亟待解决-٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ"><a href="#如何链接文章？（2025-10-27）-有问题跳转找不到网页，亟待解决-٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ" class="headerlink" title="如何链接文章？（2025-10-27）,有问题跳转找不到网页，亟待解决 ٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ"></a>如何链接文章？（2025-10-27）,有问题跳转找不到网页，亟待解决 ٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ</h4><h5 id="内部链接-٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ"><a href="#内部链接-٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ" class="headerlink" title="内部链接 ٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ"></a>内部链接 ٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ</h5><ul>
-<li>这种问题是由于在hexo生成的public文件夹中，文章的路径与链接的路径不一致导致的。</li>
-<li>解决方法：在hexo配置文件中，将permalink设置为&#x2F;:year&#x2F;:month&#x2F;:day&#x2F;:title&#x2F;，例如：permalink: &#x2F;:year&#x2F;:month&#x2F;:day&#x2F;:title&#x2F;</li>
-<li>这样，在生成的public文件夹中，文章的路径就与链接的路径一致了。</li>
-</ul>
-<p>例如，文章的路径为&#x2F;2025&#x2F;10&#x2F;27&#x2F;yuming&#x2F;，那么链接就为<a href="/2025/10/27/yuming/">域名配置</a></p>
-<h5 id="外部链接-https-www-baidu-com-٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ"><a href="#外部链接-https-www-baidu-com-٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ" class="headerlink" title="外部链接(https://www.baidu.com/) ٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ"></a>外部链接(<a href="https://www.baidu.com/">https://www.baidu.com/</a>) ٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ</h5><ul>
-<li>外部链接是指指向其他网站的链接，例如：<a href="https://www.baidu.com/">百度</a></li>
-<li>外部链接的安全链接的调试可能存在问题（待解决）</li>
-</ul>
-<h5 id="外部链接跳转无效问题？（2025-10-29）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ"><a href="#外部链接跳转无效问题？（2025-10-29）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ" class="headerlink" title="外部链接跳转无效问题？（2025-10-29）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ"></a>外部链接跳转无效问题？（2025-10-29）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ</h5><ul>
-<li>问题出在butterfly与next主题的容器选择器不同所导致的，致谢<a href="https://blog.liushen.fun/posts/1dfd1f41/">LiuShen,2024</a></li>
-</ul>
-<h4 id="如何添加脚注，来致谢引用参考链接的作者？（2025-10-27）15min-٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ"><a href="#如何添加脚注，来致谢引用参考链接的作者？（2025-10-27）15min-٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ" class="headerlink" title="如何添加脚注，来致谢引用参考链接的作者？（2025-10-27）15min ٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ"></a>如何添加脚注，来致谢引用参考链接的作者？（2025-10-27）15min ٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ</h4><p>[^1]: 小刘在路上, 2024. 手把手教会你使用Markdown. CNDS, <a href="https://blog.csdn.net/qq_40818172/article/details/126260661">https://blog.csdn.net/qq_40818172/article/details/126260661</a></p>
-]]></content>
-      <categories>
-        <category>学习</category>
-      </categories>
-      <tags>
-        <tag>blog_learning</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>thoughts</title>
-    <url>/2025/10/27/thoughts/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>观点</category>
-      </categories>
-      <tags>
-        <tag>想法</tag>
-        <tag>观点</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>复现——Data-Driven Design of High-Performance Polyimides With Enhanced Heat Resistance and Dielectric Properties</title>
-    <url>/2025/11/04/Simulation_and_reproduction_work/</url>
-    <content><![CDATA[<h3 id="标题——数据驱动的高性能聚酰亚胺设计：增强耐热性与介电性能"><a href="#标题——数据驱动的高性能聚酰亚胺设计：增强耐热性与介电性能" class="headerlink" title="标题——数据驱动的高性能聚酰亚胺设计：增强耐热性与介电性能"></a>标题——数据驱动的高性能聚酰亚胺设计：增强耐热性与介电性能</h3><h4 id="期刊名称：Advanced-Functional-Materials"><a href="#期刊名称：Advanced-Functional-Materials" class="headerlink" title="期刊名称：Advanced Functional Materials"></a>期刊名称：Advanced Functional Materials</h4><h4 id="文章解读："><a href="#文章解读：" class="headerlink" title="文章解读："></a>文章解读：</h4><h5 id="intrduction：强调背景、抛砖引玉、娓娓道来"><a href="#intrduction：强调背景、抛砖引玉、娓娓道来" class="headerlink" title="intrduction：强调背景、抛砖引玉、娓娓道来"></a>intrduction：强调背景、抛砖引玉、娓娓道来</h5><ul>
-<li>对象：聚酰亚胺Pi，在高频、高温下的需求</li>
-<li>策略：<strong>mag</strong>，先讲传统策略的缺陷，劣势；突出强调mag方法</li>
-<li><strong>mag</strong>：The MGA is a systematic research strategy to accelerate the discovery and optimization of new materials through <strong>high-throughput experimentation, computation, simulation, and data analysis</strong>. The core of MGA is to accurately predict material properties through machine learning (ML) and effectively screen desired materials from candidates.</li>
-<li>举例：其他人用<strong>mag</strong>做出了什么，开始说在Pi领域也有人在用mag做研究。</li>
-<li><strong>However</strong>：（画风一转）However, applying these methods to the design of polyimides still faces numerous challenges, such as the issue of <strong>data sparsity in high-frequency dielectric properties</strong> and <strong>the need for precise representation of polyimide structures</strong>.<br><strong>点明矛盾问题</strong>：高频段数据稀缺；聚亚酰胺的空间结构的精确表达</li>
-<li>工作方法：the classical Havriliak-Negami (H-N) dielectric relaxation dual-parameter model——对于高频段数据稀缺性采用<strong>经典的Havriliak-Negami（H-N）介电弛豫双参数模型</strong>（第一性原理的引入）；<br>developed multi-level descriptors to comprehensively capture the characteristics of the molecular structures of PIs——对于后者空间结构的表征采用的是<strong>多级描述符</strong></li>
-<li>多层神经网络<strong>HNN</strong>进行<strong>多任务学习MTL</strong>——Subsequently, using these data, we employed multi-task learning (MTL) with hierarchical neural networks (HNN) to establish an efficient and accurate machine learning model.</li>
-<li>人工神经网络<strong>ANN</strong>——Meanwhile, an artificial neural network (ANN) model for predicting the glass transition temperature of PIs was developed</li>
-<li><strong>遗传算法</strong>——A genetic algorithm was employed to create a series of PIs exhibiting exceptional high-frequency dielectric properties and heat resistance.</li>
-</ul>
-<h5 id="结果与讨论"><a href="#结果与讨论" class="headerlink" title="结果与讨论"></a>结果与讨论</h5><ul>
-<li>Section 2.1 introduces the <strong>data preparation</strong>, and Section 2.2 details <strong>the workflow of ML model construction</strong>, as shown in Figure 1b. Section 2.3 describes <strong>the structural design of polyimides using genetic algorithms</strong>. In Section 2.4, we validated <strong>the reliability of the MGA method through experiments</strong>. Section 2.5 reveals <strong>potential chemical rules through interpretable feature analysis</strong>.</li>
-</ul>
-<h6 id="2-1数据准备"><a href="#2-1数据准备" class="headerlink" title="2.1数据准备"></a>2.1数据准备</h6><ul>
-<li><p>原始数据：ployinfo总的聚亚酰胺的重复单元、介电性能（指不同频率和温度下的介电常数与介电损耗）、玻璃转化温度等参数；另一部分人工方式提取。</p>
-</li>
-<li><p>对象限制：所以聚酰亚胺均为不可交联型</p>
-</li>
-<li><p>数据拓展：Considering the need for sufficient low-frequency dielectric performance data to obtain the parameters of Equation 1, fitting was performed for 13 kinds of PIs that met the criteria (having at least 5 data points for low-frequency dielectric properties at the same test temperature).对低频拟合，再对高频计算<br>![[..&#x2F;..&#x2F;images&#x2F;Pasted image 20251104140004.png]]</p>
-</li>
-<li><p>分布展示<br>![[..&#x2F;..&#x2F;images&#x2F;Pasted image 20251104140130.png]]</p>
-</li>
-<li><p>关于数据表征：<strong>聚合物表征</strong>——简化的分子输入行条目系统（<strong>SMILES</strong>）<br>空间特征表征（<strong>多级描述符</strong>）：were automatically generated using the Python third-party library <strong>Mordred</strong>。（Python第三方库）<br>另外一种：<strong>RDKit固有的分子描述符</strong>。</p>
-</li>
-<li><p><strong>特征工程</strong>：将描述符数量减少，减少至130、107和170个</p>
-</li>
-<li><p><strong>子结构描述符SD</strong>方法，关键基元，更微小的结构。</p>
-</li>
-<li><p><strong>gspan算法</strong>：基于图的<strong>子结构模式挖掘算法</strong>，来提取<strong>每种聚酰亚胺中与各项性能相关的子结构</strong>，从而<strong>整合不同子结构对目标性能的贡献度</strong></p>
-</li>
-<li><p>结合定量结构-性能关系分析，我们最终分别获得了508、284和1313个特征，用于构建聚酰亚胺结构与介电常数、介电损耗和玻璃化转变温度之间的定量关系模型。</p>
-</li>
-</ul>
-<h6 id="2-2基于机器学习的定量结构-性质关系模型构建"><a href="#2-2基于机器学习的定量结构-性质关系模型构建" class="headerlink" title="2.2基于机器学习的定量结构-性质关系模型构建"></a>2.2基于机器学习的定量结构-性质关系模型构建</h6><ul>
-<li>简单来说<strong>HNN</strong>来多精度问题；<strong>ANN</strong>用来预测缺失的玻璃化转变温度；广泛<strong>使用的高斯过程回归（GPR）模型被确立为基准模型</strong>，用以<strong>评估神经网络模型的性能</strong>。</li>
-<li>Due to the significant impact of the size of the feature set on the performance of ML models, a practical and highly accurate dimensionality reduction method is necessary to reduce redundant information in the features.需要采用一种<strong>实用且高精度的降维方法</strong>，以<strong>减少特征中的冗余信息</strong>。</li>
-<li>We selected three feature reduction methods used in ML, including <strong>LASSO regression</strong>, <strong>ridge regression</strong>, and <strong>recursive feature elimination</strong> (RFE)</li>
-<li>Note that we have taken the logarithm of the dielectric constants and the dielectric losses to guarantee that the final predicted values are all positive.</li>
-</ul>
-<blockquote>
-<p>关于HNN的学习<a href=""></a>和ANN的学习<a href=""></a></p>
-</blockquote>
-<p>未完待续</p>
-<h3 id="数据来源（对应数据结构）"><a href="#数据来源（对应数据结构）" class="headerlink" title="数据来源（对应数据结构）"></a>数据来源（对应数据结构）</h3>]]></content>
-      <categories>
-        <category>学术</category>
-      </categories>
-      <tags>
-        <tag>文献复现</tag>
-        <tag>机器学习</tag>
-        <tag>高性能材料的设计</tag>
-        <tag>文献阅读笔记</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>蹇锡高学术讲座——新型杂环高性能工程塑料及其加工应用发展进展——杂萘联苯型聚芳醚高性能树脂及其应用技术</title>
-    <url>/2025/11/03/jianxigao_1103/</url>
-    <content><![CDATA[<h2 id="讲师介绍"><a href="#讲师介绍" class="headerlink" title="讲师介绍"></a>讲师介绍</h2><p>详细见链接<a href="https://zhuanlan.zhihu.com/p/1904787911674672194">蹇锡高院士研究团队:杂萘联苯型聚芳醚高性能树脂及其应用技术</a></p>
-<hr>
-<h4 id="重点："><a href="#重点：" class="headerlink" title="重点："></a>重点：</h4><p>杂萘联苯型聚芳醚高性能树脂及其应用技术</p>
-<blockquote>
-<p>短纤维增强树脂基复合材料</p>
-</blockquote>
-<ul>
-<li>耐磨自润滑复合材料</li>
-<li>航空发动机高速止推轴承</li>
-<li>核主泵动压滑动轴承瓦面TF330</li>
-<li>高铁风源压缩机涡旋动涡卷ppesk<blockquote>
-<p>连续纤维增强热塑性树脂基复合材料</p>
-</blockquote>
-</li>
-</ul>
-<blockquote>
-<p>耐高温、耐辐照绝缘漆</p>
-</blockquote>
-<blockquote>
-<p>功能膜——耐高温RO膜、耐400℃隔热涂料</p>
-</blockquote>
-<p><img src="/images/jxg_ppt.jpg" alt="工程应用方向"></p>
-<hr>
-<h4 id="启发"><a href="#启发" class="headerlink" title="启发"></a>启发</h4><ul>
-<li>机器学习对高性能高分子材料比较适合筛选和实验（对复合材料不友好）</li>
-<li>特征功能性高分子材料也可以加机器学习筛选预测</li>
-</ul>
-<hr>
-<h5 id="前沿研究"><a href="#前沿研究" class="headerlink" title="前沿研究"></a>前沿研究</h5><h6 id="2035发展战略研究，建议发展重点："><a href="#2035发展战略研究，建议发展重点：" class="headerlink" title="2035发展战略研究，建议发展重点："></a>2035发展战略研究，建议发展重点：</h6><ol>
-<li>高性能高分子材料及其复合材料</li>
-<li>特种功能性高分子材料</li>
-<li>通用高分子材料（过剩）高性能化、功能化（解决方法）</li>
-<li>生物基高分子材料、可回收循环利用的高分子材料——笔者课题组所研究的方向（与双碳相关）</li>
-</ol>
-<h6 id="复合材料（无机非金属-金属材料-高分子材料）"><a href="#复合材料（无机非金属-金属材料-高分子材料）" class="headerlink" title="复合材料（无机非金属+金属材料+高分子材料）"></a>复合材料（无机非金属+金属材料+高分子材料）</h6><ul>
-<li><strong>轻质、高强、耐高温（高分子材料的缺陷）、耐腐蚀</strong></li>
-</ul>
-<p>关注开发既<strong>耐高温又可溶解</strong>（固有性质是耐高温溶解差甚至不溶解）的新品种材料，希望实现高性能、低成本、可控设备——<strong>性价比、稳定性</strong>（材料领域）</p>
-<p>例如：DHPZ结构引入，酰亚胺五元氮杂环，使得聚合物也具有扭曲非共平面结构，阻碍结晶，利于溶解。实现既耐高温又可溶<a href="https://baike.baidu.com/item/%E5%90%AB%E4%BA%8C%E6%B0%AE%E6%9D%82%E8%90%98%E9%85%AE%E8%81%94%E8%8B%AF%E7%BB%93%E6%9E%84%E8%81%9A%E8%8A%B3%E9%86%9A%E8%85%88%E7%A0%9C%E5%8F%8A%E5%85%B6%E5%88%B6%E5%A4%87%E6%B3%95/59196417">具体介绍</a></p>
-]]></content>
-      <categories>
-        <category>学术</category>
-      </categories>
-      <tags>
-        <tag>学术讲座</tag>
-        <tag>高分子材料</tag>
-        <tag>高性能工程塑料</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>CatBoost道路风险预测学习笔记（对应的ipynb的markdown版本）</title>
-    <url>/2025/11/03/road_rick_new_one/</url>
+    <url>/2025/11/03/Catboost_road_rick/</url>
     <content><![CDATA[<span id="more"></span>
 <h3 id="第三方库导入和数据集的导入，数据集的查看"><a href="#第三方库导入和数据集的导入，数据集的查看" class="headerlink" title="第三方库导入和数据集的导入，数据集的查看"></a>第三方库导入和数据集的导入，数据集的查看</h3><h4 id="第三方库的导入和输出对应的版本编号"><a href="#第三方库的导入和输出对应的版本编号" class="headerlink" title="第三方库的导入和输出对应的版本编号"></a>第三方库的导入和输出对应的版本编号</h4><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"><span class="keyword">import</span> os</span><br><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line"><span class="keyword">import</span> seaborn <span class="keyword">as</span> sns</span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">from</span> sklearn.model_selection <span class="keyword">import</span> train_test_split, cross_val_score</span><br><span class="line"><span class="keyword">from</span> sklearn.metrics <span class="keyword">import</span> mean_squared_error</span><br><span class="line"><span class="keyword">from</span> catboost <span class="keyword">import</span> CatBoostRegressor</span><br><span class="line"><span class="keyword">from</span> IPython.core.display <span class="keyword">import</span> HTML</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">show_object_columns_info</span>(<span class="params">df</span>):</span><br><span class="line">    <span class="string">&quot;显示DataFrame中所有object类型列的信息，包括列名、唯一值数量和所有唯一值&quot;</span></span><br><span class="line">    object_cols = df.select_dtypes(include=[<span class="string">&#x27;object&#x27;</span>]).columns</span><br><span class="line">    <span class="built_in">print</span>(object_cols)</span><br><span class="line">    <span class="keyword">for</span> col <span class="keyword">in</span> object_cols:</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">f&quot;列名: <span class="subst">&#123;col&#125;</span>&quot;</span>)</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">f&#x27;object数量: <span class="subst">&#123;df[col].nunique()&#125;</span>&#x27;</span>)</span><br><span class="line">        <span class="built_in">print</span>(df[col].unique())</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(sns.__version__)</span><br><span class="line"><span class="built_in">print</span>(pd.__version__)</span><br><span class="line"><span class="built_in">print</span>(np.__version__)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
@@ -791,7 +614,7 @@ First 5 rows of submission:
   </entry>
   <entry>
     <title>CatBoost道路风险预测学习笔记</title>
-    <url>/2025/10/30/Predicting%20Road%20Accident%20Risk/</url>
+    <url>/2025/10/30/Catboost_road_rick_leanring/</url>
     <content><![CDATA[<span id="more"></span>
 
 <h3 id="下面所学知识经验均来自对kaggle竞赛Predicting-Road-Accident-Riskz中的公开Notebook代码的模仿过程"><a href="#下面所学知识经验均来自对kaggle竞赛Predicting-Road-Accident-Riskz中的公开Notebook代码的模仿过程" class="headerlink" title="下面所学知识经验均来自对kaggle竞赛Predicting Road Accident Riskz中的公开Notebook代码的模仿过程"></a>下面所学知识经验均来自对kaggle竞赛Predicting Road Accident Riskz中的公开Notebook<a href="https://www.kaggle.com/code/josephnehrenz/s5e10-predicting-road-accident-risk-w-web-app/notebook">代码</a>的模仿过程</h3><hr>
@@ -943,6 +766,195 @@ First 5 rows of submission:
       </tags>
   </entry>
   <entry>
+    <title>复现——Data-Driven Design of High-Performance Polyimides With Enhanced Heat Resistance and Dielectric Properties</title>
+    <url>/2025/11/04/Simulation_and_reproduction_work/</url>
+    <content><![CDATA[<h3 id="标题——数据驱动的高性能聚酰亚胺设计：增强耐热性与介电性能"><a href="#标题——数据驱动的高性能聚酰亚胺设计：增强耐热性与介电性能" class="headerlink" title="标题——数据驱动的高性能聚酰亚胺设计：增强耐热性与介电性能"></a>标题——数据驱动的高性能聚酰亚胺设计：增强耐热性与介电性能</h3><h4 id="期刊名称：Advanced-Functional-Materials"><a href="#期刊名称：Advanced-Functional-Materials" class="headerlink" title="期刊名称：Advanced Functional Materials"></a>期刊名称：Advanced Functional Materials</h4><h4 id="文章解读："><a href="#文章解读：" class="headerlink" title="文章解读："></a>文章解读：</h4><h5 id="intrduction：强调背景、抛砖引玉、娓娓道来"><a href="#intrduction：强调背景、抛砖引玉、娓娓道来" class="headerlink" title="intrduction：强调背景、抛砖引玉、娓娓道来"></a>intrduction：强调背景、抛砖引玉、娓娓道来</h5><ul>
+<li>对象：聚酰亚胺Pi，在高频、高温下的需求</li>
+<li>策略：<strong>mag</strong>，先讲传统策略的缺陷，劣势；突出强调mag方法</li>
+<li><strong>mag</strong>：The MGA is a systematic research strategy to accelerate the discovery and optimization of new materials through <strong>high-throughput experimentation, computation, simulation, and data analysis</strong>. The core of MGA is to accurately predict material properties through machine learning (ML) and effectively screen desired materials from candidates.</li>
+<li>举例：其他人用<strong>mag</strong>做出了什么，开始说在Pi领域也有人在用mag做研究。</li>
+<li><strong>However</strong>：（画风一转）However, applying these methods to the design of polyimides still faces numerous challenges, such as the issue of <strong>data sparsity in high-frequency dielectric properties</strong> and <strong>the need for precise representation of polyimide structures</strong>.<br><strong>点明矛盾问题</strong>：高频段数据稀缺；聚亚酰胺的空间结构的精确表达</li>
+<li>工作方法：the classical Havriliak-Negami (H-N) dielectric relaxation dual-parameter model——对于高频段数据稀缺性采用<strong>经典的Havriliak-Negami（H-N）介电弛豫双参数模型</strong>（第一性原理的引入）；<br>developed multi-level descriptors to comprehensively capture the characteristics of the molecular structures of PIs——对于后者空间结构的表征采用的是<strong>多级描述符</strong></li>
+<li>多层神经网络<strong>HNN</strong>进行<strong>多任务学习MTL</strong>——Subsequently, using these data, we employed multi-task learning (MTL) with hierarchical neural networks (HNN) to establish an efficient and accurate machine learning model.</li>
+<li>人工神经网络<strong>ANN</strong>——Meanwhile, an artificial neural network (ANN) model for predicting the glass transition temperature of PIs was developed</li>
+<li><strong>遗传算法</strong>——A genetic algorithm was employed to create a series of PIs exhibiting exceptional high-frequency dielectric properties and heat resistance.</li>
+</ul>
+<h5 id="结果与讨论"><a href="#结果与讨论" class="headerlink" title="结果与讨论"></a>结果与讨论</h5><ul>
+<li>Section 2.1 introduces the <strong>data preparation</strong>, and Section 2.2 details <strong>the workflow of ML model construction</strong>, as shown in Figure 1b. Section 2.3 describes <strong>the structural design of polyimides using genetic algorithms</strong>. In Section 2.4, we validated <strong>the reliability of the MGA method through experiments</strong>. Section 2.5 reveals <strong>potential chemical rules through interpretable feature analysis</strong>.</li>
+</ul>
+<h6 id="2-1数据准备"><a href="#2-1数据准备" class="headerlink" title="2.1数据准备"></a>2.1数据准备</h6><ul>
+<li><p>原始数据：ployinfo总的聚亚酰胺的重复单元、介电性能（指不同频率和温度下的介电常数与介电损耗）、玻璃转化温度等参数；另一部分人工方式提取。</p>
+</li>
+<li><p>对象限制：所以聚酰亚胺均为不可交联型</p>
+</li>
+<li><p>数据拓展：Considering the need for sufficient low-frequency dielectric performance data to obtain the parameters of Equation 1, fitting was performed for 13 kinds of PIs that met the criteria (having at least 5 data points for low-frequency dielectric properties at the same test temperature).对低频拟合，再对高频计算<br>![[..&#x2F;..&#x2F;images&#x2F;Pasted image 20251104140004.png]]</p>
+</li>
+<li><p>分布展示<br>![[..&#x2F;..&#x2F;images&#x2F;Pasted image 20251104140130.png]]</p>
+</li>
+<li><p>关于数据表征：<strong>聚合物表征</strong>——简化的分子输入行条目系统（<strong>SMILES</strong>）<br>空间特征表征（<strong>多级描述符</strong>）：were automatically generated using the Python third-party library <strong>Mordred</strong>。（Python第三方库）<br>另外一种：<strong>RDKit固有的分子描述符</strong>。</p>
+</li>
+<li><p><strong>特征工程</strong>：将描述符数量减少，减少至130、107和170个</p>
+</li>
+<li><p><strong>子结构描述符SD</strong>方法，关键基元，更微小的结构。</p>
+</li>
+<li><p><strong>gspan算法</strong>：基于图的<strong>子结构模式挖掘算法</strong>，来提取<strong>每种聚酰亚胺中与各项性能相关的子结构</strong>，从而<strong>整合不同子结构对目标性能的贡献度</strong></p>
+</li>
+<li><p>结合定量结构-性能关系分析，我们最终分别获得了508、284和1313个特征，用于构建聚酰亚胺结构与介电常数、介电损耗和玻璃化转变温度之间的定量关系模型。</p>
+</li>
+</ul>
+<h6 id="2-2基于机器学习的定量结构-性质关系模型构建"><a href="#2-2基于机器学习的定量结构-性质关系模型构建" class="headerlink" title="2.2基于机器学习的定量结构-性质关系模型构建"></a>2.2基于机器学习的定量结构-性质关系模型构建</h6><ul>
+<li>简单来说<strong>HNN</strong>来多精度问题；<strong>ANN</strong>用来预测缺失的玻璃化转变温度；广泛<strong>使用的高斯过程回归（GPR）模型被确立为基准模型</strong>，用以<strong>评估神经网络模型的性能</strong>。</li>
+<li>Due to the significant impact of the size of the feature set on the performance of ML models, a practical and highly accurate dimensionality reduction method is necessary to reduce redundant information in the features.需要采用一种<strong>实用且高精度的降维方法</strong>，以<strong>减少特征中的冗余信息</strong>。</li>
+<li>We selected three feature reduction methods used in ML, including <strong>LASSO regression</strong>, <strong>ridge regression</strong>, and <strong>recursive feature elimination</strong> (RFE)</li>
+<li>Note that we have taken the logarithm of the dielectric constants and the dielectric losses to guarantee that the final predicted values are all positive.</li>
+</ul>
+<blockquote>
+<p>关于HNN的学习<a href=""></a>和ANN的学习<a href=""></a></p>
+</blockquote>
+<p>未完待续</p>
+<h3 id="数据来源（对应数据结构）"><a href="#数据来源（对应数据结构）" class="headerlink" title="数据来源（对应数据结构）"></a>数据来源（对应数据结构）</h3>]]></content>
+      <categories>
+        <category>学术</category>
+      </categories>
+      <tags>
+        <tag>机器学习</tag>
+        <tag>文献复现</tag>
+        <tag>高性能材料的设计</tag>
+        <tag>文献阅读笔记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>关于机器（深度）学习的500问/个人版</title>
+    <url>/2025/11/05/dlml/</url>
+    <content><![CDATA[<span id="more"></span>
+
+<h4 id="显示问题"><a href="#显示问题" class="headerlink" title="显示问题"></a>显示问题</h4><h6 id="关于为什么在vsc中显示不了jupyter-notebook中生成ploty图像？（25年11月5日）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ"><a href="#关于为什么在vsc中显示不了jupyter-notebook中生成ploty图像？（25年11月5日）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ" class="headerlink" title="关于为什么在vsc中显示不了jupyter notebook中生成ploty图像？（25年11月5日）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ"></a>关于为什么在vsc中显示不了jupyter notebook中生成ploty图像？（25年11月5日）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ</h6><blockquote>
+<p>多用ai来提升问题的解决效率，提高学习的速度（同时要注意提示词给的精准，准意区分真正的解决方案和ai幻觉——靠各种方案去尝试）</p>
+</blockquote>
+<p>关键是插件Jupyter Notebook Renderers没有安装的问题。所以在浏览器中的jupyter可以显示ploty交互式的图像，但是在vsc中却没用。</p>
+<h6 id="如何在博客中自动折叠代码、以及在obsidian中自动折叠代码？（25年11月6日）"><a href="#如何在博客中自动折叠代码、以及在obsidian中自动折叠代码？（25年11月6日）" class="headerlink" title="如何在博客中自动折叠代码、以及在obsidian中自动折叠代码？（25年11月6日）"></a>如何在博客中自动折叠代码、以及在obsidian中自动折叠代码？（25年11月6日）</h6><h4 id="代码运行问题"><a href="#代码运行问题" class="headerlink" title="代码运行问题"></a>代码运行问题</h4><h6 id="在vsc-notebook中如何调试代码-25年11月6日-٩-•̤̀ᵕ•̤́๑-ᵒᵏᵏᵎᵎᵎᵎ"><a href="#在vsc-notebook中如何调试代码-25年11月6日-٩-•̤̀ᵕ•̤́๑-ᵒᵏᵏᵎᵎᵎᵎ" class="headerlink" title="在vsc-notebook中如何调试代码? (25年11月6日) ٩(•̤̀ᵕ•̤́๑)ᵒᵏᵏᵎᵎᵎᵎ"></a>在vsc-notebook中如何调试代码? (25年11月6日) ٩(•̤̀ᵕ•̤́๑)ᵒᵏᵏᵎᵎᵎᵎ</h6><p>在代码框运行旁边有个debug,可以调试代码代码块.</p>
+<blockquote>
+<p>代码调试和逐句ai辅助理解, 学习代码效率简直拉满. 其实做习惯了, 也可以少一点笔记编辑, 可以直接在理解后, 用自己的语言备注在代码块中.  </p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>machine_learning</tag>
+        <tag>deep_learning</tag>
+        <tag>questions</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>blog学习进展/hexo-next教程</title>
+    <url>/2025/10/22/blog_learning/</url>
+    <content><![CDATA[<h3 id="关于hexo-next的美化"><a href="#关于hexo-next的美化" class="headerlink" title="关于hexo-next的美化"></a>关于hexo-next的美化</h3><h4 id="如何创建一个新的博客文章？（2025-10-27）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ"><a href="#如何创建一个新的博客文章？（2025-10-27）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ" class="headerlink" title="如何创建一个新的博客文章？（2025-10-27）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ"></a>如何创建一个新的博客文章？（2025-10-27）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ</h4><p>hexo new “文章标题”<br>或者在对应的文件夹在直接添加对应.md文件，注意编辑文件头信息yaml格式</p>
+<h4 id="如何更改首页置顶顺序？（2025-10-28）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ"><a href="#如何更改首页置顶顺序？（2025-10-28）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ" class="headerlink" title="如何更改首页置顶顺序？（2025-10-28）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ"></a>如何更改首页置顶顺序？（2025-10-28）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ</h4><ul>
+<li>可以参考这篇博主的文章<a href="https://www.axitown.com/a764f98564af/">阿希の小镇, 2025</a></li>
+</ul>
+<h4 id="如何更改首页，仅部分显示文章？-2025-10-29"><a href="#如何更改首页，仅部分显示文章？-2025-10-29" class="headerlink" title="如何更改首页，仅部分显示文章？(2025-10-29)"></a>如何更改首页，仅部分显示文章？(2025-10-29)</h4><h4 id="如何实现副标题的动态显示？-2025-10-30"><a href="#如何实现副标题的动态显示？-2025-10-30" class="headerlink" title="如何实现副标题的动态显示？(2025-10-30)"></a>如何实现副标题的动态显示？(2025-10-30)</h4><h4 id="文章如何只显示部分文章内容？-2025-10-30-٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ"><a href="#文章如何只显示部分文章内容？-2025-10-30-٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ" class="headerlink" title="文章如何只显示部分文章内容？(2025-10-30) ٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ"></a>文章如何只显示部分文章内容？(2025-10-30) ٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ</h4><ul>
+<li>可以在文章的md文件中，添加<span id="more"></span>注释，注释之前的内容就会显示在首页，注释之后的内容就会隐藏起来。</li>
+</ul>
+<h4 id="链接跳转样式（2025-10-30）"><a href="#链接跳转样式（2025-10-30）" class="headerlink" title="链接跳转样式（2025-10-30）"></a>链接跳转样式（2025-10-30）</h4><ul>
+<li>链接跳转样式的图标美化</li>
+</ul>
+<p>博客美化的教程<a href="https://fatedshadow.github.io/%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/%E5%8D%9A%E5%AE%A2/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8-Hexo-Next-%E7%BE%8E%E5%8C%96%E5%8D%9A%E5%AE%A2/">text</a></p>
+<h4 id="如何自动折叠代码块？（2025-11-06）-٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ"><a href="#如何自动折叠代码块？（2025-11-06）-٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ" class="headerlink" title="如何自动折叠代码块？（2025-11-06） ٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ"></a>如何自动折叠代码块？（2025-11-06） ٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ</h4><p>最新版的hexo-next主题已经支持代码折叠，去主题配置yml文件中，找到codeblock，将fold的enable设置为true即可。</p>
+<!-- more -->
+
+<hr>
+<h3 id="关于如何优化访问，正规的站点建设"><a href="#关于如何优化访问，正规的站点建设" class="headerlink" title="关于如何优化访问，正规的站点建设"></a>关于如何优化访问，正规的站点建设</h3><h4 id="为什么每段时间自己的域名就要重新对齐GitHub（2025-10-29）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ"><a href="#为什么每段时间自己的域名就要重新对齐GitHub（2025-10-29）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ" class="headerlink" title="为什么每段时间自己的域名就要重新对齐GitHub（2025-10-29）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ"></a>为什么每段时间自己的域名就要重新对齐GitHub（2025-10-29）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ</h4><ul>
+<li>可以参考这篇博主的文章<a href="https://www.cnblogs.com/xieqk/p/Github-Page-DNS.html">域名DNS解析到自己的githubpages页面,谢乔康</a></li>
+</ul>
+<h4 id="如何配置自己的域名？（2025-10-27）"><a href="#如何配置自己的域名？（2025-10-27）" class="headerlink" title="如何配置自己的域名？（2025-10-27）"></a><strong>如何配置自己的域名？（2025-10-27）</strong></h4><p>查看<a href="/2025/10/27/yuming/">域名配置</a></p>
+<h4 id="如何添加自己的友链？（2025-10-28）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵏᵎᵎᵎᵎ"><a href="#如何添加自己的友链？（2025-10-28）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵏᵎᵎᵎᵎ" class="headerlink" title="如何添加自己的友链？（2025-10-28）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵏᵎᵎᵎᵎ"></a>如何添加自己的友链？（2025-10-28）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵏᵎᵎᵎᵎ</h4><ul>
+<li>友链是指在博客中添加其他博客作者的链接，以展示他们的创作和关注。</li>
+</ul>
+<blockquote>
+<p>感悟思考：现在hexo博客的建立主要靠，<strong>浏览器的搜索查找别人的技术文章</strong>以及<strong>ai的回答</strong>。还是要多学会用<strong>dp、chatgpt</strong>等工具，来理解问题解决问题。Trea真的太垃圾了，要加快自己的学习速度！</p>
+</blockquote>
+<h4 id="如何添加文章分享功能？（2025-10-30）"><a href="#如何添加文章分享功能？（2025-10-30）" class="headerlink" title="如何添加文章分享功能？（2025-10-30）"></a>如何添加文章分享功能？（2025-10-30）</h4><h4 id="如何将自己的ipynb文件转换为markdown文件？并发表在博客上？（2025-11-02）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ"><a href="#如何将自己的ipynb文件转换为markdown文件？并发表在博客上？（2025-11-02）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ" class="headerlink" title="如何将自己的ipynb文件转换为markdown文件？并发表在博客上？（2025-11-02）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ"></a>如何将自己的ipynb文件转换为markdown文件？并发表在博客上？（2025-11-02）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ</h4><p>参考这篇文章<a href="https://juejin.cn/post/7506038621612245033">惜鸟，2025</a></p>
+<h4 id="如何升级评论系统，GitHub评论系统较为封闭并不开放？（2025-11-03）"><a href="#如何升级评论系统，GitHub评论系统较为封闭并不开放？（2025-11-03）" class="headerlink" title="如何升级评论系统，GitHub评论系统较为封闭并不开放？（2025-11-03）"></a>如何升级评论系统，GitHub评论系统较为封闭并不开放？（2025-11-03）</h4><h4 id="RSS订阅功能如何添加？（2025-11-04）"><a href="#RSS订阅功能如何添加？（2025-11-04）" class="headerlink" title="RSS订阅功能如何添加？（2025-11-04）"></a>RSS订阅功能如何添加？（2025-11-04）</h4><ul>
+<li>添加<a href="https://www.boyouquan.com/home">博客圈</a></li>
+</ul>
+<hr>
+<h3 id="关于markdown的使用"><a href="#关于markdown的使用" class="headerlink" title="关于markdown的使用"></a>关于markdown的使用</h3><p>markdown是一种轻量级的标记语言，用于在文本中添加格式化元素。它简单易学，同时也非常灵活。（obsidion、blog必备的技能、现在ai回答输出的格式也是markdown例如deepseek的回答、）基础语法参考(小刘在路上[^1]，2024)</p>
+<h4 id="如何链接文章？（2025-10-27）-有问题跳转找不到网页，亟待解决-٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ"><a href="#如何链接文章？（2025-10-27）-有问题跳转找不到网页，亟待解决-٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ" class="headerlink" title="如何链接文章？（2025-10-27）,有问题跳转找不到网页，亟待解决 ٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ"></a>如何链接文章？（2025-10-27）,有问题跳转找不到网页，亟待解决 ٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ</h4><h5 id="内部链接-٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ"><a href="#内部链接-٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ" class="headerlink" title="内部链接 ٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ"></a>内部链接 ٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ</h5><ul>
+<li>这种问题是由于在hexo生成的public文件夹中，文章的路径与链接的路径不一致导致的。</li>
+<li>解决方法：在hexo配置文件中，将permalink设置为&#x2F;:year&#x2F;:month&#x2F;:day&#x2F;:title&#x2F;，例如：permalink: &#x2F;:year&#x2F;:month&#x2F;:day&#x2F;:title&#x2F;</li>
+<li>这样，在生成的public文件夹中，文章的路径就与链接的路径一致了。</li>
+</ul>
+<p>例如，文章的路径为&#x2F;2025&#x2F;10&#x2F;27&#x2F;yuming&#x2F;，那么链接就为<a href="/2025/10/27/yuming/">域名配置</a></p>
+<h5 id="外部链接-https-www-baidu-com-٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ"><a href="#外部链接-https-www-baidu-com-٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ" class="headerlink" title="外部链接(https://www.baidu.com/) ٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ"></a>外部链接(<a href="https://www.baidu.com/">https://www.baidu.com/</a>) ٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ</h5><ul>
+<li>外部链接是指指向其他网站的链接，例如：<a href="https://www.baidu.com/">百度</a></li>
+<li>外部链接的安全链接的调试可能存在问题（待解决）</li>
+</ul>
+<h5 id="外部链接跳转无效问题？（2025-10-29）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ"><a href="#外部链接跳转无效问题？（2025-10-29）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ" class="headerlink" title="外部链接跳转无效问题？（2025-10-29）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ"></a>外部链接跳转无效问题？（2025-10-29）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ</h5><ul>
+<li>问题出在butterfly与next主题的容器选择器不同所导致的，致谢<a href="https://blog.liushen.fun/posts/1dfd1f41/">LiuShen,2024</a></li>
+</ul>
+<h4 id="如何添加脚注，来致谢引用参考链接的作者？（2025-10-27）15min-٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ"><a href="#如何添加脚注，来致谢引用参考链接的作者？（2025-10-27）15min-٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ" class="headerlink" title="如何添加脚注，来致谢引用参考链接的作者？（2025-10-27）15min ٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ"></a>如何添加脚注，来致谢引用参考链接的作者？（2025-10-27）15min ٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ</h4><p>[^1]: 小刘在路上, 2024. 手把手教会你使用Markdown. CNDS, <a href="https://blog.csdn.net/qq_40818172/article/details/126260661">https://blog.csdn.net/qq_40818172/article/details/126260661</a></p>
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>blog_learning</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>蹇锡高学术讲座——新型杂环高性能工程塑料及其加工应用发展进展——杂萘联苯型聚芳醚高性能树脂及其应用技术</title>
+    <url>/2025/11/03/jianxigao_1103/</url>
+    <content><![CDATA[<h2 id="讲师介绍"><a href="#讲师介绍" class="headerlink" title="讲师介绍"></a>讲师介绍</h2><p>详细见链接<a href="https://zhuanlan.zhihu.com/p/1904787911674672194">蹇锡高院士研究团队:杂萘联苯型聚芳醚高性能树脂及其应用技术</a></p>
+<hr>
+<h4 id="重点："><a href="#重点：" class="headerlink" title="重点："></a>重点：</h4><p>杂萘联苯型聚芳醚高性能树脂及其应用技术</p>
+<blockquote>
+<p>短纤维增强树脂基复合材料</p>
+</blockquote>
+<ul>
+<li>耐磨自润滑复合材料</li>
+<li>航空发动机高速止推轴承</li>
+<li>核主泵动压滑动轴承瓦面TF330</li>
+<li>高铁风源压缩机涡旋动涡卷ppesk<blockquote>
+<p>连续纤维增强热塑性树脂基复合材料</p>
+</blockquote>
+</li>
+</ul>
+<blockquote>
+<p>耐高温、耐辐照绝缘漆</p>
+</blockquote>
+<blockquote>
+<p>功能膜——耐高温RO膜、耐400℃隔热涂料</p>
+</blockquote>
+<p><img src="/images/jxg_ppt.jpg" alt="工程应用方向"></p>
+<hr>
+<h4 id="启发"><a href="#启发" class="headerlink" title="启发"></a>启发</h4><ul>
+<li>机器学习对高性能高分子材料比较适合筛选和实验（对复合材料不友好）</li>
+<li>特征功能性高分子材料也可以加机器学习筛选预测</li>
+</ul>
+<hr>
+<h5 id="前沿研究"><a href="#前沿研究" class="headerlink" title="前沿研究"></a>前沿研究</h5><h6 id="2035发展战略研究，建议发展重点："><a href="#2035发展战略研究，建议发展重点：" class="headerlink" title="2035发展战略研究，建议发展重点："></a>2035发展战略研究，建议发展重点：</h6><ol>
+<li>高性能高分子材料及其复合材料</li>
+<li>特种功能性高分子材料</li>
+<li>通用高分子材料（过剩）高性能化、功能化（解决方法）</li>
+<li>生物基高分子材料、可回收循环利用的高分子材料——笔者课题组所研究的方向（与双碳相关）</li>
+</ol>
+<h6 id="复合材料（无机非金属-金属材料-高分子材料）"><a href="#复合材料（无机非金属-金属材料-高分子材料）" class="headerlink" title="复合材料（无机非金属+金属材料+高分子材料）"></a>复合材料（无机非金属+金属材料+高分子材料）</h6><ul>
+<li><strong>轻质、高强、耐高温（高分子材料的缺陷）、耐腐蚀</strong></li>
+</ul>
+<p>关注开发既<strong>耐高温又可溶解</strong>（固有性质是耐高温溶解差甚至不溶解）的新品种材料，希望实现高性能、低成本、可控设备——<strong>性价比、稳定性</strong>（材料领域）</p>
+<p>例如：DHPZ结构引入，酰亚胺五元氮杂环，使得聚合物也具有扭曲非共平面结构，阻碍结晶，利于溶解。实现既耐高温又可溶<a href="https://baike.baidu.com/item/%E5%90%AB%E4%BA%8C%E6%B0%AE%E6%9D%82%E8%90%98%E9%85%AE%E8%81%94%E8%8B%AF%E7%BB%93%E6%9E%84%E8%81%9A%E8%8A%B3%E9%86%9A%E8%85%88%E7%A0%9C%E5%8F%8A%E5%85%B6%E5%88%B6%E5%A4%87%E6%B3%95/59196417">具体介绍</a></p>
+]]></content>
+      <categories>
+        <category>学术</category>
+      </categories>
+      <tags>
+        <tag>学术讲座</tag>
+        <tag>高分子材料</tag>
+        <tag>高性能工程塑料</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>ml_learning_thought</title>
     <url>/2025/10/29/learning_thought/</url>
     <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="窃取机密失败QAQ..." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
@@ -966,21 +978,6 @@ First 5 rows of submission:
       </tags>
   </entry>
   <entry>
-    <title>域名配置</title>
-    <url>/2025/10/27/yuming/</url>
-    <content><![CDATA[<p>域名购买<a href="https://cloud.tencent.com/">腾讯云</a><br><img src="/images/yuminghouxu.png" alt="域名购买"><br>等待时间 1-2天</p>
-<p>域名绑定以及解析，参考大佬的教程<a href="https://blog.csdn.net/qq_34902437/article/details/140298754">(码的艺术家，2024)</a></p>
-<p>域名备案(最后一步，域名备案，云服务器还要购买，呜呜呜)<br>云服务器暂且搁置</p>
-]]></content>
-      <categories>
-        <category>学习</category>
-      </categories>
-      <tags>
-        <tag>blog_learning</tag>
-        <tag>域名</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>机器学习进展</title>
     <url>/2025/10/22/machine_learning/</url>
     <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="窃取机密失败QAQ..." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
@@ -1000,6 +997,33 @@ First 5 rows of submission:
       </categories>
       <tags>
         <tag>机器学习</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>域名配置</title>
+    <url>/2025/10/27/yuming/</url>
+    <content><![CDATA[<p>域名购买<a href="https://cloud.tencent.com/">腾讯云</a><br><img src="/images/yuminghouxu.png" alt="域名购买"><br>等待时间 1-2天</p>
+<p>域名绑定以及解析，参考大佬的教程<a href="https://blog.csdn.net/qq_34902437/article/details/140298754">(码的艺术家，2024)</a></p>
+<p>域名备案(最后一步，域名备案，云服务器还要购买，呜呜呜)<br>云服务器暂且搁置</p>
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>blog_learning</tag>
+        <tag>域名</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>thoughts</title>
+    <url>/2025/10/27/thoughts/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>观点</category>
+      </categories>
+      <tags>
+        <tag>想法</tag>
+        <tag>观点</tag>
       </tags>
   </entry>
 </search>

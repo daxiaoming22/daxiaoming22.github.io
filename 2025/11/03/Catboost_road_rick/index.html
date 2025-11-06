@@ -18,12 +18,12 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/themes/blue/pace-theme-bounce.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/pace.min.js" integrity="sha256-gqd7YTjg/BtfqWSwsJOvndl0Bxc8gFImLEkXQT8+qj0=" crossorigin="anonymous" defer=""></script>
 
-<script class="next-config" data-name="main" type="application/json">{"hostname":"ideaforge.icu","root":"/","images":"/images","scheme":"Pisces","darkmode":true,"version":"8.25.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"codeblock":{"theme":{"light":"default","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":true,"style":"mac"},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownBigIn","coll_header":"slideLeftIn","sidebar":"slideDownBigOut"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":"ture","top_n_per_article":1,"unescape":false,"preload":"ture"}}</script><script src="/js/config.js" defer=""></script>
+<script class="next-config" data-name="main" type="application/json">{"hostname":"ideaforge.icu","root":"/","images":"/images","scheme":"Pisces","darkmode":true,"version":"8.25.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"codeblock":{"theme":{"light":"default","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":true,"style":"mac"},"fold":{"enable":true,"height":500},"language":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownBigIn","coll_header":"slideLeftIn","sidebar":"slideDownBigOut"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":"ture","top_n_per_article":1,"unescape":false,"preload":"ture"}}</script><script src="/js/config.js" defer=""></script>
 
     <meta name="description" content="这篇笔记基于Kaggle竞赛数据，详细记录了使用CatBoost进行道路风险预测的完整流程，包括第三方库导入与版本查看、数据集导入与清洗、数据可视化分析（目标分布和相关性热力图）、CatBoost模型构建（设置1000次迭代、0.1学习率、6层深度等参数并启用GPU加速）、模型评估（通过RMSE和5折交叉验证）、特征重要性分析（速度限制、光照条件和曲率是最重要的三个特征）、预测结果可视化（实际值v">
 <meta property="og:type" content="article">
 <meta property="og:title" content="CatBoost道路风险预测学习笔记（对应的ipynb的markdown版本）">
-<meta property="og:url" content="https://ideaforge.icu/2025/11/03/road_rick_new_one/index.html">
+<meta property="og:url" content="https://ideaforge.icu/2025/11/03/Catboost_road_rick/index.html">
 <meta property="og:site_name" content="Yueming &amp; Blog">
 <meta property="og:description" content="这篇笔记基于Kaggle竞赛数据，详细记录了使用CatBoost进行道路风险预测的完整流程，包括第三方库导入与版本查看、数据集导入与清洗、数据可视化分析（目标分布和相关性热力图）、CatBoost模型构建（设置1000次迭代、0.1学习率、6层深度等参数并启用GPU加速）、模型评估（通过RMSE和5折交叉验证）、特征重要性分析（速度限制、光照条件和曲率是最重要的三个特征）、预测结果可视化（实际值v">
 <meta property="og:locale" content="zh_CN">
@@ -43,10 +43,10 @@
 <meta name="twitter:image" content="https://ideaforge.icu/images/road_rick_new_one_8_0.png">
 
 
-<link rel="canonical" href="https://ideaforge.icu/2025/11/03/road_rick_new_one/">
+<link rel="canonical" href="https://ideaforge.icu/2025/11/03/Catboost_road_rick/">
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://ideaforge.icu/2025/11/03/road_rick_new_one/","path":"2025/11/03/road_rick_new_one/","title":"CatBoost道路风险预测学习笔记（对应的ipynb的markdown版本）"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://ideaforge.icu/2025/11/03/Catboost_road_rick/","path":"2025/11/03/Catboost_road_rick/","title":"CatBoost道路风险预测学习笔记（对应的ipynb的markdown版本）"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
 <title>CatBoost道路风险预测学习笔记（对应的ipynb的markdown版本） | Yueming &amp; Blog</title>
@@ -122,7 +122,7 @@
 
 
 <nav class="site-nav">
-  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">15</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">3</span></a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">9</span></a></li><li class="menu-item menu-item-link"><a href="/links/" rel="section"><i class="fa fa-link fa-fw"></i>友链</a></li>
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">18</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">3</span></a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">10</span></a></li><li class="menu-item menu-item-link"><a href="/links/" rel="section"><i class="fa fa-link fa-fw"></i>友链</a></li>
       <li class="menu-item menu-item-search">
         <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
         </a>
@@ -185,7 +185,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">9</span>
+          <span class="site-state-item-count">10</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -196,7 +196,7 @@
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/tags/">
-        <span class="site-state-item-count">15</span>
+        <span class="site-state-item-count">18</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -253,7 +253,7 @@
   
 
   <article itemscope="" itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://ideaforge.icu/2025/11/03/road_rick_new_one/">
+    <link itemprop="mainEntityOfPage" href="https://ideaforge.icu/2025/11/03/Catboost_road_rick/">
 
     <span hidden="" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/blog_image.jpg">
@@ -947,7 +947,7 @@ First 5 rows of submission:
   </li>
   <li class="post-copyright-link">
       <strong>本文链接：</strong>
-      <a href="https://ideaforge.icu/2025/11/03/road_rick_new_one/" title="CatBoost道路风险预测学习笔记（对应的ipynb的markdown版本）">https://ideaforge.icu/2025/11/03/road_rick_new_one/</a>
+      <a href="https://ideaforge.icu/2025/11/03/Catboost_road_rick/" title="CatBoost道路风险预测学习笔记（对应的ipynb的markdown版本）">https://ideaforge.icu/2025/11/03/Catboost_road_rick/</a>
   </li>
   <li class="post-copyright-license">
       <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="/go.html?u=aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo" rel="external nofollow noopener noreferrer" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
@@ -967,13 +967,13 @@ First 5 rows of submission:
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/2025/10/30/Predicting%20Road%20Accident%20Risk/" rel="prev" title="CatBoost道路风险预测学习笔记">
-                  <i class="fa fa-angle-left"></i> CatBoost道路风险预测学习笔记
+                <a href="/2025/11/03/jianxigao_1103/" rel="prev" title="蹇锡高学术讲座——新型杂环高性能工程塑料及其加工应用发展进展——杂萘联苯型聚芳醚高性能树脂及其应用技术">
+                  <i class="fa fa-angle-left"></i> 蹇锡高学术讲座——新型杂环高性能工程塑料及其加工应用发展进展——杂萘联苯型聚芳醚高性能树脂及其应用技术
                 </a>
             </div>
             <div class="post-nav-item">
-                <a href="/2025/11/03/jianxigao_1103/" rel="next" title="蹇锡高学术讲座——新型杂环高性能工程塑料及其加工应用发展进展——杂萘联苯型聚芳醚高性能树脂及其应用技术">
-                  蹇锡高学术讲座——新型杂环高性能工程塑料及其加工应用发展进展——杂萘联苯型聚芳醚高性能树脂及其应用技术 <i class="fa fa-angle-right"></i>
+                <a href="/2025/11/04/Simulation_and_reproduction_work/" rel="next" title="复现——Data-Driven Design of High-Performance Polyimides With Enhanced Heat Resistance and Dielectric Properties">
+                  复现——Data-Driven Design of High-Performance Polyimides With Enhanced Heat Resistance and Dielectric Properties <i class="fa fa-angle-right"></i>
                 </a>
             </div>
           </div>
@@ -1011,13 +1011,13 @@ First 5 rows of submission:
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-line"></i>
     </span>
-    <span title="站点总字数">7k</span>
+    <span title="站点总字数">8k</span>
   </span>
   <span class="post-meta-item">
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">27 分钟</span>
+    <span title="站点阅读时长">28 分钟</span>
   </span>
 </div>
 <div class="busuanzi-count">
