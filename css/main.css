@@ -1454,7 +1454,7 @@ pre code {
     transition: all 0.2s ease-in-out;
   }
   .links-of-author a::before {
-    background: #2f21be;
+    background: #ff3e0f;
     display: inline-block;
     margin-right: 3px;
     transform: translateY(-2px);
@@ -3044,10 +3044,10 @@ body {
 .main-inner > .tabs-comment,
 .main-inner > .comments,
 .main-inner > .pagination {
-  background: rgba(245,245,245,0.067);
+  background: rgba(245,245,245,0.369);
 }
 body {
-  color: rgba(248,245,245,0.647);
+  color: rgba(248,245,245,0.839);
 }
 .posts-expand .post-title-link {
   color: rgba(246,244,244,0.365);
