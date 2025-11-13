@@ -1,6 +1,261 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>blog学习进展/hexo-next教程</title>
+    <url>/2025/10/22/blog_learning/</url>
+    <content><![CDATA[<h3 id="关于hexo-next的美化"><a href="#关于hexo-next的美化" class="headerlink" title="关于hexo-next的美化"></a>关于hexo-next的美化</h3><h4 id="如何创建一个新的博客文章？（2025-10-27）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ"><a href="#如何创建一个新的博客文章？（2025-10-27）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ" class="headerlink" title="如何创建一个新的博客文章？（2025-10-27）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ"></a>如何创建一个新的博客文章？（2025-10-27）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ</h4><p>hexo new “文章标题”<br>或者在对应的文件夹在直接添加对应.md文件，注意编辑文件头信息yaml格式</p>
+<h4 id="如何更改首页置顶顺序？（2025-10-28）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ"><a href="#如何更改首页置顶顺序？（2025-10-28）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ" class="headerlink" title="如何更改首页置顶顺序？（2025-10-28）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ"></a>如何更改首页置顶顺序？（2025-10-28）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ</h4><ul>
+<li>可以参考这篇博主的文章<a href="https://www.axitown.com/a764f98564af/">阿希の小镇, 2025</a></li>
+</ul>
+<h4 id="如何更改首页，仅部分显示文章？-2025-10-29"><a href="#如何更改首页，仅部分显示文章？-2025-10-29" class="headerlink" title="如何更改首页，仅部分显示文章？(2025-10-29)"></a>如何更改首页，仅部分显示文章？(2025-10-29)</h4><h4 id="如何实现副标题的动态显示？-2025-10-30"><a href="#如何实现副标题的动态显示？-2025-10-30" class="headerlink" title="如何实现副标题的动态显示？(2025-10-30)"></a>如何实现副标题的动态显示？(2025-10-30)</h4><h4 id="文章如何只显示部分文章内容？-2025-10-30-٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ"><a href="#文章如何只显示部分文章内容？-2025-10-30-٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ" class="headerlink" title="文章如何只显示部分文章内容？(2025-10-30) ٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ"></a>文章如何只显示部分文章内容？(2025-10-30) ٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ</h4><ul>
+<li>可以在文章的md文件中，添加<span id="more"></span>注释，注释之前的内容就会显示在首页，注释之后的内容就会隐藏起来。</li>
+</ul>
+<h4 id="链接跳转样式（2025-10-30）"><a href="#链接跳转样式（2025-10-30）" class="headerlink" title="链接跳转样式（2025-10-30）"></a>链接跳转样式（2025-10-30）</h4><ul>
+<li>链接跳转样式的图标美化</li>
+</ul>
+<p>博客美化的教程<a href="https://fatedshadow.github.io/%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/%E5%8D%9A%E5%AE%A2/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8-Hexo-Next-%E7%BE%8E%E5%8C%96%E5%8D%9A%E5%AE%A2/">text</a></p>
+<h4 id="如何自动折叠代码块？（2025-11-06）-٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ"><a href="#如何自动折叠代码块？（2025-11-06）-٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ" class="headerlink" title="如何自动折叠代码块？（2025-11-06） ٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ"></a>如何自动折叠代码块？（2025-11-06） ٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ</h4><p>最新版的hexo-next主题已经支持代码折叠，去主题配置yml文件中，找到codeblock，将fold的enable设置为true即可。</p>
+<!-- more -->
+
+<hr>
+<h3 id="关于如何优化访问，正规的站点建设"><a href="#关于如何优化访问，正规的站点建设" class="headerlink" title="关于如何优化访问，正规的站点建设"></a>关于如何优化访问，正规的站点建设</h3><h4 id="为什么每段时间自己的域名就要重新对齐GitHub（2025-10-29）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ"><a href="#为什么每段时间自己的域名就要重新对齐GitHub（2025-10-29）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ" class="headerlink" title="为什么每段时间自己的域名就要重新对齐GitHub（2025-10-29）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ"></a>为什么每段时间自己的域名就要重新对齐GitHub（2025-10-29）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ</h4><ul>
+<li>可以参考这篇博主的文章<a href="https://www.cnblogs.com/xieqk/p/Github-Page-DNS.html">域名DNS解析到自己的githubpages页面,谢乔康</a></li>
+</ul>
+<h4 id="如何配置自己的域名？（2025-10-27）"><a href="#如何配置自己的域名？（2025-10-27）" class="headerlink" title="如何配置自己的域名？（2025-10-27）"></a><strong>如何配置自己的域名？（2025-10-27）</strong></h4><p>查看<a href="/2025/10/27/yuming/">域名配置</a></p>
+<h4 id="如何添加自己的友链？（2025-10-28）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵏᵎᵎᵎᵎ"><a href="#如何添加自己的友链？（2025-10-28）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵏᵎᵎᵎᵎ" class="headerlink" title="如何添加自己的友链？（2025-10-28）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵏᵎᵎᵎᵎ"></a>如何添加自己的友链？（2025-10-28）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵏᵎᵎᵎᵎ</h4><ul>
+<li>友链是指在博客中添加其他博客作者的链接，以展示他们的创作和关注。</li>
+</ul>
+<blockquote>
+<p>感悟思考：现在hexo博客的建立主要靠，<strong>浏览器的搜索查找别人的技术文章</strong>以及<strong>ai的回答</strong>。还是要多学会用<strong>dp、chatgpt</strong>等工具，来理解问题解决问题。Trea真的太垃圾了，要加快自己的学习速度！</p>
+</blockquote>
+<h4 id="如何添加文章分享功能？（2025-10-30）"><a href="#如何添加文章分享功能？（2025-10-30）" class="headerlink" title="如何添加文章分享功能？（2025-10-30）"></a>如何添加文章分享功能？（2025-10-30）</h4><h4 id="如何将自己的ipynb文件转换为markdown文件？并发表在博客上？（2025-11-02）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ"><a href="#如何将自己的ipynb文件转换为markdown文件？并发表在博客上？（2025-11-02）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ" class="headerlink" title="如何将自己的ipynb文件转换为markdown文件？并发表在博客上？（2025-11-02）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ"></a>如何将自己的ipynb文件转换为markdown文件？并发表在博客上？（2025-11-02）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ</h4><p>参考这篇文章<a href="https://juejin.cn/post/7506038621612245033">惜鸟，2025</a></p>
+<h4 id="如何升级评论系统，GitHub评论系统较为封闭并不开放？（2025-11-03）"><a href="#如何升级评论系统，GitHub评论系统较为封闭并不开放？（2025-11-03）" class="headerlink" title="如何升级评论系统，GitHub评论系统较为封闭并不开放？（2025-11-03）"></a>如何升级评论系统，GitHub评论系统较为封闭并不开放？（2025-11-03）</h4><h4 id="RSS订阅功能如何添加？（2025-11-04）"><a href="#RSS订阅功能如何添加？（2025-11-04）" class="headerlink" title="RSS订阅功能如何添加？（2025-11-04）"></a>RSS订阅功能如何添加？（2025-11-04）</h4><ul>
+<li>添加<a href="https://www.boyouquan.com/home">博客圈</a></li>
+</ul>
+<hr>
+<h3 id="关于markdown的使用"><a href="#关于markdown的使用" class="headerlink" title="关于markdown的使用"></a>关于markdown的使用</h3><p>markdown是一种轻量级的标记语言，用于在文本中添加格式化元素。它简单易学，同时也非常灵活。（obsidion、blog必备的技能、现在ai回答输出的格式也是markdown例如deepseek的回答、）基础语法参考(小刘在路上[^1]，2024)</p>
+<h4 id="如何链接文章？（2025-10-27）-有问题跳转找不到网页，亟待解决-٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ"><a href="#如何链接文章？（2025-10-27）-有问题跳转找不到网页，亟待解决-٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ" class="headerlink" title="如何链接文章？（2025-10-27）,有问题跳转找不到网页，亟待解决 ٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ"></a>如何链接文章？（2025-10-27）,有问题跳转找不到网页，亟待解决 ٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ</h4><h5 id="内部链接-٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ"><a href="#内部链接-٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ" class="headerlink" title="内部链接 ٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ"></a>内部链接 ٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ</h5><ul>
+<li>这种问题是由于在hexo生成的public文件夹中，文章的路径与链接的路径不一致导致的。</li>
+<li>解决方法：在hexo配置文件中，将permalink设置为&#x2F;:year&#x2F;:month&#x2F;:day&#x2F;:title&#x2F;，例如：permalink: &#x2F;:year&#x2F;:month&#x2F;:day&#x2F;:title&#x2F;</li>
+<li>这样，在生成的public文件夹中，文章的路径就与链接的路径一致了。</li>
+</ul>
+<p>例如，文章的路径为&#x2F;2025&#x2F;10&#x2F;27&#x2F;yuming&#x2F;，那么链接就为<a href="/2025/10/27/yuming/">域名配置</a></p>
+<h5 id="外部链接-https-www-baidu-com-٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ"><a href="#外部链接-https-www-baidu-com-٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ" class="headerlink" title="外部链接(https://www.baidu.com/) ٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ"></a>外部链接(<a href="https://www.baidu.com/">https://www.baidu.com/</a>) ٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ</h5><ul>
+<li>外部链接是指指向其他网站的链接，例如：<a href="https://www.baidu.com/">百度</a></li>
+<li>外部链接的安全链接的调试可能存在问题（待解决）</li>
+</ul>
+<h5 id="外部链接跳转无效问题？（2025-10-29）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ"><a href="#外部链接跳转无效问题？（2025-10-29）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ" class="headerlink" title="外部链接跳转无效问题？（2025-10-29）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ"></a>外部链接跳转无效问题？（2025-10-29）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ</h5><ul>
+<li>问题出在butterfly与next主题的容器选择器不同所导致的，致谢<a href="https://blog.liushen.fun/posts/1dfd1f41/">LiuShen,2024</a></li>
+</ul>
+<h4 id="如何添加脚注，来致谢引用参考链接的作者？（2025-10-27）15min-٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ"><a href="#如何添加脚注，来致谢引用参考链接的作者？（2025-10-27）15min-٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ" class="headerlink" title="如何添加脚注，来致谢引用参考链接的作者？（2025-10-27）15min ٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ"></a>如何添加脚注，来致谢引用参考链接的作者？（2025-10-27）15min ٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ</h4><p>[^1]: 小刘在路上, 2024. 手把手教会你使用Markdown. CNDS, <a href="https://blog.csdn.net/qq_40818172/article/details/126260661">https://blog.csdn.net/qq_40818172/article/details/126260661</a></p>
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>blog_learning</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>关于机器（深度）学习的500问/个人版</title>
+    <url>/2025/11/05/dlml/</url>
+    <content><![CDATA[<span id="more"></span>
+
+<h4 id="显示问题"><a href="#显示问题" class="headerlink" title="显示问题"></a>显示问题</h4><h6 id="关于为什么在vsc中显示不了jupyter-notebook中生成ploty图像？（25年11月5日）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ"><a href="#关于为什么在vsc中显示不了jupyter-notebook中生成ploty图像？（25年11月5日）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ" class="headerlink" title="关于为什么在vsc中显示不了jupyter notebook中生成ploty图像？（25年11月5日）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ"></a>关于为什么在vsc中显示不了jupyter notebook中生成ploty图像？（25年11月5日）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ</h6><blockquote>
+<p>多用ai来提升问题的解决效率，提高学习的速度（同时要注意提示词给的精准，准意区分真正的解决方案和ai幻觉——靠各种方案去尝试）</p>
+</blockquote>
+<p>关键是插件Jupyter Notebook Renderers没有安装的问题。所以在浏览器中的jupyter可以显示ploty交互式的图像，但是在vsc中却没用。</p>
+<h6 id="如何在博客中自动折叠代码、以及在obsidian中自动折叠代码？（25年11月6日）"><a href="#如何在博客中自动折叠代码、以及在obsidian中自动折叠代码？（25年11月6日）" class="headerlink" title="如何在博客中自动折叠代码、以及在obsidian中自动折叠代码？（25年11月6日）"></a>如何在博客中自动折叠代码、以及在obsidian中自动折叠代码？（25年11月6日）</h6><h4 id="代码运行问题"><a href="#代码运行问题" class="headerlink" title="代码运行问题"></a>代码运行问题</h4><h6 id="在vsc-notebook中如何调试代码-25年11月6日-٩-•̤̀ᵕ•̤́๑-ᵒᵏᵏᵎᵎᵎᵎ"><a href="#在vsc-notebook中如何调试代码-25年11月6日-٩-•̤̀ᵕ•̤́๑-ᵒᵏᵏᵎᵎᵎᵎ" class="headerlink" title="在vsc-notebook中如何调试代码? (25年11月6日) ٩(•̤̀ᵕ•̤́๑)ᵒᵏᵏᵎᵎᵎᵎ"></a>在vsc-notebook中如何调试代码? (25年11月6日) ٩(•̤̀ᵕ•̤́๑)ᵒᵏᵏᵎᵎᵎᵎ</h6><p>在代码框运行旁边有个debug,可以调试代码代码块.</p>
+<blockquote>
+<p>代码调试和逐句ai辅助理解, 学习代码效率简直拉满. 其实做习惯了, 也可以少一点笔记编辑, 可以直接在理解后, 用自己的语言备注在代码块中.  </p>
+</blockquote>
+<h6 id="如何提高代码的运行效率和时间，外加服务器？（2025年11月7日）"><a href="#如何提高代码的运行效率和时间，外加服务器？（2025年11月7日）" class="headerlink" title="如何提高代码的运行效率和时间，外加服务器？（2025年11月7日）"></a>如何提高代码的运行效率和时间，外加服务器？（2025年11月7日）</h6><p><a href="https://blog.zouaw.com/article/52490.html">如何用阿里云服务器跑深度学习代码？-CLOUD云枢</a></p>
+<h6 id="如何在其他的电脑中使用docker服务器部署，如何在主机中远程连接服务器？开启炼丹炉计划？（11月10日）spider-man"><a href="#如何在其他的电脑中使用docker服务器部署，如何在主机中远程连接服务器？开启炼丹炉计划？（11月10日）spider-man" class="headerlink" title="如何在其他的电脑中使用docker服务器部署，如何在主机中远程连接服务器？开启炼丹炉计划？（11月10日）spider man"></a>如何在其他的电脑中使用docker服务器部署，如何在主机中远程连接服务器？开启炼丹炉计划？（11月10日）spider man</h6><h6 id="如何用conda将包打包后，导入另外一个电脑的环境管理或者docker容器中？-11月11日-٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ"><a href="#如何用conda将包打包后，导入另外一个电脑的环境管理或者docker容器中？-11月11日-٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ" class="headerlink" title="如何用conda将包打包后，导入另外一个电脑的环境管理或者docker容器中？(11月11日)٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ"></a>如何用conda将包打包后，导入另外一个电脑的环境管理或者docker容器中？(11月11日)٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ</h6><ul>
+<li>实现全量打包<a href="https://blog.csdn.net/weixin_42744466/article/details/149482255">【Anaconda】Conda 虚拟环境打包迁移教程_conda打包环境-CSDN博客</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>machine_learning</tag>
+        <tag>deep_learning</tag>
+        <tag>questions</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>机器学习进展</title>
+    <url>/2025/10/22/machine_learning/</url>
+    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="窃取机密失败QAQ..." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="71c8bf7212203e7846d3a7bf656fb6f12cb1ce5060a2f8af6f7f5d399af41eb0">dccefed83fa27a7ad5aaf2d0962952897e2eac05819bcc21e675ce1cdc4aba5bff28ab5366c0082d3d01afa8266b2dacef3e8eb80ba325b8acc136cbeb108b2c454e602c9a9f740b2827934a89803342bc04ccd631b0782fa124ea7bb373b86c2dea7a22cd5a6b0d2348797feec3366ae8b8f209fcd7f2a6a550fab04a206d18b7219c82ed4db1f9125a9755e75b5634656d3d4b9bf2698c88a9f2603538da83848bfb0333fd3d850acefac9fb39e6414ba447d71e7aeb9d7b8a758800f0a3504a395c2ff2b470b875cdd375ab8a683d764ad81eec8f5328ef44a818f7ba3bea4ed1af70bc6550780f4b8a6c1faafe1ceabc13c9cd1081f54dc5454ebe92c7987391a2d7646907612723f487a3527d9401bdd52bfc3bc7d026da77fb61811f7ef12f65b60214fafcc30302359bf25f8f59ecd0e291ddbc9e67aba6ea082e5e48934b4f8f9ade062ba83a80e4428b86a6d539c23fe7ae9fdcb75853f1360ec871735fbd5109301d92ac8888dafb61d6b138a4792f3a049b517186454030d317a9729f9a9ad62ac8931a38735c967c9eb423959284f9659ad117f5135e5304818fb297c0bb25a408eec8f3e9425597e96f92899252f8d6224bf1382efe6bbffd1b9ecc2fd712e30bb048654372a1d16652ba4203ec1715c183ce6a6f3f6a5046d43ffc995a092b51206ea4b6fab71fad7a98ff15ba119c73dc8b17ff65063b2f9228d56ec552f56405b7b69f8d84586766340ad670cc727ca40ac87501dea9d7f0b1f13f4e0003dd9559449a5b26bf9c108dba0ba09ba785025f4b3d4430b99f0c218eb56cb9e600ae92bbb878858a773c52db3531b06c94e971dd923880a47104279a09359d7bf0f25974ce6bb63b663a05d86300e0bd537b0759fbdd56445262be65a081a9d340528890256f255f3c3927274904a3caf0f16e9c68f8b41f70f4</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-up">
+      <input class="hbe hbe-input-field hbe-input-field-up" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-up" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-up">请输入密码查看</span>
+      </label>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+      <categories>
+        <category>学术</category>
+      </categories>
+      <tags>
+        <tag>机器学习</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>关于机器（深度）学习的炼丹docker部署计划</title>
+    <url>/2025/11/10/liandanjihua/</url>
+    <content><![CDATA[<h1 id="计划始于docker，败于ssh远程（为什么远程使用ssh连接过服务器而连接docker中的容器就失败）"><a href="#计划始于docker，败于ssh远程（为什么远程使用ssh连接过服务器而连接docker中的容器就失败）" class="headerlink" title="计划始于docker，败于ssh远程（为什么远程使用ssh连接过服务器而连接docker中的容器就失败）"></a>计划始于docker，败于ssh远程（为什么远程使用ssh连接过服务器而连接docker中的容器就失败）</h1><h3 id="从conda虚拟环境到docker容器；环境灵活配置提升，可以快速地在别的服务器、不同设备、不通操作系统中，环境管理，然后炼丹跑代码"><a href="#从conda虚拟环境到docker容器；环境灵活配置提升，可以快速地在别的服务器、不同设备、不通操作系统中，环境管理，然后炼丹跑代码" class="headerlink" title="从conda虚拟环境到docker容器；环境灵活配置提升，可以快速地在别的服务器、不同设备、不通操作系统中，环境管理，然后炼丹跑代码"></a>从conda虚拟环境到docker容器；环境灵活配置提升，可以快速地在别的服务器、不同设备、不通操作系统中，环境管理，然后炼丹跑代码</h3><ul>
+<li><p>在家中台式电脑中创建docker环境</p>
+<ul>
+<li><p>docker基本教程（知识）<a href="https://www.runoob.com/docker/docker-container-usage.html">Docker 容器使用 | 菜鸟教程</a></p>
+</li>
+<li><p>Linux操作系统入门（知识）<a href="https://blog.csdn.net/m0_70395069/article/details/145762762">入门 Ubuntu操作系统（超详细，巨简单，小白必看）-CSDN博客</a></p>
+</li>
+<li><p>双系统教程（操作，暂时不用）<a href="https://blog.csdn.net/YIMUleizi/article/details/150263876">Windows 系统下安装 Ubuntu 双系统详细教程（图文指南）_windows安装ubuntu-CSDN博客</a></p>
+<ul>
+<li>等待解决</li>
+</ul>
+</li>
+<li><p>自己电脑上使用的是window子系统功能（知识）<a href="https://blog.csdn.net/Natsuago/article/details/145594631">全网最全Win10&#x2F;11系统下WSL2+Ubuntu20.04的全流程安装指南（两种支持安装至 D 盘方式）_win10安装wsl2-CSDN博客</a></p>
+</li>
+<li><p>Ubuntu lst 版本与普通版有什么区别（知识）<a href="https://www.sysgeek.cn/what-is-ubuntu-lts/">什么是 Ubuntu LTS？和普通版本有什么区别？ - 系统极客</a></p>
+</li>
+<li><p>切换用户权限（操作，已经解决）<a href="https://blog.csdn.net/weixin_51354739/article/details/144693875">【Linux】ubuntu 切换管理员&#x2F;普通用户指令,看这篇就够了！-CSDN博客</a></p>
+</li>
+<li><p>从不同系统中安装docker，既然从Ubuntu系统（window子系统或者用docker desk版）<a href="https://segmentfault.com/a/1190000044606072#item-2-2">『Docker入门指南』- 详细安装与配置教程，助你起航容器化世界！ - 个人文章 - SegmentFault 思否</a></p>
+</li>
+</ul>
+</li>
+<li><p>在conda中打包虚拟环境并在docker部署，如何再开启远端联机，实现本地云端，主机炼丹，优势在于极大的灵活了部署问题，环境不同的问题<a href="https://blog.51cto.com/u_16213450/12773839">https://blog.51cto.com/u_16213450&#x2F;12773839</a></p>
+</li>
+</ul>
+<h3 id="对于自己而言将会常用到的docker命令"><a href="#对于自己而言将会常用到的docker命令" class="headerlink" title="对于自己而言将会常用到的docker命令"></a>对于自己而言将会常用到的docker命令</h3><h4 id="运行进入交互界面-很重要：用于在images使用conda代码，拓展环境第三方库"><a href="#运行进入交互界面-很重要：用于在images使用conda代码，拓展环境第三方库" class="headerlink" title="运行进入交互界面(很重要：用于在images使用conda代码，拓展环境第三方库)"></a>运行进入交互界面(很重要：用于在images使用conda代码，拓展环境第三方库)</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 交互式运行（进入容器内的bash shell）</span></span><br><span class="line">docker run -it --<span class="built_in">rm</span> for_dl_liandan:latest bash</span><br><span class="line"></span><br><span class="line"><span class="comment"># 构建新image</span></span><br><span class="line">docker build -t my_ssh_image .</span><br><span class="line"></span><br><span class="line"><span class="comment"># 交互式运行，用ssh连接docker，将22映射到7092（前面是容器的名字后面是image的名字）</span></span><br><span class="line">docker run -it --name ssh_test -p 7092:22 more_test bash</span><br></pre></td></tr></table></figure>
+<h4 id="在容器中安装的包如何保存到images？（11月10日）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵏᵎᵎᵎᵎ"><a href="#在容器中安装的包如何保存到images？（11月10日）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵏᵎᵎᵎᵎ" class="headerlink" title="在容器中安装的包如何保存到images？（11月10日）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵏᵎᵎᵎᵎ"></a>在容器中安装的包如何保存到images？（11月10日）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵏᵎᵎᵎᵎ</h4><p>重构容器就可以，基础用之前的容器</p>
+<h3 id="如何在远程（notebook）ipynb中使用docker的images来跑代码——使用ssh或者notebook？（11月10日）"><a href="#如何在远程（notebook）ipynb中使用docker的images来跑代码——使用ssh或者notebook？（11月10日）" class="headerlink" title="如何在远程（notebook）ipynb中使用docker的images来跑代码——使用ssh或者notebook？（11月10日）"></a>如何在远程（notebook）ipynb中使用docker的images来跑代码——使用ssh或者notebook？（11月10日）</h3><p>出现无法连接，超时等问题</p>
+<h1 id="胎死腹中（11月11日）决定放弃ssh远程连接计划"><a href="#胎死腹中（11月11日）决定放弃ssh远程连接计划" class="headerlink" title="胎死腹中（11月11日）决定放弃ssh远程连接计划"></a>胎死腹中（11月11日）决定放弃ssh远程连接计划</h1><h1 id="开始转变，决定施行conda环境打包（环境同步），git代码托管同步（代码同步），以及对应环境变更安装指令的保存（三段灵活性，成长型同步）"><a href="#开始转变，决定施行conda环境打包（环境同步），git代码托管同步（代码同步），以及对应环境变更安装指令的保存（三段灵活性，成长型同步）" class="headerlink" title="开始转变，决定施行conda环境打包（环境同步），git代码托管同步（代码同步），以及对应环境变更安装指令的保存（三段灵活性，成长型同步）"></a>开始转变，决定施行conda环境打包（环境同步），git代码托管同步（代码同步），以及对应环境变更安装指令的保存（三段灵活性，成长型同步）</h1><blockquote>
+<p>思考感悟：上午搞了三个小时的问题，都不知道咋解决，主要两个问题太前沿的问题，ai不会，因为常常联网搜索的匹配程度太低不准确；问题没有解决的百分99的原因都是因为问的问题不够精准，要多用bing搜索引擎来，精准搜索得到答案。（gpt4-o1更好用一点）</p>
+</blockquote>
+<h1 id="docker-desktop-wsl2-win11-NVIDIA-Container-Toolkit安装-tensorflorw-gpu-docker（快速docker部署容器，并且实现tensorflow-gpu-加速）-jupyter-lab-ssh远程连接、远程控制"><a href="#docker-desktop-wsl2-win11-NVIDIA-Container-Toolkit安装-tensorflorw-gpu-docker（快速docker部署容器，并且实现tensorflow-gpu-加速）-jupyter-lab-ssh远程连接、远程控制" class="headerlink" title="docker_desktop + wsl2 (win11) + NVIDIA Container Toolkit安装 + tensorflorw_gpu_docker（快速docker部署容器，并且实现tensorflow gpu 加速）+jupyter lab +ssh远程连接、远程控制"></a>docker_desktop + wsl2 (win11) + NVIDIA Container Toolkit安装 + tensorflorw_gpu_docker（快速docker部署容器，并且实现tensorflow gpu 加速）+jupyter lab +ssh远程连接、远程控制</h1><h2 id="重点内容（关于wsl2中的代理配置问题）"><a href="#重点内容（关于wsl2中的代理配置问题）" class="headerlink" title="重点内容（关于wsl2中的代理配置问题）"></a>重点内容（关于wsl2中的代理配置问题）</h2><ul>
+<li>想法路线来源于tensorflow的 <a href="https://tensorflow.google.cn/install/gpu?hl=zh-cn">官方教程:为了简化安装并避免库冲突，建议您使用支持 GPU 的 TensorFlow Docker 映像</a></li>
+<li>重点参考<a href="https://blog.csdn.net/TeleostNaCl/article/details/149058218">这位大佬</a></li>
+<li>关于NVIDIA Container Toolkit安装-<a href="https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html">参考官方教程</a><strong>其实重点在于代理</strong></li>
+</ul>
+<h2 id="重要命令（关于docker的运行，以及重构）"><a href="#重要命令（关于docker的运行，以及重构）" class="headerlink" title="重要命令（关于docker的运行，以及重构）"></a>重要命令（关于docker的运行，以及重构）</h2><ul>
+<li>下面的命令：-p指定容器内的端口向外映射（外部端口:容器内部端口），–gpus指定all可见，-v挂载主机卷到容器内，-d 指定images</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">docker run --gpus all -p 9060:8888 -p 9061:8889 -p 9062:8890 -p 2222:22 -v F:\polymer_ai:/app/pa  -d a73de5acf455</span><br><span class="line"><span class="comment"># 拉取镜像（记得配置国内的镜像）</span></span><br><span class="line">docker pull tensorflow/tensorflow:2.17.0-gpu-jupyter</span><br><span class="line"><span class="comment"># 容器共享宿主机ip</span></span><br><span class="line">docker run --gpus all --net=host -v F:\polymer_ai:/app/pa  -d a73de5acf455</span><br></pre></td></tr></table></figure>
+
+<h2 id="高版本不兼容，我靠，搞了我一下午-解决容器内tensorflow-gpu加速"><a href="#高版本不兼容，我靠，搞了我一下午-解决容器内tensorflow-gpu加速" class="headerlink" title="高版本不兼容，我靠，搞了我一下午(解决容器内tensorflow_gpu加速)"></a>高版本不兼容，我靠，搞了我一下午(解决容器内tensorflow_gpu加速)</h2><h4 id="关于为什么在docker拉取的tensorflow容器中python-c-import-tensorflow-as-tf-print-tf-config-list-physical-devices-GPU-的gpu检测不到（nvidia-msi、以及nvcc-–version却可以正确输出）？"><a href="#关于为什么在docker拉取的tensorflow容器中python-c-import-tensorflow-as-tf-print-tf-config-list-physical-devices-GPU-的gpu检测不到（nvidia-msi、以及nvcc-–version却可以正确输出）？" class="headerlink" title="关于为什么在docker拉取的tensorflow容器中python -c &quot;import tensorflow as tf; print(tf.config.list_physical_devices(&#39;GPU&#39;))&quot;的gpu检测不到（nvidia-msi、以及nvcc –version却可以正确输出）？"></a>关于为什么在docker拉取的tensorflow容器中<code>python -c &quot;import tensorflow as tf; print(tf.config.list_physical_devices(&#39;GPU&#39;))&quot;</code>的gpu检测不到（nvidia-msi、以及nvcc –version却可以正确输出）？</h4><ul>
+<li>参考官方文档</li>
+</ul>
+<h3 id="高版本容器创建后报错"><a href="#高版本容器创建后报错" class="headerlink" title="高版本容器创建后报错"></a>高版本容器创建后报错</h3><ul>
+<li>步骤1：在容器内运行下面命令，检查cuda和cudnn的版本</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">ls</span> /usr/local/cuda/lib64/</span><br><span class="line"><span class="built_in">ls</span> /usr/lib/x86_64-linux-gnu/ | grep cuda</span><br><span class="line"><span class="built_in">ls</span> /usr/lib/x86_64-linux-gnu/ | grep cudnn</span><br></pre></td></tr></table></figure>
+
+<p>例如我的输出：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># cudnn 的版本8.9.6</span></span><br><span class="line">ibcudnn.so.8  </span><br><span class="line">libcudnn.so.8.9.6  </span><br><span class="line">libcudnn_adv_infer.so.8  </span><br><span class="line">libcudnn_adv_infer.so.8.9.6  </span><br><span class="line">libcudnn_adv_train.so.8  </span><br><span class="line">libcudnn_adv_train.so.8.9.6  </span><br><span class="line">libcudnn_cnn_infer.so.8  </span><br><span class="line">libcudnn_cnn_infer.so.8.9.6  </span><br><span class="line">libcudnn_cnn_train.so.8  </span><br><span class="line">libcudnn_cnn_train.so.8.9.6  </span><br><span class="line">libcudnn_ops_infer.so.8  </span><br><span class="line">libcudnn_ops_infer.so.8.9.6  </span><br><span class="line">libcudnn_ops_train.so.8  </span><br><span class="line">libcudnn_ops_train.so.8.9.6</span><br><span class="line"></span><br><span class="line"><span class="comment"># 用nvcc --version查看cuda的实际版本 为12.3</span></span><br><span class="line">nvcc: NVIDIA (R) Cuda compiler driver</span><br><span class="line">Copyright (c) 2005-2023 NVIDIA Corporation</span><br><span class="line">Built on Fri_Nov__3_17:16:49_PDT_2023</span><br><span class="line">Cuda compilation tools, release 12.3, V12.3.103</span><br><span class="line">Build cuda_12.3.r12.3/compiler.33492891_0</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>步骤2：在官网查询，对应兼容版本<a href="https://tensorflow.google.cn/install/source">Build from source  |  TensorFlow</a></li>
+</ul>
+<p>![[&#x2F;images&#x2F;duiyingbanben.png]]</p>
+<p>如上图所示tensorflow2.17.0 和 2.16.1 可以用</p>
+<ul>
+<li>步骤3：pull 对应版本的tensorflow_docker，hub官网拉取对应版本的docker（需要魔法）<a href="https://hub.docker.com/r/tensorflow/tensorflow/">tensorflow&#x2F;tensorflow - Docker Image | Docker Hub</a></li>
+</ul>
+<h2 id="关于ssh远程连接docker的jupyter"><a href="#关于ssh远程连接docker的jupyter" class="headerlink" title="关于ssh远程连接docker的jupyter"></a>关于ssh远程连接docker的jupyter</h2><h3 id="根据最新的知识面了解到，ssh连接失败可能是不在一个局域网（超时），所以转向内网穿透领域"><a href="#根据最新的知识面了解到，ssh连接失败可能是不在一个局域网（超时），所以转向内网穿透领域" class="headerlink" title="根据最新的知识面了解到，ssh连接失败可能是不在一个局域网（超时），所以转向内网穿透领域"></a>根据最新的知识面了解到，ssh连接失败可能是不在一个局域网（超时），所以转向内网穿透领域</h3><h4 id="步骤1：打通宿主机和容器的网络，直接采用-nest-host网络共用模式"><a href="#步骤1：打通宿主机和容器的网络，直接采用-nest-host网络共用模式" class="headerlink" title="步骤1：打通宿主机和容器的网络，直接采用--nest=host网络共用模式"></a>步骤1：打通宿主机和容器的网络，直接采用<code>--nest=host</code>网络共用模式</h4><h4 id="步骤2：成功实现trea中ipynb直接访问容器，内的jupyter映射出来的内核（直接也可以但是要用到转接技术）"><a href="#步骤2：成功实现trea中ipynb直接访问容器，内的jupyter映射出来的内核（直接也可以但是要用到转接技术）" class="headerlink" title="步骤2：成功实现trea中ipynb直接访问容器，内的jupyter映射出来的内核（直接也可以但是要用到转接技术）"></a>步骤2：成功实现trea中ipynb直接访问容器，内的jupyter映射出来的内核（直接也可以但是要用到转接技术）</h4><h4 id="步骤3：成功实现没有–nest-host的情况下，直接通过ssh命令连接容器内部，并使用root命令-宿主机中win中ssh连接不了，但用win的wsl可以连接"><a href="#步骤3：成功实现没有–nest-host的情况下，直接通过ssh命令连接容器内部，并使用root命令-宿主机中win中ssh连接不了，但用win的wsl可以连接" class="headerlink" title="步骤3：成功实现没有–nest&#x3D;host的情况下，直接通过ssh命令连接容器内部，并使用root命令(宿主机中win中ssh连接不了，但用win的wsl可以连接)"></a>步骤3：成功实现没有–nest&#x3D;host的情况下，直接通过ssh命令连接容器内部，并使用root命令(宿主机中win中ssh连接不了，但用win的wsl可以连接)</h4><h4 id="步骤4：在远程机中安装wsl并尝试，在没有内网穿透下，连接宿主机"><a href="#步骤4：在远程机中安装wsl并尝试，在没有内网穿透下，连接宿主机" class="headerlink" title="步骤4：在远程机中安装wsl并尝试，在没有内网穿透下，连接宿主机"></a>步骤4：在远程机中安装wsl并尝试，在没有内网穿透下，连接宿主机</h4><h4 id="步骤5：实现宿主机与远程机的内网穿透，成功在各自的wsl内通过cpolar穿透，远程机连接到宿主机内部"><a href="#步骤5：实现宿主机与远程机的内网穿透，成功在各自的wsl内通过cpolar穿透，远程机连接到宿主机内部" class="headerlink" title="步骤5：实现宿主机与远程机的内网穿透，成功在各自的wsl内通过cpolar穿透，远程机连接到宿主机内部"></a>步骤5：实现宿主机与远程机的内网穿透，成功在各自的wsl内通过cpolar穿透，远程机连接到宿主机内部</h4><h4 id="步骤6：远程机通过ssh连接到宿主机后，再用docker命令进入容器内交互（这样就实现了，远程控制docker）"><a href="#步骤6：远程机通过ssh连接到宿主机后，再用docker命令进入容器内交互（这样就实现了，远程控制docker）" class="headerlink" title="步骤6：远程机通过ssh连接到宿主机后，再用docker命令进入容器内交互（这样就实现了，远程控制docker）"></a>步骤6：远程机通过ssh连接到宿主机后，再用docker命令进入容器内交互（这样就实现了，远程控制docker）</h4><ul>
+<li><strong>远程控制docker进程</strong></li>
+</ul>
+<h4 id="步骤7-在使用ssh指令时将宿主机的localhost拉过来，成功使用得到"><a href="#步骤7-在使用ssh指令时将宿主机的localhost拉过来，成功使用得到" class="headerlink" title="步骤7:在使用ssh指令时将宿主机的localhost拉过来，成功使用得到"></a>步骤7:在使用ssh指令时将宿主机的localhost拉过来，成功使用得到</h4><ul>
+<li><strong>远程使用docker服务</strong></li>
+</ul>
+<h3 id="重点讲一下6、7步是怎么形成的：docker是一种容器化技术，里面打包了我的机器学习深度学习的环境系统（利用docker（在Linux或者在docker-desktop中的）拉取，tensorflow官方在docker-hub推送的image），并创建一个容器（在创建时使用的关键命令，涉及到启用gpus、启用端口投射将容器端口（冒号后面8888，指在容器内jupyter使用的端口）到宿主机的端口（localhost：9060））；后在用cpolar-ssh的内网穿透技术，指定其他端口过来"><a href="#重点讲一下6、7步是怎么形成的：docker是一种容器化技术，里面打包了我的机器学习深度学习的环境系统（利用docker（在Linux或者在docker-desktop中的）拉取，tensorflow官方在docker-hub推送的image），并创建一个容器（在创建时使用的关键命令，涉及到启用gpus、启用端口投射将容器端口（冒号后面8888，指在容器内jupyter使用的端口）到宿主机的端口（localhost：9060））；后在用cpolar-ssh的内网穿透技术，指定其他端口过来" class="headerlink" title="重点讲一下6、7步是怎么形成的：docker是一种容器化技术，里面打包了我的机器学习深度学习的环境系统（利用docker（在Linux或者在docker_desktop中的）拉取，tensorflow官方在docker hub推送的image），并创建一个容器（在创建时使用的关键命令，涉及到启用gpus、启用端口投射将容器端口（冒号后面8888，指在容器内jupyter使用的端口）到宿主机的端口（localhost：9060））；后在用cpolar+ssh的内网穿透技术，指定其他端口过来"></a>重点讲一下6、7步是怎么形成的：docker是一种容器化技术，里面打包了我的机器学习深度学习的环境系统（利用docker（在Linux或者在docker_desktop中的）拉取，tensorflow官方在docker hub推送的image），并创建一个容器（在创建时使用的关键命令，涉及到启用gpus、启用端口投射将容器端口（冒号后面8888，指在容器内jupyter使用的端口）到宿主机的端口（localhost：9060））；后在用cpolar+ssh的内网穿透技术，指定其他端口过来</h3><ul>
+<li>docker容器创建命令，将容器的jupyter服务8888发到宿主机的9060中</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">docker run --gpus all -p 9060:8888 -p 9061:8889 -p 9062:8890 -p 2222:22 -v F:\polymer_ai:/app/pa  -d 容器<span class="built_in">id</span> </span><br></pre></td></tr></table></figure>
+<ul>
+<li>在宿主机上配置好cpolar后，用以下ssh命令，将端口9060又转发到远程机上</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">ssh -L localhost:9060:localhost:9060 root@cpolar隧道地址 -p 10954</span><br></pre></td></tr></table></figure>
+
+<h1 id="炼丹计划终于大成了（2天半）"><a href="#炼丹计划终于大成了（2天半）" class="headerlink" title="炼丹计划终于大成了（2天半）"></a>炼丹计划终于大成了（2天半）</h1><h1 id="第零步："><a href="#第零步：" class="headerlink" title="第零步："></a>第零步：</h1><p>笔记本电脑跑深度学习代码太慢（cpu太低，gpu不够），关于想利用docker容器技术，将代码部署到主机电脑（性能较好）并在主机上运行，实现主机跑代码、笔记本电脑写代码的炼丹大法。<br>于是开始了解并<strong>学习到有关容器docker的技术</strong>【关于为什么会想到docker因为之前电脑玩过deepseek的本地部署，但是后来发现本地部署的太笨了】，<br>并尝试把本地运行conda的虚拟环境的包需求列表导出，并引入<strong>Dockerfile的image构建文件中（学会了Dckerfile的命令句</strong>，以及利用这个文件构建docker的过程），后面发现因为库版本太具体，构建过程中出现问题，开始进入运行的容器内，手动安装需要的包(后面了解到容器暂停运行后并不会保存的image中，<strong>学会了从现有image中重新构建image</strong>)，<br>之后也是成功实现docker环境的配置。问题又来了关于如何使用容器内的代码呢，当你把文件挂载进docker时，代码输出又开不见，且没有jupyter的问题，失去了交互性。<br>之后便开始尝试使用ssh来远程连接docker以及，使用docker内的环境。ssh搞了半天没用（后面发现其实要在一个局域网下才能用ssh来连接，以及docker的网络配置也不知）<br>之后便开始弃用docker，弃用远程连接，炼丹大法开始泡汤，但有趣的事，关于炼丹大法的事情并没有永远沉寂下去………</p>
+<p>在放弃远程炼丹大法之后，由于课题依然要继续推进，便开始着手想着使用远程桌面加U盘的方法。便下载了<strong>Todesk软件</strong>，使用<strong>conda打包一整个环境</strong>传输后到主机电脑上解压展开，之后便成功完成了，在主机电脑相同的codna虚拟环境，之后发现xgboost和lightgbm算法通过简单的参数输入便成功使用上了<strong>gpu加速，代码运行速度直接打骨折</strong>，但运行到ANN（基于tensorflow的人工神经网络）不对了，gpu根本没有跑，运行速度依旧乌龟。于是开始从多途径了解<strong>tensorflow的gpu加速方法</strong>连接到在电脑上安装各种cuda驱动、CUDA、cndnn太麻烦且要考虑版本兼容问题，然后发现在tensorflow的官网上推荐，使用docker来部署tensorflow的gpu加速环境是最简单的。于是便开始<strong>了解docker的部署tensorflow-gpu方案</strong>。炼丹计划重新启动！</p>
+<p>开始拉取tensorflow的镜像，（记得先配置轩辕镜像），这里建议拉取jupyter的版本，拉取之后在容器的交互页面中，发现tensorflow并没有没有找到gpu设备（卡住了半天😭），一直搞啊搞，主要是两个方向的问题：第一：cuda container toolkit下载不下来，curl的时候，一直无法连接，就算用镜像源也没用（后面用了魔法19yuan，也是重新又用上了）第二：安装好了，拉取镜像的时候，依旧不显示GPU，如何一直找原因，终于通过检查cudnn的版本发现兼容性问题(这个我真的没想到啊，想着拉取的tensorflow的docker应该兼容性是好的吧)，开始查询官网的版本对照表，下载后，终于<strong>tensorflow检测到了gpu😎</strong>。</p>
+<p>后面又了解到<strong>ssh内网穿透</strong>，可以远程连接，干脆一不做二不休，开始研究<strong>wsl(windows的linux子系统)</strong>、研究docker的运行命令关于<strong>网络端口的投射</strong>、 关于<strong>cpolar等等一些知识</strong>，后面终于通过重重问题困难，终于练就了炼丹大法，<strong>感谢这几天的自己😎</strong>，没有放弃偷懒🤣。</p>
+<h1 id="总结一下：《炼丹大法》涉及wsl-win下的Linux-基础命令指令、cuda-container-Toolkit的安装、win下docker的安装以及使用docker-desktop的镜像构建以及使用、ssh的命令以及使用、cpolar内网穿透的使用。"><a href="#总结一下：《炼丹大法》涉及wsl-win下的Linux-基础命令指令、cuda-container-Toolkit的安装、win下docker的安装以及使用docker-desktop的镜像构建以及使用、ssh的命令以及使用、cpolar内网穿透的使用。" class="headerlink" title="总结一下：《炼丹大法》涉及wsl(win下的Linux)基础命令指令、cuda container Toolkit的安装、win下docker的安装以及使用docker-desktop的镜像构建以及使用、ssh的命令以及使用、cpolar内网穿透的使用。"></a>总结一下：《炼丹大法》涉及wsl(win下的Linux)基础命令指令、cuda container Toolkit的安装、win下docker的安装以及使用docker-desktop的镜像构建以及使用、ssh的命令以及使用、cpolar内网穿透的使用。</h1><h2 id="第一步：安装wsl，以及Linux的子系统（建议宿主机和远程机都安装），做好对应配置"><a href="#第一步：安装wsl，以及Linux的子系统（建议宿主机和远程机都安装），做好对应配置" class="headerlink" title="第一步：安装wsl，以及Linux的子系统（建议宿主机和远程机都安装），做好对应配置"></a>第一步：安装wsl，以及Linux的子系统（建议宿主机和远程机都安装），做好对应配置</h2><h2 id="第二步：安装docker-desktop，完成一些必要的配置，如确定wsl集成"><a href="#第二步：安装docker-desktop，完成一些必要的配置，如确定wsl集成" class="headerlink" title="第二步：安装docker-desktop，完成一些必要的配置，如确定wsl集成"></a>第二步：安装docker-desktop，完成一些必要的配置，如确定wsl集成</h2><h2 id="第三步：在宿主机上安装cuda，以及利用wsl-魔法安装cuda-container-toolkit"><a href="#第三步：在宿主机上安装cuda，以及利用wsl-魔法安装cuda-container-toolkit" class="headerlink" title="第三步：在宿主机上安装cuda，以及利用wsl+魔法安装cuda container toolkit"></a>第三步：在宿主机上安装cuda，以及利用wsl+魔法安装cuda container toolkit</h2><h2 id="第四步：用docker拉取tensorflow的gpu-jupyter版本的image，并通过命令运行容器"><a href="#第四步：用docker拉取tensorflow的gpu-jupyter版本的image，并通过命令运行容器" class="headerlink" title="第四步：用docker拉取tensorflow的gpu-jupyter版本的image，并通过命令运行容器"></a>第四步：用docker拉取tensorflow的gpu-jupyter版本的image，并通过命令运行容器</h2><h2 id="第五步：用cpolar-ssh打通，宿主机和远程机直接的网络以及端口"><a href="#第五步：用cpolar-ssh打通，宿主机和远程机直接的网络以及端口" class="headerlink" title="第五步：用cpolar+ssh打通，宿主机和远程机直接的网络以及端口"></a>第五步：用cpolar+ssh打通，宿主机和远程机直接的网络以及端口</h2><h2 id="第六步：通过远程机的ssh连接后，用docker命令进入容器交互，下载缺少包环境。利用ssh连接是对应的端口转接，来打开docker容器的jupyter服务。"><a href="#第六步：通过远程机的ssh连接后，用docker命令进入容器交互，下载缺少包环境。利用ssh连接是对应的端口转接，来打开docker容器的jupyter服务。" class="headerlink" title="第六步：通过远程机的ssh连接后，用docker命令进入容器交互，下载缺少包环境。利用ssh连接是对应的端口转接，来打开docker容器的jupyter服务。"></a>第六步：通过远程机的ssh连接后，用docker命令进入容器交互，下载缺少包环境。利用ssh连接是对应的端口转接，来打开docker容器的jupyter服务。</h2><h2 id="通过以上的一些步骤便可实现在笔记本电脑上，对台式机上的容器环境进行使用其环境服务，以及变更调整其环境。真正做到快速炼丹的调控。"><a href="#通过以上的一些步骤便可实现在笔记本电脑上，对台式机上的容器环境进行使用其环境服务，以及变更调整其环境。真正做到快速炼丹的调控。" class="headerlink" title="通过以上的一些步骤便可实现在笔记本电脑上，对台式机上的容器环境进行使用其环境服务，以及变更调整其环境。真正做到快速炼丹的调控。"></a>通过以上的一些步骤便可实现在笔记本电脑上，对台式机上的容器环境进行使用其环境服务，以及变更调整其环境。真正做到快速炼丹的调控。</h2>]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>machine_learning</tag>
+        <tag>deep_learning</tag>
+        <tag>questions</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>复现——Data-Driven Design of High-Performance Polyimides With Enhanced Heat Resistance and Dielectric Properties</title>
+    <url>/2025/11/04/Simulation_and_reproduction_work/</url>
+    <content><![CDATA[<h3 id="标题——数据驱动的高性能聚酰亚胺设计：增强耐热性与介电性能"><a href="#标题——数据驱动的高性能聚酰亚胺设计：增强耐热性与介电性能" class="headerlink" title="标题——数据驱动的高性能聚酰亚胺设计：增强耐热性与介电性能"></a>标题——数据驱动的高性能聚酰亚胺设计：增强耐热性与介电性能</h3><h4 id="期刊名称：Advanced-Functional-Materials"><a href="#期刊名称：Advanced-Functional-Materials" class="headerlink" title="期刊名称：Advanced Functional Materials"></a>期刊名称：Advanced Functional Materials</h4><h4 id="文章解读："><a href="#文章解读：" class="headerlink" title="文章解读："></a>文章解读：</h4><h5 id="intrduction：强调背景、抛砖引玉、娓娓道来"><a href="#intrduction：强调背景、抛砖引玉、娓娓道来" class="headerlink" title="intrduction：强调背景、抛砖引玉、娓娓道来"></a>intrduction：强调背景、抛砖引玉、娓娓道来</h5><ul>
+<li>对象：聚酰亚胺Pi，在高频、高温下的需求</li>
+<li>策略：<strong>mag</strong>，先讲传统策略的缺陷，劣势；突出强调mag方法</li>
+<li><strong>mag</strong>：The MGA is a systematic research strategy to accelerate the discovery and optimization of new materials through <strong>high-throughput experimentation, computation, simulation, and data analysis</strong>. The core of MGA is to accurately predict material properties through machine learning (ML) and effectively screen desired materials from candidates.</li>
+<li>举例：其他人用<strong>mag</strong>做出了什么，开始说在Pi领域也有人在用mag做研究。</li>
+<li><strong>However</strong>：（画风一转）However, applying these methods to the design of polyimides still faces numerous challenges, such as the issue of <strong>data sparsity in high-frequency dielectric properties</strong> and <strong>the need for precise representation of polyimide structures</strong>.<br><strong>点明矛盾问题</strong>：高频段数据稀缺；聚亚酰胺的空间结构的精确表达</li>
+<li>工作方法：the classical Havriliak-Negami (H-N) dielectric relaxation dual-parameter model——对于高频段数据稀缺性采用<strong>经典的Havriliak-Negami（H-N）介电弛豫双参数模型</strong>（第一性原理的引入）；<br>developed multi-level descriptors to comprehensively capture the characteristics of the molecular structures of PIs——对于后者空间结构的表征采用的是<strong>多级描述符</strong></li>
+<li>多层神经网络<strong>HNN</strong>进行<strong>多任务学习MTL</strong>——Subsequently, using these data, we employed multi-task learning (MTL) with hierarchical neural networks (HNN) to establish an efficient and accurate machine learning model.</li>
+<li>人工神经网络<strong>ANN</strong>——Meanwhile, an artificial neural network (ANN) model for predicting the glass transition temperature of PIs was developed</li>
+<li><strong>遗传算法</strong>——A genetic algorithm was employed to create a series of PIs exhibiting exceptional high-frequency dielectric properties and heat resistance.</li>
+</ul>
+<h5 id="结果与讨论"><a href="#结果与讨论" class="headerlink" title="结果与讨论"></a>结果与讨论</h5><ul>
+<li>Section 2.1 introduces the <strong>data preparation</strong>, and Section 2.2 details <strong>the workflow of ML model construction</strong>, as shown in Figure 1b. Section 2.3 describes <strong>the structural design of polyimides using genetic algorithms</strong>. In Section 2.4, we validated <strong>the reliability of the MGA method through experiments</strong>. Section 2.5 reveals <strong>potential chemical rules through interpretable feature analysis</strong>.</li>
+</ul>
+<h6 id="2-1数据准备"><a href="#2-1数据准备" class="headerlink" title="2.1数据准备"></a>2.1数据准备</h6><ul>
+<li><p>原始数据：ployinfo总的聚亚酰胺的重复单元、介电性能（指不同频率和温度下的介电常数与介电损耗）、玻璃转化温度等参数；另一部分人工方式提取。</p>
+</li>
+<li><p>对象限制：所以聚酰亚胺均为不可交联型</p>
+</li>
+<li><p>数据拓展：Considering the need for sufficient low-frequency dielectric performance data to obtain the parameters of Equation 1, fitting was performed for 13 kinds of PIs that met the criteria (having at least 5 data points for low-frequency dielectric properties at the same test temperature).对低频拟合，再对高频计算<br>![[..&#x2F;..&#x2F;images&#x2F;Pasted image 20251104140004.png]]</p>
+</li>
+<li><p>分布展示<br>![[..&#x2F;..&#x2F;images&#x2F;Pasted image 20251104140130.png]]</p>
+</li>
+<li><p>关于数据表征：<strong>聚合物表征</strong>——简化的分子输入行条目系统（<strong>SMILES</strong>）<br>空间特征表征（<strong>多级描述符</strong>）：were automatically generated using the Python third-party library <strong>Mordred</strong>。（Python第三方库）<br>另外一种：<strong>RDKit固有的分子描述符</strong>。</p>
+</li>
+<li><p><strong>特征工程</strong>：将描述符数量减少，减少至130、107和170个</p>
+</li>
+<li><p><strong>子结构描述符SD</strong>方法，关键基元，更微小的结构。</p>
+</li>
+<li><p><strong>gspan算法</strong>：基于图的<strong>子结构模式挖掘算法</strong>，来提取<strong>每种聚酰亚胺中与各项性能相关的子结构</strong>，从而<strong>整合不同子结构对目标性能的贡献度</strong></p>
+</li>
+<li><p>结合定量结构-性能关系分析，我们最终分别获得了508、284和1313个特征，用于构建聚酰亚胺结构与介电常数、介电损耗和玻璃化转变温度之间的定量关系模型。</p>
+</li>
+</ul>
+<h6 id="2-2基于机器学习的定量结构-性质关系模型构建"><a href="#2-2基于机器学习的定量结构-性质关系模型构建" class="headerlink" title="2.2基于机器学习的定量结构-性质关系模型构建"></a>2.2基于机器学习的定量结构-性质关系模型构建</h6><ul>
+<li>简单来说<strong>HNN</strong>来多精度问题；<strong>ANN</strong>用来预测缺失的玻璃化转变温度；广泛<strong>使用的高斯过程回归（GPR）模型被确立为基准模型</strong>，用以<strong>评估神经网络模型的性能</strong>。</li>
+<li>Due to the significant impact of the size of the feature set on the performance of ML models, a practical and highly accurate dimensionality reduction method is necessary to reduce redundant information in the features.需要采用一种<strong>实用且高精度的降维方法</strong>，以<strong>减少特征中的冗余信息</strong>。</li>
+<li>We selected three feature reduction methods used in ML, including <strong>LASSO regression</strong>, <strong>ridge regression</strong>, and <strong>recursive feature elimination</strong> (RFE)</li>
+<li>Note that we have taken the logarithm of the dielectric constants and the dielectric losses to guarantee that the final predicted values are all positive.</li>
+</ul>
+<blockquote>
+<p>关于HNN的学习<a href=""></a>和ANN的学习<a href=""></a></p>
+</blockquote>
+<p>未完待续</p>
+<h3 id="数据来源（对应数据结构）"><a href="#数据来源（对应数据结构）" class="headerlink" title="数据来源（对应数据结构）"></a>数据来源（对应数据结构）</h3>]]></content>
+      <categories>
+        <category>学术</category>
+      </categories>
+      <tags>
+        <tag>机器学习</tag>
+        <tag>文献复现</tag>
+        <tag>高性能材料的设计</tag>
+        <tag>文献阅读笔记</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>CatBoost道路风险预测学习笔记（对应的ipynb的markdown版本）</title>
     <url>/2025/11/03/Catboost_road_rick/</url>
     <content><![CDATA[<span id="more"></span>
@@ -608,8 +863,60 @@ First 5 rows of submission:
         <tag>机器学习</tag>
         <tag>kaggle比赛</tag>
         <tag>函数功能记录</tag>
-        <tag>markdown_from_ipynb</tag>
         <tag>catboost</tag>
+        <tag>markdown_from_ipynb</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>蹇锡高学术讲座——新型杂环高性能工程塑料及其加工应用发展进展——杂萘联苯型聚芳醚高性能树脂及其应用技术</title>
+    <url>/2025/11/03/jianxigao_1103/</url>
+    <content><![CDATA[<h2 id="讲师介绍"><a href="#讲师介绍" class="headerlink" title="讲师介绍"></a>讲师介绍</h2><p>详细见链接<a href="https://zhuanlan.zhihu.com/p/1904787911674672194">蹇锡高院士研究团队:杂萘联苯型聚芳醚高性能树脂及其应用技术</a></p>
+<hr>
+<h4 id="重点："><a href="#重点：" class="headerlink" title="重点："></a>重点：</h4><p>杂萘联苯型聚芳醚高性能树脂及其应用技术</p>
+<blockquote>
+<p>短纤维增强树脂基复合材料</p>
+</blockquote>
+<ul>
+<li>耐磨自润滑复合材料</li>
+<li>航空发动机高速止推轴承</li>
+<li>核主泵动压滑动轴承瓦面TF330</li>
+<li>高铁风源压缩机涡旋动涡卷ppesk<blockquote>
+<p>连续纤维增强热塑性树脂基复合材料</p>
+</blockquote>
+</li>
+</ul>
+<blockquote>
+<p>耐高温、耐辐照绝缘漆</p>
+</blockquote>
+<blockquote>
+<p>功能膜——耐高温RO膜、耐400℃隔热涂料</p>
+</blockquote>
+<p><img src="/images/jxg_ppt.jpg" alt="工程应用方向"></p>
+<hr>
+<h4 id="启发"><a href="#启发" class="headerlink" title="启发"></a>启发</h4><ul>
+<li>机器学习对高性能高分子材料比较适合筛选和实验（对复合材料不友好）</li>
+<li>特征功能性高分子材料也可以加机器学习筛选预测</li>
+</ul>
+<hr>
+<h5 id="前沿研究"><a href="#前沿研究" class="headerlink" title="前沿研究"></a>前沿研究</h5><h6 id="2035发展战略研究，建议发展重点："><a href="#2035发展战略研究，建议发展重点：" class="headerlink" title="2035发展战略研究，建议发展重点："></a>2035发展战略研究，建议发展重点：</h6><ol>
+<li>高性能高分子材料及其复合材料</li>
+<li>特种功能性高分子材料</li>
+<li>通用高分子材料（过剩）高性能化、功能化（解决方法）</li>
+<li>生物基高分子材料、可回收循环利用的高分子材料——笔者课题组所研究的方向（与双碳相关）</li>
+</ol>
+<h6 id="复合材料（无机非金属-金属材料-高分子材料）"><a href="#复合材料（无机非金属-金属材料-高分子材料）" class="headerlink" title="复合材料（无机非金属+金属材料+高分子材料）"></a>复合材料（无机非金属+金属材料+高分子材料）</h6><ul>
+<li><strong>轻质、高强、耐高温（高分子材料的缺陷）、耐腐蚀</strong></li>
+</ul>
+<p>关注开发既<strong>耐高温又可溶解</strong>（固有性质是耐高温溶解差甚至不溶解）的新品种材料，希望实现高性能、低成本、可控设备——<strong>性价比、稳定性</strong>（材料领域）</p>
+<p>例如：DHPZ结构引入，酰亚胺五元氮杂环，使得聚合物也具有扭曲非共平面结构，阻碍结晶，利于溶解。实现既耐高温又可溶<a href="https://baike.baidu.com/item/%E5%90%AB%E4%BA%8C%E6%B0%AE%E6%9D%82%E8%90%98%E9%85%AE%E8%81%94%E8%8B%AF%E7%BB%93%E6%9E%84%E8%81%9A%E8%8A%B3%E9%86%9A%E8%85%88%E7%A0%9C%E5%8F%8A%E5%85%B6%E5%88%B6%E5%A4%87%E6%B3%95/59196417">具体介绍</a></p>
+]]></content>
+      <categories>
+        <category>学术</category>
+      </categories>
+      <tags>
+        <tag>学术讲座</tag>
+        <tag>高分子材料</tag>
+        <tag>高性能工程塑料</tag>
       </tags>
   </entry>
   <entry>
@@ -766,199 +1073,6 @@ First 5 rows of submission:
       </tags>
   </entry>
   <entry>
-    <title>关于机器（深度）学习的500问/个人版</title>
-    <url>/2025/11/05/dlml/</url>
-    <content><![CDATA[<span id="more"></span>
-
-<h4 id="显示问题"><a href="#显示问题" class="headerlink" title="显示问题"></a>显示问题</h4><h6 id="关于为什么在vsc中显示不了jupyter-notebook中生成ploty图像？（25年11月5日）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ"><a href="#关于为什么在vsc中显示不了jupyter-notebook中生成ploty图像？（25年11月5日）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ" class="headerlink" title="关于为什么在vsc中显示不了jupyter notebook中生成ploty图像？（25年11月5日）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ"></a>关于为什么在vsc中显示不了jupyter notebook中生成ploty图像？（25年11月5日）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ</h6><blockquote>
-<p>多用ai来提升问题的解决效率，提高学习的速度（同时要注意提示词给的精准，准意区分真正的解决方案和ai幻觉——靠各种方案去尝试）</p>
-</blockquote>
-<p>关键是插件Jupyter Notebook Renderers没有安装的问题。所以在浏览器中的jupyter可以显示ploty交互式的图像，但是在vsc中却没用。</p>
-<h6 id="如何在博客中自动折叠代码、以及在obsidian中自动折叠代码？（25年11月6日）"><a href="#如何在博客中自动折叠代码、以及在obsidian中自动折叠代码？（25年11月6日）" class="headerlink" title="如何在博客中自动折叠代码、以及在obsidian中自动折叠代码？（25年11月6日）"></a>如何在博客中自动折叠代码、以及在obsidian中自动折叠代码？（25年11月6日）</h6><h4 id="代码运行问题"><a href="#代码运行问题" class="headerlink" title="代码运行问题"></a>代码运行问题</h4><h6 id="在vsc-notebook中如何调试代码-25年11月6日-٩-•̤̀ᵕ•̤́๑-ᵒᵏᵏᵎᵎᵎᵎ"><a href="#在vsc-notebook中如何调试代码-25年11月6日-٩-•̤̀ᵕ•̤́๑-ᵒᵏᵏᵎᵎᵎᵎ" class="headerlink" title="在vsc-notebook中如何调试代码? (25年11月6日) ٩(•̤̀ᵕ•̤́๑)ᵒᵏᵏᵎᵎᵎᵎ"></a>在vsc-notebook中如何调试代码? (25年11月6日) ٩(•̤̀ᵕ•̤́๑)ᵒᵏᵏᵎᵎᵎᵎ</h6><p>在代码框运行旁边有个debug,可以调试代码代码块.</p>
-<blockquote>
-<p>代码调试和逐句ai辅助理解, 学习代码效率简直拉满. 其实做习惯了, 也可以少一点笔记编辑, 可以直接在理解后, 用自己的语言备注在代码块中.  </p>
-</blockquote>
-<h6 id="如何提高代码的运行效率和时间，外加服务器？（2025年11月7日）"><a href="#如何提高代码的运行效率和时间，外加服务器？（2025年11月7日）" class="headerlink" title="如何提高代码的运行效率和时间，外加服务器？（2025年11月7日）"></a>如何提高代码的运行效率和时间，外加服务器？（2025年11月7日）</h6><p><a href="https://blog.zouaw.com/article/52490.html">如何用阿里云服务器跑深度学习代码？-CLOUD云枢</a></p>
-<h6 id="如何在其他的电脑中使用docker服务器部署，如何在主机中远程连接服务器？开启炼丹炉计划？（11月10日）spider-man"><a href="#如何在其他的电脑中使用docker服务器部署，如何在主机中远程连接服务器？开启炼丹炉计划？（11月10日）spider-man" class="headerlink" title="如何在其他的电脑中使用docker服务器部署，如何在主机中远程连接服务器？开启炼丹炉计划？（11月10日）spider man"></a>如何在其他的电脑中使用docker服务器部署，如何在主机中远程连接服务器？开启炼丹炉计划？（11月10日）spider man</h6><h6 id="如何用conda将包打包后，导入另外一个电脑的环境管理或者docker容器中？-11月11日-٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ"><a href="#如何用conda将包打包后，导入另外一个电脑的环境管理或者docker容器中？-11月11日-٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ" class="headerlink" title="如何用conda将包打包后，导入另外一个电脑的环境管理或者docker容器中？(11月11日)٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ"></a>如何用conda将包打包后，导入另外一个电脑的环境管理或者docker容器中？(11月11日)٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ</h6><ul>
-<li>实现全量打包<a href="https://blog.csdn.net/weixin_42744466/article/details/149482255">【Anaconda】Conda 虚拟环境打包迁移教程_conda打包环境-CSDN博客</a></li>
-</ul>
-]]></content>
-      <categories>
-        <category>学习</category>
-      </categories>
-      <tags>
-        <tag>machine_learning</tag>
-        <tag>deep_learning</tag>
-        <tag>questions</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>复现——Data-Driven Design of High-Performance Polyimides With Enhanced Heat Resistance and Dielectric Properties</title>
-    <url>/2025/11/04/Simulation_and_reproduction_work/</url>
-    <content><![CDATA[<h3 id="标题——数据驱动的高性能聚酰亚胺设计：增强耐热性与介电性能"><a href="#标题——数据驱动的高性能聚酰亚胺设计：增强耐热性与介电性能" class="headerlink" title="标题——数据驱动的高性能聚酰亚胺设计：增强耐热性与介电性能"></a>标题——数据驱动的高性能聚酰亚胺设计：增强耐热性与介电性能</h3><h4 id="期刊名称：Advanced-Functional-Materials"><a href="#期刊名称：Advanced-Functional-Materials" class="headerlink" title="期刊名称：Advanced Functional Materials"></a>期刊名称：Advanced Functional Materials</h4><h4 id="文章解读："><a href="#文章解读：" class="headerlink" title="文章解读："></a>文章解读：</h4><h5 id="intrduction：强调背景、抛砖引玉、娓娓道来"><a href="#intrduction：强调背景、抛砖引玉、娓娓道来" class="headerlink" title="intrduction：强调背景、抛砖引玉、娓娓道来"></a>intrduction：强调背景、抛砖引玉、娓娓道来</h5><ul>
-<li>对象：聚酰亚胺Pi，在高频、高温下的需求</li>
-<li>策略：<strong>mag</strong>，先讲传统策略的缺陷，劣势；突出强调mag方法</li>
-<li><strong>mag</strong>：The MGA is a systematic research strategy to accelerate the discovery and optimization of new materials through <strong>high-throughput experimentation, computation, simulation, and data analysis</strong>. The core of MGA is to accurately predict material properties through machine learning (ML) and effectively screen desired materials from candidates.</li>
-<li>举例：其他人用<strong>mag</strong>做出了什么，开始说在Pi领域也有人在用mag做研究。</li>
-<li><strong>However</strong>：（画风一转）However, applying these methods to the design of polyimides still faces numerous challenges, such as the issue of <strong>data sparsity in high-frequency dielectric properties</strong> and <strong>the need for precise representation of polyimide structures</strong>.<br><strong>点明矛盾问题</strong>：高频段数据稀缺；聚亚酰胺的空间结构的精确表达</li>
-<li>工作方法：the classical Havriliak-Negami (H-N) dielectric relaxation dual-parameter model——对于高频段数据稀缺性采用<strong>经典的Havriliak-Negami（H-N）介电弛豫双参数模型</strong>（第一性原理的引入）；<br>developed multi-level descriptors to comprehensively capture the characteristics of the molecular structures of PIs——对于后者空间结构的表征采用的是<strong>多级描述符</strong></li>
-<li>多层神经网络<strong>HNN</strong>进行<strong>多任务学习MTL</strong>——Subsequently, using these data, we employed multi-task learning (MTL) with hierarchical neural networks (HNN) to establish an efficient and accurate machine learning model.</li>
-<li>人工神经网络<strong>ANN</strong>——Meanwhile, an artificial neural network (ANN) model for predicting the glass transition temperature of PIs was developed</li>
-<li><strong>遗传算法</strong>——A genetic algorithm was employed to create a series of PIs exhibiting exceptional high-frequency dielectric properties and heat resistance.</li>
-</ul>
-<h5 id="结果与讨论"><a href="#结果与讨论" class="headerlink" title="结果与讨论"></a>结果与讨论</h5><ul>
-<li>Section 2.1 introduces the <strong>data preparation</strong>, and Section 2.2 details <strong>the workflow of ML model construction</strong>, as shown in Figure 1b. Section 2.3 describes <strong>the structural design of polyimides using genetic algorithms</strong>. In Section 2.4, we validated <strong>the reliability of the MGA method through experiments</strong>. Section 2.5 reveals <strong>potential chemical rules through interpretable feature analysis</strong>.</li>
-</ul>
-<h6 id="2-1数据准备"><a href="#2-1数据准备" class="headerlink" title="2.1数据准备"></a>2.1数据准备</h6><ul>
-<li><p>原始数据：ployinfo总的聚亚酰胺的重复单元、介电性能（指不同频率和温度下的介电常数与介电损耗）、玻璃转化温度等参数；另一部分人工方式提取。</p>
-</li>
-<li><p>对象限制：所以聚酰亚胺均为不可交联型</p>
-</li>
-<li><p>数据拓展：Considering the need for sufficient low-frequency dielectric performance data to obtain the parameters of Equation 1, fitting was performed for 13 kinds of PIs that met the criteria (having at least 5 data points for low-frequency dielectric properties at the same test temperature).对低频拟合，再对高频计算<br>![[..&#x2F;..&#x2F;images&#x2F;Pasted image 20251104140004.png]]</p>
-</li>
-<li><p>分布展示<br>![[..&#x2F;..&#x2F;images&#x2F;Pasted image 20251104140130.png]]</p>
-</li>
-<li><p>关于数据表征：<strong>聚合物表征</strong>——简化的分子输入行条目系统（<strong>SMILES</strong>）<br>空间特征表征（<strong>多级描述符</strong>）：were automatically generated using the Python third-party library <strong>Mordred</strong>。（Python第三方库）<br>另外一种：<strong>RDKit固有的分子描述符</strong>。</p>
-</li>
-<li><p><strong>特征工程</strong>：将描述符数量减少，减少至130、107和170个</p>
-</li>
-<li><p><strong>子结构描述符SD</strong>方法，关键基元，更微小的结构。</p>
-</li>
-<li><p><strong>gspan算法</strong>：基于图的<strong>子结构模式挖掘算法</strong>，来提取<strong>每种聚酰亚胺中与各项性能相关的子结构</strong>，从而<strong>整合不同子结构对目标性能的贡献度</strong></p>
-</li>
-<li><p>结合定量结构-性能关系分析，我们最终分别获得了508、284和1313个特征，用于构建聚酰亚胺结构与介电常数、介电损耗和玻璃化转变温度之间的定量关系模型。</p>
-</li>
-</ul>
-<h6 id="2-2基于机器学习的定量结构-性质关系模型构建"><a href="#2-2基于机器学习的定量结构-性质关系模型构建" class="headerlink" title="2.2基于机器学习的定量结构-性质关系模型构建"></a>2.2基于机器学习的定量结构-性质关系模型构建</h6><ul>
-<li>简单来说<strong>HNN</strong>来多精度问题；<strong>ANN</strong>用来预测缺失的玻璃化转变温度；广泛<strong>使用的高斯过程回归（GPR）模型被确立为基准模型</strong>，用以<strong>评估神经网络模型的性能</strong>。</li>
-<li>Due to the significant impact of the size of the feature set on the performance of ML models, a practical and highly accurate dimensionality reduction method is necessary to reduce redundant information in the features.需要采用一种<strong>实用且高精度的降维方法</strong>，以<strong>减少特征中的冗余信息</strong>。</li>
-<li>We selected three feature reduction methods used in ML, including <strong>LASSO regression</strong>, <strong>ridge regression</strong>, and <strong>recursive feature elimination</strong> (RFE)</li>
-<li>Note that we have taken the logarithm of the dielectric constants and the dielectric losses to guarantee that the final predicted values are all positive.</li>
-</ul>
-<blockquote>
-<p>关于HNN的学习<a href=""></a>和ANN的学习<a href=""></a></p>
-</blockquote>
-<p>未完待续</p>
-<h3 id="数据来源（对应数据结构）"><a href="#数据来源（对应数据结构）" class="headerlink" title="数据来源（对应数据结构）"></a>数据来源（对应数据结构）</h3>]]></content>
-      <categories>
-        <category>学术</category>
-      </categories>
-      <tags>
-        <tag>机器学习</tag>
-        <tag>文献复现</tag>
-        <tag>高性能材料的设计</tag>
-        <tag>文献阅读笔记</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>blog学习进展/hexo-next教程</title>
-    <url>/2025/10/22/blog_learning/</url>
-    <content><![CDATA[<h3 id="关于hexo-next的美化"><a href="#关于hexo-next的美化" class="headerlink" title="关于hexo-next的美化"></a>关于hexo-next的美化</h3><h4 id="如何创建一个新的博客文章？（2025-10-27）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ"><a href="#如何创建一个新的博客文章？（2025-10-27）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ" class="headerlink" title="如何创建一个新的博客文章？（2025-10-27）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ"></a>如何创建一个新的博客文章？（2025-10-27）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ</h4><p>hexo new “文章标题”<br>或者在对应的文件夹在直接添加对应.md文件，注意编辑文件头信息yaml格式</p>
-<h4 id="如何更改首页置顶顺序？（2025-10-28）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ"><a href="#如何更改首页置顶顺序？（2025-10-28）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ" class="headerlink" title="如何更改首页置顶顺序？（2025-10-28）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ"></a>如何更改首页置顶顺序？（2025-10-28）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ</h4><ul>
-<li>可以参考这篇博主的文章<a href="https://www.axitown.com/a764f98564af/">阿希の小镇, 2025</a></li>
-</ul>
-<h4 id="如何更改首页，仅部分显示文章？-2025-10-29"><a href="#如何更改首页，仅部分显示文章？-2025-10-29" class="headerlink" title="如何更改首页，仅部分显示文章？(2025-10-29)"></a>如何更改首页，仅部分显示文章？(2025-10-29)</h4><h4 id="如何实现副标题的动态显示？-2025-10-30"><a href="#如何实现副标题的动态显示？-2025-10-30" class="headerlink" title="如何实现副标题的动态显示？(2025-10-30)"></a>如何实现副标题的动态显示？(2025-10-30)</h4><h4 id="文章如何只显示部分文章内容？-2025-10-30-٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ"><a href="#文章如何只显示部分文章内容？-2025-10-30-٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ" class="headerlink" title="文章如何只显示部分文章内容？(2025-10-30) ٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ"></a>文章如何只显示部分文章内容？(2025-10-30) ٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ</h4><ul>
-<li>可以在文章的md文件中，添加<span id="more"></span>注释，注释之前的内容就会显示在首页，注释之后的内容就会隐藏起来。</li>
-</ul>
-<h4 id="链接跳转样式（2025-10-30）"><a href="#链接跳转样式（2025-10-30）" class="headerlink" title="链接跳转样式（2025-10-30）"></a>链接跳转样式（2025-10-30）</h4><ul>
-<li>链接跳转样式的图标美化</li>
-</ul>
-<p>博客美化的教程<a href="https://fatedshadow.github.io/%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/%E5%8D%9A%E5%AE%A2/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8-Hexo-Next-%E7%BE%8E%E5%8C%96%E5%8D%9A%E5%AE%A2/">text</a></p>
-<h4 id="如何自动折叠代码块？（2025-11-06）-٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ"><a href="#如何自动折叠代码块？（2025-11-06）-٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ" class="headerlink" title="如何自动折叠代码块？（2025-11-06） ٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ"></a>如何自动折叠代码块？（2025-11-06） ٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ</h4><p>最新版的hexo-next主题已经支持代码折叠，去主题配置yml文件中，找到codeblock，将fold的enable设置为true即可。</p>
-<!-- more -->
-
-<hr>
-<h3 id="关于如何优化访问，正规的站点建设"><a href="#关于如何优化访问，正规的站点建设" class="headerlink" title="关于如何优化访问，正规的站点建设"></a>关于如何优化访问，正规的站点建设</h3><h4 id="为什么每段时间自己的域名就要重新对齐GitHub（2025-10-29）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ"><a href="#为什么每段时间自己的域名就要重新对齐GitHub（2025-10-29）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ" class="headerlink" title="为什么每段时间自己的域名就要重新对齐GitHub（2025-10-29）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ"></a>为什么每段时间自己的域名就要重新对齐GitHub（2025-10-29）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ</h4><ul>
-<li>可以参考这篇博主的文章<a href="https://www.cnblogs.com/xieqk/p/Github-Page-DNS.html">域名DNS解析到自己的githubpages页面,谢乔康</a></li>
-</ul>
-<h4 id="如何配置自己的域名？（2025-10-27）"><a href="#如何配置自己的域名？（2025-10-27）" class="headerlink" title="如何配置自己的域名？（2025-10-27）"></a><strong>如何配置自己的域名？（2025-10-27）</strong></h4><p>查看<a href="/2025/10/27/yuming/">域名配置</a></p>
-<h4 id="如何添加自己的友链？（2025-10-28）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵏᵎᵎᵎᵎ"><a href="#如何添加自己的友链？（2025-10-28）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵏᵎᵎᵎᵎ" class="headerlink" title="如何添加自己的友链？（2025-10-28）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵏᵎᵎᵎᵎ"></a>如何添加自己的友链？（2025-10-28）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵏᵎᵎᵎᵎ</h4><ul>
-<li>友链是指在博客中添加其他博客作者的链接，以展示他们的创作和关注。</li>
-</ul>
-<blockquote>
-<p>感悟思考：现在hexo博客的建立主要靠，<strong>浏览器的搜索查找别人的技术文章</strong>以及<strong>ai的回答</strong>。还是要多学会用<strong>dp、chatgpt</strong>等工具，来理解问题解决问题。Trea真的太垃圾了，要加快自己的学习速度！</p>
-</blockquote>
-<h4 id="如何添加文章分享功能？（2025-10-30）"><a href="#如何添加文章分享功能？（2025-10-30）" class="headerlink" title="如何添加文章分享功能？（2025-10-30）"></a>如何添加文章分享功能？（2025-10-30）</h4><h4 id="如何将自己的ipynb文件转换为markdown文件？并发表在博客上？（2025-11-02）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ"><a href="#如何将自己的ipynb文件转换为markdown文件？并发表在博客上？（2025-11-02）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ" class="headerlink" title="如何将自己的ipynb文件转换为markdown文件？并发表在博客上？（2025-11-02）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ"></a>如何将自己的ipynb文件转换为markdown文件？并发表在博客上？（2025-11-02）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ</h4><p>参考这篇文章<a href="https://juejin.cn/post/7506038621612245033">惜鸟，2025</a></p>
-<h4 id="如何升级评论系统，GitHub评论系统较为封闭并不开放？（2025-11-03）"><a href="#如何升级评论系统，GitHub评论系统较为封闭并不开放？（2025-11-03）" class="headerlink" title="如何升级评论系统，GitHub评论系统较为封闭并不开放？（2025-11-03）"></a>如何升级评论系统，GitHub评论系统较为封闭并不开放？（2025-11-03）</h4><h4 id="RSS订阅功能如何添加？（2025-11-04）"><a href="#RSS订阅功能如何添加？（2025-11-04）" class="headerlink" title="RSS订阅功能如何添加？（2025-11-04）"></a>RSS订阅功能如何添加？（2025-11-04）</h4><ul>
-<li>添加<a href="https://www.boyouquan.com/home">博客圈</a></li>
-</ul>
-<hr>
-<h3 id="关于markdown的使用"><a href="#关于markdown的使用" class="headerlink" title="关于markdown的使用"></a>关于markdown的使用</h3><p>markdown是一种轻量级的标记语言，用于在文本中添加格式化元素。它简单易学，同时也非常灵活。（obsidion、blog必备的技能、现在ai回答输出的格式也是markdown例如deepseek的回答、）基础语法参考(小刘在路上[^1]，2024)</p>
-<h4 id="如何链接文章？（2025-10-27）-有问题跳转找不到网页，亟待解决-٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ"><a href="#如何链接文章？（2025-10-27）-有问题跳转找不到网页，亟待解决-٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ" class="headerlink" title="如何链接文章？（2025-10-27）,有问题跳转找不到网页，亟待解决 ٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ"></a>如何链接文章？（2025-10-27）,有问题跳转找不到网页，亟待解决 ٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ</h4><h5 id="内部链接-٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ"><a href="#内部链接-٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ" class="headerlink" title="内部链接 ٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ"></a>内部链接 ٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ</h5><ul>
-<li>这种问题是由于在hexo生成的public文件夹中，文章的路径与链接的路径不一致导致的。</li>
-<li>解决方法：在hexo配置文件中，将permalink设置为&#x2F;:year&#x2F;:month&#x2F;:day&#x2F;:title&#x2F;，例如：permalink: &#x2F;:year&#x2F;:month&#x2F;:day&#x2F;:title&#x2F;</li>
-<li>这样，在生成的public文件夹中，文章的路径就与链接的路径一致了。</li>
-</ul>
-<p>例如，文章的路径为&#x2F;2025&#x2F;10&#x2F;27&#x2F;yuming&#x2F;，那么链接就为<a href="/2025/10/27/yuming/">域名配置</a></p>
-<h5 id="外部链接-https-www-baidu-com-٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ"><a href="#外部链接-https-www-baidu-com-٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ" class="headerlink" title="外部链接(https://www.baidu.com/) ٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ"></a>外部链接(<a href="https://www.baidu.com/">https://www.baidu.com/</a>) ٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ</h5><ul>
-<li>外部链接是指指向其他网站的链接，例如：<a href="https://www.baidu.com/">百度</a></li>
-<li>外部链接的安全链接的调试可能存在问题（待解决）</li>
-</ul>
-<h5 id="外部链接跳转无效问题？（2025-10-29）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ"><a href="#外部链接跳转无效问题？（2025-10-29）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ" class="headerlink" title="外部链接跳转无效问题？（2025-10-29）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ"></a>外部链接跳转无效问题？（2025-10-29）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ</h5><ul>
-<li>问题出在butterfly与next主题的容器选择器不同所导致的，致谢<a href="https://blog.liushen.fun/posts/1dfd1f41/">LiuShen,2024</a></li>
-</ul>
-<h4 id="如何添加脚注，来致谢引用参考链接的作者？（2025-10-27）15min-٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ"><a href="#如何添加脚注，来致谢引用参考链接的作者？（2025-10-27）15min-٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ" class="headerlink" title="如何添加脚注，来致谢引用参考链接的作者？（2025-10-27）15min ٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ"></a>如何添加脚注，来致谢引用参考链接的作者？（2025-10-27）15min ٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ</h4><p>[^1]: 小刘在路上, 2024. 手把手教会你使用Markdown. CNDS, <a href="https://blog.csdn.net/qq_40818172/article/details/126260661">https://blog.csdn.net/qq_40818172/article/details/126260661</a></p>
-]]></content>
-      <categories>
-        <category>学习</category>
-      </categories>
-      <tags>
-        <tag>blog_learning</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>蹇锡高学术讲座——新型杂环高性能工程塑料及其加工应用发展进展——杂萘联苯型聚芳醚高性能树脂及其应用技术</title>
-    <url>/2025/11/03/jianxigao_1103/</url>
-    <content><![CDATA[<h2 id="讲师介绍"><a href="#讲师介绍" class="headerlink" title="讲师介绍"></a>讲师介绍</h2><p>详细见链接<a href="https://zhuanlan.zhihu.com/p/1904787911674672194">蹇锡高院士研究团队:杂萘联苯型聚芳醚高性能树脂及其应用技术</a></p>
-<hr>
-<h4 id="重点："><a href="#重点：" class="headerlink" title="重点："></a>重点：</h4><p>杂萘联苯型聚芳醚高性能树脂及其应用技术</p>
-<blockquote>
-<p>短纤维增强树脂基复合材料</p>
-</blockquote>
-<ul>
-<li>耐磨自润滑复合材料</li>
-<li>航空发动机高速止推轴承</li>
-<li>核主泵动压滑动轴承瓦面TF330</li>
-<li>高铁风源压缩机涡旋动涡卷ppesk<blockquote>
-<p>连续纤维增强热塑性树脂基复合材料</p>
-</blockquote>
-</li>
-</ul>
-<blockquote>
-<p>耐高温、耐辐照绝缘漆</p>
-</blockquote>
-<blockquote>
-<p>功能膜——耐高温RO膜、耐400℃隔热涂料</p>
-</blockquote>
-<p><img src="/images/jxg_ppt.jpg" alt="工程应用方向"></p>
-<hr>
-<h4 id="启发"><a href="#启发" class="headerlink" title="启发"></a>启发</h4><ul>
-<li>机器学习对高性能高分子材料比较适合筛选和实验（对复合材料不友好）</li>
-<li>特征功能性高分子材料也可以加机器学习筛选预测</li>
-</ul>
-<hr>
-<h5 id="前沿研究"><a href="#前沿研究" class="headerlink" title="前沿研究"></a>前沿研究</h5><h6 id="2035发展战略研究，建议发展重点："><a href="#2035发展战略研究，建议发展重点：" class="headerlink" title="2035发展战略研究，建议发展重点："></a>2035发展战略研究，建议发展重点：</h6><ol>
-<li>高性能高分子材料及其复合材料</li>
-<li>特种功能性高分子材料</li>
-<li>通用高分子材料（过剩）高性能化、功能化（解决方法）</li>
-<li>生物基高分子材料、可回收循环利用的高分子材料——笔者课题组所研究的方向（与双碳相关）</li>
-</ol>
-<h6 id="复合材料（无机非金属-金属材料-高分子材料）"><a href="#复合材料（无机非金属-金属材料-高分子材料）" class="headerlink" title="复合材料（无机非金属+金属材料+高分子材料）"></a>复合材料（无机非金属+金属材料+高分子材料）</h6><ul>
-<li><strong>轻质、高强、耐高温（高分子材料的缺陷）、耐腐蚀</strong></li>
-</ul>
-<p>关注开发既<strong>耐高温又可溶解</strong>（固有性质是耐高温溶解差甚至不溶解）的新品种材料，希望实现高性能、低成本、可控设备——<strong>性价比、稳定性</strong>（材料领域）</p>
-<p>例如：DHPZ结构引入，酰亚胺五元氮杂环，使得聚合物也具有扭曲非共平面结构，阻碍结晶，利于溶解。实现既耐高温又可溶<a href="https://baike.baidu.com/item/%E5%90%AB%E4%BA%8C%E6%B0%AE%E6%9D%82%E8%90%98%E9%85%AE%E8%81%94%E8%8B%AF%E7%BB%93%E6%9E%84%E8%81%9A%E8%8A%B3%E9%86%9A%E8%85%88%E7%A0%9C%E5%8F%8A%E5%85%B6%E5%88%B6%E5%A4%87%E6%B3%95/59196417">具体介绍</a></p>
-]]></content>
-      <categories>
-        <category>学术</category>
-      </categories>
-      <tags>
-        <tag>学术讲座</tag>
-        <tag>高分子材料</tag>
-        <tag>高性能工程塑料</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>ml_learning_thought</title>
     <url>/2025/10/29/learning_thought/</url>
     <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="窃取机密失败QAQ..." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
@@ -979,69 +1093,6 @@ First 5 rows of submission:
       <tags>
         <tag>想法</tag>
         <tag>观点</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>机器学习进展</title>
-    <url>/2025/10/22/machine_learning/</url>
-    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="窃取机密失败QAQ..." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
-  <script id="hbeData" type="hbeData" data-hmacdigest="71c8bf7212203e7846d3a7bf656fb6f12cb1ce5060a2f8af6f7f5d399af41eb0">dccefed83fa27a7ad5aaf2d0962952897e2eac05819bcc21e675ce1cdc4aba5bff28ab5366c0082d3d01afa8266b2dacef3e8eb80ba325b8acc136cbeb108b2c454e602c9a9f740b2827934a89803342bc04ccd631b0782fa124ea7bb373b86c2dea7a22cd5a6b0d2348797feec3366ae8b8f209fcd7f2a6a550fab04a206d18b7219c82ed4db1f9125a9755e75b5634656d3d4b9bf2698c88a9f2603538da83848bfb0333fd3d850acefac9fb39e6414ba447d71e7aeb9d7b8a758800f0a3504a395c2ff2b470b875cdd375ab8a683d764ad81eec8f5328ef44a818f7ba3bea4ed1af70bc6550780f4b8a6c1faafe1ceabc13c9cd1081f54dc5454ebe92c7987391a2d7646907612723f487a3527d9401bdd52bfc3bc7d026da77fb61811f7ef12f65b60214fafcc30302359bf25f8f59ecd0e291ddbc9e67aba6ea082e5e48934b4f8f9ade062ba83a80e4428b86a6d539c23fe7ae9fdcb75853f1360ec871735fbd5109301d92ac8888dafb61d6b138a4792f3a049b517186454030d317a9729f9a9ad62ac8931a38735c967c9eb423959284f9659ad117f5135e5304818fb297c0bb25a408eec8f3e9425597e96f92899252f8d6224bf1382efe6bbffd1b9ecc2fd712e30bb048654372a1d16652ba4203ec1715c183ce6a6f3f6a5046d43ffc995a092b51206ea4b6fab71fad7a98ff15ba119c73dc8b17ff65063b2f9228d56ec552f56405b7b69f8d84586766340ad670cc727ca40ac87501dea9d7f0b1f13f4e0003dd9559449a5b26bf9c108dba0ba09ba785025f4b3d4430b99f0c218eb56cb9e600ae92bbb878858a773c52db3531b06c94e971dd923880a47104279a09359d7bf0f25974ce6bb63b663a05d86300e0bd537b0759fbdd56445262be65a081a9d340528890256f255f3c3927274904a3caf0f16e9c68f8b41f70f4</script>
-  <div class="hbe hbe-content">
-    <div class="hbe hbe-input hbe-input-up">
-      <input class="hbe hbe-input-field hbe-input-field-up" type="password" id="hbePass">
-      <label class="hbe hbe-input-label hbe-input-label-up" for="hbePass">
-        <span class="hbe hbe-input-label-content hbe-input-label-content-up">请输入密码查看</span>
-      </label>
-    </div>
-  </div>
-</div>
-<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
-      <categories>
-        <category>学术</category>
-      </categories>
-      <tags>
-        <tag>机器学习</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>关于机器（深度）学习的炼丹docker部署计划</title>
-    <url>/2025/11/10/liandanjihua/</url>
-    <content><![CDATA[<h1 id="计划始于docker，败于ssh远程（为什么远程使用ssh连接过服务器而连接docker中的容器就失败）"><a href="#计划始于docker，败于ssh远程（为什么远程使用ssh连接过服务器而连接docker中的容器就失败）" class="headerlink" title="计划始于docker，败于ssh远程（为什么远程使用ssh连接过服务器而连接docker中的容器就失败）"></a>计划始于docker，败于ssh远程（为什么远程使用ssh连接过服务器而连接docker中的容器就失败）</h1><h3 id="从conda虚拟环境到docker容器；环境灵活配置提升，可以快速地在别的服务器、不同设备、不通操作系统中，环境管理，然后炼丹跑代码"><a href="#从conda虚拟环境到docker容器；环境灵活配置提升，可以快速地在别的服务器、不同设备、不通操作系统中，环境管理，然后炼丹跑代码" class="headerlink" title="从conda虚拟环境到docker容器；环境灵活配置提升，可以快速地在别的服务器、不同设备、不通操作系统中，环境管理，然后炼丹跑代码"></a>从conda虚拟环境到docker容器；环境灵活配置提升，可以快速地在别的服务器、不同设备、不通操作系统中，环境管理，然后炼丹跑代码</h3><ul>
-<li><p>在家中台式电脑中创建docker环境</p>
-<ul>
-<li><p>docker基本教程（知识）<a href="https://www.runoob.com/docker/docker-container-usage.html">Docker 容器使用 | 菜鸟教程</a></p>
-</li>
-<li><p>Linux操作系统入门（知识）<a href="https://blog.csdn.net/m0_70395069/article/details/145762762">入门 Ubuntu操作系统（超详细，巨简单，小白必看）-CSDN博客</a></p>
-</li>
-<li><p>双系统教程（操作，暂时不用）<a href="https://blog.csdn.net/YIMUleizi/article/details/150263876">Windows 系统下安装 Ubuntu 双系统详细教程（图文指南）_windows安装ubuntu-CSDN博客</a></p>
-<ul>
-<li>等待解决</li>
-</ul>
-</li>
-<li><p>自己电脑上使用的是window子系统功能（知识）<a href="https://blog.csdn.net/Natsuago/article/details/145594631">全网最全Win10&#x2F;11系统下WSL2+Ubuntu20.04的全流程安装指南（两种支持安装至 D 盘方式）_win10安装wsl2-CSDN博客</a></p>
-</li>
-<li><p>Ubuntu lst 版本与普通版有什么区别（知识）<a href="https://www.sysgeek.cn/what-is-ubuntu-lts/">什么是 Ubuntu LTS？和普通版本有什么区别？ - 系统极客</a></p>
-</li>
-<li><p>切换用户权限（操作，已经解决）<a href="https://blog.csdn.net/weixin_51354739/article/details/144693875">【Linux】ubuntu 切换管理员&#x2F;普通用户指令,看这篇就够了！-CSDN博客</a></p>
-</li>
-<li><p>从不同系统中安装docker，既然从Ubuntu系统（window子系统或者用docker desk版）<a href="https://segmentfault.com/a/1190000044606072#item-2-2">『Docker入门指南』- 详细安装与配置教程，助你起航容器化世界！ - 个人文章 - SegmentFault 思否</a></p>
-</li>
-</ul>
-</li>
-<li><p>在conda中打包虚拟环境并在docker部署，如何再开启远端联机，实现本地云端，主机炼丹，优势在于极大的灵活了部署问题，环境不同的问题<a href="https://blog.51cto.com/u_16213450/12773839">https://blog.51cto.com/u_16213450&#x2F;12773839</a></p>
-</li>
-</ul>
-<h3 id="对于自己而言将会常用到的docker命令"><a href="#对于自己而言将会常用到的docker命令" class="headerlink" title="对于自己而言将会常用到的docker命令"></a>对于自己而言将会常用到的docker命令</h3><h4 id="运行进入交互界面-很重要：用于在images使用conda代码，拓展环境第三方库"><a href="#运行进入交互界面-很重要：用于在images使用conda代码，拓展环境第三方库" class="headerlink" title="运行进入交互界面(很重要：用于在images使用conda代码，拓展环境第三方库)"></a>运行进入交互界面(很重要：用于在images使用conda代码，拓展环境第三方库)</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 交互式运行（进入容器内的bash shell）</span></span><br><span class="line">docker run -it --<span class="built_in">rm</span> for_dl_liandan:latest bash</span><br><span class="line"></span><br><span class="line"><span class="comment"># 构建新image</span></span><br><span class="line">docker build -t my_ssh_image .</span><br><span class="line"></span><br><span class="line"><span class="comment"># 交互式运行，用ssh连接docker，将22映射到7092（前面是容器的名字后面是image的名字）</span></span><br><span class="line">docker run -it --name ssh_test -p 7092:22 more_test bash</span><br></pre></td></tr></table></figure>
-<h4 id="在容器中安装的包如何保存到images？（11月10日）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵏᵎᵎᵎᵎ"><a href="#在容器中安装的包如何保存到images？（11月10日）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵏᵎᵎᵎᵎ" class="headerlink" title="在容器中安装的包如何保存到images？（11月10日）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵏᵎᵎᵎᵎ"></a>在容器中安装的包如何保存到images？（11月10日）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵏᵎᵎᵎᵎ</h4><p>重构容器就可以，基础用之前的容器</p>
-<h3 id="如何在远程（notebook）ipynb中使用docker的images来跑代码——使用ssh或者notebook？（11月10日）"><a href="#如何在远程（notebook）ipynb中使用docker的images来跑代码——使用ssh或者notebook？（11月10日）" class="headerlink" title="如何在远程（notebook）ipynb中使用docker的images来跑代码——使用ssh或者notebook？（11月10日）"></a>如何在远程（notebook）ipynb中使用docker的images来跑代码——使用ssh或者notebook？（11月10日）</h3><p>出现无法连接，超时等问题</p>
-<h1 id="胎死腹中（11月11日）决定放弃ssh远程连接计划"><a href="#胎死腹中（11月11日）决定放弃ssh远程连接计划" class="headerlink" title="胎死腹中（11月11日）决定放弃ssh远程连接计划"></a>胎死腹中（11月11日）决定放弃ssh远程连接计划</h1><h1 id="开始转变，决定施行conda环境打包（环境同步），git代码托管同步（代码同步），以及对应环境变更安装指令的保存（三段灵活性，成长型同步）"><a href="#开始转变，决定施行conda环境打包（环境同步），git代码托管同步（代码同步），以及对应环境变更安装指令的保存（三段灵活性，成长型同步）" class="headerlink" title="开始转变，决定施行conda环境打包（环境同步），git代码托管同步（代码同步），以及对应环境变更安装指令的保存（三段灵活性，成长型同步）"></a>开始转变，决定施行conda环境打包（环境同步），git代码托管同步（代码同步），以及对应环境变更安装指令的保存（三段灵活性，成长型同步）</h1>]]></content>
-      <categories>
-        <category>学习</category>
-      </categories>
-      <tags>
-        <tag>machine_learning</tag>
-        <tag>deep_learning</tag>
-        <tag>questions</tag>
       </tags>
   </entry>
   <entry>
