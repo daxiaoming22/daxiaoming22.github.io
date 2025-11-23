@@ -78,9 +78,9 @@
         <category>学习</category>
       </categories>
       <tags>
-        <tag>machine_learning</tag>
-        <tag>deep_learning</tag>
         <tag>questions</tag>
+        <tag>deep_learning</tag>
+        <tag>machine_learning</tag>
       </tags>
   </entry>
   <entry>
@@ -103,6 +103,159 @@
       </categories>
       <tags>
         <tag>机器学习</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>关于11月17日~11月23日中遇到的问题</title>
+    <url>/2025/11/17/202511W3_WeeklyReport/</url>
+    <content><![CDATA[<h4 id="Obsidian的笔记同步"><a href="#Obsidian的笔记同步" class="headerlink" title="Obsidian的笔记同步"></a>Obsidian的笔记同步</h4><h6 id="如何利用gitee在不同电脑以及不同平台，同步Obsidian笔记？（11月17日）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵏᵎᵎᵎᵎ"><a href="#如何利用gitee在不同电脑以及不同平台，同步Obsidian笔记？（11月17日）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵏᵎᵎᵎᵎ" class="headerlink" title="如何利用gitee在不同电脑以及不同平台，同步Obsidian笔记？（11月17日）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵏᵎᵎᵎᵎ"></a>如何利用gitee在不同电脑以及不同平台，同步Obsidian笔记？（11月17日）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵏᵎᵎᵎᵎ</h6><p>但不是很完善，git很多知识等待去学习了解（关于各种分支的验证等等）,成功实现推送，现在就开始验证不同端的拉取。</p>
+<h6 id="关于在同步过程中常常出现分支不一致或者分支推送不知道在哪里的问题？（11月17日）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵏᵎᵎᵎᵎ"><a href="#关于在同步过程中常常出现分支不一致或者分支推送不知道在哪里的问题？（11月17日）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵏᵎᵎᵎᵎ" class="headerlink" title="关于在同步过程中常常出现分支不一致或者分支推送不知道在哪里的问题？（11月17日）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵏᵎᵎᵎᵎ"></a>关于在同步过程中常常出现分支不一致或者分支推送不知道在哪里的问题？（11月17日）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵏᵎᵎᵎᵎ</h6><ul>
+<li>查看所有分支<code>git branch -a</code>（星号表示本地，remotes&#x2F;origin表示远程分支</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git branch -a</span><br><span class="line">* master</span><br><span class="line">  remotes/origin/main</span><br><span class="line">  remotes/origin/obsidian_syn</span><br></pre></td></tr></table></figure>
+<ul>
+<li><p>如何指定push分支（长期）remotes&#x2F;origin&#x2F;main</p>
+</li>
+<li><p>关于问题的ai描述和解决方案</p>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>内容类型</th>
+<th>内容</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>AI</strong></td>
+<td>这段 Git 提示的核心意思是：你当前所在的本地分支（local branch）所关联（upstream）的远程分支（remote branch）名字，和你本地分支的名字不一致。因此当你直接执行 <code>git push</code> 时，Git 不知道到底该把本地改动推送到哪个远程分支上。<br><br>提示中给出了两种临时解决办法，和两种长期（配置）方案：<br><br>1.  临时推送到远程的 main 分支（upstream 分支）  <br>   git push origin HEAD:main  <br>   这会把当前本地分支（HEAD）里的提交，推送并合并到远程的 main 分支上。<br><br>2.  临时推送到一个“同名”远程分支  <br>   git push origin HEAD  <br>   相当于 <code>git push origin &lt;your-local-branch&gt;:&lt;your-local-branch&gt;</code>，在远程新建或更新一个和你本地分支同名的分支。<br><br>3.  永久指定默认推送行为  <br>   你可以通过修改 Git 配置，让它以后自动选择其中一种方式：  <br>   – 在命令行里运行 <code>git config --global push.default &lt;模式&gt;</code>  <br>     常用模式有  <br>     • simple：只允许推送当前分支到名字相同的远程分支（安全性更高，Git 2.0+ 默认）  <br>     • upstream：推送到已设置好的上游分支（不关心名字是否相同）  <br>   具体可查看 <code>git help config</code> 中 push.default 的说明。<br><br>4.  避免自动关联“异名”分支  <br>   如果你希望新建分支时就不要把它错误地关联到名字不同的远程分支，可以配置  <br>   git config –global branch.autoSetupMerge simple  <br>   这样只有当本地分支和远程分支同名时，Git 才会自动给它设置上游。<br><br>———<br><br>简单来说，这条提示告诉你：  <br>• 你的本地分支 upstream（上游）指向了一个和它本地名字不一样的远程分支，  <br>• Git 无法猜测你到底是想推送到哪个分支，  <br>• 因此让你手动指定“推向 main”还是“推向同名分支”，或者调整配置让它以后自动选其中一种。</td>
+<td>模型：(openai)：gpt-o4mini<br></td>
+</tr>
+<tr>
+<td><strong>自己理解</strong></td>
+<td></td>
+<td>笔者猪脑</td>
+</tr>
+</tbody></table>
+<ul>
+<li>或者更改本地的分支名 <code>git branch -m new_name</code>使得其与远程分支同名，带到git默认版本模式</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 在主机上（同名分支main）</span></span><br><span class="line">$ git branch -a</span><br><span class="line">* main</span><br><span class="line">  remotes/origin/HEAD -&gt; origin/obsidian_syn</span><br><span class="line">  remotes/origin/main</span><br><span class="line">  remotes/origin/obsidian_syn</span><br><span class="line"></span><br><span class="line"><span class="comment">## 查看同步历史，看见默认备份成功从本地的main到远端的main</span></span><br><span class="line">$ git branch -vv</span><br><span class="line">* main cf68e5c [origin/main] vault backup: 2025-11-17 17:45:18</span><br><span class="line"></span><br><span class="line"><span class="comment"># 在笔记本上（同名分支main）</span></span><br><span class="line">$ git branch -a</span><br><span class="line">* main</span><br><span class="line">  remotes/origin/main</span><br><span class="line">  remotes/origin/obsidian_syn</span><br><span class="line"></span><br><span class="line"><span class="comment">## （观察到同步历史达到一致）</span></span><br><span class="line">$ git branch -vv</span><br><span class="line">* main cf68e5c [origin/main] vault backup: 2025-11-17 17:45:18</span><br></pre></td></tr></table></figure>
+
+<h6 id="关于git的常见操作-commit、push、pull三种命令的解释？（11月17日）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵏᵎᵎᵎᵎ"><a href="#关于git的常见操作-commit、push、pull三种命令的解释？（11月17日）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵏᵎᵎᵎᵎ" class="headerlink" title="关于git的常见操作-commit、push、pull三种命令的解释？（11月17日）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵏᵎᵎᵎᵎ"></a>关于git的常见操作-commit、push、pull三种命令的解释？（11月17日）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵏᵎᵎᵎᵎ</h6><p>总结来说，<code>commit</code>是在本地保存你的工作，<code>push</code>是将你的本地工作推送到远程仓库，而<code>pull</code>是从远程仓库获取并合并最新的更改到你的本地仓库。</p>
+<h4 id="课题组网站"><a href="#课题组网站" class="headerlink" title="课题组网站"></a>课题组网站</h4><h6 id="自己的个人blog用的hexo来创建，那么该用什么中介工具来介入课题组网站？（11月17日）"><a href="#自己的个人blog用的hexo来创建，那么该用什么中介工具来介入课题组网站？（11月17日）" class="headerlink" title="自己的个人blog用的hexo来创建，那么该用什么中介工具来介入课题组网站？（11月17日）"></a>自己的个人blog用的hexo来创建，那么该用什么中介工具来介入课题组网站？（11月17日）</h6><ul>
+<li>Labxing这种填空式的网站，总结来说相当丑，所以笔者愚见是采用类似的hexo+github这种方式来进行运作，只要求专注具体内容的本身，而不用花大量时间精力，去重新学习html前端代码知识。<br>可以参考这篇文章所描述<a href="https://blog.csdn.net/zdc1010/article/details/145609864">这篇大佬所展示的方案是HugoBlox+Github托管的方式</a></li>
+</ul>
+<h6 id="hugo如何安装？以及基础的操作命令是什么？（11月17日）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵏᵎᵎᵎᵎ"><a href="#hugo如何安装？以及基础的操作命令是什么？（11月17日）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵏᵎᵎᵎᵎ" class="headerlink" title="hugo如何安装？以及基础的操作命令是什么？（11月17日）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵏᵎᵎᵎᵎ"></a>hugo如何安装？以及基础的操作命令是什么？（11月17日）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵏᵎᵎᵎᵎ</h6><ul>
+<li>最好的是用hugo-theme上github免费的主题，不建议使用hugo-blox pro主题，太贵了799多（是人搞得起的？）<br>可以参考这份官方的安装文档<a href="https://docs.hugoblox.com/getting-started/install-hugo/">💻 本地编辑你的Hugo网站 |雨果·布洛克斯医生</a></li>
+<li>scoop(win的powershell下安装)，这个是一个win的包管理器<br>在包管理器下安装git go hugo-extended nodejs三个前置条件</li>
+</ul>
+<h6 id="如何找到hugo的主题，并开始制作搭建一个课题组网站？（11月19日）"><a href="#如何找到hugo的主题，并开始制作搭建一个课题组网站？（11月19日）" class="headerlink" title="如何找到hugo的主题，并开始制作搭建一个课题组网站？（11月19日）"></a>如何找到hugo的主题，并开始制作搭建一个课题组网站？（11月19日）</h6><h6 id="如何从json数据集中提取玻璃转化温度，并完成复现工作？（11月20日）"><a href="#如何从json数据集中提取玻璃转化温度，并完成复现工作？（11月20日）" class="headerlink" title="如何从json数据集中提取玻璃转化温度，并完成复现工作？（11月20日）"></a>如何从json数据集中提取玻璃转化温度，并完成复现工作？（11月20日）</h6><ul>
+<li>优化可以把__getitem__</li>
+</ul>
+<h4 id="pytorch的使用-文献复现工作"><a href="#pytorch的使用-文献复现工作" class="headerlink" title="pytorch的使用+文献复现工作"></a>pytorch的使用+文献复现工作</h4><h6 id="怎样读取元数据的格式，并且将其定义解析成pytorch中的data对象-（11月17日）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵏᵎᵎᵎᵎ"><a href="#怎样读取元数据的格式，并且将其定义解析成pytorch中的data对象-（11月17日）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵏᵎᵎᵎᵎ" class="headerlink" title="怎样读取元数据的格式，并且将其定义解析成pytorch中的data对象?（11月17日）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵏᵎᵎᵎᵎ"></a>怎样读取元数据的格式，并且将其定义解析成pytorch中的data对象?（11月17日）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵏᵎᵎᵎᵎ</h6><ul>
+<li>成功实现了json中文件的部分数据结构的读取，但后面发现json中的结构不统一，相同json中的sample数据也不统一存在多个分散，较为复杂的局限，通过单纯的定义数据框似乎也可以解决，但工作量较大，逐步框架式的搜索复杂</li>
+</ul>
+<h6 id="借此我们通过引入无幻觉的LLM的api来捕获数据集，如何引入api来捕获对应数据集？（11月18日）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵏᵏᵎᵎᵎᵎ"><a href="#借此我们通过引入无幻觉的LLM的api来捕获数据集，如何引入api来捕获对应数据集？（11月18日）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵏᵏᵎᵎᵎᵎ" class="headerlink" title="借此我们通过引入无幻觉的LLM的api来捕获数据集，如何引入api来捕获对应数据集？（11月18日）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵏᵏᵎᵎᵎᵎ"></a>借此我们通过引入无幻觉的LLM的api来捕获数据集，如何引入api来捕获对应数据集？（11月18日）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵏᵏᵎᵎᵎᵎ</h6><ul>
+<li>这种操作的实现，在于客户端的构建、提示词的构建，还蛮简单的。详细可以参考</li>
+</ul>
+<h6 id="如何在pycharm中引入对应llm的api加入编程？（11月19日）"><a href="#如何在pycharm中引入对应llm的api加入编程？（11月19日）" class="headerlink" title="如何在pycharm中引入对应llm的api加入编程？（11月19日）"></a>如何在pycharm中引入对应llm的api加入编程？（11月19日）</h6><ul>
+<li>第零步检查所有值得搜索的变量（第一难检查、存在数据种类稀疏、标准不统一的情况）</li>
+<li>第一步将所有需要的变量赋值为None</li>
+<li>第二步将文件下的json读取为txt（改为先提取每个json中的sample，减少输入llm的tokens）</li>
+<li>第三步通过llm的api来填空</li>
+<li>第四步循环完所有单文件</li>
+<li><strong>优化第二步</strong>，通过re筛选包含检索目标性能json的索引列表，在利用llm在对应json中提取目标性能值（进一步减少llm的输出损耗）；</li>
+<li><strong>优化第三步</strong>，先通过pid来构建df索引列，在通过往其中引入对应的值即可</li>
+</ul>
+<p><a href="https://developer.aliyun.com/article/1680875">大模型部署指南：从个人玩转到企业级应用，这4款工具必看！-阿里云开发者社区</a></p>
+<h6 id="在pycharm中如何忽略隐私文件数据文件的git上传？（11月19日）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵏᵎᵎᵎᵎ"><a href="#在pycharm中如何忽略隐私文件数据文件的git上传？（11月19日）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵏᵎᵎᵎᵎ" class="headerlink" title="在pycharm中如何忽略隐私文件数据文件的git上传？（11月19日）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵏᵎᵎᵎᵎ"></a>在pycharm中如何忽略隐私文件数据文件的git上传？（11月19日）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵏᵎᵎᵎᵎ</h6><ul>
+<li>一定要在文件被跟踪前，在.gitignore文件中添加，文件目录或者文件名，这样可以避免隐私信息的上传</li>
+</ul>
+<h4 id="本地大模型的部署——如何启动在本地上安装可以使用openai的api支持的大模型，支持嵌入代码中？（11月21日）"><a href="#本地大模型的部署——如何启动在本地上安装可以使用openai的api支持的大模型，支持嵌入代码中？（11月21日）" class="headerlink" title="本地大模型的部署——如何启动在本地上安装可以使用openai的api支持的大模型，支持嵌入代码中？（11月21日）"></a>本地大模型的部署——如何启动在本地上安装可以使用openai的api支持的大模型，支持嵌入代码中？（11月21日）</h4><h5 id="第零步：对相关模型本地部署的知识进行普及，挑选架构，选用什么推理框架来部署本地大模型？（11月21日）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵏᵎᵎᵎᵎ"><a href="#第零步：对相关模型本地部署的知识进行普及，挑选架构，选用什么推理框架来部署本地大模型？（11月21日）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵏᵎᵎᵎᵎ" class="headerlink" title="第零步：对相关模型本地部署的知识进行普及，挑选架构，选用什么推理框架来部署本地大模型？（11月21日）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵏᵎᵎᵎᵎ"></a>第零步：对相关模型本地部署的知识进行普及，挑选架构，选用什么推理框架来部署本地大模型？（11月21日）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵏᵎᵎᵎᵎ</h5><ul>
+<li>在这里我将采用vllm来部署本地大模型，因为这样可以方便代码api调用，以及获得较高的性能。详细参考文档<a href="https://developer.aliyun.com/article/1680875">大模型部署指南：从个人玩转到企业级应用，这4款工具必看！-阿里云开发者社区</a></li>
+<li>不同推理框架的大模型的对比<a href="https://cloud.tencent.com/developer/article/2589156">2025年本地AI部署完全指南：从Ollama到vLLM的全方位实践教程-腾讯云开发者社区-腾讯云</a></li>
+</ul>
+<h5 id="第一步关于vllm的安装？（11月21日）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵏᵎᵎᵎᵎ"><a href="#第一步关于vllm的安装？（11月21日）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵏᵎᵎᵎᵎ" class="headerlink" title="第一步关于vllm的安装？（11月21日）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵏᵎᵎᵎᵎ"></a>第一步关于vllm的安装？（11月21日）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵏᵎᵎᵎᵎ</h5><ul>
+<li>使用uv来构建pytorch环境和vllm的安装</li>
+</ul>
+<h6 id="win11如何安装uv（理解起来就类似于conda）包、环境管理器？（11月21日）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵏᵎᵎᵎᵎ"><a href="#win11如何安装uv（理解起来就类似于conda）包、环境管理器？（11月21日）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵏᵎᵎᵎᵎ" class="headerlink" title="win11如何安装uv（理解起来就类似于conda）包、环境管理器？（11月21日）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵏᵎᵎᵎᵎ"></a>win11如何安装uv（理解起来就类似于conda）包、环境管理器？（11月21日）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵏᵎᵎᵎᵎ</h6><ul>
+<li>参考uv的官方文档<a href="https://uv.doczh.com/getting-started/installation/">安装 | uv 中文文档</a></li>
+</ul>
+<p><strong>uv的介绍</strong>：</p>
+<ul>
+<li><code>uv</code> 是一个由 Rye 或 pip-tools 启发的高性能 Python 包安装器和解析器<br><strong>使用uv创建环境、激活环境</strong>、<strong>退出环境</strong>(在win powershell中)<br><code>uv venv --python 3.12</code>、<code>.venv\Scripts\activate</code>、<code>deactivate</code></li>
+</ul>
+<p><strong>报错版本限制问题</strong>：无法在win powershell中安装vllm</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">PS E:\projects\vllm_rag&gt; uv add torch modelscope vllm</span><br><span class="line">Resolved 163 packages in 5.59s</span><br><span class="line">error: Distribution `nvidia-cutlass-dsl==4.3.0 @ registry+https://pypi.org/simple` can&#x27;t be installed because it doesn&#x27;t have a source distribution or wheel for the current platform</span><br><span class="line"></span><br><span class="line">hint: You&#x27;re on Windows (`win_amd64`), but `nvidia-cutlass-dsl` (v4.3.0) only has wheels for the following platforms: `manylinux_2_28_aarch64`, `manylinux_2_28_x86_64`; consider adding &quot;sys_platform == &#x27;win32&#x27; and platform_machine == &#x27;AMD64&#x27;&quot; to `tool.uv.required-environments` to ensure uv resolves to a version with compatible wheels</span><br></pre></td></tr></table></figure>
+
+<h6 id="如何解决uv安装vllm兼容性问题，仅支持Linux系统？（11月21日）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵏᵎᵎᵎᵎ"><a href="#如何解决uv安装vllm兼容性问题，仅支持Linux系统？（11月21日）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵏᵎᵎᵎᵎ" class="headerlink" title="如何解决uv安装vllm兼容性问题，仅支持Linux系统？（11月21日）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵏᵎᵎᵎᵎ"></a>如何解决uv安装vllm兼容性问题，仅支持Linux系统？（11月21日）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵏᵎᵎᵎᵎ</h6><ul>
+<li><p>在这里我们使用win的Linux子系统来解决这个问题+docker的方式</p>
+</li>
+<li><p>不在这里我们更改策略，采用docker（<strong>一个比conda、uv、scoop更大的概念，可以叫做系统管理器</strong>）来拉取vllm的镜像来快速部署</p>
+</li>
+</ul>
+<p><strong>具体可以参考：</strong><a href="https://xuanyuan.cloud/blog/vllm-openai-docker">vllm-openai Docker 部署全手册 - 轩辕镜像技术博客</a></p>
+<p><strong>win下安装docker，可以采用docker-desktop+wsl2的方式（完成安装、配置国内镜像源）</strong>，具体可以参考<a href="https://blog.csdn.net/weixin_52286364/article/details/150379121">Windows 环境下安装 Docker 的详细教程（超详细图文）_windows 安装docker-CSDN博客</a></p>
+<h6 id="如何使用docker将vllm推理框架与本地框架隔离，并使得win也可以使用vllm？（11月21日）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵏᵎᵎᵎᵎ"><a href="#如何使用docker将vllm推理框架与本地框架隔离，并使得win也可以使用vllm？（11月21日）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵏᵎᵎᵎᵎ" class="headerlink" title="如何使用docker将vllm推理框架与本地框架隔离，并使得win也可以使用vllm？（11月21日）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵏᵎᵎᵎᵎ"></a>如何使用docker将vllm推理框架与本地框架隔离，并使得win也可以使用vllm？（11月21日）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵏᵎᵎᵎᵎ</h6><ul>
+<li>参考官方vllm文档的docker安装说明<a href="https://docs.vllm.com.cn/en/latest/deployment/docker.html">使用 Docker - vLLM 文档</a></li>
+</ul>
+<h6 id="如何挑选模型和下载到本地，方便vllm挂载启动？（11月23日）"><a href="#如何挑选模型和下载到本地，方便vllm挂载启动？（11月23日）" class="headerlink" title="如何挑选模型和下载到本地，方便vllm挂载启动？（11月23日）"></a>如何挑选模型和下载到本地，方便vllm挂载启动？（11月23日）</h6><ul>
+<li>在国内<a href="https://www.modelscope.cn/models">模型库首页 · 魔搭社区</a>网页中挑选适合自己的模型，<a href="https://huggingface.co/">huggingface.co</a>也可以了解到最新的模型</li>
+</ul>
+<blockquote>
+<p>魔塔社区挺不错，支持很多模型的下载<a href="https://www.modelscope.cn/my/overview">概览 · 魔搭社区</a>，包括<a href="https://huggingface.co/models">Models – Hugging Face</a>（后者是ai界的github）</p>
+</blockquote>
+<ul>
+<li>现在开来主要有三个选择<strong>Llama 3 系列 (Meta)</strong>、<strong>Qwen 系列 (通义千问)</strong>、<strong>Mistral 系列</strong> (Mistral AI)</li>
+</ul>
+<h6 id="如何结合轩辕云下载vllm的docker并运行本地大模型，开启api，并接入代码中？（11月23日）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵏᵎᵎᵎᵎ"><a href="#如何结合轩辕云下载vllm的docker并运行本地大模型，开启api，并接入代码中？（11月23日）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵏᵎᵎᵎᵎ" class="headerlink" title="如何结合轩辕云下载vllm的docker并运行本地大模型，开启api，并接入代码中？（11月23日）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵏᵎᵎᵎᵎ"></a>如何结合轩辕云下载vllm的docker并运行本地大模型，开启api，并接入代码中？（11月23日）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵏᵎᵎᵎᵎ</h6><ol>
+<li>去轩辕云官网查询对应vllm的docker版本利用专属域名，按量计费加速下载<code>docker pull zhuanshuyuming.xuanyuan.run/vllm/vllm-openai:v0.11.2</code><blockquote>
+<p>最新了解到，vllm只是一个运行推理框架，可以选择在本地下载大模型然后采用挂载的方式，所以想要运动大模型，还得下载模型文件</p>
+</blockquote>
+</li>
+<li>下载的方式分为两种，第一种：本地下载大模型后通过挂载卷的方式送入容器内，后利用容器内的vllm推理框架进行运行，第二种：通过共享挂载卷的方式在vllm中使用hf拉取大模型，挂载卷也会同步回主机的存放大模型的空文件夹中；<blockquote>
+<p>这里采用第二种方法，因为采用第一种时，docker容器内部的网络环境与宿主机是win的wsl2不同，win与wsl2又不同，存在多层网络嵌套处理较为麻烦，使用python脚本+魔法+conda环境的方式，利用hf-api来下载到本地的目录，然后挂载到docker</p>
+</blockquote>
+</li>
+</ol>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> os  </span><br><span class="line"><span class="keyword">from</span> huggingface_hub <span class="keyword">import</span> snapshot_download  </span><br><span class="line">  </span><br><span class="line"><span class="comment"># 你挂载到 Docker 的本地目录  </span></span><br><span class="line">local_cache_dir = <span class="string">&quot;E:/vllm_models&quot;</span>  </span><br><span class="line">  </span><br><span class="line"><span class="comment"># 你要下载的模型  </span></span><br><span class="line">model_name = <span class="string">&quot;mistralai/Mistral-7B-v0.1&quot;</span>  </span><br><span class="line">  </span><br><span class="line"><span class="comment"># 使用你的 Hugging Face Token</span></span><br><span class="line">hf_token = <span class="string">&quot;your_hf_tokens&quot;</span>  </span><br><span class="line">  </span><br><span class="line"><span class="built_in">print</span>(<span class="string">f&quot;开始下载模型 <span class="subst">&#123;model_name&#125;</span> 到 <span class="subst">&#123;local_cache_dir&#125;</span>&quot;</span>)  </span><br><span class="line"></span><br><span class="line"><span class="comment"># 这会使用你主机的网络（包括代理设置）来下载  </span></span><br><span class="line">snapshot_download(  </span><br><span class="line">    repo_id=model_name,  </span><br><span class="line">    cache_dir=local_cache_dir,  </span><br><span class="line">    token=hf_token,  </span><br><span class="line">    resume_download=<span class="literal">True</span>,  </span><br><span class="line">)  </span><br><span class="line">  </span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;模型下载完成！&quot;</span>)</span><br></pre></td></tr></table></figure>
+
+<ol start="3">
+<li>成功下载模型mistralai&#x2F;Mistral-7B-v0.1，也成功在docker中运行，但是很不幸的是gpu的显存爆了</li>
+</ol>
+<h4 id="AI辅助"><a href="#AI辅助" class="headerlink" title="AI辅助"></a>AI辅助</h4><h6 id="如何采用mcp来提高ai辅助编程trea的能力？（11月18日）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵏᵎᵎᵎᵎ"><a href="#如何采用mcp来提高ai辅助编程trea的能力？（11月18日）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵏᵎᵎᵎᵎ" class="headerlink" title="如何采用mcp来提高ai辅助编程trea的能力？（11月18日）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵏᵎᵎᵎᵎ"></a>如何采用mcp来提高ai辅助编程trea的能力？（11月18日）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵏᵎᵎᵎᵎ</h6><ul>
+<li>trea给了内置的功能（极大地方便了调用）</li>
+<li>glm4.6+mcp</li>
+</ul>
+<blockquote>
+<p>关于ai使用的心得：ai很笨需要检验，检查理解关键部分！不要盲从，理解代码，慢慢给ai问改。代码运行成本较贵（从时间和金钱上来讲，所以最好一次成功，对各部分检验</p>
+</blockquote>
+<h6 id="如何采用mcp来提高ai助手chatbox集成的能力？（11月18日）"><a href="#如何采用mcp来提高ai助手chatbox集成的能力？（11月18日）" class="headerlink" title="如何采用mcp来提高ai助手chatbox集成的能力？（11月18日）"></a>如何采用mcp来提高ai助手chatbox集成的能力？（11月18日）</h6><ul>
+<li>安装</li>
+</ul>
+<h6 id="如何采用本地知识库的部署，通过ai助手chatbox来强化对文献知识库的理解和检索能力？（11月18日）"><a href="#如何采用本地知识库的部署，通过ai助手chatbox来强化对文献知识库的理解和检索能力？（11月18日）" class="headerlink" title="如何采用本地知识库的部署，通过ai助手chatbox来强化对文献知识库的理解和检索能力？（11月18日）"></a>如何采用本地知识库的部署，通过ai助手chatbox来强化对文献知识库的理解和检索能力？（11月18日）</h6><h4 id="课程任务学习"><a href="#课程任务学习" class="headerlink" title="课程任务学习"></a>课程任务学习</h4><h5 id="基本的高斯程序的使用，基本的高斯计算"><a href="#基本的高斯程序的使用，基本的高斯计算" class="headerlink" title="基本的高斯程序的使用，基本的高斯计算"></a>基本的高斯程序的使用，基本的高斯计算</h5><h6 id="如何使用高斯程序，制作高斯输入文件，并运行查看输出结果？（11月23日）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵏᵎᵎᵎᵎ"><a href="#如何使用高斯程序，制作高斯输入文件，并运行查看输出结果？（11月23日）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵏᵎᵎᵎᵎ" class="headerlink" title="如何使用高斯程序，制作高斯输入文件，并运行查看输出结果？（11月23日）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵏᵎᵎᵎᵎ"></a>如何使用高斯程序，制作高斯输入文件，并运行查看输出结果？（11月23日）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵏᵎᵎᵎᵎ</h6><p>（结合chemoffice中chemdraw（画好分子图保存为.cdx）——&gt;chem3D（打开后create高斯计算文件.gif）——&gt;Gaussian程序运行即可）</p>
+<h6 id="如何在高斯输出文件中查找对应物理参数以及其意义？（11月23日）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵏᵎᵎᵎᵎ"><a href="#如何在高斯输出文件中查找对应物理参数以及其意义？（11月23日）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵏᵎᵎᵎᵎ" class="headerlink" title="如何在高斯输出文件中查找对应物理参数以及其意义？（11月23日）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵏᵎᵎᵎᵎ"></a>如何在高斯输出文件中查找对应物理参数以及其意义？（11月23日）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵏᵎᵎᵎᵎ</h6><p>使用ctrl+F搜索以下关键词</p>
+<ul>
+<li>分子总能量：SCF Done：E &#x3D; object_value</li>
+<li>精确极化率：</li>
+<li>最高轨道占有能(E_home)：多行Alpha  occ. eigenvalues最后一个数字</li>
+<li>最低空轨道能（E_lumo）：多行 Alpha virt. eigenvalues第一个数字</li>
+<li>原子净电荷Mulliken charges:（最正最负）</li>
+<li>偶极矩：Tot&#x3D;</li>
+<li>etc.</li>
+</ul>
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>questions</tag>
+        <tag>learning</tag>
+        <tag>deep_learning</tag>
+        <tag>Obsidian</tag>
+        <tag>课题组网站</tag>
       </tags>
   </entry>
   <entry>
@@ -190,16 +343,16 @@
 <h1 id="总结一下：《炼丹大法》涉及wsl-win下的Linux-基础命令指令、cuda-container-Toolkit的安装、win下docker的安装以及使用docker-desktop的镜像构建以及使用、ssh的命令以及使用、cpolar内网穿透的使用。"><a href="#总结一下：《炼丹大法》涉及wsl-win下的Linux-基础命令指令、cuda-container-Toolkit的安装、win下docker的安装以及使用docker-desktop的镜像构建以及使用、ssh的命令以及使用、cpolar内网穿透的使用。" class="headerlink" title="总结一下：《炼丹大法》涉及wsl(win下的Linux)基础命令指令、cuda container Toolkit的安装、win下docker的安装以及使用docker-desktop的镜像构建以及使用、ssh的命令以及使用、cpolar内网穿透的使用。"></a>总结一下：《炼丹大法》涉及wsl(win下的Linux)基础命令指令、cuda container Toolkit的安装、win下docker的安装以及使用docker-desktop的镜像构建以及使用、ssh的命令以及使用、cpolar内网穿透的使用。</h1><h2 id="第一步：安装wsl，以及Linux的子系统（建议宿主机和远程机都安装），做好对应配置"><a href="#第一步：安装wsl，以及Linux的子系统（建议宿主机和远程机都安装），做好对应配置" class="headerlink" title="第一步：安装wsl，以及Linux的子系统（建议宿主机和远程机都安装），做好对应配置"></a>第一步：安装wsl，以及Linux的子系统（建议宿主机和远程机都安装），做好对应配置</h2><h2 id="第二步：安装docker-desktop，完成一些必要的配置，如确定wsl集成"><a href="#第二步：安装docker-desktop，完成一些必要的配置，如确定wsl集成" class="headerlink" title="第二步：安装docker-desktop，完成一些必要的配置，如确定wsl集成"></a>第二步：安装docker-desktop，完成一些必要的配置，如确定wsl集成</h2><h2 id="第三步：在宿主机上安装cuda，以及利用wsl-魔法安装cuda-container-toolkit"><a href="#第三步：在宿主机上安装cuda，以及利用wsl-魔法安装cuda-container-toolkit" class="headerlink" title="第三步：在宿主机上安装cuda，以及利用wsl+魔法安装cuda container toolkit"></a>第三步：在宿主机上安装cuda，以及利用wsl+魔法安装cuda container toolkit</h2><h2 id="第四步：用docker拉取tensorflow的gpu-jupyter版本的image，并通过命令运行容器"><a href="#第四步：用docker拉取tensorflow的gpu-jupyter版本的image，并通过命令运行容器" class="headerlink" title="第四步：用docker拉取tensorflow的gpu-jupyter版本的image，并通过命令运行容器"></a>第四步：用docker拉取tensorflow的gpu-jupyter版本的image，并通过命令运行容器</h2><h2 id="第五步：用cpolar-ssh打通，宿主机和远程机直接的网络以及端口"><a href="#第五步：用cpolar-ssh打通，宿主机和远程机直接的网络以及端口" class="headerlink" title="第五步：用cpolar+ssh打通，宿主机和远程机直接的网络以及端口"></a>第五步：用cpolar+ssh打通，宿主机和远程机直接的网络以及端口</h2><h2 id="第六步：通过远程机的ssh连接后，用docker命令进入容器交互，下载缺少包环境。利用ssh连接是对应的端口转接，来打开docker容器的jupyter服务。"><a href="#第六步：通过远程机的ssh连接后，用docker命令进入容器交互，下载缺少包环境。利用ssh连接是对应的端口转接，来打开docker容器的jupyter服务。" class="headerlink" title="第六步：通过远程机的ssh连接后，用docker命令进入容器交互，下载缺少包环境。利用ssh连接是对应的端口转接，来打开docker容器的jupyter服务。"></a>第六步：通过远程机的ssh连接后，用docker命令进入容器交互，下载缺少包环境。利用ssh连接是对应的端口转接，来打开docker容器的jupyter服务。</h2><ul>
 <li>具体docker命令如下</li>
 </ul>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">docker <span class="built_in">exec</span> -it 容器<span class="built_in">id</span> /bin/bash</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">docker <span class="built_in">exec</span> -it 容器<span class="built_in">id</span> /bin/bash</span><br><span class="line"></span><br><span class="line"><span class="comment"># 转发端口</span></span><br><span class="line">ssh -f -N -L 5672:localhost:5672 用户名@远程服务器地址</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
 <h2 id="通过以上的一些步骤便可实现在笔记本电脑上，对台式机上的容器环境进行使用其环境服务，以及变更调整其环境。真正做到快速炼丹的调控。"><a href="#通过以上的一些步骤便可实现在笔记本电脑上，对台式机上的容器环境进行使用其环境服务，以及变更调整其环境。真正做到快速炼丹的调控。" class="headerlink" title="通过以上的一些步骤便可实现在笔记本电脑上，对台式机上的容器环境进行使用其环境服务，以及变更调整其环境。真正做到快速炼丹的调控。"></a>通过以上的一些步骤便可实现在笔记本电脑上，对台式机上的容器环境进行使用其环境服务，以及变更调整其环境。真正做到快速炼丹的调控。</h2>]]></content>
       <categories>
         <category>学习</category>
       </categories>
       <tags>
-        <tag>machine_learning</tag>
-        <tag>deep_learning</tag>
         <tag>questions</tag>
+        <tag>deep_learning</tag>
+        <tag>machine_learning</tag>
       </tags>
   </entry>
   <entry>
@@ -868,8 +1021,8 @@ First 5 rows of submission:
         <tag>机器学习</tag>
         <tag>kaggle比赛</tag>
         <tag>函数功能记录</tag>
-        <tag>catboost</tag>
         <tag>markdown_from_ipynb</tag>
+        <tag>catboost</tag>
       </tags>
   </entry>
   <entry>
