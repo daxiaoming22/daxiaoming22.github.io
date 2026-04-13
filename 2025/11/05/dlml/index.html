@@ -1,0 +1,523 @@
+<!DOCTYPE html><html lang="zh-CN"><head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 8.0.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/blog_image_3232.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/blog_image_16_16.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha256-VHqXKFhhMxcpubYf9xiWdCiojEbY9NexQ4jh8AxbvcM=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/themes/blue/pace-theme-bounce.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/pace.min.js" integrity="sha256-gqd7YTjg/BtfqWSwsJOvndl0Bxc8gFImLEkXQT8+qj0=" crossorigin="anonymous" defer=""></script>
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"ideaforge.icu","root":"/","images":"/images","scheme":"Pisces","darkmode":true,"version":"8.25.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"codeblock":{"theme":{"light":"default","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":true,"style":"mac"},"fold":{"enable":true,"height":500},"language":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownBigIn","coll_header":"slideLeftIn","sidebar":"slideDownBigOut"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":"ture","top_n_per_article":1,"unescape":false,"preload":"ture"}}</script><script src="/js/config.js" defer=""></script>
+
+    <meta name="description" content="解决问题最好的方式，就是正确的提问，从大问题中拆成小问题（一个个解决），这便是思考学习；鉴于每个人的学习情况不同，可以用全局搜索，是否遇到同一个问题。这是将会是一篇汇总自己在学习ml、dl过程中遇到最想的问题。以及我自己还有ai的回答。仅供参考">
+<meta property="og:type" content="article">
+<meta property="og:title" content="关于机器（深度）学习的500问/个人版">
+<meta property="og:url" content="https://ideaforge.icu/2025/11/05/dlml/index.html">
+<meta property="og:site_name" content="Yueming &amp; Blog">
+<meta property="og:description" content="解决问题最好的方式，就是正确的提问，从大问题中拆成小问题（一个个解决），这便是思考学习；鉴于每个人的学习情况不同，可以用全局搜索，是否遇到同一个问题。这是将会是一篇汇总自己在学习ml、dl过程中遇到最想的问题。以及我自己还有ai的回答。仅供参考">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2025-11-04T16:00:00.000Z">
+<meta property="article:modified_time" content="2025-11-11T07:10:35.488Z">
+<meta property="article:author" content="月明">
+<meta property="article:tag" content="deep_learning">
+<meta property="article:tag" content="machine_learning">
+<meta property="article:tag" content="questions">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="https://ideaforge.icu/2025/11/05/dlml/">
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://ideaforge.icu/2025/11/05/dlml/","path":"2025/11/05/dlml/","title":"关于机器（深度）学习的500问/个人版"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>关于机器（深度）学习的500问/个人版 | Yueming &amp; Blog</title>
+  
+
+
+
+
+
+
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous" defer=""></script>
+<script src="/js/utils.js" defer=""></script><script src="/js/motion.js" defer=""></script><script src="/js/sidebar.js" defer=""></script><script src="/js/next-boot.js" defer=""></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.5.0/search.js" integrity="sha256-xFC6PJ82SL9b3WkGjFavNiA9gm5z6UBxWPiu4CYjptg=" crossorigin="anonymous" defer=""></script>
+<script src="/js/third-party/search/local-search.js" defer=""></script>
+
+
+
+
+
+  <script src="/js/third-party/pace.js" defer=""></script>
+
+
+  
+  <script async="" src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope="" itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+
+<div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">Yueming &amp; Blog</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">人的内心不种满鲜花，就会长满杂草。</p>
+      <img class="custom-logo-image" src="/images/site_logo.jpg" alt="Yueming &amp; Blog">
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜索" role="button">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">25</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">5</span></a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">14</span></a></li><li class="menu-item menu-item-link"><a href="/links/" rel="section"><i class="fa fa-link fa-fw"></i>友链</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+      <div class="search-header">
+        <span class="search-icon">
+          <i class="fa fa-search"></i>
+        </span>
+        <div class="search-input-container">
+          <input autocomplete="off" autocapitalize="off" maxlength="80" placeholder="搜索..." spellcheck="false" type="search" class="search-input">
+        </div>
+        <span class="popup-btn-close" role="button">
+          <i class="fa fa-times-circle"></i>
+        </span>
+      </div>
+      <div class="search-result-container">
+        <div class="search-result-icon">
+          <i class="fa fa-spinner fa-pulse fa-5x"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%98%BE%E7%A4%BA%E9%97%AE%E9%A2%98"><span class="nav-number">1.</span> <span class="nav-text">显示问题</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#%E5%85%B3%E4%BA%8E%E4%B8%BA%E4%BB%80%E4%B9%88%E5%9C%A8vsc%E4%B8%AD%E6%98%BE%E7%A4%BA%E4%B8%8D%E4%BA%86jupyter-notebook%E4%B8%AD%E7%94%9F%E6%88%90ploty%E5%9B%BE%E5%83%8F%EF%BC%9F%EF%BC%8825%E5%B9%B411%E6%9C%885%E6%97%A5%EF%BC%89%D9%A9-%E2%80%A2%CC%A4%CC%80%E1%B5%95%E2%80%A2%CC%A4%CC%81%E0%B9%91-%E1%B5%92%E1%B5%8F%E1%B5%8E%E1%B5%8E%E1%B5%8E%E1%B5%8E"><span class="nav-number">1.0.1.</span> <span class="nav-text">关于为什么在vsc中显示不了jupyter notebook中生成ploty图像？（25年11月5日）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#%E5%A6%82%E4%BD%95%E5%9C%A8%E5%8D%9A%E5%AE%A2%E4%B8%AD%E8%87%AA%E5%8A%A8%E6%8A%98%E5%8F%A0%E4%BB%A3%E7%A0%81%E3%80%81%E4%BB%A5%E5%8F%8A%E5%9C%A8obsidian%E4%B8%AD%E8%87%AA%E5%8A%A8%E6%8A%98%E5%8F%A0%E4%BB%A3%E7%A0%81%EF%BC%9F%EF%BC%8825%E5%B9%B411%E6%9C%886%E6%97%A5%EF%BC%89"><span class="nav-number">1.0.2.</span> <span class="nav-text">如何在博客中自动折叠代码、以及在obsidian中自动折叠代码？（25年11月6日）</span></a></li></ol></li></ol><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%BB%A3%E7%A0%81%E8%BF%90%E8%A1%8C%E9%97%AE%E9%A2%98"><span class="nav-number">2.</span> <span class="nav-text">代码运行问题</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#%E5%9C%A8vsc-notebook%E4%B8%AD%E5%A6%82%E4%BD%95%E8%B0%83%E8%AF%95%E4%BB%A3%E7%A0%81-25%E5%B9%B411%E6%9C%886%E6%97%A5-%D9%A9-%E2%80%A2%CC%A4%CC%80%E1%B5%95%E2%80%A2%CC%A4%CC%81%E0%B9%91-%E1%B5%92%E1%B5%8F%E1%B5%8F%E1%B5%8E%E1%B5%8E%E1%B5%8E%E1%B5%8E"><span class="nav-number">2.0.1.</span> <span class="nav-text">在vsc-notebook中如何调试代码? (25年11月6日) ٩(•̤̀ᵕ•̤́๑)ᵒᵏᵏᵎᵎᵎᵎ</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#%E5%A6%82%E4%BD%95%E6%8F%90%E9%AB%98%E4%BB%A3%E7%A0%81%E7%9A%84%E8%BF%90%E8%A1%8C%E6%95%88%E7%8E%87%E5%92%8C%E6%97%B6%E9%97%B4%EF%BC%8C%E5%A4%96%E5%8A%A0%E6%9C%8D%E5%8A%A1%E5%99%A8%EF%BC%9F%EF%BC%882025%E5%B9%B411%E6%9C%887%E6%97%A5%EF%BC%89"><span class="nav-number">2.0.2.</span> <span class="nav-text">如何提高代码的运行效率和时间，外加服务器？（2025年11月7日）</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#%E5%A6%82%E4%BD%95%E5%9C%A8%E5%85%B6%E4%BB%96%E7%9A%84%E7%94%B5%E8%84%91%E4%B8%AD%E4%BD%BF%E7%94%A8docker%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%83%A8%E7%BD%B2%EF%BC%8C%E5%A6%82%E4%BD%95%E5%9C%A8%E4%B8%BB%E6%9C%BA%E4%B8%AD%E8%BF%9C%E7%A8%8B%E8%BF%9E%E6%8E%A5%E6%9C%8D%E5%8A%A1%E5%99%A8%EF%BC%9F%E5%BC%80%E5%90%AF%E7%82%BC%E4%B8%B9%E7%82%89%E8%AE%A1%E5%88%92%EF%BC%9F%EF%BC%8811%E6%9C%8810%E6%97%A5%EF%BC%89spider-man"><span class="nav-number">2.0.3.</span> <span class="nav-text">如何在其他的电脑中使用docker服务器部署，如何在主机中远程连接服务器？开启炼丹炉计划？（11月10日）spider man</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#%E5%A6%82%E4%BD%95%E7%94%A8conda%E5%B0%86%E5%8C%85%E6%89%93%E5%8C%85%E5%90%8E%EF%BC%8C%E5%AF%BC%E5%85%A5%E5%8F%A6%E5%A4%96%E4%B8%80%E4%B8%AA%E7%94%B5%E8%84%91%E7%9A%84%E7%8E%AF%E5%A2%83%E7%AE%A1%E7%90%86%E6%88%96%E8%80%85docker%E5%AE%B9%E5%99%A8%E4%B8%AD%EF%BC%9F-11%E6%9C%8811%E6%97%A5-%D9%A9-%E2%80%A2%CC%A4%CC%80%E1%B5%95%E2%80%A2%CC%A4%CC%81%E0%B9%91-%E1%B5%92%E1%B5%8F%E1%B5%8E%E1%B5%8E%E1%B5%8E%E1%B5%8E"><span class="nav-number">2.0.4.</span> <span class="nav-text">如何用conda将包打包后，导入另外一个电脑的环境管理或者docker容器中？(11月11日)٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ</span></a></li></ol></li></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="月明" src="/images/blog_image.jpg">
+  <p class="site-author-name" itemprop="name">月明</p>
+  <div class="site-description" itemprop="description">多提问多思考 | 做多长期主义</div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">14</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">5</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">25</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <a href="/go.html?u=aHR0cHM6Ly9naXRodWIuY29tL2RheGlhb21pbmcyMg" title="GitHub → https://github.com/daxiaoming22" rel="external nofollow noopener noreferrer" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:yueming_dai@smail.nju.edu.cn" title="E-Mail → mailto:yueming_dai@smail.nju.edu.cn" rel="noopener me" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="/go.html?u=aHR0cHM6Ly9zcGFjZS5iaWxpYmlsaS5jb20vMzYxNDYyMzIz" title="哔哩哔哩 → https://space.bilibili.com/361462323" rel="external nofollow noopener noreferrer" target="_blank"><i class="fa-brands fa-bilibili fa-fw"></i>哔哩哔哩</a>
+      </span>
+  </div>
+  <div class="cc-license animated" itemprop="license">
+    <a href="/go.html?u=aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo" class="cc-opacity" rel="external nofollow noopener noreferrer" target="_blank"><img src="https://cdnjs.cloudflare.com/ajax/libs/creativecommons-vocabulary/2020.11.3/assets/license_badges/small/by_nc_sa.svg" alt="Creative Commons"></a>
+  </div>
+<p id="hitokoto">
+  <a href="#" id="hitokoto_text">:D 获取中...</a>
+</p>
+<script>
+  fetch('https://v1.hitokoto.cn?c=a&c=i&c=j&encode=json&charset=utf-8')
+    .then(response => response.json())
+    .then(data => {
+      const hitokoto = document.querySelector('#hitokoto_text');
+      hitokoto.href = `https://hitokoto.cn?uuid=${data.uuid}`;
+      hitokoto.innerText = `${data.hitokoto}  --${data.from_who}《${data.from}》`;
+    })
+    .catch(console.error);
+</script>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope="" itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://ideaforge.icu/2025/11/05/dlml/">
+
+    <span hidden="" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/blog_image.jpg">
+      <meta itemprop="name" content="月明">
+    </span>
+
+    <span hidden="" itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Yueming &amp; Blog">
+      <meta itemprop="description" content="多提问多思考 | 做多长期主义">
+    </span>
+
+    <span hidden="" itemprop="post" itemscope="" itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="关于机器（深度）学习的500问/个人版 | Yueming &amp; Blog">
+      <meta itemprop="description" content="解决问题最好的方式，就是正确的提问，从大问题中拆成小问题（一个个解决），这便是思考学习；鉴于每个人的学习情况不同，可以用全局搜索，是否遇到同一个问题。这是将会是一篇汇总自己在学习ml、dl过程中遇到最想的问题。以及我自己还有ai的回答。仅供参考">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          关于机器（深度）学习的500问/个人版
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2025-11-05 00:00:00" itemprop="dateCreated datePublished" datetime="2025-11-05T00:00:00+08:00">2025-11-05</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2025-11-11 15:10:35" itemprop="dateModified" datetime="2025-11-11T15:10:35+08:00">2025-11-11</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+          <a href="/categories/%E5%AD%A6%E4%B9%A0/" itemprop="url" rel="index"><span itemprop="name">学习</span></a>
+        </span>
+    </span>
+
+  
+    <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span id="busuanzi_value_page_pv"></span>
+    </span>
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>416</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 ≈</span>
+      <span>2 分钟</span>
+    </span>
+</div>
+
+            <div class="post-description">解决问题最好的方式，就是正确的提问，从大问题中拆成小问题（一个个解决），这便是思考学习；鉴于每个人的学习情况不同，可以用全局搜索，是否遇到同一个问题。这是将会是一篇汇总自己在学习ml、dl过程中遇到最想的问题。以及我自己还有ai的回答。仅供参考</div>
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><span id="more"></span>
+
+<h4 id="显示问题"><a href="#显示问题" class="headerlink" title="显示问题"></a>显示问题</h4><h6 id="关于为什么在vsc中显示不了jupyter-notebook中生成ploty图像？（25年11月5日）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ"><a href="#关于为什么在vsc中显示不了jupyter-notebook中生成ploty图像？（25年11月5日）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ" class="headerlink" title="关于为什么在vsc中显示不了jupyter notebook中生成ploty图像？（25年11月5日）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ"></a>关于为什么在vsc中显示不了jupyter notebook中生成ploty图像？（25年11月5日）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ</h6><blockquote>
+<p>多用ai来提升问题的解决效率，提高学习的速度（同时要注意提示词给的精准，准意区分真正的解决方案和ai幻觉——靠各种方案去尝试）</p>
+</blockquote>
+<p>关键是插件Jupyter Notebook Renderers没有安装的问题。所以在浏览器中的jupyter可以显示ploty交互式的图像，但是在vsc中却没用。</p>
+<h6 id="如何在博客中自动折叠代码、以及在obsidian中自动折叠代码？（25年11月6日）"><a href="#如何在博客中自动折叠代码、以及在obsidian中自动折叠代码？（25年11月6日）" class="headerlink" title="如何在博客中自动折叠代码、以及在obsidian中自动折叠代码？（25年11月6日）"></a>如何在博客中自动折叠代码、以及在obsidian中自动折叠代码？（25年11月6日）</h6><h4 id="代码运行问题"><a href="#代码运行问题" class="headerlink" title="代码运行问题"></a>代码运行问题</h4><h6 id="在vsc-notebook中如何调试代码-25年11月6日-٩-•̤̀ᵕ•̤́๑-ᵒᵏᵏᵎᵎᵎᵎ"><a href="#在vsc-notebook中如何调试代码-25年11月6日-٩-•̤̀ᵕ•̤́๑-ᵒᵏᵏᵎᵎᵎᵎ" class="headerlink" title="在vsc-notebook中如何调试代码? (25年11月6日) ٩(•̤̀ᵕ•̤́๑)ᵒᵏᵏᵎᵎᵎᵎ"></a>在vsc-notebook中如何调试代码? (25年11月6日) ٩(•̤̀ᵕ•̤́๑)ᵒᵏᵏᵎᵎᵎᵎ</h6><p>在代码框运行旁边有个debug,可以调试代码代码块.</p>
+<blockquote>
+<p>代码调试和逐句ai辅助理解, 学习代码效率简直拉满. 其实做习惯了, 也可以少一点笔记编辑, 可以直接在理解后, 用自己的语言备注在代码块中.  </p>
+</blockquote>
+<h6 id="如何提高代码的运行效率和时间，外加服务器？（2025年11月7日）"><a href="#如何提高代码的运行效率和时间，外加服务器？（2025年11月7日）" class="headerlink" title="如何提高代码的运行效率和时间，外加服务器？（2025年11月7日）"></a>如何提高代码的运行效率和时间，外加服务器？（2025年11月7日）</h6><p><a target="_blank" rel="external nofollow noopener noreferrer" href="/go.html?u=aHR0cHM6Ly9ibG9nLnpvdWF3LmNvbS9hcnRpY2xlLzUyNDkwLmh0bWw">如何用阿里云服务器跑深度学习代码？-CLOUD云枢</a></p>
+<h6 id="如何在其他的电脑中使用docker服务器部署，如何在主机中远程连接服务器？开启炼丹炉计划？（11月10日）spider-man"><a href="#如何在其他的电脑中使用docker服务器部署，如何在主机中远程连接服务器？开启炼丹炉计划？（11月10日）spider-man" class="headerlink" title="如何在其他的电脑中使用docker服务器部署，如何在主机中远程连接服务器？开启炼丹炉计划？（11月10日）spider man"></a>如何在其他的电脑中使用docker服务器部署，如何在主机中远程连接服务器？开启炼丹炉计划？（11月10日）spider man</h6><h6 id="如何用conda将包打包后，导入另外一个电脑的环境管理或者docker容器中？-11月11日-٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ"><a href="#如何用conda将包打包后，导入另外一个电脑的环境管理或者docker容器中？-11月11日-٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ" class="headerlink" title="如何用conda将包打包后，导入另外一个电脑的环境管理或者docker容器中？(11月11日)٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ"></a>如何用conda将包打包后，导入另外一个电脑的环境管理或者docker容器中？(11月11日)٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ</h6><ul>
+<li>实现全量打包<a target="_blank" rel="external nofollow noopener noreferrer" href="/go.html?u=aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80Mjc0NDQ2Ni9hcnRpY2xlL2RldGFpbHMvMTQ5NDgyMjU1">【Anaconda】Conda 虚拟环境打包迁移教程_conda打包环境-CSDN博客</a></li>
+</ul>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          
+
+<div class="post-copyright">
+<ul>
+  <li class="post-copyright-author">
+      <strong>原作者： </strong>xingguang
+  </li>
+  <li class="post-copyright-link">
+      <strong>本文链接：</strong>
+      <a href="https://ideaforge.icu/2025/11/05/dlml/" title="关于机器（深度）学习的500问/个人版">https://ideaforge.icu/2025/11/05/dlml/</a>
+  </li>
+  <li class="post-copyright-license">
+      <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="/go.html?u=aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo" rel="external nofollow noopener noreferrer" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+          <div class="post-tags">
+              <a href="/tags/questions/" rel="tag"><i class="fa fa-tag"></i> questions</a>
+              <a href="/tags/deep-learning/" rel="tag"><i class="fa fa-tag"></i> deep_learning</a>
+              <a href="/tags/machine-learning/" rel="tag"><i class="fa fa-tag"></i> machine_learning</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2025/11/04/Simulation_and_reproduction_work/" rel="prev" title="复现——Data-Driven Design of High-Performance Polyimides With Enhanced Heat Resistance and Dielectric Properties">
+                  <i class="fa fa-angle-left"></i> 复现——Data-Driven Design of High-Performance Polyimides With Enhanced Heat Resistance and Dielectric Properties
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/2025/11/10/liandanjihua/" rel="next" title="关于机器（深度）学习的炼丹docker部署计划">
+                  关于机器（深度）学习的炼丹docker部署计划 <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+    
+  
+  <div class="comments giscus-container">
+  </div>
+  
+  
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    © 
+    <span itemprop="copyrightYear">2026</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">月明</span>
+  </div>
+<div class="wordcount">
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-line"></i>
+    </span>
+    <span title="站点总字数">15k</span>
+  </span>
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    <span title="站点阅读时长">56 分钟</span>
+  </span>
+</div>
+<div class="busuanzi-count">
+    <span class="post-meta-item" id="busuanzi_container_site_uv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+
+<!--
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/pisces/" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
+  </div>
+-->
+
+
+<!-- <br /> -->
+<!-- 网站运行时间的设置 -->
+<span id="timeDate">载入天数...</span>
+<!-- <span id="times">载入时分秒...</span> -->
+<script>
+    var now = new Date();
+    function createtime() {
+        var grt= new Date("10/23/2025 8:00:00");//此处修改你的建站时间或者网站上线时间
+        now.setTime(now.getTime()+250);
+        days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days);
+        hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours);
+        if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum);
+        mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;}
+        seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
+        snum = Math.round(seconds); 
+        if(String(snum).length ==1 ){snum = "0" + snum;}
+        // var times = document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒";
+        document.getElementById("timeDate").innerHTML = "本站已安全运行 "+dnum+" 天 "+hnum + " 小时 " + mnum + " 分 " + snum + " 秒";
+    }
+setInterval("createtime()",250);
+</script>
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+<script class="next-config" data-name="giscus" type="application/json">{"enable":true,"repo":"daxiaoming22/daxiaoming22.github.io","repo_id":"R_kgDOQG7XnQ","category":"Announcements","category_id":"DIC_kwDOQG7Xnc4CxAjd","mapping":"title","strict":0,"reactions_enabled":1,"emit_metadata":0,"theme":"light","lang":"zh-CN","crossorigin":"anonymous","input_position":"bottom","loading":"lazy"}</script>
+
+<script>
+document.addEventListener('page:loaded', () => {
+  if (!CONFIG.page.comments) return;
+
+  NexT.utils.loadComments('.giscus-container')
+    .then(() => NexT.utils.getScript('https://giscus.app/client.js', {
+      attributes: {
+        async                   : true,
+        crossOrigin             : 'anonymous',
+        'data-repo'             : CONFIG.giscus.repo,
+        'data-repo-id'          : CONFIG.giscus.repo_id,
+        'data-category'         : CONFIG.giscus.category,
+        'data-category-id'      : CONFIG.giscus.category_id,
+        'data-mapping'          : CONFIG.giscus.mapping,
+        'data-strict'           : CONFIG.giscus.strict,
+        'data-reactions-enabled': CONFIG.giscus.reactions_enabled,
+        'data-emit-metadata'    : CONFIG.giscus.emit_metadata,
+        'data-theme'            : CONFIG.giscus.theme,
+        'data-lang'             : CONFIG.giscus.lang,
+        'data-input-position'   : CONFIG.giscus.input_position,
+        'data-loading'          : CONFIG.giscus.loading
+      },
+      parentNode: document.querySelector('.giscus-container')
+    }));
+});
+</script>
+
+
+
+</body></html>
