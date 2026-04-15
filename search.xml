@@ -106,6 +106,122 @@
       </tags>
   </entry>
   <entry>
+    <title>OpenClaw 浏览器配置完整教程 - 解决 WSL2 自启动失败问题</title>
+    <url>/2026/04/15/openclaw-browser-setup/</url>
+    <content><![CDATA[<h1 id="静态神器：web-fetch-内置工具"><a href="#静态神器：web-fetch-内置工具" class="headerlink" title="静态神器：web_fetch 内置工具"></a>静态神器：web_fetch 内置工具</h1><h2 id="原理机制-获取-URL-并提取可读内容"><a href="#原理机制-获取-URL-并提取可读内容" class="headerlink" title="原理机制 - 获取 URL 并提取可读内容"></a>原理机制 - 获取 URL 并提取可读内容</h2><p>详细见 <a href="https://openclaw.cc/tools/web.html#web-fetch">openclaw中文站官方解释</a></p>
+<p>![[Pasted image 20260414120119.png]]</p>
+<ol>
+<li><strong>纯 HTTP 请求</strong>：发送 GET 请求（不执行 JavaScript），用 Chrome-like UA 模拟正常浏览器 </li>
+<li><strong>SSRF 防护</strong>：默认阻止私有&#x2F;内网主机，每一步重定向都重新检查 </li>
+<li><strong>正文提取</strong>：用 Readability 算法从 HTML 中提取主体内容，去除导航、广告等干扰 </li>
+<li><strong>格式转换</strong>：输出转换为干净的 Markdown 或纯文本 </li>
+<li><strong>回退机制</strong>：提取失败且配置了 Firecrawl 时，自动回退到 Firecrawl API </li>
+<li><strong>缓存</strong>：相同 URL 结果缓存 15 分钟，减少重复请求</li>
+</ol>
+<h2 id="使用场景"><a href="#使用场景" class="headerlink" title="使用场景"></a>使用场景</h2><p>✅ <strong>适合</strong>：静态网页、文章、文档、API 数据获取<br>❌ <strong>不适合</strong>：JavaScript 动态渲染页面、需要登录的页面、交互操作  </p>
+<p>总结：<strong>轻量快速获取静态网页正文</strong>，动态内容请用 browser&#x2F;agent-browser。</p>
+<h1 id="通过-Chrome-DevTools-MCP-连接现有会话"><a href="#通过-Chrome-DevTools-MCP-连接现有会话" class="headerlink" title="通过 Chrome DevTools MCP 连接现有会话"></a>通过 Chrome DevTools MCP 连接现有会话</h1><blockquote>
+<p><a href="https://docs.openclaw.ai/zh-CN/tools/browser#%E9%80%9A%E8%BF%87-chrome-devtools-mcp-%E8%BF%9E%E6%8E%A5%E7%8E%B0%E6%9C%89%E4%BC%9A%E8%AF%9D">官网介绍</a></p>
+</blockquote>
+<h2 id="检查状态"><a href="#检查状态" class="headerlink" title="检查状态"></a>检查状态</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">openclaw browser --browser-profile user status </span><br></pre></td></tr></table></figure>
+
+<p><code>running: true</code> 则成功。</p>
+<h2 id="在浏览器中打开并批准远程调试"><a href="#在浏览器中打开并批准远程调试" class="headerlink" title="在浏览器中打开并批准远程调试"></a>在浏览器中打开并批准远程调试</h2><p>地址：<code>chrome://inspect/#remote-debugging</code></p>
+<p>![[Pasted image 20260414122323.png]]</p>
+<h2 id="实际操作示例"><a href="#实际操作示例" class="headerlink" title="实际操作示例"></a>实际操作示例</h2><p>![[Pasted image 20260414122458.png]]</p>
+<h2 id="适用场景"><a href="#适用场景" class="headerlink" title="适用场景"></a>适用场景</h2><p>这种方式非常适合：</p>
+<ul>
+<li>需要登录才能访问的网站</li>
+<li>JavaScript 动态渲染页面</li>
+<li>人机验证（你点击验证，AI 提取内容）</li>
+<li>多种反爬机制</li>
+</ul>
+<h1 id="OpenClaw-独立控制专用浏览器（openclaw-配置文件）"><a href="#OpenClaw-独立控制专用浏览器（openclaw-配置文件）" class="headerlink" title="OpenClaw 独立控制专用浏览器（openclaw 配置文件）"></a>OpenClaw 独立控制专用浏览器（openclaw 配置文件）</h1><h2 id="前置步骤"><a href="#前置步骤" class="headerlink" title="前置步骤"></a>前置步骤</h2><p>安装浏览器可以参考这两篇教程：</p>
+<ul>
+<li><a href="https://juejin.cn/post/7616129123815931931">保姆级 OpenClaw 浏览器配置教程</a></li>
+<li><a href="https://zhuanlan.zhihu.com/p/601320998">WSL 2 GUI 原生支持！Ubuntu 安装 Chrome 浏览器</a></li>
+</ul>
+<h2 id="启动"><a href="#启动" class="headerlink" title="启动"></a>启动</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">openclaw browser --browser-profile openclaw start</span><br></pre></td></tr></table></figure>
+
+<h2 id="检查浏览器状态"><a href="#检查浏览器状态" class="headerlink" title="检查浏览器状态"></a>检查浏览器状态</h2><h3 id="Q：如果遇到自动启动报错，应该怎么办？"><a href="#Q：如果遇到自动启动报错，应该怎么办？" class="headerlink" title="Q：如果遇到自动启动报错，应该怎么办？"></a>Q：如果遇到自动启动报错，应该怎么办？</h3><p>可以使用无头模式（不显示窗口），或者 WSLg 显示窗口，手动启动。</p>
+<hr>
+<h2 id="踩坑总结：WSL2-systemd-环境下-OpenClaw-自启动失败解决方法——额这是小龙虾总结的，仅供参考"><a href="#踩坑总结：WSL2-systemd-环境下-OpenClaw-自启动失败解决方法——额这是小龙虾总结的，仅供参考" class="headerlink" title="踩坑总结：WSL2 + systemd 环境下 OpenClaw 自启动失败解决方法——额这是小龙虾总结的，仅供参考"></a>踩坑总结：WSL2 + systemd 环境下 OpenClaw 自启动失败解决方法——额这是小龙虾总结的，仅供参考</h2><h3 id="问题现象"><a href="#问题现象" class="headerlink" title="问题现象"></a>问题现象</h3><ul>
+<li><code>openclaw browser --profile openclaw start</code> 一直报 <code>Chrome CDP websocket not reachable after start</code></li>
+<li>手动启动 Chrome 能成功，curl 能拿到 CDP 信息，但 OpenClaw 还是连不上</li>
+</ul>
+<h3 id="根本原因"><a href="#根本原因" class="headerlink" title="根本原因"></a>根本原因</h3><p>WSL2 中 <code>openclaw-gateway</code> 由 systemd 管理，<strong>systemd 服务不会继承你终端的 <code>DISPLAY</code> 环境变量</strong>，即使你 <code>echo $DISPLAY</code> 显示 <code>:0</code>，systemd 启动的 Gateway 还是拿不到，Chrome 启动还是找不到 X 服务器，即使开了 <code>headless: true</code> 也会失败。</p>
+<h3 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h3><ol>
+<li><strong>创建 systemd 服务配置，添加 <code>DISPLAY=:0</code> 环境变量</strong></li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> systemctl edit --force --full openclaw-gateway.service</span><br></pre></td></tr></table></figure>
+
+<p>填入以下内容：</p>
+<figure class="highlight ini"><table><tr><td class="code"><pre><span class="line"><span class="section">[Unit]</span></span><br><span class="line"><span class="attr">Description</span>=OpenClaw Gateway</span><br><span class="line"><span class="attr">After</span>=network.target</span><br><span class="line"></span><br><span class="line"><span class="section">[Service]</span></span><br><span class="line"><span class="attr">Type</span>=simple</span><br><span class="line"><span class="attr">User</span>=xm</span><br><span class="line"><span class="attr">Environment</span>=DISPLAY=:<span class="number">0</span></span><br><span class="line"><span class="attr">ExecStart</span>=/usr/bin/openclaw gateway start</span><br><span class="line"><span class="attr">WorkingDirectory</span>=%h</span><br><span class="line"><span class="attr">Restart</span>=always</span><br><span class="line"><span class="attr">RestartSec</span>=<span class="number">5</span></span><br><span class="line"></span><br><span class="line"><span class="section">[Install]</span></span><br><span class="line"><span class="attr">WantedBy</span>=multi-user.target</span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li><strong>重载配置并重启</strong></li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> systemctl daemon-reload</span><br><span class="line"><span class="built_in">sudo</span> systemctl restart openclaw-gateway.service</span><br></pre></td></tr></table></figure>
+
+<ol start="3">
+<li><strong>测试启动</strong></li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">openclaw browser --browser-profile openclaw start</span><br><span class="line">openclaw browser --browser-profile openclaw status</span><br></pre></td></tr></table></figure>
+
+<p>现在应该就能显示 <code>running: true</code> 了 ✅</p>
+<h2 id="如果自动启动失败，可以手动启动浏览器，OpenClaw-通过-CDP-连接"><a href="#如果自动启动失败，可以手动启动浏览器，OpenClaw-通过-CDP-连接" class="headerlink" title="如果自动启动失败，可以手动启动浏览器，OpenClaw 通过 CDP 连接"></a>如果自动启动失败，可以手动启动浏览器，OpenClaw 通过 CDP 连接</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">/usr/bin/google-chrome-stable --headless --no-sandbox --disable-gpu --remote-debugging-port=18800 --user-data-dir=/tmp/chrome-openclaw </span><br></pre></td></tr></table></figure>
+
+<p>参数说明：</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>作用</th>
+<th>是否必须</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>--headless</code></td>
+<td>无头模式运行，不显示窗口</td>
+<td>✅ 必须</td>
+</tr>
+<tr>
+<td><code>--no-sandbox</code></td>
+<td>WSL2 root 运行必须加，否则权限错误</td>
+<td>✅ 必须</td>
+</tr>
+<tr>
+<td><code>--disable-gpu</code></td>
+<td>禁用 GPU 加速</td>
+<td>✅ 建议</td>
+</tr>
+<tr>
+<td><code>--remote-debugging-port</code></td>
+<td>CDP 调试端口</td>
+<td>✅ 必须</td>
+</tr>
+<tr>
+<td><code>--user-data-dir</code></td>
+<td>独立临时用户数据目录，避免和日常 Chrome 冲突</td>
+<td>✅ 必须</td>
+</tr>
+</tbody></table>
+<h2 id="最后检查状态"><a href="#最后检查状态" class="headerlink" title="最后检查状态"></a>最后检查状态</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">openclaw browser --browser-profile openclaw status</span><br></pre></td></tr></table></figure>
+
+<p><code>running: true</code> 则成功。</p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>推荐优先使用<strong>第二种方式（连接现有会话）</strong>，适合需要登录、人机验证的场景，踩坑更少。<br>如果需要完全自动化无人值守，再用第三种方式，按照上文修改 systemd 配置就能解决问题。</p>
+]]></content>
+      <categories>
+        <category>教程</category>
+      </categories>
+      <tags>
+        <tag>OpenClaw</tag>
+        <tag>浏览器自动化</tag>
+        <tag>爬虫</tag>
+        <tag>WSL2</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>OpenClaw 配置安装完整教程</title>
     <url>/2026/04/13/openclaw-setup-tutorial/</url>
     <content><![CDATA[<h1 id="🚀-step1：根据openclaw官网，对应自己系统，使用终端命令下载对应的版本"><a href="#🚀-step1：根据openclaw官网，对应自己系统，使用终端命令下载对应的版本" class="headerlink" title="🚀 step1：根据openclaw官网，对应自己系统，使用终端命令下载对应的版本"></a>🚀 step1：根据<a href="https://openclaw.ai/">openclaw官网</a>，对应自己系统，使用终端命令下载对应的版本</h1><p>![[Pasted image 20260407090302.png]]</p>
@@ -1108,8 +1224,8 @@ First 5 rows of submission:
         <tag>机器学习</tag>
         <tag>kaggle比赛</tag>
         <tag>函数功能记录</tag>
-        <tag>markdown_from_ipynb</tag>
         <tag>catboost</tag>
+        <tag>markdown_from_ipynb</tag>
       </tags>
   </entry>
   <entry>
