@@ -30,7 +30,7 @@
 <meta property="og:description" content="一步步教你在 WSL2 环境下安装配置 OpenClaw 数字员工，推荐常用技能">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2026-04-12T16:00:00.000Z">
-<meta property="article:modified_time" content="2026-04-15T05:39:58.312Z">
+<meta property="article:modified_time" content="2026-04-15T09:24:57.131Z">
 <meta property="article:author" content="月明">
 <meta property="article:tag" content="OpenClaw">
 <meta name="twitter:card" content="summary">
@@ -282,7 +282,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2026-04-15 13:39:58" itemprop="dateModified" datetime="2026-04-15T13:39:58+08:00">2026-04-15</time>
+      <time title="修改时间：2026-04-15 17:24:57" itemprop="dateModified" datetime="2026-04-15T17:24:57+08:00">2026-04-15</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -308,7 +308,7 @@
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">本文字数：</span>
-      <span>460</span>
+      <span>461</span>
     </span>
     <span class="post-meta-item" title="阅读时长">
       <span class="post-meta-item-icon">
@@ -326,7 +326,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody"><h1 id="🚀-step1：根据openclaw官网，对应自己系统，使用终端命令下载对应的版本"><a href="#🚀-step1：根据openclaw官网，对应自己系统，使用终端命令下载对应的版本" class="headerlink" title="🚀 step1：根据openclaw官网，对应自己系统，使用终端命令下载对应的版本"></a>🚀 step1：根据<a target="_blank" rel="noopener" href="https://openclaw.ai/">openclaw官网</a>，对应自己系统，使用终端命令下载对应的版本</h1><p>![[Pasted image 20260407090302.png]]</p>
+    <div class="post-body" itemprop="articleBody"><h1 id="🚀-step1：根据openclaw官网，对应自己系统，使用终端命令下载对应的版本"><a href="#🚀-step1：根据openclaw官网，对应自己系统，使用终端命令下载对应的版本" class="headerlink" title="🚀 step1：根据openclaw官网，对应自己系统，使用终端命令下载对应的版本"></a>🚀 step1：根据<a target="_blank" rel="noopener" href="https://openclaw.ai/">openclaw官网</a>，对应自己系统，使用终端命令下载对应的版本</h1><p>![[images&#x2F;Pasted image 20260407090302.png]]</p>
 <h3 id="这里笔者使用的是win的wsl2子系统Ubuntu22-04中的npm下载的；如果你也是win系统官网也是非常强烈的推荐使用WSL2来下载的。✅"><a href="#这里笔者使用的是win的wsl2子系统Ubuntu22-04中的npm下载的；如果你也是win系统官网也是非常强烈的推荐使用WSL2来下载的。✅" class="headerlink" title="这里笔者使用的是win的wsl2子系统Ubuntu22.04中的npm下载的；如果你也是win系统官网也是非常强烈的推荐使用WSL2来下载的。✅"></a>这里笔者使用的是win的wsl2子系统Ubuntu22.04中的npm下载的；如果你也是win系统官网也是非常强烈的推荐使用WSL2来下载的。✅</h3><h1 id="⚙️-step2：进行基础配置，因为小龙虾是数字员工，官网也叫做入职，允许以下代码"><a href="#⚙️-step2：进行基础配置，因为小龙虾是数字员工，官网也叫做入职，允许以下代码" class="headerlink" title="⚙️ step2：进行基础配置，因为小龙虾是数字员工，官网也叫做入职，允许以下代码"></a>⚙️ step2：进行基础配置，因为小龙虾是数字员工，官网也叫做入职，允许以下代码</h1><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">openclaw onboard --install-daemon</span><br></pre></td></tr></table></figure>
 
 <h2 id="QuickStart-vs-Advanced，推荐使用前者进行配置，要提前准备好，大模型的api-key"><a href="#QuickStart-vs-Advanced，推荐使用前者进行配置，要提前准备好，大模型的api-key" class="headerlink" title="QuickStart vs Advanced，推荐使用前者进行配置，要提前准备好，大模型的api_key"></a>QuickStart vs Advanced，推荐使用前者进行配置，要提前准备好，大模型的api_key</h2><h3 id="有无-install-daemon对应——有无后台服务，使网关自动启动-🚀"><a href="#有无-install-daemon对应——有无后台服务，使网关自动启动-🚀" class="headerlink" title="有无--install-daemon对应——有无后台服务，使网关自动启动 🚀"></a>有无<code>--install-daemon</code>对应——有无后台服务，使网关自动启动 🚀</h3><h2 id="无论如何配置，一定包含Model-provider-and-auth（必选，模型的提供者）、Workspace、Gateway（网关配置）、Channels（其他端介入）。具体可以先参考：火山引擎、官方教程"><a href="#无论如何配置，一定包含Model-provider-and-auth（必选，模型的提供者）、Workspace、Gateway（网关配置）、Channels（其他端介入）。具体可以先参考：火山引擎、官方教程" class="headerlink" title="无论如何配置，一定包含Model provider and auth（必选，模型的提供者）、Workspace、Gateway（网关配置）、Channels（其他端介入）。具体可以先参考：火山引擎、官方教程"></a>无论如何配置，一定包含Model provider and auth（必选，模型的提供者）、Workspace、Gateway（网关配置）、Channels（其他端介入）。具体可以先参考：<a target="_blank" rel="noopener" href="https://www.volcengine.com/docs/82379/2183190?lang=zh">火山引擎</a>、<a target="_blank" rel="noopener" href="https://docs.openclaw.ai/zh-CN/start/wizard">官方教程</a></h2><h3 id="最重要的配置信息都集中在-openclaw-openclaw-json文件内，可以通过记事本编辑，定制化更改，但操作难度较高⚠️"><a href="#最重要的配置信息都集中在-openclaw-openclaw-json文件内，可以通过记事本编辑，定制化更改，但操作难度较高⚠️" class="headerlink" title="最重要的配置信息都集中在~/.openclaw/openclaw.json文件内，可以通过记事本编辑，定制化更改，但操作难度较高⚠️"></a>最重要的配置信息都集中在<code>~/.openclaw/openclaw.json</code>文件内，可以通过记事本编辑，定制化更改，但操作难度较高⚠️</h3><h1 id="🛠️-step3：配置小龙虾的性格、工具、技能，可以取国内的技能镜像下载对应技能，这里推荐一些技能-⭐"><a href="#🛠️-step3：配置小龙虾的性格、工具、技能，可以取国内的技能镜像下载对应技能，这里推荐一些技能-⭐" class="headerlink" title="🛠️ step3：配置小龙虾的性格、工具、技能，可以取国内的技能镜像下载对应技能，这里推荐一些技能 ⭐"></a>🛠️ step3：配置小龙虾的性格、工具、技能，可以取<a target="_blank" rel="noopener" href="https://www.skillhub.cn/">国内的技能镜像</a>下载对应技能，这里推荐一些技能 ⭐</h1><h2 id="可以采用对话式的安装-💬"><a href="#可以采用对话式的安装-💬" class="headerlink" title="可以采用对话式的安装 💬"></a>可以采用对话式的安装 💬</h2><table>

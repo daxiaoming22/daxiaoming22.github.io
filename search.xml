@@ -109,7 +109,7 @@
     <title>OpenClaw 浏览器配置完整教程 - 解决 WSL2 自启动失败问题</title>
     <url>/2026/04/15/openclaw-browser-setup/</url>
     <content><![CDATA[<h1 id="静态神器：web-fetch-内置工具"><a href="#静态神器：web-fetch-内置工具" class="headerlink" title="静态神器：web_fetch 内置工具"></a>静态神器：web_fetch 内置工具</h1><h2 id="原理机制-获取-URL-并提取可读内容"><a href="#原理机制-获取-URL-并提取可读内容" class="headerlink" title="原理机制 - 获取 URL 并提取可读内容"></a>原理机制 - 获取 URL 并提取可读内容</h2><p>详细见 <a href="https://openclaw.cc/tools/web.html#web-fetch">openclaw中文站官方解释</a></p>
-<p>![[Pasted image 20260414120119.png]]</p>
+<p>![[images&#x2F;Pasted image 20260414120119.png]]</p>
 <ol>
 <li><strong>纯 HTTP 请求</strong>：发送 GET 请求（不执行 JavaScript），用 Chrome-like UA 模拟正常浏览器 </li>
 <li><strong>SSRF 防护</strong>：默认阻止私有&#x2F;内网主机，每一步重定向都重新检查 </li>
@@ -127,8 +127,8 @@
 
 <p><code>running: true</code> 则成功。</p>
 <h2 id="在浏览器中打开并批准远程调试"><a href="#在浏览器中打开并批准远程调试" class="headerlink" title="在浏览器中打开并批准远程调试"></a>在浏览器中打开并批准远程调试</h2><p>地址：<code>chrome://inspect/#remote-debugging</code></p>
-<p>![[Pasted image 20260414122323.png]]</p>
-<h2 id="实际操作示例"><a href="#实际操作示例" class="headerlink" title="实际操作示例"></a>实际操作示例</h2><p>![[Pasted image 20260414122458.png]]</p>
+<p>![[images&#x2F;Pasted image 20260414122323.png]]</p>
+<h2 id="实际操作示例"><a href="#实际操作示例" class="headerlink" title="实际操作示例"></a>实际操作示例</h2><p>![[images&#x2F;Pasted image 20260414122458.png]]</p>
 <h2 id="适用场景"><a href="#适用场景" class="headerlink" title="适用场景"></a>适用场景</h2><p>这种方式非常适合：</p>
 <ul>
 <li>需要登录才能访问的网站</li>
@@ -224,7 +224,7 @@
   <entry>
     <title>OpenClaw 配置安装完整教程</title>
     <url>/2026/04/13/openclaw-setup-tutorial/</url>
-    <content><![CDATA[<h1 id="🚀-step1：根据openclaw官网，对应自己系统，使用终端命令下载对应的版本"><a href="#🚀-step1：根据openclaw官网，对应自己系统，使用终端命令下载对应的版本" class="headerlink" title="🚀 step1：根据openclaw官网，对应自己系统，使用终端命令下载对应的版本"></a>🚀 step1：根据<a href="https://openclaw.ai/">openclaw官网</a>，对应自己系统，使用终端命令下载对应的版本</h1><p>![[Pasted image 20260407090302.png]]</p>
+    <content><![CDATA[<h1 id="🚀-step1：根据openclaw官网，对应自己系统，使用终端命令下载对应的版本"><a href="#🚀-step1：根据openclaw官网，对应自己系统，使用终端命令下载对应的版本" class="headerlink" title="🚀 step1：根据openclaw官网，对应自己系统，使用终端命令下载对应的版本"></a>🚀 step1：根据<a href="https://openclaw.ai/">openclaw官网</a>，对应自己系统，使用终端命令下载对应的版本</h1><p>![[images&#x2F;Pasted image 20260407090302.png]]</p>
 <h3 id="这里笔者使用的是win的wsl2子系统Ubuntu22-04中的npm下载的；如果你也是win系统官网也是非常强烈的推荐使用WSL2来下载的。✅"><a href="#这里笔者使用的是win的wsl2子系统Ubuntu22-04中的npm下载的；如果你也是win系统官网也是非常强烈的推荐使用WSL2来下载的。✅" class="headerlink" title="这里笔者使用的是win的wsl2子系统Ubuntu22.04中的npm下载的；如果你也是win系统官网也是非常强烈的推荐使用WSL2来下载的。✅"></a>这里笔者使用的是win的wsl2子系统Ubuntu22.04中的npm下载的；如果你也是win系统官网也是非常强烈的推荐使用WSL2来下载的。✅</h3><h1 id="⚙️-step2：进行基础配置，因为小龙虾是数字员工，官网也叫做入职，允许以下代码"><a href="#⚙️-step2：进行基础配置，因为小龙虾是数字员工，官网也叫做入职，允许以下代码" class="headerlink" title="⚙️ step2：进行基础配置，因为小龙虾是数字员工，官网也叫做入职，允许以下代码"></a>⚙️ step2：进行基础配置，因为小龙虾是数字员工，官网也叫做入职，允许以下代码</h1><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">openclaw onboard --install-daemon</span><br></pre></td></tr></table></figure>
 
 <h2 id="QuickStart-vs-Advanced，推荐使用前者进行配置，要提前准备好，大模型的api-key"><a href="#QuickStart-vs-Advanced，推荐使用前者进行配置，要提前准备好，大模型的api-key" class="headerlink" title="QuickStart vs Advanced，推荐使用前者进行配置，要提前准备好，大模型的api_key"></a>QuickStart vs Advanced，推荐使用前者进行配置，要提前准备好，大模型的api_key</h2><h3 id="有无-install-daemon对应——有无后台服务，使网关自动启动-🚀"><a href="#有无-install-daemon对应——有无后台服务，使网关自动启动-🚀" class="headerlink" title="有无--install-daemon对应——有无后台服务，使网关自动启动 🚀"></a>有无<code>--install-daemon</code>对应——有无后台服务，使网关自动启动 🚀</h3><h2 id="无论如何配置，一定包含Model-provider-and-auth（必选，模型的提供者）、Workspace、Gateway（网关配置）、Channels（其他端介入）。具体可以先参考：火山引擎、官方教程"><a href="#无论如何配置，一定包含Model-provider-and-auth（必选，模型的提供者）、Workspace、Gateway（网关配置）、Channels（其他端介入）。具体可以先参考：火山引擎、官方教程" class="headerlink" title="无论如何配置，一定包含Model provider and auth（必选，模型的提供者）、Workspace、Gateway（网关配置）、Channels（其他端介入）。具体可以先参考：火山引擎、官方教程"></a>无论如何配置，一定包含Model provider and auth（必选，模型的提供者）、Workspace、Gateway（网关配置）、Channels（其他端介入）。具体可以先参考：<a href="https://www.volcengine.com/docs/82379/2183190?lang=zh">火山引擎</a>、<a href="https://docs.openclaw.ai/zh-CN/start/wizard">官方教程</a></h2><h3 id="最重要的配置信息都集中在-openclaw-openclaw-json文件内，可以通过记事本编辑，定制化更改，但操作难度较高⚠️"><a href="#最重要的配置信息都集中在-openclaw-openclaw-json文件内，可以通过记事本编辑，定制化更改，但操作难度较高⚠️" class="headerlink" title="最重要的配置信息都集中在~/.openclaw/openclaw.json文件内，可以通过记事本编辑，定制化更改，但操作难度较高⚠️"></a>最重要的配置信息都集中在<code>~/.openclaw/openclaw.json</code>文件内，可以通过记事本编辑，定制化更改，但操作难度较高⚠️</h3><h1 id="🛠️-step3：配置小龙虾的性格、工具、技能，可以取国内的技能镜像下载对应技能，这里推荐一些技能-⭐"><a href="#🛠️-step3：配置小龙虾的性格、工具、技能，可以取国内的技能镜像下载对应技能，这里推荐一些技能-⭐" class="headerlink" title="🛠️ step3：配置小龙虾的性格、工具、技能，可以取国内的技能镜像下载对应技能，这里推荐一些技能 ⭐"></a>🛠️ step3：配置小龙虾的性格、工具、技能，可以取<a href="https://www.skillhub.cn/">国内的技能镜像</a>下载对应技能，这里推荐一些技能 ⭐</h1><h2 id="可以采用对话式的安装-💬"><a href="#可以采用对话式的安装-💬" class="headerlink" title="可以采用对话式的安装 💬"></a>可以采用对话式的安装 💬</h2><table>
@@ -1224,8 +1224,8 @@ First 5 rows of submission:
         <tag>机器学习</tag>
         <tag>kaggle比赛</tag>
         <tag>函数功能记录</tag>
-        <tag>catboost</tag>
         <tag>markdown_from_ipynb</tag>
+        <tag>catboost</tag>
       </tags>
   </entry>
   <entry>
