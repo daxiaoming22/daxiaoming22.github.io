@@ -106,6 +106,19 @@
       </tags>
   </entry>
   <entry>
+    <title>claude_code 配置安装完整教程</title>
+    <url>/2026/04/30/Claude_code_install/</url>
+    <content><![CDATA[<h1 id="如何安装claude-code-vscode的新编程模式-元工具的方式不止编程"><a href="#如何安装claude-code-vscode的新编程模式-元工具的方式不止编程" class="headerlink" title="如何安装claude code+vscode的新编程模式? 元工具的方式不止编程"></a>如何安装claude code+vscode的新编程模式? 元工具的方式不止编程</h1><h1 id="关于安装不推荐采用claude-code官方的安装指令（地区和网络问题），也就是下面这行代码"><a href="#关于安装不推荐采用claude-code官方的安装指令（地区和网络问题），也就是下面这行代码" class="headerlink" title="关于安装不推荐采用claude code官方的安装指令（地区和网络问题），也就是下面这行代码"></a>关于安装不推荐采用<a href="https://code.claude.com/docs/zh-CN/overview">claude code官方的安装指令</a>（地区和网络问题），也就是下面这行代码</h1><figure class="highlight nginx"><table><tr><td class="code"><pre><span class="line"><span class="attribute">irm</span> https://claude.ai/install.ps1 | iex</span><br></pre></td></tr></table></figure>
+
+<h1 id="推荐采用以下两种方式："><a href="#推荐采用以下两种方式：" class="headerlink" title="推荐采用以下两种方式："></a>推荐采用以下两种方式：</h1><h1 id="1-采用npm的方式"><a href="#1-采用npm的方式" class="headerlink" title="1.采用npm的方式"></a>1.采用<a href="https://blog.csdn.net/kai_2003/article/details/158469982">npm的方式</a></h1><h2 id="先安装node，node-js官网"><a href="#先安装node，node-js官网" class="headerlink" title="先安装node，node.js官网"></a>先安装node，<a href="https://nodejs.org/zh-cn">node.js官网</a></h2><h3 id="对于liunx：一般先安装nvm，安装node，也就有了npm"><a href="#对于liunx：一般先安装nvm，安装node，也就有了npm" class="headerlink" title="对于liunx：一般先安装nvm，安装node，也就有了npm"></a>对于liunx：一般先安装nvm，安装node，也就有了npm</h3><h3 id="对于windows：直接去官网下载exe，然后，在终端测试版本号，即可验证安装是否成功"><a href="#对于windows：直接去官网下载exe，然后，在终端测试版本号，即可验证安装是否成功" class="headerlink" title="对于windows：直接去官网下载exe，然后，在终端测试版本号，即可验证安装是否成功"></a>对于windows：直接去官网下载exe，然后，在终端测试版本号，即可验证安装是否成功</h3><h1 id="2-采用字节，的教程（让卖方告诉你使用的方法，说明书一样），这种方法往往实用且高效，字节也有个agent的脚本ark-helper"><a href="#2-采用字节，的教程（让卖方告诉你使用的方法，说明书一样），这种方法往往实用且高效，字节也有个agent的脚本ark-helper" class="headerlink" title="2.采用字节，的教程（让卖方告诉你使用的方法，说明书一样），这种方法往往实用且高效，字节也有个agent的脚本ark-helper."></a>2.采用<a href="https://www.volcengine.com/docs/82379/1928262?lang=zh#7fd1eee7">字节，的教程（让卖方告诉你使用的方法，说明书一样）</a>，这种方法往往实用且高效，字节也有个agent的脚本ark-helper.</h1><h1 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h1><h2 id="关于如何快速管理自己的agent端的模型，如何快速切换，这里笔者强力推荐一个项目，叫做cc-switch；通过它我们可以实现openclaw、claude-code、codex等cil工具背后的模型接口的快速的切换。"><a href="#关于如何快速管理自己的agent端的模型，如何快速切换，这里笔者强力推荐一个项目，叫做cc-switch；通过它我们可以实现openclaw、claude-code、codex等cil工具背后的模型接口的快速的切换。" class="headerlink" title="关于如何快速管理自己的agent端的模型，如何快速切换，这里笔者强力推荐一个项目，叫做cc switch；通过它我们可以实现openclaw、claude code、codex等cil工具背后的模型接口的快速的切换。"></a>关于如何快速管理自己的agent端的模型，如何快速切换，这里笔者强力推荐一个项目，叫做<a href="https://github.com/farion1231/cc-switch/blob/main/README_ZH.md">cc switch</a>；通过它我们可以实现openclaw、claude code、codex等cil工具背后的模型接口的快速的切换。</h2>]]></content>
+      <categories>
+        <category>教程</category>
+      </categories>
+      <tags>
+        <tag>claude_code</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>OpenClaw 浏览器配置完整教程 - 解决 WSL2 自启动失败问题</title>
     <url>/2026/04/15/openclaw-browser-setup/</url>
     <content><![CDATA[<h1 id="静态神器：web-fetch-内置工具"><a href="#静态神器：web-fetch-内置工具" class="headerlink" title="静态神器：web_fetch 内置工具"></a>静态神器：web_fetch 内置工具</h1><h2 id="原理机制-获取-URL-并提取可读内容"><a href="#原理机制-获取-URL-并提取可读内容" class="headerlink" title="原理机制 - 获取 URL 并提取可读内容"></a>原理机制 - 获取 URL 并提取可读内容</h2><p>详细见 <a href="https://openclaw.cc/tools/web.html#web-fetch">openclaw中文站官方解释</a></p>
@@ -1224,8 +1237,8 @@ First 5 rows of submission:
         <tag>机器学习</tag>
         <tag>kaggle比赛</tag>
         <tag>函数功能记录</tag>
-        <tag>markdown_from_ipynb</tag>
         <tag>catboost</tag>
+        <tag>markdown_from_ipynb</tag>
       </tags>
   </entry>
   <entry>
