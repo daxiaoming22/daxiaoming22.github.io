@@ -85,8 +85,8 @@
       <name>月明</name>
     </author>
     <category term="工作周报" scheme="https://ideaforge.icu/categories/%E5%B7%A5%E4%BD%9C%E5%91%A8%E6%8A%A5/"/>
-    <category term="课题组网站" scheme="https://ideaforge.icu/tags/%E8%AF%BE%E9%A2%98%E7%BB%84%E7%BD%91%E7%AB%99/"/>
     <category term="ai辅助" scheme="https://ideaforge.icu/tags/ai%E8%BE%85%E5%8A%A9/"/>
+    <category term="课题组网站" scheme="https://ideaforge.icu/tags/%E8%AF%BE%E9%A2%98%E7%BB%84%E7%BD%91%E7%AB%99/"/>
     <content>
       <![CDATA[<h4 id="llm的本地部署"><a href="#llm的本地部署" class="headerlink" title="llm的本地部署"></a>llm的本地部署</h4><h5 id="如何选择本地大模型的推理框架app？（11月24日）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵏᵎᵎᵎᵎ"><a href="#如何选择本地大模型的推理框架app？（11月24日）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵏᵎᵎᵎᵎ" class="headerlink" title="如何选择本地大模型的推理框架app？（11月24日）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵏᵎᵎᵎᵎ"></a>如何选择本地大模型的推理框架app？（11月24日）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵏᵎᵎᵎᵎ</h5><ul><li>最后选择了LM Studio</li></ul><table><thead><tr><th>推理框架的对比</th><th>自己个人理解（缺点）</th><th>优点</th><th>进度</th></tr></thead><tbody><tr><td>vllm推理框架</td><td>采用huggingface下载需要魔法；docker拉取image时也需要魔法；<br>运用较为复杂（推进采用先在本地下载好模型后，挂载的方式，推入到容器中运行）；<br>wsl2的方式来吸取可能导致，硬件的限制</td><td>支持docker部署；模型种类丰富；支持api调用；更适合工业部署；</td><td>成功部署过《mistralai&#x2F;Mistral-7B-v0.1》，但遗憾的是显存爆了</td></tr><tr><td>ollma推理框架</td><td>部署起来也偏简答，运用不复杂；模型较笨</td><td>部署简答使用方便；</td><td>成功安装过deepseek，但是太笨了；<br></td></tr><tr><td>LM Studio推理框架</td><td>模型种类较少、门类较少</td><td>下载模型简单，且在国内下载模型无网络限制；<br>自动检测你的gpu、cpu以及下载好的cuda的驱动；<br></td><td>完成模型的下载好部署，并成功在pycharm中调用api</td></tr></tbody></table><h6 id="如何在本地大模型中加入mcp的服务？（11月26日）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵏᵎᵎᵎᵎ"><a href="#如何在本地大模型中加入mcp的服务？（11月26日）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵏᵎᵎᵎᵎ" class="headerlink" title="如何在本地大模型中加入mcp的服务？（11月26日）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵏᵎᵎᵎᵎ"></a>如何在本地大模型中加入mcp的服务？（11月26日）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵏᵎᵎᵎᵎ</h6><ul><li>在环境中安装好必要的库后，编辑好mcp.json即可，可以通过询问大模型（支持工具调用的模型）的方式来问它是否能，使用mcp的服务</li></ul><h6 id="ai辅助"><a href="#ai辅助" class="headerlink" title="ai辅助"></a>ai辅助</h6><h6 id="为什么cherry-studio中大语言模型的联网搜索内容不准确？（11月26日）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵏᵎᵎᵎᵎ"><a href="#为什么cherry-studio中大语言模型的联网搜索内容不准确？（11月26日）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵏᵎᵎᵎᵎ" class="headerlink" title="为什么cherry_studio中大语言模型的联网搜索内容不准确？（11月26日）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵏᵎᵎᵎᵎ"></a>为什么cherry_studio中大语言模型的联网搜索内容不准确？（11月26日）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵏᵎᵎᵎᵎ</h6><ul><li>这与cherry_studio中模型内置的搜索有关，可以优先使用模型自带的联网搜索功能，或者用mcp的搜索服务</li></ul><h4 id="课题组网站"><a href="#课题组网站" class="headerlink" title="课题组网站"></a>课题组网站</h4><h4 id="关于学习的思考"><a href="#关于学习的思考" class="headerlink" title="关于学习的思考"></a>关于学习的思考</h4><h5 id="如何避免在听课（知识输入）太过于关心记录，而造成知识点的略过，产生一种，只见树木不见树林的学习窘境？（11月25日）"><a href="#如何避免在听课（知识输入）太过于关心记录，而造成知识点的略过，产生一种，只见树木不见树林的学习窘境？（11月25日）" class="headerlink" title="如何避免在听课（知识输入）太过于关心记录，而造成知识点的略过，产生一种，只见树木不见树林的学习窘境？（11月25日）"></a>如何避免在听课（知识输入）太过于关心记录，而造成知识点的略过，产生一种，只见树木不见树林的学习窘境？（11月25日）</h5><ul><li>以下两个任务正在完成中<br>[[s5e11]]<br>[[课题组网站]]</li></ul>]]>
     </content>
@@ -102,11 +102,11 @@
       <name>月明</name>
     </author>
     <category term="学习" scheme="https://ideaforge.icu/categories/%E5%AD%A6%E4%B9%A0/"/>
+    <category term="课题组网站" scheme="https://ideaforge.icu/tags/%E8%AF%BE%E9%A2%98%E7%BB%84%E7%BD%91%E7%AB%99/"/>
     <category term="questions" scheme="https://ideaforge.icu/tags/questions/"/>
     <category term="learning" scheme="https://ideaforge.icu/tags/learning/"/>
     <category term="deep_learning" scheme="https://ideaforge.icu/tags/deep-learning/"/>
     <category term="Obsidian" scheme="https://ideaforge.icu/tags/Obsidian/"/>
-    <category term="课题组网站" scheme="https://ideaforge.icu/tags/%E8%AF%BE%E9%A2%98%E7%BB%84%E7%BD%91%E7%AB%99/"/>
     <category term="Gaussian" scheme="https://ideaforge.icu/tags/Gaussian/"/>
     <category term="chemoffice" scheme="https://ideaforge.icu/tags/chemoffice/"/>
     <content>

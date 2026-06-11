@@ -5,7 +5,7 @@
     var el=document.createElement("meting-js");
     el.setAttribute("server","netease");
     el.setAttribute("type","playlist");
-    el.setAttribute("id","8543070918");
+    el.setAttribute("id","17927434884");
     el.setAttribute("fixed","true");
     el.setAttribute("mini","true");
     el.setAttribute("autoplay","false");
