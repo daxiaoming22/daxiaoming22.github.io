@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title>blog学习进展/hexo-next教程</title>
-    <url>/2025/10/22/blog_learning/</url>
+    <url>/2026/06/10/blog_learning/</url>
     <content><![CDATA[<h3 id="关于hexo-next的美化"><a href="#关于hexo-next的美化" class="headerlink" title="关于hexo-next的美化"></a>关于hexo-next的美化</h3><h4 id="如何创建一个新的博客文章？（2025-10-27）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ"><a href="#如何创建一个新的博客文章？（2025-10-27）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ" class="headerlink" title="如何创建一个新的博客文章？（2025-10-27）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ"></a>如何创建一个新的博客文章？（2025-10-27）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ</h4><p>hexo new “文章标题”<br>或者在对应的文件夹在直接添加对应.md文件，注意编辑文件头信息yaml格式</p>
 <h4 id="如何更改首页置顶顺序？（2025-10-28）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ"><a href="#如何更改首页置顶顺序？（2025-10-28）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ" class="headerlink" title="如何更改首页置顶顺序？（2025-10-28）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ"></a>如何更改首页置顶顺序？（2025-10-28）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ</h4><ul>
 <li>可以参考这篇博主的文章<a href="https://www.axitown.com/a764f98564af/">阿希の小镇, 2025</a></li>
@@ -54,55 +54,6 @@
       </categories>
       <tags>
         <tag>blog_learning</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>关于机器（深度）学习的500问/个人版</title>
-    <url>/2025/11/05/dlml/</url>
-    <content><![CDATA[<span id="more"></span>
-
-<h4 id="显示问题"><a href="#显示问题" class="headerlink" title="显示问题"></a>显示问题</h4><h6 id="关于为什么在vsc中显示不了jupyter-notebook中生成ploty图像？（25年11月5日）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ"><a href="#关于为什么在vsc中显示不了jupyter-notebook中生成ploty图像？（25年11月5日）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ" class="headerlink" title="关于为什么在vsc中显示不了jupyter notebook中生成ploty图像？（25年11月5日）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ"></a>关于为什么在vsc中显示不了jupyter notebook中生成ploty图像？（25年11月5日）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ</h6><blockquote>
-<p>多用ai来提升问题的解决效率，提高学习的速度（同时要注意提示词给的精准，准意区分真正的解决方案和ai幻觉——靠各种方案去尝试）</p>
-</blockquote>
-<p>关键是插件Jupyter Notebook Renderers没有安装的问题。所以在浏览器中的jupyter可以显示ploty交互式的图像，但是在vsc中却没用。</p>
-<h6 id="如何在博客中自动折叠代码、以及在obsidian中自动折叠代码？（25年11月6日）"><a href="#如何在博客中自动折叠代码、以及在obsidian中自动折叠代码？（25年11月6日）" class="headerlink" title="如何在博客中自动折叠代码、以及在obsidian中自动折叠代码？（25年11月6日）"></a>如何在博客中自动折叠代码、以及在obsidian中自动折叠代码？（25年11月6日）</h6><h4 id="代码运行问题"><a href="#代码运行问题" class="headerlink" title="代码运行问题"></a>代码运行问题</h4><h6 id="在vsc-notebook中如何调试代码-25年11月6日-٩-•̤̀ᵕ•̤́๑-ᵒᵏᵏᵎᵎᵎᵎ"><a href="#在vsc-notebook中如何调试代码-25年11月6日-٩-•̤̀ᵕ•̤́๑-ᵒᵏᵏᵎᵎᵎᵎ" class="headerlink" title="在vsc-notebook中如何调试代码? (25年11月6日) ٩(•̤̀ᵕ•̤́๑)ᵒᵏᵏᵎᵎᵎᵎ"></a>在vsc-notebook中如何调试代码? (25年11月6日) ٩(•̤̀ᵕ•̤́๑)ᵒᵏᵏᵎᵎᵎᵎ</h6><p>在代码框运行旁边有个debug,可以调试代码代码块.</p>
-<blockquote>
-<p>代码调试和逐句ai辅助理解, 学习代码效率简直拉满. 其实做习惯了, 也可以少一点笔记编辑, 可以直接在理解后, 用自己的语言备注在代码块中.  </p>
-</blockquote>
-<h6 id="如何提高代码的运行效率和时间，外加服务器？（2025年11月7日）"><a href="#如何提高代码的运行效率和时间，外加服务器？（2025年11月7日）" class="headerlink" title="如何提高代码的运行效率和时间，外加服务器？（2025年11月7日）"></a>如何提高代码的运行效率和时间，外加服务器？（2025年11月7日）</h6><p><a href="https://blog.zouaw.com/article/52490.html">如何用阿里云服务器跑深度学习代码？-CLOUD云枢</a></p>
-<h6 id="如何在其他的电脑中使用docker服务器部署，如何在主机中远程连接服务器？开启炼丹炉计划？（11月10日）spider-man"><a href="#如何在其他的电脑中使用docker服务器部署，如何在主机中远程连接服务器？开启炼丹炉计划？（11月10日）spider-man" class="headerlink" title="如何在其他的电脑中使用docker服务器部署，如何在主机中远程连接服务器？开启炼丹炉计划？（11月10日）spider man"></a>如何在其他的电脑中使用docker服务器部署，如何在主机中远程连接服务器？开启炼丹炉计划？（11月10日）spider man</h6><h6 id="如何用conda将包打包后，导入另外一个电脑的环境管理或者docker容器中？-11月11日-٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ"><a href="#如何用conda将包打包后，导入另外一个电脑的环境管理或者docker容器中？-11月11日-٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ" class="headerlink" title="如何用conda将包打包后，导入另外一个电脑的环境管理或者docker容器中？(11月11日)٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ"></a>如何用conda将包打包后，导入另外一个电脑的环境管理或者docker容器中？(11月11日)٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ</h6><ul>
-<li>实现全量打包<a href="https://blog.csdn.net/weixin_42744466/article/details/149482255">【Anaconda】Conda 虚拟环境打包迁移教程_conda打包环境-CSDN博客</a></li>
-</ul>
-]]></content>
-      <categories>
-        <category>学习</category>
-      </categories>
-      <tags>
-        <tag>questions</tag>
-        <tag>deep_learning</tag>
-        <tag>machine_learning</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>机器学习进展</title>
-    <url>/2025/10/22/machine_learning/</url>
-    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="窃取机密失败QAQ..." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
-  <script id="hbeData" type="hbeData" data-hmacdigest="71c8bf7212203e7846d3a7bf656fb6f12cb1ce5060a2f8af6f7f5d399af41eb0">dccefed83fa27a7ad5aaf2d0962952897e2eac05819bcc21e675ce1cdc4aba5bff28ab5366c0082d3d01afa8266b2dacef3e8eb80ba325b8acc136cbeb108b2c454e602c9a9f740b2827934a89803342bc04ccd631b0782fa124ea7bb373b86c2dea7a22cd5a6b0d2348797feec3366ae8b8f209fcd7f2a6a550fab04a206d18b7219c82ed4db1f9125a9755e75b5634656d3d4b9bf2698c88a9f2603538da83848bfb0333fd3d850acefac9fb39e6414ba447d71e7aeb9d7b8a758800f0a3504a395c2ff2b470b875cdd375ab8a683d764ad81eec8f5328ef44a818f7ba3bea4ed1af70bc6550780f4b8a6c1faafe1ceabc13c9cd1081f54dc5454ebe92c7987391a2d7646907612723f487a3527d9401bdd52bfc3bc7d026da77fb61811f7ef12f65b60214fafcc30302359bf25f8f59ecd0e291ddbc9e67aba6ea082e5e48934b4f8f9ade062ba83a80e4428b86a6d539c23fe7ae9fdcb75853f1360ec871735fbd5109301d92ac8888dafb61d6b138a4792f3a049b517186454030d317a9729f9a9ad62ac8931a38735c967c9eb423959284f9659ad117f5135e5304818fb297c0bb25a408eec8f3e9425597e96f92899252f8d6224bf1382efe6bbffd1b9ecc2fd712e30bb048654372a1d16652ba4203ec1715c183ce6a6f3f6a5046d43ffc995a092b51206ea4b6fab71fad7a98ff15ba119c73dc8b17ff65063b2f9228d56ec552f56405b7b69f8d84586766340ad670cc727ca40ac87501dea9d7f0b1f13f4e0003dd9559449a5b26bf9c108dba0ba09ba785025f4b3d4430b99f0c218eb56cb9e600ae92bbb878858a773c52db3531b06c94e971dd923880a47104279a09359d7bf0f25974ce6bb63b663a05d86300e0bd537b0759fbdd56445262be65a081a9d340528890256f255f3c3927274904a3caf0f16e9c68f8b41f70f4</script>
-  <div class="hbe hbe-content">
-    <div class="hbe hbe-input hbe-input-up">
-      <input class="hbe hbe-input-field hbe-input-field-up" type="password" id="hbePass">
-      <label class="hbe hbe-input-label hbe-input-label-up" for="hbePass">
-        <span class="hbe hbe-input-label-content hbe-input-label-content-up">请输入密码查看</span>
-      </label>
-    </div>
-  </div>
-</div>
-<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
-      <categories>
-        <category>学术</category>
-      </categories>
-      <tags>
-        <tag>机器学习</tag>
       </tags>
   </entry>
   <entry>
@@ -562,6 +513,33 @@
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">docker <span class="built_in">exec</span> -it 容器<span class="built_in">id</span> /bin/bash</span><br><span class="line"></span><br><span class="line"><span class="comment"># 转发端口</span></span><br><span class="line">ssh -f -N -L 5672:localhost:5672 用户名@远程服务器地址</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
 <h2 id="通过以上的一些步骤便可实现在笔记本电脑上，对台式机上的容器环境进行使用其环境服务，以及变更调整其环境。真正做到快速炼丹的调控。"><a href="#通过以上的一些步骤便可实现在笔记本电脑上，对台式机上的容器环境进行使用其环境服务，以及变更调整其环境。真正做到快速炼丹的调控。" class="headerlink" title="通过以上的一些步骤便可实现在笔记本电脑上，对台式机上的容器环境进行使用其环境服务，以及变更调整其环境。真正做到快速炼丹的调控。"></a>通过以上的一些步骤便可实现在笔记本电脑上，对台式机上的容器环境进行使用其环境服务，以及变更调整其环境。真正做到快速炼丹的调控。</h2>]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>questions</tag>
+        <tag>deep_learning</tag>
+        <tag>machine_learning</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>关于机器（深度）学习的500问/个人版</title>
+    <url>/2025/11/05/dlml/</url>
+    <content><![CDATA[<span id="more"></span>
+
+<h4 id="显示问题"><a href="#显示问题" class="headerlink" title="显示问题"></a>显示问题</h4><h6 id="关于为什么在vsc中显示不了jupyter-notebook中生成ploty图像？（25年11月5日）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ"><a href="#关于为什么在vsc中显示不了jupyter-notebook中生成ploty图像？（25年11月5日）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ" class="headerlink" title="关于为什么在vsc中显示不了jupyter notebook中生成ploty图像？（25年11月5日）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ"></a>关于为什么在vsc中显示不了jupyter notebook中生成ploty图像？（25年11月5日）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ</h6><blockquote>
+<p>多用ai来提升问题的解决效率，提高学习的速度（同时要注意提示词给的精准，准意区分真正的解决方案和ai幻觉——靠各种方案去尝试）</p>
+</blockquote>
+<p>关键是插件Jupyter Notebook Renderers没有安装的问题。所以在浏览器中的jupyter可以显示ploty交互式的图像，但是在vsc中却没用。</p>
+<h6 id="如何在博客中自动折叠代码、以及在obsidian中自动折叠代码？（25年11月6日）"><a href="#如何在博客中自动折叠代码、以及在obsidian中自动折叠代码？（25年11月6日）" class="headerlink" title="如何在博客中自动折叠代码、以及在obsidian中自动折叠代码？（25年11月6日）"></a>如何在博客中自动折叠代码、以及在obsidian中自动折叠代码？（25年11月6日）</h6><h4 id="代码运行问题"><a href="#代码运行问题" class="headerlink" title="代码运行问题"></a>代码运行问题</h4><h6 id="在vsc-notebook中如何调试代码-25年11月6日-٩-•̤̀ᵕ•̤́๑-ᵒᵏᵏᵎᵎᵎᵎ"><a href="#在vsc-notebook中如何调试代码-25年11月6日-٩-•̤̀ᵕ•̤́๑-ᵒᵏᵏᵎᵎᵎᵎ" class="headerlink" title="在vsc-notebook中如何调试代码? (25年11月6日) ٩(•̤̀ᵕ•̤́๑)ᵒᵏᵏᵎᵎᵎᵎ"></a>在vsc-notebook中如何调试代码? (25年11月6日) ٩(•̤̀ᵕ•̤́๑)ᵒᵏᵏᵎᵎᵎᵎ</h6><p>在代码框运行旁边有个debug,可以调试代码代码块.</p>
+<blockquote>
+<p>代码调试和逐句ai辅助理解, 学习代码效率简直拉满. 其实做习惯了, 也可以少一点笔记编辑, 可以直接在理解后, 用自己的语言备注在代码块中.  </p>
+</blockquote>
+<h6 id="如何提高代码的运行效率和时间，外加服务器？（2025年11月7日）"><a href="#如何提高代码的运行效率和时间，外加服务器？（2025年11月7日）" class="headerlink" title="如何提高代码的运行效率和时间，外加服务器？（2025年11月7日）"></a>如何提高代码的运行效率和时间，外加服务器？（2025年11月7日）</h6><p><a href="https://blog.zouaw.com/article/52490.html">如何用阿里云服务器跑深度学习代码？-CLOUD云枢</a></p>
+<h6 id="如何在其他的电脑中使用docker服务器部署，如何在主机中远程连接服务器？开启炼丹炉计划？（11月10日）spider-man"><a href="#如何在其他的电脑中使用docker服务器部署，如何在主机中远程连接服务器？开启炼丹炉计划？（11月10日）spider-man" class="headerlink" title="如何在其他的电脑中使用docker服务器部署，如何在主机中远程连接服务器？开启炼丹炉计划？（11月10日）spider man"></a>如何在其他的电脑中使用docker服务器部署，如何在主机中远程连接服务器？开启炼丹炉计划？（11月10日）spider man</h6><h6 id="如何用conda将包打包后，导入另外一个电脑的环境管理或者docker容器中？-11月11日-٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ"><a href="#如何用conda将包打包后，导入另外一个电脑的环境管理或者docker容器中？-11月11日-٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ" class="headerlink" title="如何用conda将包打包后，导入另外一个电脑的环境管理或者docker容器中？(11月11日)٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ"></a>如何用conda将包打包后，导入另外一个电脑的环境管理或者docker容器中？(11月11日)٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ</h6><ul>
+<li>实现全量打包<a href="https://blog.csdn.net/weixin_42744466/article/details/149482255">【Anaconda】Conda 虚拟环境打包迁移教程_conda打包环境-CSDN博客</a></li>
+</ul>
+]]></content>
       <categories>
         <category>学习</category>
       </categories>
@@ -1237,8 +1215,8 @@ First 5 rows of submission:
         <tag>机器学习</tag>
         <tag>kaggle比赛</tag>
         <tag>函数功能记录</tag>
-        <tag>catboost</tag>
         <tag>markdown_from_ipynb</tag>
+        <tag>catboost</tag>
       </tags>
   </entry>
   <entry>
@@ -1494,6 +1472,28 @@ First 5 rows of submission:
       <tags>
         <tag>想法</tag>
         <tag>观点</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>机器学习进展</title>
+    <url>/2025/10/22/machine_learning/</url>
+    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="窃取机密失败QAQ..." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="71c8bf7212203e7846d3a7bf656fb6f12cb1ce5060a2f8af6f7f5d399af41eb0">dccefed83fa27a7ad5aaf2d0962952897e2eac05819bcc21e675ce1cdc4aba5bff28ab5366c0082d3d01afa8266b2dacef3e8eb80ba325b8acc136cbeb108b2c454e602c9a9f740b2827934a89803342bc04ccd631b0782fa124ea7bb373b86c2dea7a22cd5a6b0d2348797feec3366ae8b8f209fcd7f2a6a550fab04a206d18b7219c82ed4db1f9125a9755e75b5634656d3d4b9bf2698c88a9f2603538da83848bfb0333fd3d850acefac9fb39e6414ba447d71e7aeb9d7b8a758800f0a3504a395c2ff2b470b875cdd375ab8a683d764ad81eec8f5328ef44a818f7ba3bea4ed1af70bc6550780f4b8a6c1faafe1ceabc13c9cd1081f54dc5454ebe92c7987391a2d7646907612723f487a3527d9401bdd52bfc3bc7d026da77fb61811f7ef12f65b60214fafcc30302359bf25f8f59ecd0e291ddbc9e67aba6ea082e5e48934b4f8f9ade062ba83a80e4428b86a6d539c23fe7ae9fdcb75853f1360ec871735fbd5109301d92ac8888dafb61d6b138a4792f3a049b517186454030d317a9729f9a9ad62ac8931a38735c967c9eb423959284f9659ad117f5135e5304818fb297c0bb25a408eec8f3e9425597e96f92899252f8d6224bf1382efe6bbffd1b9ecc2fd712e30bb048654372a1d16652ba4203ec1715c183ce6a6f3f6a5046d43ffc995a092b51206ea4b6fab71fad7a98ff15ba119c73dc8b17ff65063b2f9228d56ec552f56405b7b69f8d84586766340ad670cc727ca40ac87501dea9d7f0b1f13f4e0003dd9559449a5b26bf9c108dba0ba09ba785025f4b3d4430b99f0c218eb56cb9e600ae92bbb878858a773c52db3531b06c94e971dd923880a47104279a09359d7bf0f25974ce6bb63b663a05d86300e0bd537b0759fbdd56445262be65a081a9d340528890256f255f3c3927274904a3caf0f16e9c68f8b41f70f4</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-up">
+      <input class="hbe hbe-input-field hbe-input-field-up" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-up" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-up">请输入密码查看</span>
+      </label>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+      <categories>
+        <category>学术</category>
+      </categories>
+      <tags>
+        <tag>机器学习</tag>
       </tags>
   </entry>
 </search>
