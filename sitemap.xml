@@ -268,14 +268,21 @@
   </url>
   
   <url>
-    <loc>https://ideaforge.icu/tags/markdown-from-ipynb/</loc>
+    <loc>https://ideaforge.icu/tags/catboost/</loc>
     <lastmod>2026-06-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://ideaforge.icu/tags/catboost/</loc>
+    <loc>https://ideaforge.icu/tags/claude-code/</loc>
+    <lastmod>2026-06-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://ideaforge.icu/tags/markdown-from-ipynb/</loc>
     <lastmod>2026-06-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -297,13 +304,6 @@
   
   <url>
     <loc>https://ideaforge.icu/tags/%E6%96%87%E7%8C%AE%E9%98%85%E8%AF%BB%E7%AC%94%E8%AE%B0/</loc>
-    <lastmod>2026-06-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://ideaforge.icu/tags/claude-code/</loc>
     <lastmod>2026-06-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -410,14 +410,14 @@
   </url>
   
   <url>
-    <loc>https://ideaforge.icu/categories/%E5%AD%A6%E6%9C%AF/</loc>
+    <loc>https://ideaforge.icu/categories/%E6%95%99%E7%A8%8B/</loc>
     <lastmod>2026-06-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://ideaforge.icu/categories/%E6%95%99%E7%A8%8B/</loc>
+    <loc>https://ideaforge.icu/categories/%E5%AD%A6%E6%9C%AF/</loc>
     <lastmod>2026-06-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
