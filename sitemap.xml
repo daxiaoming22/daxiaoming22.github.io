@@ -11,36 +11,9 @@
   </url>
   
   <url>
-    <loc>https://ideaforge.icu/2025/11/05/dlml/</loc>
-    
-    <lastmod>2026-06-10</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://ideaforge.icu/2025/10/22/machine_learning/</loc>
-    
-    <lastmod>2026-06-10</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://ideaforge.icu/2026/04/30/Claude_code_install/</loc>
     
-    <lastmod>2026-04-30</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://ideaforge.icu/2026/04/13/openclaw-setup-tutorial/</loc>
-    
-    <lastmod>2026-04-15</lastmod>
+    <lastmod>2026-04-29</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -49,25 +22,16 @@
   <url>
     <loc>https://ideaforge.icu/2026/04/15/openclaw-browser-setup/</loc>
     
-    <lastmod>2026-04-15</lastmod>
+    <lastmod>2026-04-14</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://ideaforge.icu/2025/11/10/liandanjihua/</loc>
+    <loc>https://ideaforge.icu/2026/04/13/openclaw-setup-tutorial/</loc>
     
-    <lastmod>2026-04-13</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://ideaforge.icu/2025/10/29/learning_thought/</loc>
-    
-    <lastmod>2026-04-13</lastmod>
+    <lastmod>2026-04-12</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -76,16 +40,7 @@
   <url>
     <loc>https://ideaforge.icu/2025/11/24/202511W4_WeeklyReport/</loc>
     
-    <lastmod>2026-04-13</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://ideaforge.icu/2025/11/03/Catboost_road_rick/</loc>
-    
-    <lastmod>2026-04-13</lastmod>
+    <lastmod>2025-11-23</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -94,16 +49,25 @@
   <url>
     <loc>https://ideaforge.icu/2025/11/17/202511W3_WeeklyReport/</loc>
     
-    <lastmod>2026-04-13</lastmod>
+    <lastmod>2025-11-16</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://ideaforge.icu/2025/10/27/thoughts/</loc>
+    <loc>https://ideaforge.icu/2025/11/10/liandanjihua/</loc>
     
-    <lastmod>2025-11-06</lastmod>
+    <lastmod>2025-11-09</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://ideaforge.icu/2025/11/05/dlml/</loc>
+    
+    <lastmod>2025-11-04</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -112,25 +76,7 @@
   <url>
     <loc>https://ideaforge.icu/2025/11/04/Simulation_and_reproduction_work/</loc>
     
-    <lastmod>2025-11-04</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://ideaforge.icu/2025/10/30/Catboost_road_rick_leanring/</loc>
-    
-    <lastmod>2025-11-04</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://ideaforge.icu/2025/11/03/jianxigao_1103/</loc>
-    
-    <lastmod>2025-11-04</lastmod>
+    <lastmod>2025-11-03</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -146,9 +92,36 @@
   </url>
   
   <url>
-    <loc>https://ideaforge.icu/about/index.html</loc>
+    <loc>https://ideaforge.icu/2025/11/03/Catboost_road_rick/</loc>
     
-    <lastmod>2025-11-03</lastmod>
+    <lastmod>2025-11-02</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://ideaforge.icu/2025/11/03/jianxigao_1103/</loc>
+    
+    <lastmod>2025-11-02</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://ideaforge.icu/2025/10/30/Catboost_road_rick_leanring/</loc>
+    
+    <lastmod>2025-10-29</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://ideaforge.icu/2025/10/29/learning_thought/</loc>
+    
+    <lastmod>2025-10-28</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -157,7 +130,25 @@
   <url>
     <loc>https://ideaforge.icu/2025/10/27/yuming/</loc>
     
-    <lastmod>2025-10-28</lastmod>
+    <lastmod>2025-10-27</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://ideaforge.icu/2025/10/27/thoughts/</loc>
+    
+    <lastmod>2025-10-27</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://ideaforge.icu/about/index.html</loc>
+    
+    <lastmod>2025-10-24</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -176,6 +167,15 @@
     <loc>https://ideaforge.icu/tags/index.html</loc>
     
     <lastmod>2025-10-24</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://ideaforge.icu/2025/10/22/machine_learning/</loc>
+    
+    <lastmod>2025-10-21</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>

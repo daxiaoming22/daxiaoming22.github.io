@@ -12,7 +12,7 @@
   <title>
     <![CDATA[Yueming & Blog]]>
   </title>
-  <updated>2026-06-10T07:58:26.427Z</updated>
+  <updated>2026-06-10T07:58:26.426Z</updated>
   <entry>
     <author>
       <name>月明</name>
@@ -27,7 +27,7 @@
     <published>2026-06-10T07:58:26.426Z</published>
     <summary>这是一篇关于Hexo-Next博客学习进展的总结文章，记录了作者在博客美化、站点建设和Markdown使用方面的学习笔记，包含如何创建新文章、更改首页置顶顺序、实现文章部分显示、配置域名、添加友链、将ipynb转换为markdown、解决链接跳转问题、添加脚注等实用技巧，每个技巧都标注了学习日期，并提供了相关参考链接和解决方法。</summary>
     <title>blog学习进展/hexo-next教程</title>
-    <updated>2026-06-10T07:58:26.427Z</updated>
+    <updated>2026-06-10T07:58:26.426Z</updated>
   </entry>
   <entry>
     <author>
@@ -43,7 +43,7 @@
     <published>2026-04-29T16:00:00.000Z</published>
     <summary>一步步教你使用强大的ai操控，的cil工具Claude code，元工具不止用来编程，文献检索，数据分析，科研绘图；天才第一步——安装配置Claude code</summary>
     <title>claude_code 配置安装完整教程</title>
-    <updated>2026-04-30T04:02:05.000Z</updated>
+    <updated>2026-04-29T16:00:00.000Z</updated>
   </entry>
   <entry>
     <author>
@@ -62,7 +62,7 @@
     <published>2026-04-14T16:00:00.000Z</published>
     <summary>详细讲解 OpenClaw 三种浏览器使用方式，解决 WSL2 + systemd 环境下自启动失败问题</summary>
     <title>OpenClaw 浏览器配置完整教程 - 解决 WSL2 自启动失败问题</title>
-    <updated>2026-04-15T09:22:20.000Z</updated>
+    <updated>2026-04-14T16:00:00.000Z</updated>
   </entry>
   <entry>
     <author>
@@ -78,7 +78,7 @@
     <published>2026-04-12T16:00:00.000Z</published>
     <summary>一步步教你在 WSL2 环境下安装配置 OpenClaw 数字员工，推荐常用技能</summary>
     <title>OpenClaw 配置安装完整教程</title>
-    <updated>2026-04-15T09:24:57.000Z</updated>
+    <updated>2026-04-12T16:00:00.000Z</updated>
   </entry>
   <entry>
     <author>
@@ -95,7 +95,7 @@
     <published>2025-11-23T16:00:00.000Z</published>
     <summary>这是11月第四周所遇到的所有问题以及思考以及解决方案，并在一周结束时将会整理，梳理（不要说说，说到做到！下周上压力，工作和身体上面的）</summary>
     <title>关于11月24日~11月30日中遇到的问题</title>
-    <updated>2026-04-13T08:02:18.000Z</updated>
+    <updated>2025-11-23T16:00:00.000Z</updated>
   </entry>
   <entry>
     <author>
@@ -117,7 +117,7 @@
     <published>2025-11-16T16:00:00.000Z</published>
     <summary>这是11月第三周所遇到的所有问题以及思考以及解决方案，并在一周结束时将会整理，梳理</summary>
     <title>关于11月17日~11月23日中遇到的问题以及解决方法</title>
-    <updated>2026-04-13T08:02:15.000Z</updated>
+    <updated>2025-11-16T16:00:00.000Z</updated>
   </entry>
   <entry>
     <author>
@@ -135,7 +135,7 @@
     <published>2025-11-09T16:00:00.000Z</published>
     <summary>这是解决一个关于笔记本远程连接docker，并使用docker来训练深度学习模型以及机器学习，提高ai代码效率问题的笔记</summary>
     <title>关于机器（深度）学习的炼丹docker部署计划</title>
-    <updated>2026-04-13T08:02:26.000Z</updated>
+    <updated>2025-11-09T16:00:00.000Z</updated>
   </entry>
   <entry>
     <author>
@@ -153,7 +153,7 @@
     <published>2025-11-04T16:00:00.000Z</published>
     <summary>解决问题最好的方式，就是正确的提问，从大问题中拆成小问题（一个个解决），这便是思考学习；鉴于每个人的学习情况不同，可以用全局搜索，是否遇到同一个问题。这是将会是一篇汇总自己在学习ml、dl过程中遇到最想的问题。以及我自己还有ai的回答。仅供参考</summary>
     <title>关于机器（深度）学习的500问/个人版</title>
-    <updated>2026-06-10T07:58:26.427Z</updated>
+    <updated>2025-11-04T16:00:00.000Z</updated>
   </entry>
   <entry>
     <author>
@@ -174,7 +174,7 @@
       <![CDATA[<h3 id="标题——数据驱动的高性能聚酰亚胺设计：增强耐热性与介电性能"><a href="#标题——数据驱动的高性能聚酰亚胺设计：增强耐热性与介电性能" class="headerlink" title="标题——数据驱动的高性能聚酰亚胺设计：增强耐热性与介电性能"></a]]>
     </summary>
     <title>复现——Data-Driven Design of High-Performance Polyimides With Enhanced Heat Resistance and Dielectric Properties</title>
-    <updated>2025-11-04T08:21:47.000Z</updated>
+    <updated>2025-11-03T16:00:00.000Z</updated>
   </entry>
   <entry>
     <author>
@@ -194,7 +194,7 @@
     <published>2025-11-02T16:00:00.000Z</published>
     <summary>这篇笔记基于Kaggle竞赛数据，详细记录了使用CatBoost进行道路风险预测的完整流程，包括第三方库导入与版本查看、数据集导入与清洗、数据可视化分析（目标分布和相关性热力图）、CatBoost模型构建（设置1000次迭代、0.1学习率、6层深度等参数并启用GPU加速）、模型评估（通过RMSE和5折交叉验证）、特征重要性分析（速度限制、光照条件和曲率是最重要的三个特征）、预测结果可视化（实际值vs预测值散点图）以及提交结果生成（创建包含id和accident_risk的submission.csv文件）。</summary>
     <title>CatBoost道路风险预测学习笔记（对应的ipynb的markdown版本）</title>
-    <updated>2026-04-13T08:02:18.000Z</updated>
+    <updated>2025-11-02T16:00:00.000Z</updated>
   </entry>
   <entry>
     <author>
@@ -212,7 +212,7 @@
     <published>2025-11-02T16:00:00.000Z</published>
     <summary>这是一篇关于蹇锡高院士学术讲座的笔记，主题为&quot;新型杂环高性能工程塑料及其加工应用发展进展——杂萘联苯型聚芳醚高性能树脂及其应用技术&quot;。笔记包含讲师介绍链接、重点内容（短纤维增强树脂基复合材料、连续纤维增强热塑性树脂基复合材料、耐高温耐辐照绝缘漆、功能膜等应用领域）、启发（机器学习在高分子材料筛选中的适用性）以及前沿研究（2035发展战略研究建议发展重点和复合材料特性），特别提到关注既耐高温又可溶解的新品种材料开发，如引入DHPZ结构实现既耐高温又可溶的特性。</summary>
     <title>蹇锡高学术讲座——新型杂环高性能工程塑料及其加工应用发展进展——杂萘联苯型聚芳醚高性能树脂及其应用技术</title>
-    <updated>2025-11-04T02:38:03.000Z</updated>
+    <updated>2025-11-02T16:00:00.000Z</updated>
   </entry>
   <entry>
     <author>
@@ -231,7 +231,7 @@
     <published>2025-10-29T16:00:00.000Z</published>
     <summary>这篇笔记基于Kaggle竞赛&quot;Predicting Road Accident Risk&quot;的公开代码，主要介绍了从数据观察、探索性数据分析(EDA)到CatBoost模型应用的完整流程，包括使用pandas读取和分析数据，通过matplotlib和seaborn进行数据可视化，利用CatBoost算法（特别擅长处理类别特征）构建预测模型并设置GPU加速，通过RMSE和交叉验证评估模型性能，提取特征重要性并可视化，以及按比赛要求准备和输出预测结果。</summary>
     <title>CatBoost道路风险预测学习笔记</title>
-    <updated>2025-11-04T03:07:30.000Z</updated>
+    <updated>2025-10-29T16:00:00.000Z</updated>
   </entry>
   <entry>
     <author>
@@ -248,7 +248,7 @@
     <published>2025-10-28T16:00:00.000Z</published>
     <summary>不给看</summary>
     <title>ml_learning_thought</title>
-    <updated>2026-04-13T08:02:25.000Z</updated>
+    <updated>2025-10-28T16:00:00.000Z</updated>
   </entry>
   <entry>
     <author>
@@ -268,7 +268,7 @@
 <p>域名绑定以及解析，参考大佬的教程<a]]>
     </summary>
     <title>域名配置</title>
-    <updated>2025-10-28T08:10:50.000Z</updated>
+    <updated>2025-10-27T06:40:46.000Z</updated>
   </entry>
   <entry>
     <author>
@@ -281,7 +281,7 @@
     <link href="https://ideaforge.icu/2025/10/27/thoughts/"/>
     <published>2025-10-27T06:36:49.000Z</published>
     <title>thoughts</title>
-    <updated>2025-11-06T08:00:18.000Z</updated>
+    <updated>2025-10-27T06:36:49.000Z</updated>
   </entry>
   <entry>
     <author>
@@ -297,6 +297,6 @@
     <published>2025-10-21T16:00:00.000Z</published>
     <summary>这是一篇加密文章，请输入密码查看</summary>
     <title>机器学习进展</title>
-    <updated>2026-06-10T07:58:26.427Z</updated>
+    <updated>2025-10-21T16:00:00.000Z</updated>
   </entry>
 </feed>
