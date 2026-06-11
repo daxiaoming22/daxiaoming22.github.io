@@ -211,172 +211,6 @@
       </tags>
   </entry>
   <entry>
-    <title>CatBoost道路风险预测学习笔记</title>
-    <url>/2025/10/30/Catboost_road_rick_leanring/</url>
-    <content><![CDATA[<span id="more"></span>
-
-<h3 id="下面所学知识经验均来自对kaggle竞赛Predicting-Road-Accident-Riskz中的公开Notebook代码的模仿过程"><a href="#下面所学知识经验均来自对kaggle竞赛Predicting-Road-Accident-Riskz中的公开Notebook代码的模仿过程" class="headerlink" title="下面所学知识经验均来自对kaggle竞赛Predicting Road Accident Riskz中的公开Notebook代码的模仿过程"></a>下面所学知识经验均来自对kaggle竞赛Predicting Road Accident Riskz中的公开Notebook<a href="https://www.kaggle.com/code/josephnehrenz/s5e10-predicting-road-accident-risk-w-web-app/notebook">代码</a>的模仿过程</h3><hr>
-<h4 id="数据观察（主要用pandas库）"><a href="#数据观察（主要用pandas库）" class="headerlink" title="数据观察（主要用pandas库）"></a>数据观察（主要用pandas库）</h4><h5 id="读取数据"><a href="#读取数据" class="headerlink" title="读取数据"></a>读取数据</h5><ul>
-<li>读取文件——<strong>pd.read_csv</strong>(“path”)<code>pd.read_csv</code></li>
-</ul>
-<h5 id="数据分析"><a href="#数据分析" class="headerlink" title="数据分析"></a>数据分析</h5><blockquote>
-<p>注意kaggle比赛中，数据已经备好了，从赛者可专注于模型的建立和学习<br>一下较为常用的用粗体表示</p>
-</blockquote>
-<ul>
-<li>df.columns 查看列 <code>df.columns</code></li>
-<li>数据DataFrame的信息——<strong>df.info()</strong>， <code>df.info()</code>输出列名、以及对于列名的数据大小、空值情况、以及对应的数据类型</li>
-<li>df.shape查看数据的形状 <code>df.shape</code></li>
-<li>数据DataFrame的前五行——<strong>df.head()</strong>， <code>df.head()</code>在nb中会自动展示，或者要对比可以print，or display</li>
-</ul>
-<hr>
-<h4 id="EDA"><a href="#EDA" class="headerlink" title="EDA"></a>EDA</h4><blockquote>
-<p>探索性数据分析（Exploratory Data Analysis，简称EDA）是数据科学中的关键步骤，旨在熟悉数据集、揭示变量间的关系并指导后续处理。通过读取数据、数据汇总、总览、缺失值和异常值分析，以及特征分析，我们可以深入了解数据的结构和质量。</p>
-</blockquote>
-<h5 id="目标分布"><a href="#目标分布" class="headerlink" title="目标分布"></a>目标分布</h5><ul>
-<li><code>plt.figure()</code>的作用创建画布</li>
-<li><code>sns.histplot()</code>的参数和功能是什么？bin箱子的数目，kde是否加一条拟合分布的曲线</li>
-</ul>
-<blockquote>
-<p>参考两个教程<a href="https://blog.csdn.net/maizeman126/article/details/135347919">民间教程</a>、<a href="https://seaborn.pydata.org/generated/seaborn.histplot.html">官方教程</a></p>
-</blockquote>
-<h5 id="关联热力图"><a href="#关联热力图" class="headerlink" title="关联热力图"></a>关联热力图</h5><ul>
-<li><p>筛选出数值列<code>df.select_dtypes（include=[&quot;int64&quot;,&quot;float64&quot;]）</code></p>
-</li>
-<li><p><code>df.corr()</code>用来计算各列之间的相关系数的（可以自定义方法用method参数来指定）。这用来做作为<code> sns.heatmap()</code>的输入参数极为方便</p>
-</li>
-</ul>
-<blockquote>
-<p>参考<a href="https://blog.csdn.net/qq_41721951/article/details/109645921">民间教程</a></p>
-</blockquote>
-<ul>
-<li><code>sns.heatmap()</code></li>
-</ul>
-<blockquote>
-<p>参考两个教程<a href="https://blog.csdn.net/weixin_45492560/article/details/106227864">民间教程</a>、<a href="https://seaborn.org.cn/generated/seaborn.heatmap.html">官方教程</a></p>
-</blockquote>
-<hr>
-<h4 id="CatBoost-Model"><a href="#CatBoost-Model" class="headerlink" title="CatBoost Model"></a>CatBoost Model</h4><h5 id="介绍-擅长处理类别特征"><a href="#介绍-擅长处理类别特征" class="headerlink" title="介绍(擅长处理类别特征)"></a>介绍(擅长处理类别特征)</h5><p>CatBoost的全称是<strong>Categorical Boosting</strong>，它是一种由俄罗斯搜索巨头Yandex开发的梯度提升算法库，特别擅长处理类别型特征。</p>
-<p>CatBoost的名称来源于其核心功能，即处理类别型特征（Categorical Features）和梯度提升（Gradient Boosting）。与其他梯度提升算法如XGBoost和LightGBM相比，CatBoost在处理类别型特征方面具有显著优势。</p>
-<p>CatBoost的特点</p>
-<ol>
-<li><strong>类别型特征处理</strong>：CatBoost使用独特的编码方法来处理类别型特征，降低过拟合风险。（<strong>无需对这些特征（分类特征）进行One-Hot编码</strong>）</li>
-<li><strong>克服梯度偏差</strong>：CatBoost采用排序提升的概念，防止目标泄漏和过度拟合。</li>
-<li><strong>高效实现</strong>：支持GPU加速和多GPU训练，提升计算效率。</li>
-<li><strong>鲁棒性</strong>：减少对大量超参数调整的需求，降低过度拟合的机会。<br>CatBoost的应用</li>
-</ol>
-<p>CatBoost在多个领域中表现出色，包括金融风控、推荐系统和生物医学等。例如，在信用卡欺诈检测、商品推荐和基因表达数据分析中，CatBoost能够有效处理类别型特征和缺失值，构建精准的预测模型。</p>
-<p>总之，CatBoost作为一种专为类别型特征优化的梯度提升算法，凭借其独特的处理策略和高效的实现，迅速成为业界广受欢迎的GBDT框架。</p>
-<blockquote>
-<p>详细介绍解释参考<a href="https://zhuanlan.zhihu.com/p/540956200">数据STUDIO, 2022</a>、<a href="https://blog.csdn.net/ai_aijiang/article/details/149075808">CatBoost深度解析</a>、<a href="https://catboost.ai/docs/en/concepts/python-quickstart">官方 CatBoost</a></p>
-</blockquote>
-<h5 id="分类特征（前面对数值类型的特征进行了关联性的分析）"><a href="#分类特征（前面对数值类型的特征进行了关联性的分析）" class="headerlink" title="分类特征（前面对数值类型的特征进行了关联性的分析）"></a>分类特征（前面对数值类型的特征进行了关联性的分析）</h5><p><strong>dtype一般是bool或者object</strong></p>
-<ul>
-<li><p>作者做了一个操作，将bool转化为str，也变成了object对象。关于选择bool值时，<code>df.select_dtypes(include=)</code>进行优化</p>
-</li>
-<li><p>关于具体转化格式的函数方法，作者使用的是<code>df.astype()</code></p>
-</li>
-</ul>
-<blockquote>
-<p>可参考<a href="https://blog.csdn.net/u013172930/article/details/143723145">转化类型</a></p>
-</blockquote>
-<p> 关于<code>from sklearn.model_selection import train_test_split, cross_val_score</code></p>
-<ul>
-<li><code>train_test_split</code>这个函数十分常用在从训练集分割出验证集时。</li>
-</ul>
-<blockquote>
-<p>参考<a href="https://blog.csdn.net/2301_76849908/article/details/149281512">民间教程</a>、<a href="https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.train_test_split.html">官方教程</a></p>
-</blockquote>
-<h5 id="模型构建"><a href="#模型构建" class="headerlink" title="模型构建"></a>模型构建</h5><p>使用的是catboost库中的，CatBoostRegressor模型，记得安装</p>
-<figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line">conda activate your_env</span><br><span class="line"></span><br><span class="line">conda install catboost</span><br></pre></td></tr></table></figure>
-
-<h5 id="模型参数选择"><a href="#模型参数选择" class="headerlink" title="模型参数选择"></a>模型参数选择</h5><ol>
-<li>iterations 迭代次数（定义了训练过程中提升树的数量）</li>
-<li>learning_rate 学习率（控制每一步梯度提升时模型权重更新的幅度，而迭代）</li>
-</ol>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">params = &#123;     </span><br><span class="line">	<span class="string">&#x27;iterations&#x27;</span>: <span class="number">1000</span>, <span class="comment"># 迭代次数     </span></span><br><span class="line">	<span class="string">&#x27;learning_rate&#x27;</span>: <span class="number">0.1</span>, <span class="comment"># 学习率     </span></span><br><span class="line">	<span class="string">&#x27;depth&#x27;</span>: <span class="number">6</span>, <span class="comment"># 树的深度     </span></span><br><span class="line">	<span class="string">&#x27;cat_features&#x27;</span>: cat_features, <span class="comment"># 分类特征</span></span><br><span class="line">	<span class="string">&#x27;random_seed&#x27;</span>: <span class="number">42</span>, <span class="comment"># 随机种子     </span></span><br><span class="line">	<span class="string">&#x27;loss_function&#x27;</span>: <span class="string">&#x27;RMSE&#x27;</span>, <span class="comment"># 损失函数     </span></span><br><span class="line">	<span class="string">&#x27;verbose&#x27;</span>: <span class="number">100</span>, <span class="comment"># 每100次迭代打印一次信息</span></span><br><span class="line">	<span class="string">&#x27;early_stopping_rounds&#x27;</span>: <span class="number">50</span>, <span class="comment"># 早停轮数 </span></span><br><span class="line">	<span class="string">&quot;task_type&quot;</span>: <span class="string">&quot;GPU&quot;</span>, <span class="comment"># 启用 GPU</span></span><br><span class="line">	<span class="string">&quot;devices&quot;</span>: <span class="string">&quot;0&quot;</span> <span class="comment"># 指定 GPU 设备</span></span><br><span class="line">&#125;  </span><br><span class="line"></span><br><span class="line">Catboost_model = CatBoostRegressor(**params) Catboost_model.fit(X, y, eval_set=(X_val, y_val)) <span class="comment"># eval_set 用于监控模型在验证集上的性能 没有则不会显示性能表现</span></span><br></pre></td></tr></table></figure>
-
-<ol start="3">
-<li>损失函数（二元分类Logloss；回归RMSE（均方根误差） or MAE（平均绝对误差；多分类采用Multiclass损失；不平衡数据集（QueryCrossentropy）</li>
-<li>GPU加速，加快训练速度</li>
-</ol>
-<ul>
-<li><code>model.fit()</code> 模型训练，输入X，以及对应的y标签即可。</li>
-</ul>
-<h5 id="模型评估"><a href="#模型评估" class="headerlink" title="模型评估"></a>模型评估</h5><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Make predictions on validation set</span></span><br><span class="line">y_pred = Catboost_model.predict(X_val)   <span class="comment"># Calculate RMSE</span></span><br><span class="line">val_rmse = mean_squared_error(y_val, y_pred) <span class="built_in">print</span>(<span class="string">f&quot;Validation RMSE: <span class="subst">&#123;val_rmse:<span class="number">.4</span>f&#125;</span>&quot;</span>)  </span><br><span class="line"></span><br><span class="line"><span class="comment"># Cross-validation</span></span><br><span class="line">cv_scores = cross_val_score(Catboost_model, X, y, cv=<span class="number">5</span>, scoring=<span class="string">&#x27;neg_mean_squared_error&#x27;</span>) </span><br><span class="line">cv_rmse = np.sqrt(-cv_scores)  </span><br><span class="line"><span class="built_in">print</span>(<span class="string">f&quot;Cross-validation RMSE: <span class="subst">&#123;cv_rmse.mean():<span class="number">.4</span>f&#125;</span> (+/- <span class="subst">&#123;cv_rmse.std() * <span class="number">2</span>:<span class="number">.4</span>f&#125;</span>)&quot;</span>)</span><br></pre></td></tr></table></figure>
-
-<p>这段代码实现了交叉验证（Cross-validation）过程，用于评估CatBoost模型的性能。具体解释如下：</p>
-<ol>
-<li><strong>第一行代码</strong>：<code>cv_scores = cross_val_score(Catboost_model, X, y, cv=5, scoring=&#39;neg_mean_squared_error&#39;)</code></li>
-</ol>
-<ul>
-<li>使用<code>cross_val_score</code>函数执行5折交叉验证</li>
-<li>参数<code>Catboost_model</code>是已经定义好的CatBoost模型</li>
-<li><code>X</code>是特征数据，<code>y</code>是目标变量</li>
-<li><code>cv=5</code>表示将数据集分成5个部分进行交叉验证</li>
-<li><code>scoring=&#39;neg_mean_squared_error&#39;</code>表示使用负均方误差作为评分指标（负值是因为scikit-learn中大多数评分函数追求最大化）</li>
-</ul>
-<ol start="2">
-<li><strong>第二行代码</strong>：<code>cv_rmse = np.sqrt(-cv_scores)</code></li>
-</ol>
-<ul>
-<li>将负均方误差转换为均方根误差（RMSE）</li>
-<li>首先取负值（因为原始得分是负数），然后开平方</li>
-<li>得到的<code>cv_rmse</code>是一个包含5个元素的数组，每个元素对应一折验证的RMSE（均方根误差）</li>
-</ul>
-<ol start="3">
-<li><strong>第三行代码</strong>：<code>print(f&quot;Cross-validation RMSE: {cv_rmse.mean():.4f} (+/- {cv_rmse.std() * 2:.4f})&quot;)</code></li>
-</ol>
-<ul>
-<li>输出交叉验证的平均RMSE和标准差</li>
-<li><code>.mean()</code>计算5折RMSE的平均值</li>
-<li><code>.std() * 2</code>计算2倍标准差，表示模型性能的置信区间范围</li>
-<li><code>:.4f</code>表示保留4位小数  这段代码的主要目的是通过交叉验证来评估模型的泛化能力，避免过拟合问题，并提供模型性能的可靠估计。</li>
-<li><code>mean_squared_error()</code> 计算两列的均方根误差</li>
-<li><code>cross_val_score()</code></li>
-</ul>
-<blockquote>
-<p>参考教程<a href="https://blog.csdn.net/weixin_42211626/article/details/100064842">民间教程</a>、<a href="https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.cross_val_score.html">官方文档</a>、<a href="https://scikit-learn.cn/stable/modules/cross_validation.html">中文官方</a></p>
-</blockquote>
-<h5 id="重要性分析"><a href="#重要性分析" class="headerlink" title="重要性分析"></a>重要性分析</h5><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Feature Importance</span></span><br><span class="line"></span><br><span class="line">feature_importance = Catboost_model.get_feature_importance()  <span class="comment"># index类型</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#print(feature_importance)</span></span><br><span class="line"></span><br><span class="line">feature_names = X.columns <span class="comment"># ndarray类型</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#print(feature_names)</span></span><br><span class="line"></span><br><span class="line">importance_df = pd.DataFrame(&#123;</span><br><span class="line"></span><br><span class="line">    <span class="string">&#x27;feature&#x27;</span>: feature_names,</span><br><span class="line"></span><br><span class="line">    <span class="string">&#x27;importance&#x27;</span>: feature_importance</span><br><span class="line"></span><br><span class="line">&#125;).sort_values(<span class="string">&#x27;importance&#x27;</span>, ascending=<span class="literal">False</span>) <span class="comment"># 按重要性降序排序</span></span><br><span class="line"></span><br><span class="line">  </span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;\nTop 10 Most Important Features:&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(importance_df.head(<span class="number">10</span>))</span><br></pre></td></tr></table></figure>
-
-<p>这里直接用<code>catboost_model.get_feature_importance()</code>方法。</p>
-<ul>
-<li><code>sort_values()</code> 函数，他是一个排序函数</li>
-</ul>
-<blockquote>
-<p>参考<a href="https://yaoweibin.cn/pandas-series%e6%8e%92%e5%ba%8f%e7%a5%9e%e5%99%a8sort_values%e5%85%a8%e9%9d%a2%e8%a7%a3%e6%9e%90%e4%b8%8e%e5%ba%94%e7%94%a8/">民间教程</a></p>
-</blockquote>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Detailed feature importance plot</span></span><br><span class="line"></span><br><span class="line">plt.figure()</span><br><span class="line"></span><br><span class="line">sns.barplot(data=importance_df.head(<span class="number">10</span>), x=<span class="string">&#x27;importance&#x27;</span>, y=<span class="string">&#x27;feature&#x27;</span>, palette=<span class="string">&#x27;viridis&#x27;</span>)</span><br><span class="line"></span><br><span class="line">plt.title(<span class="string">&#x27;Top 10 Most Important Features&#x27;</span>)</span><br><span class="line"></span><br><span class="line">plt.xlabel(<span class="string">&#x27;Importance Score&#x27;</span>)</span><br><span class="line"></span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
-
-<p><code>sns.barplot()</code>函数功能，支持df的输入，指定对于xy的列名即可</p>
-<h4 id="可视化结果"><a href="#可视化结果" class="headerlink" title="可视化结果"></a>可视化结果</h4><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Plot actual vs predicted values</span></span><br><span class="line"></span><br><span class="line">plt.scatter(y_val, y_pred, alpha=<span class="number">0.1</span>, marker=<span class="string">&#x27;.&#x27;</span>, s=<span class="number">5</span>)</span><br><span class="line"><span class="comment"># 画出对应的散点图，x为实际，y为预测。所有的散点越靠近完美对角线，就意味着预测效果越好</span></span><br><span class="line">plt.plot([y_val.<span class="built_in">min</span>(), y_val.<span class="built_in">max</span>()], [y_val.<span class="built_in">min</span>(), y_val.<span class="built_in">max</span>()], <span class="string">&#x27;r--&#x27;</span>, lw=<span class="number">2</span>) </span><br><span class="line"><span class="comment"># 第一个参数代表x范围，第二个参数是y的范围，此时默认x=y 画出完美预测线，对角线。</span></span><br><span class="line"></span><br><span class="line">plt.xlabel(<span class="string">&#x27;Actual Values&#x27;</span>)</span><br><span class="line"></span><br><span class="line">plt.ylabel(<span class="string">&#x27;Predicted Values&#x27;</span>)</span><br><span class="line"></span><br><span class="line">plt.title(<span class="string">&#x27;Actual vs Predicted Values&#x27;</span>)</span><br><span class="line"></span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
-
-<h4 id="提交结果"><a href="#提交结果" class="headerlink" title="提交结果"></a>提交结果</h4><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Prepare test data (excluding the id column for prediction)</span></span><br><span class="line"></span><br><span class="line">test_features = test_ds.drop(<span class="string">&#x27;id&#x27;</span>, axis=<span class="number">1</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># Make predictions on test set</span></span><br><span class="line">test_predictions = Catboost_model.predict(test_features)</span><br><span class="line"></span><br><span class="line"><span class="comment"># Create submission file</span></span><br><span class="line"></span><br><span class="line">submission = pd.DataFrame(&#123;</span><br><span class="line">    <span class="string">&#x27;id&#x27;</span>: test_ds[<span class="string">&#x27;id&#x27;</span>],</span><br><span class="line">    <span class="string">&#x27;accident_risk&#x27;</span>: test_predictions</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line">  </span><br><span class="line"><span class="comment"># Save submission file</span></span><br><span class="line">submission.to_csv(<span class="string">&#x27;submission.csv&#x27;</span>, index=<span class="literal">False</span>)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">f&quot;Submission shape: <span class="subst">&#123;submission.shape&#125;</span>&quot;</span>)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;\nFirst 5 rows of submission:&quot;</span>)</span><br><span class="line">display(submission.head())</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>学习</category>
-      </categories>
-      <tags>
-        <tag>机器学习</tag>
-        <tag>kaggle比赛</tag>
-        <tag>函数功能记录</tag>
-        <tag>catboost</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>claude_code 配置安装完整教程</title>
-    <url>/2026/04/30/Claude_code_install/</url>
-    <content><![CDATA[<h1 id="如何安装claude-code-vscode的新编程模式-元工具的方式不止编程"><a href="#如何安装claude-code-vscode的新编程模式-元工具的方式不止编程" class="headerlink" title="如何安装claude code+vscode的新编程模式? 元工具的方式不止编程"></a>如何安装claude code+vscode的新编程模式? 元工具的方式不止编程</h1><h1 id="关于安装不推荐采用claude-code官方的安装指令（地区和网络问题），也就是下面这行代码"><a href="#关于安装不推荐采用claude-code官方的安装指令（地区和网络问题），也就是下面这行代码" class="headerlink" title="关于安装不推荐采用claude code官方的安装指令（地区和网络问题），也就是下面这行代码"></a>关于安装不推荐采用<a href="https://code.claude.com/docs/zh-CN/overview">claude code官方的安装指令</a>（地区和网络问题），也就是下面这行代码</h1><figure class="highlight nginx"><table><tr><td class="code"><pre><span class="line"><span class="attribute">irm</span> https://claude.ai/install.ps1 | iex</span><br></pre></td></tr></table></figure>
-
-<h1 id="推荐采用以下两种方式："><a href="#推荐采用以下两种方式：" class="headerlink" title="推荐采用以下两种方式："></a>推荐采用以下两种方式：</h1><h1 id="1-采用npm的方式"><a href="#1-采用npm的方式" class="headerlink" title="1.采用npm的方式"></a>1.采用<a href="https://blog.csdn.net/kai_2003/article/details/158469982">npm的方式</a></h1><h2 id="先安装node，node-js官网"><a href="#先安装node，node-js官网" class="headerlink" title="先安装node，node.js官网"></a>先安装node，<a href="https://nodejs.org/zh-cn">node.js官网</a></h2><h3 id="对于liunx：一般先安装nvm，安装node，也就有了npm"><a href="#对于liunx：一般先安装nvm，安装node，也就有了npm" class="headerlink" title="对于liunx：一般先安装nvm，安装node，也就有了npm"></a>对于liunx：一般先安装nvm，安装node，也就有了npm</h3><h3 id="对于windows：直接去官网下载exe，然后，在终端测试版本号，即可验证安装是否成功"><a href="#对于windows：直接去官网下载exe，然后，在终端测试版本号，即可验证安装是否成功" class="headerlink" title="对于windows：直接去官网下载exe，然后，在终端测试版本号，即可验证安装是否成功"></a>对于windows：直接去官网下载exe，然后，在终端测试版本号，即可验证安装是否成功</h3><h1 id="2-采用字节，的教程（让卖方告诉你使用的方法，说明书一样），这种方法往往实用且高效，字节也有个agent的脚本ark-helper"><a href="#2-采用字节，的教程（让卖方告诉你使用的方法，说明书一样），这种方法往往实用且高效，字节也有个agent的脚本ark-helper" class="headerlink" title="2.采用字节，的教程（让卖方告诉你使用的方法，说明书一样），这种方法往往实用且高效，字节也有个agent的脚本ark-helper."></a>2.采用<a href="https://www.volcengine.com/docs/82379/1928262?lang=zh#7fd1eee7">字节，的教程（让卖方告诉你使用的方法，说明书一样）</a>，这种方法往往实用且高效，字节也有个agent的脚本ark-helper.</h1><h1 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h1><h2 id="关于如何快速管理自己的agent端的模型，如何快速切换，这里笔者强力推荐一个项目，叫做cc-switch；通过它我们可以实现openclaw、claude-code、codex等cil工具背后的模型接口的快速的切换。"><a href="#关于如何快速管理自己的agent端的模型，如何快速切换，这里笔者强力推荐一个项目，叫做cc-switch；通过它我们可以实现openclaw、claude-code、codex等cil工具背后的模型接口的快速的切换。" class="headerlink" title="关于如何快速管理自己的agent端的模型，如何快速切换，这里笔者强力推荐一个项目，叫做cc switch；通过它我们可以实现openclaw、claude code、codex等cil工具背后的模型接口的快速的切换。"></a>关于如何快速管理自己的agent端的模型，如何快速切换，这里笔者强力推荐一个项目，叫做<a href="https://github.com/farion1231/cc-switch/blob/main/README_ZH.md">cc switch</a>；通过它我们可以实现openclaw、claude code、codex等cil工具背后的模型接口的快速的切换。</h2>]]></content>
-      <categories>
-        <category>教程</category>
-      </categories>
-      <tags>
-        <tag>claude_code</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>CatBoost道路风险预测学习笔记（对应的ipynb的markdown版本）</title>
     <url>/2025/11/03/Catboost_road_rick/</url>
     <content><![CDATA[<span id="more"></span>
@@ -984,8 +818,174 @@ First 5 rows of submission:
         <tag>机器学习</tag>
         <tag>kaggle比赛</tag>
         <tag>函数功能记录</tag>
-        <tag>catboost</tag>
         <tag>markdown_from_ipynb</tag>
+        <tag>catboost</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>claude_code 配置安装完整教程</title>
+    <url>/2026/04/30/Claude_code_install/</url>
+    <content><![CDATA[<h1 id="如何安装claude-code-vscode的新编程模式-元工具的方式不止编程"><a href="#如何安装claude-code-vscode的新编程模式-元工具的方式不止编程" class="headerlink" title="如何安装claude code+vscode的新编程模式? 元工具的方式不止编程"></a>如何安装claude code+vscode的新编程模式? 元工具的方式不止编程</h1><h1 id="关于安装不推荐采用claude-code官方的安装指令（地区和网络问题），也就是下面这行代码"><a href="#关于安装不推荐采用claude-code官方的安装指令（地区和网络问题），也就是下面这行代码" class="headerlink" title="关于安装不推荐采用claude code官方的安装指令（地区和网络问题），也就是下面这行代码"></a>关于安装不推荐采用<a href="https://code.claude.com/docs/zh-CN/overview">claude code官方的安装指令</a>（地区和网络问题），也就是下面这行代码</h1><figure class="highlight nginx"><table><tr><td class="code"><pre><span class="line"><span class="attribute">irm</span> https://claude.ai/install.ps1 | iex</span><br></pre></td></tr></table></figure>
+
+<h1 id="推荐采用以下两种方式："><a href="#推荐采用以下两种方式：" class="headerlink" title="推荐采用以下两种方式："></a>推荐采用以下两种方式：</h1><h1 id="1-采用npm的方式"><a href="#1-采用npm的方式" class="headerlink" title="1.采用npm的方式"></a>1.采用<a href="https://blog.csdn.net/kai_2003/article/details/158469982">npm的方式</a></h1><h2 id="先安装node，node-js官网"><a href="#先安装node，node-js官网" class="headerlink" title="先安装node，node.js官网"></a>先安装node，<a href="https://nodejs.org/zh-cn">node.js官网</a></h2><h3 id="对于liunx：一般先安装nvm，安装node，也就有了npm"><a href="#对于liunx：一般先安装nvm，安装node，也就有了npm" class="headerlink" title="对于liunx：一般先安装nvm，安装node，也就有了npm"></a>对于liunx：一般先安装nvm，安装node，也就有了npm</h3><h3 id="对于windows：直接去官网下载exe，然后，在终端测试版本号，即可验证安装是否成功"><a href="#对于windows：直接去官网下载exe，然后，在终端测试版本号，即可验证安装是否成功" class="headerlink" title="对于windows：直接去官网下载exe，然后，在终端测试版本号，即可验证安装是否成功"></a>对于windows：直接去官网下载exe，然后，在终端测试版本号，即可验证安装是否成功</h3><h1 id="2-采用字节，的教程（让卖方告诉你使用的方法，说明书一样），这种方法往往实用且高效，字节也有个agent的脚本ark-helper"><a href="#2-采用字节，的教程（让卖方告诉你使用的方法，说明书一样），这种方法往往实用且高效，字节也有个agent的脚本ark-helper" class="headerlink" title="2.采用字节，的教程（让卖方告诉你使用的方法，说明书一样），这种方法往往实用且高效，字节也有个agent的脚本ark-helper."></a>2.采用<a href="https://www.volcengine.com/docs/82379/1928262?lang=zh#7fd1eee7">字节，的教程（让卖方告诉你使用的方法，说明书一样）</a>，这种方法往往实用且高效，字节也有个agent的脚本ark-helper.</h1><h1 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h1><h2 id="关于如何快速管理自己的agent端的模型，如何快速切换，这里笔者强力推荐一个项目，叫做cc-switch；通过它我们可以实现openclaw、claude-code、codex等cil工具背后的模型接口的快速的切换。"><a href="#关于如何快速管理自己的agent端的模型，如何快速切换，这里笔者强力推荐一个项目，叫做cc-switch；通过它我们可以实现openclaw、claude-code、codex等cil工具背后的模型接口的快速的切换。" class="headerlink" title="关于如何快速管理自己的agent端的模型，如何快速切换，这里笔者强力推荐一个项目，叫做cc switch；通过它我们可以实现openclaw、claude code、codex等cil工具背后的模型接口的快速的切换。"></a>关于如何快速管理自己的agent端的模型，如何快速切换，这里笔者强力推荐一个项目，叫做<a href="https://github.com/farion1231/cc-switch/blob/main/README_ZH.md">cc switch</a>；通过它我们可以实现openclaw、claude code、codex等cil工具背后的模型接口的快速的切换。</h2>]]></content>
+      <categories>
+        <category>教程</category>
+      </categories>
+      <tags>
+        <tag>claude_code</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>CatBoost道路风险预测学习笔记</title>
+    <url>/2025/10/30/Catboost_road_rick_leanring/</url>
+    <content><![CDATA[<span id="more"></span>
+
+<h3 id="下面所学知识经验均来自对kaggle竞赛Predicting-Road-Accident-Riskz中的公开Notebook代码的模仿过程"><a href="#下面所学知识经验均来自对kaggle竞赛Predicting-Road-Accident-Riskz中的公开Notebook代码的模仿过程" class="headerlink" title="下面所学知识经验均来自对kaggle竞赛Predicting Road Accident Riskz中的公开Notebook代码的模仿过程"></a>下面所学知识经验均来自对kaggle竞赛Predicting Road Accident Riskz中的公开Notebook<a href="https://www.kaggle.com/code/josephnehrenz/s5e10-predicting-road-accident-risk-w-web-app/notebook">代码</a>的模仿过程</h3><hr>
+<h4 id="数据观察（主要用pandas库）"><a href="#数据观察（主要用pandas库）" class="headerlink" title="数据观察（主要用pandas库）"></a>数据观察（主要用pandas库）</h4><h5 id="读取数据"><a href="#读取数据" class="headerlink" title="读取数据"></a>读取数据</h5><ul>
+<li>读取文件——<strong>pd.read_csv</strong>(“path”)<code>pd.read_csv</code></li>
+</ul>
+<h5 id="数据分析"><a href="#数据分析" class="headerlink" title="数据分析"></a>数据分析</h5><blockquote>
+<p>注意kaggle比赛中，数据已经备好了，从赛者可专注于模型的建立和学习<br>一下较为常用的用粗体表示</p>
+</blockquote>
+<ul>
+<li>df.columns 查看列 <code>df.columns</code></li>
+<li>数据DataFrame的信息——<strong>df.info()</strong>， <code>df.info()</code>输出列名、以及对于列名的数据大小、空值情况、以及对应的数据类型</li>
+<li>df.shape查看数据的形状 <code>df.shape</code></li>
+<li>数据DataFrame的前五行——<strong>df.head()</strong>， <code>df.head()</code>在nb中会自动展示，或者要对比可以print，or display</li>
+</ul>
+<hr>
+<h4 id="EDA"><a href="#EDA" class="headerlink" title="EDA"></a>EDA</h4><blockquote>
+<p>探索性数据分析（Exploratory Data Analysis，简称EDA）是数据科学中的关键步骤，旨在熟悉数据集、揭示变量间的关系并指导后续处理。通过读取数据、数据汇总、总览、缺失值和异常值分析，以及特征分析，我们可以深入了解数据的结构和质量。</p>
+</blockquote>
+<h5 id="目标分布"><a href="#目标分布" class="headerlink" title="目标分布"></a>目标分布</h5><ul>
+<li><code>plt.figure()</code>的作用创建画布</li>
+<li><code>sns.histplot()</code>的参数和功能是什么？bin箱子的数目，kde是否加一条拟合分布的曲线</li>
+</ul>
+<blockquote>
+<p>参考两个教程<a href="https://blog.csdn.net/maizeman126/article/details/135347919">民间教程</a>、<a href="https://seaborn.pydata.org/generated/seaborn.histplot.html">官方教程</a></p>
+</blockquote>
+<h5 id="关联热力图"><a href="#关联热力图" class="headerlink" title="关联热力图"></a>关联热力图</h5><ul>
+<li><p>筛选出数值列<code>df.select_dtypes（include=[&quot;int64&quot;,&quot;float64&quot;]）</code></p>
+</li>
+<li><p><code>df.corr()</code>用来计算各列之间的相关系数的（可以自定义方法用method参数来指定）。这用来做作为<code> sns.heatmap()</code>的输入参数极为方便</p>
+</li>
+</ul>
+<blockquote>
+<p>参考<a href="https://blog.csdn.net/qq_41721951/article/details/109645921">民间教程</a></p>
+</blockquote>
+<ul>
+<li><code>sns.heatmap()</code></li>
+</ul>
+<blockquote>
+<p>参考两个教程<a href="https://blog.csdn.net/weixin_45492560/article/details/106227864">民间教程</a>、<a href="https://seaborn.org.cn/generated/seaborn.heatmap.html">官方教程</a></p>
+</blockquote>
+<hr>
+<h4 id="CatBoost-Model"><a href="#CatBoost-Model" class="headerlink" title="CatBoost Model"></a>CatBoost Model</h4><h5 id="介绍-擅长处理类别特征"><a href="#介绍-擅长处理类别特征" class="headerlink" title="介绍(擅长处理类别特征)"></a>介绍(擅长处理类别特征)</h5><p>CatBoost的全称是<strong>Categorical Boosting</strong>，它是一种由俄罗斯搜索巨头Yandex开发的梯度提升算法库，特别擅长处理类别型特征。</p>
+<p>CatBoost的名称来源于其核心功能，即处理类别型特征（Categorical Features）和梯度提升（Gradient Boosting）。与其他梯度提升算法如XGBoost和LightGBM相比，CatBoost在处理类别型特征方面具有显著优势。</p>
+<p>CatBoost的特点</p>
+<ol>
+<li><strong>类别型特征处理</strong>：CatBoost使用独特的编码方法来处理类别型特征，降低过拟合风险。（<strong>无需对这些特征（分类特征）进行One-Hot编码</strong>）</li>
+<li><strong>克服梯度偏差</strong>：CatBoost采用排序提升的概念，防止目标泄漏和过度拟合。</li>
+<li><strong>高效实现</strong>：支持GPU加速和多GPU训练，提升计算效率。</li>
+<li><strong>鲁棒性</strong>：减少对大量超参数调整的需求，降低过度拟合的机会。<br>CatBoost的应用</li>
+</ol>
+<p>CatBoost在多个领域中表现出色，包括金融风控、推荐系统和生物医学等。例如，在信用卡欺诈检测、商品推荐和基因表达数据分析中，CatBoost能够有效处理类别型特征和缺失值，构建精准的预测模型。</p>
+<p>总之，CatBoost作为一种专为类别型特征优化的梯度提升算法，凭借其独特的处理策略和高效的实现，迅速成为业界广受欢迎的GBDT框架。</p>
+<blockquote>
+<p>详细介绍解释参考<a href="https://zhuanlan.zhihu.com/p/540956200">数据STUDIO, 2022</a>、<a href="https://blog.csdn.net/ai_aijiang/article/details/149075808">CatBoost深度解析</a>、<a href="https://catboost.ai/docs/en/concepts/python-quickstart">官方 CatBoost</a></p>
+</blockquote>
+<h5 id="分类特征（前面对数值类型的特征进行了关联性的分析）"><a href="#分类特征（前面对数值类型的特征进行了关联性的分析）" class="headerlink" title="分类特征（前面对数值类型的特征进行了关联性的分析）"></a>分类特征（前面对数值类型的特征进行了关联性的分析）</h5><p><strong>dtype一般是bool或者object</strong></p>
+<ul>
+<li><p>作者做了一个操作，将bool转化为str，也变成了object对象。关于选择bool值时，<code>df.select_dtypes(include=)</code>进行优化</p>
+</li>
+<li><p>关于具体转化格式的函数方法，作者使用的是<code>df.astype()</code></p>
+</li>
+</ul>
+<blockquote>
+<p>可参考<a href="https://blog.csdn.net/u013172930/article/details/143723145">转化类型</a></p>
+</blockquote>
+<p> 关于<code>from sklearn.model_selection import train_test_split, cross_val_score</code></p>
+<ul>
+<li><code>train_test_split</code>这个函数十分常用在从训练集分割出验证集时。</li>
+</ul>
+<blockquote>
+<p>参考<a href="https://blog.csdn.net/2301_76849908/article/details/149281512">民间教程</a>、<a href="https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.train_test_split.html">官方教程</a></p>
+</blockquote>
+<h5 id="模型构建"><a href="#模型构建" class="headerlink" title="模型构建"></a>模型构建</h5><p>使用的是catboost库中的，CatBoostRegressor模型，记得安装</p>
+<figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line">conda activate your_env</span><br><span class="line"></span><br><span class="line">conda install catboost</span><br></pre></td></tr></table></figure>
+
+<h5 id="模型参数选择"><a href="#模型参数选择" class="headerlink" title="模型参数选择"></a>模型参数选择</h5><ol>
+<li>iterations 迭代次数（定义了训练过程中提升树的数量）</li>
+<li>learning_rate 学习率（控制每一步梯度提升时模型权重更新的幅度，而迭代）</li>
+</ol>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">params = &#123;     </span><br><span class="line">	<span class="string">&#x27;iterations&#x27;</span>: <span class="number">1000</span>, <span class="comment"># 迭代次数     </span></span><br><span class="line">	<span class="string">&#x27;learning_rate&#x27;</span>: <span class="number">0.1</span>, <span class="comment"># 学习率     </span></span><br><span class="line">	<span class="string">&#x27;depth&#x27;</span>: <span class="number">6</span>, <span class="comment"># 树的深度     </span></span><br><span class="line">	<span class="string">&#x27;cat_features&#x27;</span>: cat_features, <span class="comment"># 分类特征</span></span><br><span class="line">	<span class="string">&#x27;random_seed&#x27;</span>: <span class="number">42</span>, <span class="comment"># 随机种子     </span></span><br><span class="line">	<span class="string">&#x27;loss_function&#x27;</span>: <span class="string">&#x27;RMSE&#x27;</span>, <span class="comment"># 损失函数     </span></span><br><span class="line">	<span class="string">&#x27;verbose&#x27;</span>: <span class="number">100</span>, <span class="comment"># 每100次迭代打印一次信息</span></span><br><span class="line">	<span class="string">&#x27;early_stopping_rounds&#x27;</span>: <span class="number">50</span>, <span class="comment"># 早停轮数 </span></span><br><span class="line">	<span class="string">&quot;task_type&quot;</span>: <span class="string">&quot;GPU&quot;</span>, <span class="comment"># 启用 GPU</span></span><br><span class="line">	<span class="string">&quot;devices&quot;</span>: <span class="string">&quot;0&quot;</span> <span class="comment"># 指定 GPU 设备</span></span><br><span class="line">&#125;  </span><br><span class="line"></span><br><span class="line">Catboost_model = CatBoostRegressor(**params) Catboost_model.fit(X, y, eval_set=(X_val, y_val)) <span class="comment"># eval_set 用于监控模型在验证集上的性能 没有则不会显示性能表现</span></span><br></pre></td></tr></table></figure>
+
+<ol start="3">
+<li>损失函数（二元分类Logloss；回归RMSE（均方根误差） or MAE（平均绝对误差；多分类采用Multiclass损失；不平衡数据集（QueryCrossentropy）</li>
+<li>GPU加速，加快训练速度</li>
+</ol>
+<ul>
+<li><code>model.fit()</code> 模型训练，输入X，以及对应的y标签即可。</li>
+</ul>
+<h5 id="模型评估"><a href="#模型评估" class="headerlink" title="模型评估"></a>模型评估</h5><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Make predictions on validation set</span></span><br><span class="line">y_pred = Catboost_model.predict(X_val)   <span class="comment"># Calculate RMSE</span></span><br><span class="line">val_rmse = mean_squared_error(y_val, y_pred) <span class="built_in">print</span>(<span class="string">f&quot;Validation RMSE: <span class="subst">&#123;val_rmse:<span class="number">.4</span>f&#125;</span>&quot;</span>)  </span><br><span class="line"></span><br><span class="line"><span class="comment"># Cross-validation</span></span><br><span class="line">cv_scores = cross_val_score(Catboost_model, X, y, cv=<span class="number">5</span>, scoring=<span class="string">&#x27;neg_mean_squared_error&#x27;</span>) </span><br><span class="line">cv_rmse = np.sqrt(-cv_scores)  </span><br><span class="line"><span class="built_in">print</span>(<span class="string">f&quot;Cross-validation RMSE: <span class="subst">&#123;cv_rmse.mean():<span class="number">.4</span>f&#125;</span> (+/- <span class="subst">&#123;cv_rmse.std() * <span class="number">2</span>:<span class="number">.4</span>f&#125;</span>)&quot;</span>)</span><br></pre></td></tr></table></figure>
+
+<p>这段代码实现了交叉验证（Cross-validation）过程，用于评估CatBoost模型的性能。具体解释如下：</p>
+<ol>
+<li><strong>第一行代码</strong>：<code>cv_scores = cross_val_score(Catboost_model, X, y, cv=5, scoring=&#39;neg_mean_squared_error&#39;)</code></li>
+</ol>
+<ul>
+<li>使用<code>cross_val_score</code>函数执行5折交叉验证</li>
+<li>参数<code>Catboost_model</code>是已经定义好的CatBoost模型</li>
+<li><code>X</code>是特征数据，<code>y</code>是目标变量</li>
+<li><code>cv=5</code>表示将数据集分成5个部分进行交叉验证</li>
+<li><code>scoring=&#39;neg_mean_squared_error&#39;</code>表示使用负均方误差作为评分指标（负值是因为scikit-learn中大多数评分函数追求最大化）</li>
+</ul>
+<ol start="2">
+<li><strong>第二行代码</strong>：<code>cv_rmse = np.sqrt(-cv_scores)</code></li>
+</ol>
+<ul>
+<li>将负均方误差转换为均方根误差（RMSE）</li>
+<li>首先取负值（因为原始得分是负数），然后开平方</li>
+<li>得到的<code>cv_rmse</code>是一个包含5个元素的数组，每个元素对应一折验证的RMSE（均方根误差）</li>
+</ul>
+<ol start="3">
+<li><strong>第三行代码</strong>：<code>print(f&quot;Cross-validation RMSE: {cv_rmse.mean():.4f} (+/- {cv_rmse.std() * 2:.4f})&quot;)</code></li>
+</ol>
+<ul>
+<li>输出交叉验证的平均RMSE和标准差</li>
+<li><code>.mean()</code>计算5折RMSE的平均值</li>
+<li><code>.std() * 2</code>计算2倍标准差，表示模型性能的置信区间范围</li>
+<li><code>:.4f</code>表示保留4位小数  这段代码的主要目的是通过交叉验证来评估模型的泛化能力，避免过拟合问题，并提供模型性能的可靠估计。</li>
+<li><code>mean_squared_error()</code> 计算两列的均方根误差</li>
+<li><code>cross_val_score()</code></li>
+</ul>
+<blockquote>
+<p>参考教程<a href="https://blog.csdn.net/weixin_42211626/article/details/100064842">民间教程</a>、<a href="https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.cross_val_score.html">官方文档</a>、<a href="https://scikit-learn.cn/stable/modules/cross_validation.html">中文官方</a></p>
+</blockquote>
+<h5 id="重要性分析"><a href="#重要性分析" class="headerlink" title="重要性分析"></a>重要性分析</h5><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Feature Importance</span></span><br><span class="line"></span><br><span class="line">feature_importance = Catboost_model.get_feature_importance()  <span class="comment"># index类型</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#print(feature_importance)</span></span><br><span class="line"></span><br><span class="line">feature_names = X.columns <span class="comment"># ndarray类型</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#print(feature_names)</span></span><br><span class="line"></span><br><span class="line">importance_df = pd.DataFrame(&#123;</span><br><span class="line"></span><br><span class="line">    <span class="string">&#x27;feature&#x27;</span>: feature_names,</span><br><span class="line"></span><br><span class="line">    <span class="string">&#x27;importance&#x27;</span>: feature_importance</span><br><span class="line"></span><br><span class="line">&#125;).sort_values(<span class="string">&#x27;importance&#x27;</span>, ascending=<span class="literal">False</span>) <span class="comment"># 按重要性降序排序</span></span><br><span class="line"></span><br><span class="line">  </span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;\nTop 10 Most Important Features:&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(importance_df.head(<span class="number">10</span>))</span><br></pre></td></tr></table></figure>
+
+<p>这里直接用<code>catboost_model.get_feature_importance()</code>方法。</p>
+<ul>
+<li><code>sort_values()</code> 函数，他是一个排序函数</li>
+</ul>
+<blockquote>
+<p>参考<a href="https://yaoweibin.cn/pandas-series%e6%8e%92%e5%ba%8f%e7%a5%9e%e5%99%a8sort_values%e5%85%a8%e9%9d%a2%e8%a7%a3%e6%9e%90%e4%b8%8e%e5%ba%94%e7%94%a8/">民间教程</a></p>
+</blockquote>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Detailed feature importance plot</span></span><br><span class="line"></span><br><span class="line">plt.figure()</span><br><span class="line"></span><br><span class="line">sns.barplot(data=importance_df.head(<span class="number">10</span>), x=<span class="string">&#x27;importance&#x27;</span>, y=<span class="string">&#x27;feature&#x27;</span>, palette=<span class="string">&#x27;viridis&#x27;</span>)</span><br><span class="line"></span><br><span class="line">plt.title(<span class="string">&#x27;Top 10 Most Important Features&#x27;</span>)</span><br><span class="line"></span><br><span class="line">plt.xlabel(<span class="string">&#x27;Importance Score&#x27;</span>)</span><br><span class="line"></span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
+
+<p><code>sns.barplot()</code>函数功能，支持df的输入，指定对于xy的列名即可</p>
+<h4 id="可视化结果"><a href="#可视化结果" class="headerlink" title="可视化结果"></a>可视化结果</h4><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Plot actual vs predicted values</span></span><br><span class="line"></span><br><span class="line">plt.scatter(y_val, y_pred, alpha=<span class="number">0.1</span>, marker=<span class="string">&#x27;.&#x27;</span>, s=<span class="number">5</span>)</span><br><span class="line"><span class="comment"># 画出对应的散点图，x为实际，y为预测。所有的散点越靠近完美对角线，就意味着预测效果越好</span></span><br><span class="line">plt.plot([y_val.<span class="built_in">min</span>(), y_val.<span class="built_in">max</span>()], [y_val.<span class="built_in">min</span>(), y_val.<span class="built_in">max</span>()], <span class="string">&#x27;r--&#x27;</span>, lw=<span class="number">2</span>) </span><br><span class="line"><span class="comment"># 第一个参数代表x范围，第二个参数是y的范围，此时默认x=y 画出完美预测线，对角线。</span></span><br><span class="line"></span><br><span class="line">plt.xlabel(<span class="string">&#x27;Actual Values&#x27;</span>)</span><br><span class="line"></span><br><span class="line">plt.ylabel(<span class="string">&#x27;Predicted Values&#x27;</span>)</span><br><span class="line"></span><br><span class="line">plt.title(<span class="string">&#x27;Actual vs Predicted Values&#x27;</span>)</span><br><span class="line"></span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
+
+<h4 id="提交结果"><a href="#提交结果" class="headerlink" title="提交结果"></a>提交结果</h4><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Prepare test data (excluding the id column for prediction)</span></span><br><span class="line"></span><br><span class="line">test_features = test_ds.drop(<span class="string">&#x27;id&#x27;</span>, axis=<span class="number">1</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># Make predictions on test set</span></span><br><span class="line">test_predictions = Catboost_model.predict(test_features)</span><br><span class="line"></span><br><span class="line"><span class="comment"># Create submission file</span></span><br><span class="line"></span><br><span class="line">submission = pd.DataFrame(&#123;</span><br><span class="line">    <span class="string">&#x27;id&#x27;</span>: test_ds[<span class="string">&#x27;id&#x27;</span>],</span><br><span class="line">    <span class="string">&#x27;accident_risk&#x27;</span>: test_predictions</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line">  </span><br><span class="line"><span class="comment"># Save submission file</span></span><br><span class="line">submission.to_csv(<span class="string">&#x27;submission.csv&#x27;</span>, index=<span class="literal">False</span>)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">f&quot;Submission shape: <span class="subst">&#123;submission.shape&#125;</span>&quot;</span>)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;\nFirst 5 rows of submission:&quot;</span>)</span><br><span class="line">display(submission.head())</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>机器学习</tag>
+        <tag>kaggle比赛</tag>
+        <tag>函数功能记录</tag>
+        <tag>catboost</tag>
       </tags>
   </entry>
   <entry>
@@ -1205,6 +1205,28 @@ First 5 rows of submission:
       </tags>
   </entry>
   <entry>
+    <title>机器学习进展</title>
+    <url>/2025/10/22/machine_learning/</url>
+    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="窃取机密失败QAQ..." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="71c8bf7212203e7846d3a7bf656fb6f12cb1ce5060a2f8af6f7f5d399af41eb0">dccefed83fa27a7ad5aaf2d0962952897e2eac05819bcc21e675ce1cdc4aba5bff28ab5366c0082d3d01afa8266b2dacef3e8eb80ba325b8acc136cbeb108b2c454e602c9a9f740b2827934a89803342bc04ccd631b0782fa124ea7bb373b86c2dea7a22cd5a6b0d2348797feec3366ae8b8f209fcd7f2a6a550fab04a206d18b7219c82ed4db1f9125a9755e75b5634656d3d4b9bf2698c88a9f2603538da83848bfb0333fd3d850acefac9fb39e6414ba447d71e7aeb9d7b8a758800f0a3504a395c2ff2b470b875cdd375ab8a683d764ad81eec8f5328ef44a818f7ba3bea4ed1af70bc6550780f4b8a6c1faafe1ceabc13c9cd1081f54dc5454ebe92c7987391a2d7646907612723f487a3527d9401bdd52bfc3bc7d026da77fb61811f7ef12f65b60214fafcc30302359bf25f8f59ecd0e291ddbc9e67aba6ea082e5e48934b4f8f9ade062ba83a80e4428b86a6d539c23fe7ae9fdcb75853f1360ec871735fbd5109301d92ac8888dafb61d6b138a4792f3a049b517186454030d317a9729f9a9ad62ac8931a38735c967c9eb423959284f9659ad117f5135e5304818fb297c0bb25a408eec8f3e9425597e96f92899252f8d6224bf1382efe6bbffd1b9ecc2fd712e30bb048654372a1d16652ba4203ec1715c183ce6a6f3f6a5046d43ffc995a092b51206ea4b6fab71fad7a98ff15ba119c73dc8b17ff65063b2f9228d56ec552f56405b7b69f8d84586766340ad670cc727ca40ac87501dea9d7f0b1f13f4e0003dd9559449a5b26bf9c108dba0ba09ba785025f4b3d4430b99f0c218eb56cb9e600ae92bbb878858a773c52db3531b06c94e971dd923880a47104279a09359d7bf0f25974ce6bb63b663a05d86300e0bd537b0759fbdd56445262be65a081a9d340528890256f255f3c3927274904a3caf0f16e9c68f8b41f70f4</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-up">
+      <input class="hbe hbe-input-field hbe-input-field-up" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-up" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-up">请输入密码查看</span>
+      </label>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+      <categories>
+        <category>学术</category>
+      </categories>
+      <tags>
+        <tag>机器学习</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>关于机器（深度）学习的炼丹docker部署计划</title>
     <url>/2025/11/10/liandanjihua/</url>
     <content><![CDATA[<h1 id="计划始于docker，败于ssh远程（为什么远程使用ssh连接过服务器而连接docker中的容器就失败）"><a href="#计划始于docker，败于ssh远程（为什么远程使用ssh连接过服务器而连接docker中的容器就失败）" class="headerlink" title="计划始于docker，败于ssh远程（为什么远程使用ssh连接过服务器而连接docker中的容器就失败）"></a>计划始于docker，败于ssh远程（为什么远程使用ssh连接过服务器而连接docker中的容器就失败）</h1><h3 id="从conda虚拟环境到docker容器；环境灵活配置提升，可以快速地在别的服务器、不同设备、不通操作系统中，环境管理，然后炼丹跑代码"><a href="#从conda虚拟环境到docker容器；环境灵活配置提升，可以快速地在别的服务器、不同设备、不通操作系统中，环境管理，然后炼丹跑代码" class="headerlink" title="从conda虚拟环境到docker容器；环境灵活配置提升，可以快速地在别的服务器、不同设备、不通操作系统中，环境管理，然后炼丹跑代码"></a>从conda虚拟环境到docker容器；环境灵活配置提升，可以快速地在别的服务器、不同设备、不通操作系统中，环境管理，然后炼丹跑代码</h3><ul>
@@ -1299,28 +1321,6 @@ First 5 rows of submission:
         <tag>questions</tag>
         <tag>deep_learning</tag>
         <tag>machine_learning</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>机器学习进展</title>
-    <url>/2025/10/22/machine_learning/</url>
-    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="窃取机密失败QAQ..." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
-  <script id="hbeData" type="hbeData" data-hmacdigest="71c8bf7212203e7846d3a7bf656fb6f12cb1ce5060a2f8af6f7f5d399af41eb0">dccefed83fa27a7ad5aaf2d0962952897e2eac05819bcc21e675ce1cdc4aba5bff28ab5366c0082d3d01afa8266b2dacef3e8eb80ba325b8acc136cbeb108b2c454e602c9a9f740b2827934a89803342bc04ccd631b0782fa124ea7bb373b86c2dea7a22cd5a6b0d2348797feec3366ae8b8f209fcd7f2a6a550fab04a206d18b7219c82ed4db1f9125a9755e75b5634656d3d4b9bf2698c88a9f2603538da83848bfb0333fd3d850acefac9fb39e6414ba447d71e7aeb9d7b8a758800f0a3504a395c2ff2b470b875cdd375ab8a683d764ad81eec8f5328ef44a818f7ba3bea4ed1af70bc6550780f4b8a6c1faafe1ceabc13c9cd1081f54dc5454ebe92c7987391a2d7646907612723f487a3527d9401bdd52bfc3bc7d026da77fb61811f7ef12f65b60214fafcc30302359bf25f8f59ecd0e291ddbc9e67aba6ea082e5e48934b4f8f9ade062ba83a80e4428b86a6d539c23fe7ae9fdcb75853f1360ec871735fbd5109301d92ac8888dafb61d6b138a4792f3a049b517186454030d317a9729f9a9ad62ac8931a38735c967c9eb423959284f9659ad117f5135e5304818fb297c0bb25a408eec8f3e9425597e96f92899252f8d6224bf1382efe6bbffd1b9ecc2fd712e30bb048654372a1d16652ba4203ec1715c183ce6a6f3f6a5046d43ffc995a092b51206ea4b6fab71fad7a98ff15ba119c73dc8b17ff65063b2f9228d56ec552f56405b7b69f8d84586766340ad670cc727ca40ac87501dea9d7f0b1f13f4e0003dd9559449a5b26bf9c108dba0ba09ba785025f4b3d4430b99f0c218eb56cb9e600ae92bbb878858a773c52db3531b06c94e971dd923880a47104279a09359d7bf0f25974ce6bb63b663a05d86300e0bd537b0759fbdd56445262be65a081a9d340528890256f255f3c3927274904a3caf0f16e9c68f8b41f70f4</script>
-  <div class="hbe hbe-content">
-    <div class="hbe hbe-input hbe-input-up">
-      <input class="hbe hbe-input-field hbe-input-field-up" type="password" id="hbePass">
-      <label class="hbe hbe-input-label hbe-input-label-up" for="hbePass">
-        <span class="hbe hbe-input-label-content hbe-input-label-content-up">请输入密码查看</span>
-      </label>
-    </div>
-  </div>
-</div>
-<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
-      <categories>
-        <category>学术</category>
-      </categories>
-      <tags>
-        <tag>机器学习</tag>
       </tags>
   </entry>
   <entry>
