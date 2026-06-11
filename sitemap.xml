@@ -191,20 +191,6 @@
 
   
   <url>
-    <loc>https://ideaforge.icu/tags/ai%E8%BE%85%E5%8A%A9/</loc>
-    <lastmod>2026-06-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://ideaforge.icu/tags/%E8%AF%BE%E9%A2%98%E7%BB%84%E7%BD%91%E7%AB%99/</loc>
-    <lastmod>2026-06-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://ideaforge.icu/tags/questions/</loc>
     <lastmod>2026-06-11</lastmod>
     <changefreq>weekly</changefreq>
@@ -233,6 +219,13 @@
   </url>
   
   <url>
+    <loc>https://ideaforge.icu/tags/%E8%AF%BE%E9%A2%98%E7%BB%84%E7%BD%91%E7%AB%99/</loc>
+    <lastmod>2026-06-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://ideaforge.icu/tags/Gaussian/</loc>
     <lastmod>2026-06-11</lastmod>
     <changefreq>weekly</changefreq>
@@ -241,6 +234,13 @@
   
   <url>
     <loc>https://ideaforge.icu/tags/chemoffice/</loc>
+    <lastmod>2026-06-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://ideaforge.icu/tags/ai%E8%BE%85%E5%8A%A9/</loc>
     <lastmod>2026-06-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -396,14 +396,14 @@
 
   
   <url>
-    <loc>https://ideaforge.icu/categories/%E5%B7%A5%E4%BD%9C%E5%91%A8%E6%8A%A5/</loc>
+    <loc>https://ideaforge.icu/categories/%E5%AD%A6%E4%B9%A0/</loc>
     <lastmod>2026-06-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://ideaforge.icu/categories/%E5%AD%A6%E4%B9%A0/</loc>
+    <loc>https://ideaforge.icu/categories/%E5%B7%A5%E4%BD%9C%E5%91%A8%E6%8A%A5/</loc>
     <lastmod>2026-06-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>

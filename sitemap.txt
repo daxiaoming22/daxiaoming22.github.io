@@ -19,14 +19,14 @@ https://ideaforge.icu/categories/index.html
 https://ideaforge.icu/tags/index.html
 https://ideaforge.icu/2025/10/22/machine_learning/
 https://ideaforge.icu/
-https://ideaforge.icu/tags/ai%E8%BE%85%E5%8A%A9/
-https://ideaforge.icu/tags/%E8%AF%BE%E9%A2%98%E7%BB%84%E7%BD%91%E7%AB%99/
 https://ideaforge.icu/tags/questions/
 https://ideaforge.icu/tags/learning/
 https://ideaforge.icu/tags/deep-learning/
 https://ideaforge.icu/tags/Obsidian/
+https://ideaforge.icu/tags/%E8%AF%BE%E9%A2%98%E7%BB%84%E7%BD%91%E7%AB%99/
 https://ideaforge.icu/tags/Gaussian/
 https://ideaforge.icu/tags/chemoffice/
+https://ideaforge.icu/tags/ai%E8%BE%85%E5%8A%A9/
 https://ideaforge.icu/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/
 https://ideaforge.icu/tags/kaggle%E6%AF%94%E8%B5%9B/
 https://ideaforge.icu/tags/%E5%87%BD%E6%95%B0%E5%8A%9F%E8%83%BD%E8%AE%B0%E5%BD%95/
@@ -48,8 +48,8 @@ https://ideaforge.icu/tags/%E6%B5%8F%E8%A7%88%E5%99%A8%E8%87%AA%E5%8A%A8%E5%8C%9
 https://ideaforge.icu/tags/%E7%88%AC%E8%99%AB/
 https://ideaforge.icu/tags/WSL2/
 https://ideaforge.icu/tags/%E5%9F%9F%E5%90%8D/
-https://ideaforge.icu/categories/%E5%B7%A5%E4%BD%9C%E5%91%A8%E6%8A%A5/
 https://ideaforge.icu/categories/%E5%AD%A6%E4%B9%A0/
+https://ideaforge.icu/categories/%E5%B7%A5%E4%BD%9C%E5%91%A8%E6%8A%A5/
 https://ideaforge.icu/categories/%E6%95%99%E7%A8%8B/
 https://ideaforge.icu/categories/%E5%AD%A6%E6%9C%AF/
 https://ideaforge.icu/categories/%E8%A7%82%E7%82%B9/

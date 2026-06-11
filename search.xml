@@ -263,8 +263,8 @@
         <category>工作周报</category>
       </categories>
       <tags>
-        <tag>ai辅助</tag>
         <tag>课题组网站</tag>
+        <tag>ai辅助</tag>
       </tags>
   </entry>
   <entry>
@@ -416,11 +416,11 @@
         <category>学习</category>
       </categories>
       <tags>
-        <tag>课题组网站</tag>
         <tag>questions</tag>
         <tag>learning</tag>
         <tag>deep_learning</tag>
         <tag>Obsidian</tag>
+        <tag>课题组网站</tag>
         <tag>Gaussian</tag>
         <tag>chemoffice</tag>
       </tags>
