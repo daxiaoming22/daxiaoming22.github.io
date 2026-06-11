@@ -282,13 +282,6 @@
   </url>
   
   <url>
-    <loc>https://ideaforge.icu/tags/claude-code/</loc>
-    <lastmod>2026-06-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://ideaforge.icu/tags/%E6%96%87%E7%8C%AE%E5%A4%8D%E7%8E%B0/</loc>
     <lastmod>2026-06-11</lastmod>
     <changefreq>weekly</changefreq>
@@ -310,7 +303,7 @@
   </url>
   
   <url>
-    <loc>https://ideaforge.icu/tags/machine-learning/</loc>
+    <loc>https://ideaforge.icu/tags/claude-code/</loc>
     <lastmod>2026-06-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -318,6 +311,13 @@
   
   <url>
     <loc>https://ideaforge.icu/tags/blog-learning/</loc>
+    <lastmod>2026-06-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://ideaforge.icu/tags/machine-learning/</loc>
     <lastmod>2026-06-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -410,14 +410,14 @@
   </url>
   
   <url>
-    <loc>https://ideaforge.icu/categories/%E6%95%99%E7%A8%8B/</loc>
+    <loc>https://ideaforge.icu/categories/%E5%AD%A6%E6%9C%AF/</loc>
     <lastmod>2026-06-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://ideaforge.icu/categories/%E5%AD%A6%E6%9C%AF/</loc>
+    <loc>https://ideaforge.icu/categories/%E6%95%99%E7%A8%8B/</loc>
     <lastmod>2026-06-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
