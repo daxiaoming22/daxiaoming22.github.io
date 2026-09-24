@@ -1,3 +1,4 @@
+https://ideaforge.icu/2026/09/24/codex-desktop-cc-switch/
 https://ideaforge.icu/2026/06/10/blog_learning/
 https://ideaforge.icu/2026/04/30/Claude_code_install/
 https://ideaforge.icu/2026/04/15/openclaw-browser-setup/
@@ -36,6 +37,9 @@ https://ideaforge.icu/tags/claude-code/
 https://ideaforge.icu/tags/%E6%96%87%E7%8C%AE%E5%A4%8D%E7%8E%B0/
 https://ideaforge.icu/tags/%E9%AB%98%E6%80%A7%E8%83%BD%E6%9D%90%E6%96%99%E7%9A%84%E8%AE%BE%E8%AE%A1/
 https://ideaforge.icu/tags/%E6%96%87%E7%8C%AE%E9%98%85%E8%AF%BB%E7%AC%94%E8%AE%B0/
+https://ideaforge.icu/tags/Codex/
+https://ideaforge.icu/tags/cc-switch/
+https://ideaforge.icu/tags/%E5%9B%BD%E4%BA%A7%E5%A4%A7%E6%A8%A1%E5%9E%8B/
 https://ideaforge.icu/tags/blog-learning/
 https://ideaforge.icu/tags/machine-learning/
 https://ideaforge.icu/tags/%E5%AD%A6%E6%9C%AF%E8%AE%B2%E5%BA%A7/

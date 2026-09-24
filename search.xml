@@ -1,6 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>不翻墙也能用 Codex 桌面端：cc-switch + 国产 API 记录</title>
+    <url>/2026/09/24/codex-desktop-cc-switch/</url>
+    <content><![CDATA[<h2 id="1-关于-Codex-如何绕开初始的强制登录"><a href="#1-关于-Codex-如何绕开初始的强制登录" class="headerlink" title="1. 关于 Codex 如何绕开初始的强制登录"></a>1. 关于 Codex 如何绕开初始的强制登录</h2><p>网上教程一大堆，大部分都要求你科学上网，但如果你没有怎么办？其实思路很简单：Codex（壳）+ 自己的 API（国产性价比）。</p>
+<p>用 <a href="https://www.ccswitch.io/zh/changelog/3.20.3">cc-switch</a> 就行。安装这个 app 不难（微软商店就可以），然后用 cc-switch 切换成自己的 API，它可以把官方一开始强制的那一套全去掉，把 API 核心换成国产的。</p>
+<h2 id="2-关于我目前的-agent-工具排行（仅供参考）"><a href="#2-关于我目前的-agent-工具排行（仅供参考）" class="headerlink" title="2. 关于我目前的 agent 工具排行（仅供参考）"></a>2. 关于我目前的 agent 工具排行（仅供参考）</h2><p>Claude CLI（无疑的神，插件生态异常成熟，加上 cc-switch 基本上所有的 API 都适用）&gt; Hermes CLI&#x2F;desktop（记忆的神，但感觉记忆太短了，希望这个 agent 进化时能把记忆库扩大一些）&gt; Codex 桌面端（官方维护的插件。说白了，下桌面端的优势就在于它有官方自定义库，可以更好地自动化操作）&gt; 豆包 &#x2F; WorkBuddy（自定义程度较低，但办公应用等相对较成熟）&gt; DeepSeek harness（版本不断迭代中，生态插件依旧不成熟，也没有官方维护的库，不推荐）</p>
+<h2 id="3-关于-API"><a href="#3-关于-API" class="headerlink" title="3. 关于 API"></a>3. 关于 API</h2><p>我一直用的两个：<a href="https://platform.deepseek.com/usage">DeepSeek</a>（一直是按用量的，但自从 ds 涨价，梁圣变成梁娘，账户余额也如落花流水，近 30 天 ¥140）和火山的 <a href="https://www.volcengine.com/activity/agentplan">agent plan</a>（首三个月 9.9 还是相当划算的，但我的三个月已经过期了，可怜）。后面打算订阅制了，小米的还没试过效果。同门说 ds 高峰期用<a href="https://platform.xiaomimimo.com/console/balance">小米 MiMo</a>，谷底用 ds。</p>
+<blockquote>
+<p>注：后续会持续更新</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>教程</category>
+      </categories>
+      <tags>
+        <tag>Codex</tag>
+        <tag>cc-switch</tag>
+        <tag>国产大模型</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>blog学习进展/hexo-next教程</title>
     <url>/2026/06/10/blog_learning/</url>
     <content><![CDATA[<h3 id="关于hexo-next的美化"><a href="#关于hexo-next的美化" class="headerlink" title="关于hexo-next的美化"></a>关于hexo-next的美化</h3><h4 id="如何创建一个新的博客文章？（2025-10-27）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ"><a href="#如何创建一个新的博客文章？（2025-10-27）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵎᵎᵎᵎ" class="headerlink" title="如何创建一个新的博客文章？（2025-10-27）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ"></a>如何创建一个新的博客文章？（2025-10-27）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ</h4><p>hexo new “文章标题”<br>或者在对应的文件夹在直接添加对应.md文件，注意编辑文件头信息yaml格式</p>
