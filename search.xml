@@ -1,6 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>关于如何更好地高性价比地使用 agent 框架 + API</title>
+    <url>/2026/10/21/agent-framework-api-cost/</url>
+    <content><![CDATA[<blockquote>
+<p>本博客针对于使用各种框架壳子（claude&#x2F;codex&#x2F;dsh&#x2F;hermes） + <a href="https://github.com/farion1231/cc-switch/tree/main">cc switch</a>（真神把框架绑定制改调了，自由度拉满，操作简单，伟大无需多言，真心推荐） + 自己调用的各种包月或按量的api后台（mimo、ds、gpt、第三方等等）</p>
+</blockquote>
+<h1 id="1-什么决定了你使用ai的价格？"><a href="#1-什么决定了你使用ai的价格？" class="headerlink" title="1.什么决定了你使用ai的价格？"></a>1.什么决定了你使用ai的价格？</h1><h2 id="缓存："><a href="#缓存：" class="headerlink" title="缓存："></a>缓存：</h2><p>也就api的记忆、上下文，ai每次回答你的问题，把之前和你对话的东西再读一遍，如果你的会话是连续的那这部分会很低；想象一下你在claude和ai聊了很久后，突然把它后面的脑子给换了（假设ds官方额度用完了，换成xiaomi mimo），那这个新脑子要把你当前上下文的东西再读一遍。这个新脑子可没有之前这些东西的影响。此时就会大量地命中非缓存。这个价钱是相当贵的。所以要避免会话中途切api</p>
+<h2 id="思考强度："><a href="#思考强度：" class="headerlink" title="思考强度："></a>思考强度：</h2><p>这个无庸置疑，你可以试试用同一个框架，调整不同的思考强度，发一句你好，每个框架可能消耗的token不同</p>
+<h2 id="api："><a href="#api：" class="headerlink" title="api："></a>api：</h2><p>依旧无质疑，这个脑子是本地的，国外的，官网的，中转的都全然不同。国内按用量来说ds、mimo性价比较高了。</p>
+<h2 id="框架壳子："><a href="#框架壳子：" class="headerlink" title="框架壳子："></a>框架壳子：</h2><p>目前我用的最顺手的就算codex、claude、hermes、dsh刚出没什么优势，常常写个插件把自己写死，但未来看好，让其在发酵一会生态</p>
+<h1 id="2-思路：越贵的越在上层，越按量的越在上层，越便宜的越在下层，越本地的越在下层，越按月的越在下层。"><a href="#2-思路：越贵的越在上层，越按量的越在上层，越便宜的越在下层，越本地的越在下层，越按月的越在下层。" class="headerlink" title="2.思路：越贵的越在上层，越按量的越在上层，越便宜的越在下层，越本地的越在下层，越按月的越在下层。"></a>2.思路：越贵的越在上层，越按量的越在上层，越便宜的越在下层，越本地的越在下层，越按月的越在下层。</h1><p>现在的框架沟通互相调用起来其实都比较方便，这给予了我们一定的操作性。</p>
+<p>其实关于各自框架有一个概念叫做子agent，它的持久化还不确定。之前dsh刚出的时候，我用创作模式捣鼓自己的插件，最后表现的效果还是非常好的，但结果是非常烧钱。但其实有一个问题，这个过程是浪费时间和金钱的，因为github上有很多类似的项目或在经验。经典重复造轮子</p>
+<p>但有一个问题想要降低缓存，并不是让每个agent+api的组合变成全能；而是让每个agent+api拥有一个专长，训练它们有一个专长。这样可以下派任务，想重复简单的任务交给本地模型，交给mimo，ds等，而且让他们保持这些会话通道畅通，可以更加地提高缓存命中。</p>
+<p>比如：codex+gpt plus最顶层（仅负责发派任务和验收结果），hermes+ds作为中间力量，claude+mimo包月从事最低级的最基础的事情。</p>
+<h1 id="3-思考题：你现在有以下员工，如何更加高效地组织你自己的工作任务"><a href="#3-思考题：你现在有以下员工，如何更加高效地组织你自己的工作任务" class="headerlink" title="3.思考题：你现在有以下员工，如何更加高效地组织你自己的工作任务"></a>3.思考题：你现在有以下员工，如何更加高效地组织你自己的工作任务</h1><h2 id="A-codex-gpt（领月薪120￥）"><a href="#A-codex-gpt（领月薪120￥）" class="headerlink" title="A codex + gpt（领月薪120￥）"></a>A codex + gpt（领月薪120￥）</h2><h2 id="B-hermes-ds-按量计价，喜欢别人放假的时候干活"><a href="#B-hermes-ds-按量计价，喜欢别人放假的时候干活" class="headerlink" title="B hermes + ds (按量计价，喜欢别人放假的时候干活)"></a>B hermes + ds (按量计价，喜欢别人放假的时候干活)</h2><h2 id="C-claude-本地llm（脑袋有点本，有点吃工作环境，优点是仅收点电费）"><a href="#C-claude-本地llm（脑袋有点本，有点吃工作环境，优点是仅收点电费）" class="headerlink" title="C claude + 本地llm（脑袋有点本，有点吃工作环境，优点是仅收点电费）"></a>C claude + 本地llm（脑袋有点本，有点吃工作环境，优点是仅收点电费）</h2><h2 id="通过cc-switch您还可以定制更多不同的员工。如opencode-mimo等等。还可以招募一些cc-管不了的dsh、workbuddy等等"><a href="#通过cc-switch您还可以定制更多不同的员工。如opencode-mimo等等。还可以招募一些cc-管不了的dsh、workbuddy等等" class="headerlink" title="通过cc switch您还可以定制更多不同的员工。如opencode + mimo等等。还可以招募一些cc 管不了的dsh、workbuddy等等"></a>通过cc switch您还可以定制更多不同的员工。如opencode + mimo等等。还可以招募一些cc 管不了的dsh、workbuddy等等</h2>]]></content>
+      <categories>
+        <category>观点</category>
+      </categories>
+      <tags>
+        <tag>Agent</tag>
+        <tag>cc-switch</tag>
+        <tag>API</tag>
+        <tag>国产大模型</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>不翻墙也能用 Codex 桌面端：cc-switch + 国产 API 记录</title>
     <url>/2026/09/24/codex-desktop-cc-switch/</url>
     <content><![CDATA[<h2 id="1-关于-Codex-如何绕开初始的强制登录"><a href="#1-关于-Codex-如何绕开初始的强制登录" class="headerlink" title="1. 关于 Codex 如何绕开初始的强制登录"></a>1. 关于 Codex 如何绕开初始的强制登录</h2><p>网上教程一大堆，大部分都要求你科学上网，但如果你没有怎么办？其实思路很简单：Codex（壳）+ 自己的 API（国产性价比）。</p>
@@ -15,9 +40,9 @@
         <category>教程</category>
       </categories>
       <tags>
-        <tag>Codex</tag>
         <tag>cc-switch</tag>
         <tag>国产大模型</tag>
+        <tag>Codex</tag>
       </tags>
   </entry>
   <entry>
@@ -283,8 +308,8 @@
         <category>工作周报</category>
       </categories>
       <tags>
-        <tag>ai辅助</tag>
         <tag>课题组网站</tag>
+        <tag>ai辅助</tag>
       </tags>
   </entry>
   <entry>
@@ -436,11 +461,11 @@
         <category>学习</category>
       </categories>
       <tags>
-        <tag>课题组网站</tag>
         <tag>questions</tag>
         <tag>learning</tag>
         <tag>deep_learning</tag>
         <tag>Obsidian</tag>
+        <tag>课题组网站</tag>
         <tag>Gaussian</tag>
         <tag>chemoffice</tag>
       </tags>

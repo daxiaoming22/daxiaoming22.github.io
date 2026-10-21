@@ -12,15 +12,34 @@
   <title>
     <![CDATA[Yueming & Blog]]>
   </title>
-  <updated>2026-09-23T16:00:00.000Z</updated>
+  <updated>2026-10-21T07:00:00.000Z</updated>
+  <entry>
+    <author>
+      <name>月明</name>
+    </author>
+    <category term="观点" scheme="https://ideaforge.icu/categories/%E8%A7%82%E7%82%B9/"/>
+    <category term="Agent" scheme="https://ideaforge.icu/tags/Agent/"/>
+    <category term="cc-switch" scheme="https://ideaforge.icu/tags/cc-switch/"/>
+    <category term="API" scheme="https://ideaforge.icu/tags/API/"/>
+    <category term="国产大模型" scheme="https://ideaforge.icu/tags/%E5%9B%BD%E4%BA%A7%E5%A4%A7%E6%A8%A1%E5%9E%8B/"/>
+    <content>
+      <![CDATA[<blockquote><p>本博客针对于使用各种框架壳子（claude&#x2F;codex&#x2F;dsh&#x2F;hermes） + <a href="https://github.com/farion1231/cc-switch/tree/main">cc switch</a>（真神把框架绑定制改调了，自由度拉满，操作简单，伟大无需多言，真心推荐） + 自己调用的各种包月或按量的api后台（mimo、ds、gpt、第三方等等）</p></blockquote><h1 id="1-什么决定了你使用ai的价格？"><a href="#1-什么决定了你使用ai的价格？" class="headerlink" title="1.什么决定了你使用ai的价格？"></a>1.什么决定了你使用ai的价格？</h1><h2 id="缓存："><a href="#缓存：" class="headerlink" title="缓存："></a>缓存：</h2><p>也就api的记忆、上下文，ai每次回答你的问题，把之前和你对话的东西再读一遍，如果你的会话是连续的那这部分会很低；想象一下你在claude和ai聊了很久后，突然把它后面的脑子给换了（假设ds官方额度用完了，换成xiaomi mimo），那这个新脑子要把你当前上下文的东西再读一遍。这个新脑子可没有之前这些东西的影响。此时就会大量地命中非缓存。这个价钱是相当贵的。所以要避免会话中途切api</p><h2 id="思考强度："><a href="#思考强度：" class="headerlink" title="思考强度："></a>思考强度：</h2><p>这个无庸置疑，你可以试试用同一个框架，调整不同的思考强度，发一句你好，每个框架可能消耗的token不同</p><h2 id="api："><a href="#api：" class="headerlink" title="api："></a>api：</h2><p>依旧无质疑，这个脑子是本地的，国外的，官网的，中转的都全然不同。国内按用量来说ds、mimo性价比较高了。</p><h2 id="框架壳子："><a href="#框架壳子：" class="headerlink" title="框架壳子："></a>框架壳子：</h2><p>目前我用的最顺手的就算codex、claude、hermes、dsh刚出没什么优势，常常写个插件把自己写死，但未来看好，让其在发酵一会生态</p><h1 id="2-思路：越贵的越在上层，越按量的越在上层，越便宜的越在下层，越本地的越在下层，越按月的越在下层。"><a href="#2-思路：越贵的越在上层，越按量的越在上层，越便宜的越在下层，越本地的越在下层，越按月的越在下层。" class="headerlink" title="2.思路：越贵的越在上层，越按量的越在上层，越便宜的越在下层，越本地的越在下层，越按月的越在下层。"></a>2.思路：越贵的越在上层，越按量的越在上层，越便宜的越在下层，越本地的越在下层，越按月的越在下层。</h1><p>现在的框架沟通互相调用起来其实都比较方便，这给予了我们一定的操作性。</p><p>其实关于各自框架有一个概念叫做子agent，它的持久化还不确定。之前dsh刚出的时候，我用创作模式捣鼓自己的插件，最后表现的效果还是非常好的，但结果是非常烧钱。但其实有一个问题，这个过程是浪费时间和金钱的，因为github上有很多类似的项目或在经验。经典重复造轮子</p><p>但有一个问题想要降低缓存，并不是让每个agent+api的组合变成全能；而是让每个agent+api拥有一个专长，训练它们有一个专长。这样可以下派任务，想重复简单的任务交给本地模型，交给mimo，ds等，而且让他们保持这些会话通道畅通，可以更加地提高缓存命中。</p><p>比如：codex+gpt plus最顶层（仅负责发派任务和验收结果），hermes+ds作为中间力量，claude+mimo包月从事最低级的最基础的事情。</p><h1 id="3-思考题：你现在有以下员工，如何更加高效地组织你自己的工作任务"><a href="#3-思考题：你现在有以下员工，如何更加高效地组织你自己的工作任务" class="headerlink" title="3.思考题：你现在有以下员工，如何更加高效地组织你自己的工作任务"></a>3.思考题：你现在有以下员工，如何更加高效地组织你自己的工作任务</h1><h2 id="A-codex-gpt（领月薪120￥）"><a href="#A-codex-gpt（领月薪120￥）" class="headerlink" title="A codex + gpt（领月薪120￥）"></a>A codex + gpt（领月薪120￥）</h2><h2 id="B-hermes-ds-按量计价，喜欢别人放假的时候干活"><a href="#B-hermes-ds-按量计价，喜欢别人放假的时候干活" class="headerlink" title="B hermes + ds (按量计价，喜欢别人放假的时候干活)"></a>B hermes + ds (按量计价，喜欢别人放假的时候干活)</h2><h2 id="C-claude-本地llm（脑袋有点本，有点吃工作环境，优点是仅收点电费）"><a href="#C-claude-本地llm（脑袋有点本，有点吃工作环境，优点是仅收点电费）" class="headerlink" title="C claude + 本地llm（脑袋有点本，有点吃工作环境，优点是仅收点电费）"></a>C claude + 本地llm（脑袋有点本，有点吃工作环境，优点是仅收点电费）</h2><h2 id="通过cc-switch您还可以定制更多不同的员工。如opencode-mimo等等。还可以招募一些cc-管不了的dsh、workbuddy等等"><a href="#通过cc-switch您还可以定制更多不同的员工。如opencode-mimo等等。还可以招募一些cc-管不了的dsh、workbuddy等等" class="headerlink" title="通过cc switch您还可以定制更多不同的员工。如opencode + mimo等等。还可以招募一些cc 管不了的dsh、workbuddy等等"></a>通过cc switch您还可以定制更多不同的员工。如opencode + mimo等等。还可以招募一些cc 管不了的dsh、workbuddy等等</h2>]]>
+    </content>
+    <id>https://ideaforge.icu/2026/10/21/agent-framework-api-cost/</id>
+    <link href="https://ideaforge.icu/2026/10/21/agent-framework-api-cost/"/>
+    <published>2026-10-21T07:00:00.000Z</published>
+    <summary>拆解决定 AI 使用成本的四个变量（缓存、思考强度、API、框架壳子），以及一条省钱思路——越贵越按量的放上层、越便宜越本地的放下层，让每个 agent+API 组合只专精一件事。</summary>
+    <title>关于如何更好地高性价比地使用 agent 框架 + API</title>
+    <updated>2026-10-21T07:00:00.000Z</updated>
+  </entry>
   <entry>
     <author>
       <name>月明</name>
     </author>
     <category term="教程" scheme="https://ideaforge.icu/categories/%E6%95%99%E7%A8%8B/"/>
-    <category term="Codex" scheme="https://ideaforge.icu/tags/Codex/"/>
     <category term="cc-switch" scheme="https://ideaforge.icu/tags/cc-switch/"/>
     <category term="国产大模型" scheme="https://ideaforge.icu/tags/%E5%9B%BD%E4%BA%A7%E5%A4%A7%E6%A8%A1%E5%9E%8B/"/>
+    <category term="Codex" scheme="https://ideaforge.icu/tags/Codex/"/>
     <content>
       <![CDATA[<h2 id="1-关于-Codex-如何绕开初始的强制登录"><a href="#1-关于-Codex-如何绕开初始的强制登录" class="headerlink" title="1. 关于 Codex 如何绕开初始的强制登录"></a>1. 关于 Codex 如何绕开初始的强制登录</h2><p>网上教程一大堆，大部分都要求你科学上网，但如果你没有怎么办？其实思路很简单：Codex（壳）+ 自己的 API（国产性价比）。</p><p>用 <a href="https://www.ccswitch.io/zh/changelog/3.20.3">cc-switch</a> 就行。安装这个 app 不难（微软商店就可以），然后用 cc-switch 切换成自己的 API，它可以把官方一开始强制的那一套全去掉，把 API 核心换成国产的。</p><h2 id="2-关于我目前的-agent-工具排行（仅供参考）"><a href="#2-关于我目前的-agent-工具排行（仅供参考）" class="headerlink" title="2. 关于我目前的 agent 工具排行（仅供参考）"></a>2. 关于我目前的 agent 工具排行（仅供参考）</h2><p>Claude CLI（无疑的神，插件生态异常成熟，加上 cc-switch 基本上所有的 API 都适用）&gt; Hermes CLI&#x2F;desktop（记忆的神，但感觉记忆太短了，希望这个 agent 进化时能把记忆库扩大一些）&gt; Codex 桌面端（官方维护的插件。说白了，下桌面端的优势就在于它有官方自定义库，可以更好地自动化操作）&gt; 豆包 &#x2F; WorkBuddy（自定义程度较低，但办公应用等相对较成熟）&gt; DeepSeek harness（版本不断迭代中，生态插件依旧不成熟，也没有官方维护的库，不推荐）</p><h2 id="3-关于-API"><a href="#3-关于-API" class="headerlink" title="3. 关于 API"></a>3. 关于 API</h2><p>我一直用的两个：<a href="https://platform.deepseek.com/usage">DeepSeek</a>（一直是按用量的，但自从 ds 涨价，梁圣变成梁娘，账户余额也如落花流水，近 30 天 ¥140）和火山的 <a href="https://www.volcengine.com/activity/agentplan">agent plan</a>（首三个月 9.9 还是相当划算的，但我的三个月已经过期了，可怜）。后面打算订阅制了，小米的还没试过效果。同门说 ds 高峰期用<a href="https://platform.xiaomimimo.com/console/balance">小米 MiMo</a>，谷底用 ds。</p><blockquote><p>注：后续会持续更新</p></blockquote>]]>
     </content>
@@ -103,8 +122,8 @@
       <name>月明</name>
     </author>
     <category term="工作周报" scheme="https://ideaforge.icu/categories/%E5%B7%A5%E4%BD%9C%E5%91%A8%E6%8A%A5/"/>
-    <category term="ai辅助" scheme="https://ideaforge.icu/tags/ai%E8%BE%85%E5%8A%A9/"/>
     <category term="课题组网站" scheme="https://ideaforge.icu/tags/%E8%AF%BE%E9%A2%98%E7%BB%84%E7%BD%91%E7%AB%99/"/>
+    <category term="ai辅助" scheme="https://ideaforge.icu/tags/ai%E8%BE%85%E5%8A%A9/"/>
     <content>
       <![CDATA[<h4 id="llm的本地部署"><a href="#llm的本地部署" class="headerlink" title="llm的本地部署"></a>llm的本地部署</h4><h5 id="如何选择本地大模型的推理框架app？（11月24日）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵏᵎᵎᵎᵎ"><a href="#如何选择本地大模型的推理框架app？（11月24日）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵏᵎᵎᵎᵎ" class="headerlink" title="如何选择本地大模型的推理框架app？（11月24日）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵏᵎᵎᵎᵎ"></a>如何选择本地大模型的推理框架app？（11月24日）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵏᵎᵎᵎᵎ</h5><ul><li>最后选择了LM Studio</li></ul><table><thead><tr><th>推理框架的对比</th><th>自己个人理解（缺点）</th><th>优点</th><th>进度</th></tr></thead><tbody><tr><td>vllm推理框架</td><td>采用huggingface下载需要魔法；docker拉取image时也需要魔法；<br>运用较为复杂（推进采用先在本地下载好模型后，挂载的方式，推入到容器中运行）；<br>wsl2的方式来吸取可能导致，硬件的限制</td><td>支持docker部署；模型种类丰富；支持api调用；更适合工业部署；</td><td>成功部署过《mistralai&#x2F;Mistral-7B-v0.1》，但遗憾的是显存爆了</td></tr><tr><td>ollma推理框架</td><td>部署起来也偏简答，运用不复杂；模型较笨</td><td>部署简答使用方便；</td><td>成功安装过deepseek，但是太笨了；<br></td></tr><tr><td>LM Studio推理框架</td><td>模型种类较少、门类较少</td><td>下载模型简单，且在国内下载模型无网络限制；<br>自动检测你的gpu、cpu以及下载好的cuda的驱动；<br></td><td>完成模型的下载好部署，并成功在pycharm中调用api</td></tr></tbody></table><h6 id="如何在本地大模型中加入mcp的服务？（11月26日）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵏᵎᵎᵎᵎ"><a href="#如何在本地大模型中加入mcp的服务？（11月26日）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵏᵎᵎᵎᵎ" class="headerlink" title="如何在本地大模型中加入mcp的服务？（11月26日）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵏᵎᵎᵎᵎ"></a>如何在本地大模型中加入mcp的服务？（11月26日）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵏᵎᵎᵎᵎ</h6><ul><li>在环境中安装好必要的库后，编辑好mcp.json即可，可以通过询问大模型（支持工具调用的模型）的方式来问它是否能，使用mcp的服务</li></ul><h6 id="ai辅助"><a href="#ai辅助" class="headerlink" title="ai辅助"></a>ai辅助</h6><h6 id="为什么cherry-studio中大语言模型的联网搜索内容不准确？（11月26日）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵏᵎᵎᵎᵎ"><a href="#为什么cherry-studio中大语言模型的联网搜索内容不准确？（11月26日）٩-•̤̀ᵕ•̤́๑-ᵒᵏᵏᵎᵎᵎᵎ" class="headerlink" title="为什么cherry_studio中大语言模型的联网搜索内容不准确？（11月26日）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵏᵎᵎᵎᵎ"></a>为什么cherry_studio中大语言模型的联网搜索内容不准确？（11月26日）٩(•̤̀ᵕ•̤́๑)ᵒᵏᵏᵎᵎᵎᵎ</h6><ul><li>这与cherry_studio中模型内置的搜索有关，可以优先使用模型自带的联网搜索功能，或者用mcp的搜索服务</li></ul><h4 id="课题组网站"><a href="#课题组网站" class="headerlink" title="课题组网站"></a>课题组网站</h4><h4 id="关于学习的思考"><a href="#关于学习的思考" class="headerlink" title="关于学习的思考"></a>关于学习的思考</h4><h5 id="如何避免在听课（知识输入）太过于关心记录，而造成知识点的略过，产生一种，只见树木不见树林的学习窘境？（11月25日）"><a href="#如何避免在听课（知识输入）太过于关心记录，而造成知识点的略过，产生一种，只见树木不见树林的学习窘境？（11月25日）" class="headerlink" title="如何避免在听课（知识输入）太过于关心记录，而造成知识点的略过，产生一种，只见树木不见树林的学习窘境？（11月25日）"></a>如何避免在听课（知识输入）太过于关心记录，而造成知识点的略过，产生一种，只见树木不见树林的学习窘境？（11月25日）</h5><ul><li>以下两个任务正在完成中<br>[[s5e11]]<br>[[课题组网站]]</li></ul>]]>
     </content>
@@ -120,11 +139,11 @@
       <name>月明</name>
     </author>
     <category term="学习" scheme="https://ideaforge.icu/categories/%E5%AD%A6%E4%B9%A0/"/>
-    <category term="课题组网站" scheme="https://ideaforge.icu/tags/%E8%AF%BE%E9%A2%98%E7%BB%84%E7%BD%91%E7%AB%99/"/>
     <category term="questions" scheme="https://ideaforge.icu/tags/questions/"/>
     <category term="learning" scheme="https://ideaforge.icu/tags/learning/"/>
     <category term="deep_learning" scheme="https://ideaforge.icu/tags/deep-learning/"/>
     <category term="Obsidian" scheme="https://ideaforge.icu/tags/Obsidian/"/>
+    <category term="课题组网站" scheme="https://ideaforge.icu/tags/%E8%AF%BE%E9%A2%98%E7%BB%84%E7%BD%91%E7%AB%99/"/>
     <category term="Gaussian" scheme="https://ideaforge.icu/tags/Gaussian/"/>
     <category term="chemoffice" scheme="https://ideaforge.icu/tags/chemoffice/"/>
     <content>
