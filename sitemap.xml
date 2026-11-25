@@ -304,7 +304,21 @@
   </url>
   
   <url>
+    <loc>https://ideaforge.icu/tags/markdown-from-ipynb/</loc>
+    <lastmod>2026-11-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://ideaforge.icu/tags/catboost/</loc>
+    <lastmod>2026-11-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://ideaforge.icu/tags/claude-code/</loc>
     <lastmod>2026-11-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -326,41 +340,6 @@
   
   <url>
     <loc>https://ideaforge.icu/tags/%E6%96%87%E7%8C%AE%E9%98%85%E8%AF%BB%E7%AC%94%E8%AE%B0/</loc>
-    <lastmod>2026-11-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://ideaforge.icu/tags/claude-code/</loc>
-    <lastmod>2026-11-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://ideaforge.icu/tags/markdown-from-ipynb/</loc>
-    <lastmod>2026-11-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://ideaforge.icu/tags/blog-learning/</loc>
-    <lastmod>2026-11-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://ideaforge.icu/tags/%E6%83%B3%E6%B3%95/</loc>
-    <lastmod>2026-11-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://ideaforge.icu/tags/%E8%A7%82%E7%82%B9/</loc>
     <lastmod>2026-11-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -395,6 +374,27 @@
   </url>
   
   <url>
+    <loc>https://ideaforge.icu/tags/blog-learning/</loc>
+    <lastmod>2026-11-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://ideaforge.icu/tags/Codex/</loc>
+    <lastmod>2026-11-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://ideaforge.icu/tags/machine-learning/</loc>
+    <lastmod>2026-11-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://ideaforge.icu/tags/%E5%AD%A6%E6%9C%AF%E8%AE%B2%E5%BA%A7/</loc>
     <lastmod>2026-11-25</lastmod>
     <changefreq>weekly</changefreq>
@@ -416,14 +416,35 @@
   </url>
   
   <url>
-    <loc>https://ideaforge.icu/tags/machine-learning/</loc>
+    <loc>https://ideaforge.icu/tags/%E6%83%B3%E6%B3%95/</loc>
     <lastmod>2026-11-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://ideaforge.icu/tags/Codex/</loc>
+    <loc>https://ideaforge.icu/tags/%E8%A7%82%E7%82%B9/</loc>
+    <lastmod>2026-11-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://ideaforge.icu/tags/magpie/</loc>
+    <lastmod>2026-11-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://ideaforge.icu/tags/WorkBuddy/</loc>
+    <lastmod>2026-11-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://ideaforge.icu/tags/Token/</loc>
     <lastmod>2026-11-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -452,27 +473,6 @@
   
   <url>
     <loc>https://ideaforge.icu/tags/WSL2/</loc>
-    <lastmod>2026-11-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://ideaforge.icu/tags/magpie/</loc>
-    <lastmod>2026-11-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://ideaforge.icu/tags/WorkBuddy/</loc>
-    <lastmod>2026-11-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://ideaforge.icu/tags/Token/</loc>
     <lastmod>2026-11-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -530,14 +530,14 @@
   </url>
   
   <url>
-    <loc>https://ideaforge.icu/categories/%E5%AD%A6%E6%9C%AF/</loc>
+    <loc>https://ideaforge.icu/categories/%E6%95%99%E7%A8%8B/</loc>
     <lastmod>2026-11-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://ideaforge.icu/categories/%E6%95%99%E7%A8%8B/</loc>
+    <loc>https://ideaforge.icu/categories/%E5%AD%A6%E6%9C%AF/</loc>
     <lastmod>2026-11-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>

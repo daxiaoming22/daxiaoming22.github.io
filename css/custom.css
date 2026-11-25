@@ -406,3 +406,141 @@ html[data-theme="dark"] #article-container table tbody tr:nth-child(even) {
     transition: opacity 1.5s ease-in-out;
     pointer-events: none;
 }
+
+/* =========================================================
+   排版微调（2026-11-25）
+   目标：中文长文可读性。只调字号/行高/段距/行长，不动配色和卡片。
+   回滚：删掉这一整段即可，前面 408 行未被触碰。
+   ========================================================= */
+
+/* 正文段落：段距从 16px 提到 1.15em，中文段落之间更有呼吸 */
+#article-container p {
+    margin-bottom: 1.15em;
+}
+
+/* 中文行高：主题默认 2 对纯英文合适，中文宜 1.85 */
+#article-container > p,
+#article-container > ul,
+#article-container > ol,
+#article-container > blockquote {
+    line-height: 1.85;
+}
+
+/* 正文行长收窄到约 40 个汉字，超过这个宽度回行容易丢行。
+   注意：只收窄文字类元素，表格/代码块保持卡片全宽，否则宽表会被切。 */
+#article-container > p,
+#article-container > ul,
+#article-container > ol,
+#article-container > blockquote,
+#article-container > h1,
+#article-container > h2,
+#article-container > h3,
+#article-container > h4,
+#article-container > h5,
+#article-container > h6 {
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* 标题与上一段的间距：中文标题压得太紧会糊成一团 */
+#article-container h2 { margin-top: 2.2em; margin-bottom: 0.9em; }
+#article-container h3 { margin-top: 1.9em; margin-bottom: 0.8em; }
+#article-container h4 { margin-top: 1.6em; margin-bottom: 0.7em; }
+
+/* 标题字距微调，中文标题紧凑一点更像排版过的 */
+#article-container h2,
+#article-container h3 {
+    letter-spacing: 0.01em;
+}
+
+/* 列表项行高与间距 */
+#article-container li {
+    line-height: 1.8;
+    margin-bottom: 0.35em;
+}
+
+/* 引用块：左内边距加大，突出层次 */
+#article-container blockquote {
+    padding: 0.6em 1.1em;
+    margin: 1.3em 0;
+}
+
+/* 表格：单元格内边距加大，挤了一起难读 */
+#article-container table th,
+#article-container table td {
+    padding: 8px 12px;
+}
+
+/* 行内代码：字号跟正文靠一点，别显得像缩小版 */
+#article-container code {
+    font-size: 0.92em;
+    padding: 2px 6px;
+}
+
+/* 移动端单独给字号，14px 在手机上太吃力 */
+@media screen and (max-width: 768px) {
+    #article-container > p,
+    #article-container > ul,
+    #article-container > ol,
+    #article-container > blockquote {
+        max-width: 100%;
+    }
+    #article-container > p,
+    #article-container > ul,
+    #article-container > ol {
+        line-height: 1.78;
+    }
+    #article-container p {
+        font-size: 15px;
+    }
+}
+
+/* 表格横向滚动容器（配合 /js/table-wrap.js） */
+#article-container .table-wrap {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin: 1.3em 0;
+    /* 右侧渐隐：只在内容溢出、能横向滚动时才出现 */
+    background-image:
+        linear-gradient(to right, transparent, transparent),
+        linear-gradient(to right, rgba(0, 0, 0, 0.10), transparent);
+    background-position: 0 0, 100% 0;
+    background-repeat: no-repeat;
+    background-size: 24px 100%, 24px 100%;
+    background-attachment: local, scroll;
+}
+
+html[data-theme="dark"] #article-container .table-wrap {
+    background-image:
+        linear-gradient(to right, transparent, transparent),
+        linear-gradient(to right, rgba(255, 255, 255, 0.14), transparent);
+}
+
+#article-container .table-wrap > table {
+    margin: 0;
+    min-width: 100%;
+}
+
+/* 表头一律不换行，避免被挤成竖排 */
+#article-container table th {
+    white-space: nowrap;
+}
+
+/* 窄列（编号/首字母/Star/许可/日期）不折行，长列（项目/地址/角色）正常换行 */
+#article-container table td:nth-child(1),
+#article-container table td:nth-child(3),
+#article-container table td:nth-child(5),
+#article-container table td:nth-child(6),
+#article-container table td:nth-child(7) {
+    white-space: nowrap;
+}
+
+/* 移动端也给表格一个最小宽度，让它滚动而不是压扁 */
+@media screen and (max-width: 768px) {
+    #article-container .table-wrap > table {
+        min-width: 820px;
+    }
+}
+
