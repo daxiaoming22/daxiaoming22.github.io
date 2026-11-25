@@ -466,10 +466,12 @@ html[data-theme="dark"] #article-container table tbody tr:nth-child(even) {
     margin: 1.3em 0;
 }
 
-/* 表格：单元格内边距加大，挤了一起难读 */
+/* 表格：单元格内边距加大，挤了一起难读
+   2026-11-25：12px 会让 8 列宽表撑出容器 13px，被 .table-wrap 裁掉后
+   右边缘露出底色，看着像一道黑影。降到 10px 正好贴合。 */
 #article-container table th,
 #article-container table td {
-    padding: 8px 12px;
+    padding: 8px 10px;
 }
 
 /* 行内代码：字号跟正文靠一点，别显得像缩小版 */
@@ -502,20 +504,9 @@ html[data-theme="dark"] #article-container table tbody tr:nth-child(even) {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
     margin: 1.3em 0;
-    /* 右侧渐隐：只在内容溢出、能横向滚动时才出现 */
-    background-image:
-        linear-gradient(to right, transparent, transparent),
-        linear-gradient(to right, rgba(0, 0, 0, 0.10), transparent);
-    background-position: 0 0, 100% 0;
-    background-repeat: no-repeat;
-    background-size: 24px 100%, 24px 100%;
-    background-attachment: local, scroll;
-}
-
-html[data-theme="dark"] #article-container .table-wrap {
-    background-image:
-        linear-gradient(to right, transparent, transparent),
-        linear-gradient(to right, rgba(255, 255, 255, 0.14), transparent);
+    /* 2026-11-25 去掉右侧渐隐阴影：用户嫌脏，只要干净的横向滚动 */
+    background: none;
+    box-shadow: none;
 }
 
 #article-container .table-wrap > table {
@@ -544,3 +535,32 @@ html[data-theme="dark"] #article-container .table-wrap {
     }
 }
 
+
+/* ==========================================================
+   2026-11-25 第二期 · B 卡片圆角统一到 12px
+   只覆盖卡片容器，不动主题源码；想回滚删掉这段即可
+   ========================================================== */
+#recent-posts .recent-post-item,
+#aside-content .card-widget,
+#archive .card-archive-list-item,
+#footer-wrap,
+.layout > div:first-child:not(.recent-posts) > #pagination {
+    border-radius: 12px !important;
+}
+
+/* 首页卡片封面与卡片同圆角，左上/左下 */
+#recent-posts .recent-post-item .post_cover,
+#recent-posts .recent-post-item .post_cover a,
+#recent-posts .recent-post-item .post_cover img.post-bg,
+#recent-posts .recent-post-item .post_cover.left,
+#recent-posts .recent-post-item .post_cover.right {
+    border-radius: 12px 0 0 12px !important;
+}
+
+@media screen and (max-width: 768px) {
+    #recent-posts .recent-post-item .post_cover,
+    #recent-posts .recent-post-item .post_cover a,
+    #recent-posts .recent-post-item .post_cover img.post-bg {
+        border-radius: 12px 12px 0 0 !important;
+    }
+}
